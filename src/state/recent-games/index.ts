@@ -14,7 +14,7 @@ export const useRecentGamesState = create<
         ...historySlice(...args),
       }),
       {
-        name: "mlb-recent-games",
+        name: "mlb-matches",
         storage: createJSONStorage(() => localStorage),
       },
     ),

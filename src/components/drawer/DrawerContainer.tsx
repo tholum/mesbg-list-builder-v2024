@@ -4,55 +4,41 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
 import { useAppState } from "../../state/app";
 import { drawers } from "./drawers.tsx";
 
 export const DrawerContainer = () => {
   const state = useAppState();
-  const { palette } = useTheme();
 
   return [...drawers.entries()].map(([type, props]) => {
     return (
       <Drawer
         key={type}
         open={type === state.currentlyOpenendSidebar}
+        anchor="right"
         onClose={() => state.closeSidebar()}
-        PaperProps={{
-          sx: {
-            maxWidth: "72ch",
-            p: 2,
-          },
-        }}
+        PaperProps={{ sx: { maxWidth: "72ch" } }}
       >
         <Stack
           direction="row"
           sx={{
-            borderBottom: "1px solid black",
-            mb: 3,
-            pb: 1,
+            mb: 1,
+            p: 1.5,
+            boxShadow: "0 0 5px 0 black",
           }}
           justifyContent="center"
-          alignItems="start"
+          alignItems="center"
         >
           <Box flexGrow={1}>
-            <Typography variant="h5">{props.title}</Typography>
+            <Typography variant="h5" className="middle-earth">
+              {props.title}
+            </Typography>
           </Box>
-          <IconButton
-            onClick={() => state.closeSidebar()}
-            sx={{
-              borderRadius: 2,
-              backgroundColor: palette.primary.light,
-              color: palette.primary.contrastText,
-              "&:hover": {
-                backgroundColor: palette.primary.main,
-              },
-            }}
-          >
+          <IconButton onClick={() => state.closeSidebar()}>
             <CloseIcon />
           </IconButton>
         </Stack>
-        <Box>{props.children}</Box>
+        <Box sx={{ px: 2, pt: 1, pb: 2 }}>{props.children}</Box>
       </Drawer>
     );
   });

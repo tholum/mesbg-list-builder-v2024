@@ -3,10 +3,9 @@ import fallbackCard from "../../../assets/images/default_card.jpg";
 import { ImageWithFallback } from "./ImageWithFallback.tsx";
 import { UnitProfileProps } from "./UnitProfilePicture.tsx";
 
-export const UnitProfileCard: FunctionComponent<UnitProfileProps> = ({
-  army,
-  profile,
-}) => {
+export const UnitProfileCard: FunctionComponent<
+  Pick<UnitProfileProps, "army" | "profile">
+> = ({ army, profile }) => {
   return (
     <ImageWithFallback
       source={

@@ -2,13 +2,13 @@ import { saveAs } from "file-saver";
 import { HTMLOptions, jsPDF } from "jspdf";
 import JSZip from "jszip";
 import { useState } from "react";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useRosterBuildingState } from "../state/roster-building";
-import { isDefinedUnit } from "../types/unit.ts";
+import { heroConstraintData } from "../assets/data.ts";
+import { useRosterInformation } from "../components/common/warbands/useRosterInformation.ts";
+import { isSelectedUnit } from "../types/roster.ts";
 
 export const useDownload = () => {
   const [isDownloading, setDownloading] = useState(false);
-  const { roster } = useRosterBuildingState();
+  const { roster } = useRosterInformation();
 
   const downloadProfileCards = async () => {
     setDownloading(true);
@@ -20,10 +20,10 @@ export const useDownload = () => {
         );
         if (
           _warband.hero.unit_type !== "Siege Engine" &&
-          hero_constraint_data[_warband.hero.model_id][0]["extra_profiles"]
-            .length > 0
+          heroConstraintData[_warband.hero.model_id]["extra_profiles"].length >
+            0
         ) {
-          hero_constraint_data[_warband.hero.model_id][0]["extra_profiles"].map(
+          heroConstraintData[_warband.hero.model_id]["extra_profiles"].map(
             (_profile) => {
               profileCards.push(
                 [_warband.hero.profile_origin, _profile].join("|"),
@@ -33,7 +33,7 @@ export const useDownload = () => {
           );
         }
       }
-      _warband.units.filter(isDefinedUnit).map((_unit) => {
+      _warband.units.filter(isSelectedUnit).map((_unit) => {
         if (_unit.name != null && _unit.unit_type !== "Siege") {
           profileCards.push([_unit.profile_origin, _unit.name].join("|"));
         }

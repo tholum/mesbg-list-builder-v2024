@@ -1,6 +1,6 @@
 {
   "name": "mesbg",
-  "version": "6.17.10",
+  "version": "0.1.0",
   "homepage": "https://v2018.mesbg-list-builder.com/",
   "private": true,
   "type": "module",
@@ -18,7 +18,9 @@
     "version": "sh changelog-version-update.sh %npm_package_version%",
     "postversion": "git push && git push --tags && npm run deploy",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -36,8 +38,10 @@
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.3.0",
     "react-numeric-input": "^2.2.3",
+    "react-router-dom": "^7.0.1",
     "uuid": "^10.0.0",
     "web-vitals": "^4.2.3",
     "zipson": "^0.2.12",
@@ -45,7 +49,17 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
     "@eslint/js": "^9.9.0",
+    "@storybook/addon-docs": "^8.4.6",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/addon-interactions": "^8.4.6",
+    "@storybook/addon-onboarding": "^8.4.6",
+    "@storybook/blocks": "^8.4.6",
+    "@storybook/builder-vite": "^8.4.6",
+    "@storybook/react": "^8.4.6",
+    "@storybook/react-vite": "^8.4.6",
+    "@storybook/test": "^8.4.6",
     "@types/node": "^22.4.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -59,11 +73,13 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-storybook": "^0.11.1",
     "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "husky": "^9.1.4",
     "prettier": "^3.3.3",
     "sass": "^1.78.0",
+    "storybook": "^8.4.6",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.2"

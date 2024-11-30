@@ -343,7 +343,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               onChange={(values) => {
                 handleChangeField(
                   "armies",
-                  values.map((v) => v.title).join(", "),
+                  values.map((v) => v.army).join(", "),
                 );
 
                 if (values.length === 1 && values[0].type.includes("LL"))
@@ -471,7 +471,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               onChange={(values) =>
                 handleChangeField(
                   "opponentArmies",
-                  values.map((v) => v.title).join(", "),
+                  values.map((v) => v.army).join(", "),
                 )
               }
               defaultSelection={formValues.opponentArmies

@@ -19,7 +19,7 @@ export const useUserPreferences = create<
         ...userPreferences(...args),
       }),
       {
-        name: "mlb-user-prefs",
+        name: "mlb-preferences",
         storage: createJSONStorage(() => localStorage),
       },
     ),

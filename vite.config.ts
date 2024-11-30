@@ -13,14 +13,11 @@ const currentDate = new Date()
 export default defineConfig({
   base: "/",
   plugins: [react()],
-  server: {
-    port: 3000,
-  },
   define: {
     BUILD_VERSION: JSON.stringify(process.env.npm_package_version),
     BUILD_DATE: JSON.stringify(currentDate),
     RESOURCES_URL: JSON.stringify(
-      "https://resources.mesbg-list-builder.com/v2018",
+      "https://resources.mesbg-list-builder.com/v2024",
     ),
   },
   build: {

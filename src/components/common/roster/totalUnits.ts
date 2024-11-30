@@ -1,5 +1,5 @@
-import { Roster } from "../../../types/roster.ts";
-import { isDefinedUnit, Unit, UnitType } from "../../../types/unit.ts";
+import { UnitType } from "../../../types/mesbg-data.types.ts";
+import { isSelectedUnit, Roster, SelectedUnit } from "../../../types/roster.ts";
 
 export const getSumOfUnits = (roster: Roster) => {
   const units = roster.warbands.flatMap((warband) => [
@@ -7,22 +7,22 @@ export const getSumOfUnits = (roster: Roster) => {
     ...warband.units,
   ]);
 
-  const totalledUnits: Unit[] = Object.values(
+  const totalledUnits: SelectedUnit[] = Object.values(
     Object.create(units)
-      .filter(isDefinedUnit)
+      .filter(isSelectedUnit)
       // clone the unit so not to update its 'quantity' by object reference in state.
       .map(Object.create)
-      .map((unit: Unit) => {
+      .map((unit: SelectedUnit) => {
         const options = unit.options
-          .filter((o) => o.opt_quantity)
-          .map((o) => o.option + o.opt_quantity)
+          .filter((o) => o.quantity)
+          .map((o) => o.name + o.quantity)
           .join(",");
         const key = unit.name + " [" + options + "]";
 
         return { key, unit };
       })
       .reduce(
-        (totals: Record<string, Unit>, { key, unit }) => {
+        (totals: Record<string, SelectedUnit>, { key, unit }) => {
           if (!totals[key]) {
             totals[key] = unit;
           } else {
@@ -31,7 +31,7 @@ export const getSumOfUnits = (roster: Roster) => {
           }
           return totals;
         },
-        {} as Record<string, Unit>,
+        {} as Record<string, SelectedUnit>,
       ),
   );
 

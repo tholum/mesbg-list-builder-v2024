@@ -7,19 +7,19 @@ import {
   Input,
   InputLabel,
 } from "@mui/material";
+import Alert from "@mui/material/Alert";
 import { useState } from "react";
-import { useExternalStorage } from "../../../hooks/external-storage.ts";
+import { useExport } from "../../../hooks/useExport.ts";
 import { useAppState } from "../../../state/app";
-import { useCurrentRosterState } from "../../../state/rosters";
+import { slugify } from "../../../utils/string.ts";
+import { useRosterInformation } from "../../common/warbands/useRosterInformation.ts";
 
 export const ExportRosterModal = () => {
   const { closeModal } = useAppState();
-  const { activeRoster } = useCurrentRosterState();
-  const { exportRoster, copyToClipboard } = useExternalStorage();
+  const { roster } = useRosterInformation();
+  const { exportToFile, exportToClipboard } = useExport();
 
-  const [filename, setFilename] = useState(
-    activeRoster !== "default" ? activeRoster : "",
-  );
+  const [filename, setFilename] = useState(slugify(roster.name));
   const [filenameValid, setFilenameValid] = useState(true);
 
   const handleExport = (e) => {
@@ -27,20 +27,25 @@ export const ExportRosterModal = () => {
     const validFilename = filename.trim().length > 0;
     setFilenameValid(validFilename);
     if (validFilename) {
-      exportRoster(filename + ".json");
+      exportToFile(filename + ".json");
       closeModal();
     }
   };
 
   const handleCopy = (e) => {
     e.preventDefault();
-    copyToClipboard();
+    exportToClipboard();
     closeModal();
   };
 
   return (
     <>
       <DialogContent>
+        <Alert severity="info" sx={{ mb: 2 }} icon={false}>
+          You can export your roster to a <i>.json</i> (or to your clipboard).
+          This allows you to reimport your roster on another device or when you
+          lose your browser data.
+        </Alert>
         <FormControl error={!filenameValid} variant="standard" fullWidth>
           <InputLabel htmlFor="component-error">Roster filename</InputLabel>
           <Input

@@ -1,79 +1,318 @@
+import { AttachFileOutlined } from "@mui/icons-material";
 import {
+  Autocomplete,
   Button,
   DialogActions,
   DialogContent,
-  FormControl,
-  FormHelperText,
-  Input,
-  InputLabel,
+  ListItemIcon,
+  TextField,
 } from "@mui/material";
-import { useState } from "react";
+import Alert from "@mui/material/Alert";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { v4 as randomUuid } from "uuid";
+import data from "../../../assets/data/mesbg_data.json";
+import models from "../../../assets/data/mesbg_data.json";
+import warningRules from "../../../assets/data/warning_rules.json";
+import { useCalculator } from "../../../hooks/useCalculator.ts";
+import { useExport } from "../../../hooks/useExport.ts";
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { initialBuilderState } from "../../../state/roster-building/builder-selection";
 import { emptyRoster } from "../../../state/roster-building/roster";
-import {
-  useCurrentRosterState,
-  useSavedRostersState,
-} from "../../../state/rosters";
+import { Roster } from "../../../types/roster.ts";
+import { WarningRules } from "../../../types/warning-rules.types.ts";
+import { generateRandomHash, slugify } from "../../../utils/string.ts";
+import { FactionLogo } from "../../common/images/FactionLogo.tsx";
+
+const armyLists = Object.values(data)
+  .map((item) => ({
+    title: item.army_list,
+    army: item.army_list,
+    type: item.army_type,
+  }))
+  .filter(
+    (value, index, array) =>
+      array.findIndex((other) => other.title === value.title) === index,
+  )
+  .sort((a, b) => b.type.localeCompare(a.type));
+
+function withSuffix(id: string, existingIds: string[]) {
+  const hashedId = id + "-" + generateRandomHash(6);
+  if (existingIds.includes(hashedId)) {
+    return withSuffix(id, existingIds);
+  }
+  return hashedId;
+}
 
 export const CreateNewRosterModal = () => {
   const { closeModal } = useAppState();
-  const { rosters, saveNewRoster, setLastOpenedRoster } =
-    useSavedRostersState();
-  const { setActiveRoster } = useCurrentRosterState();
-  const { setRoster, updateBuilderSidebar } = useRosterBuildingState();
+  const { createRoster, rosters } = useRosterBuildingState();
+  const navigate = useNavigate();
+  const { importJsonRoster } = useExport();
+  const calculator = useCalculator();
+
+  const existingRosterIds = rosters.map(({ id }) => id);
+
+  const [armyList, setArmyList] = useState<{
+    title: string;
+    type: string;
+    army: string;
+  }>();
 
   const [rosterName, setRosterName] = useState("");
   const [rosterNameValid, setRosterNameValid] = useState(true);
+  const [JSONImport, setJSONImport] = useState("");
+  const [JSONImportError, setJSONImportError] = useState("");
 
-  const handleCreateNewRoster = (e) => {
+  const jsonImportTextField = useRef<HTMLInputElement | null>(null);
+
+  function scrollToBottom() {
+    if (jsonImportTextField.current) {
+      // Scroll the input to the bottom
+      jsonImportTextField.current.scrollTop =
+        jsonImportTextField.current.scrollHeight;
+    }
+  }
+
+  function validateAndAdjustForCompulsoryRules(roster: Roster): Roster {
+    const rules = (warningRules as WarningRules)[roster.armyList];
+    if (!rules) return roster;
+
+    const compulsoryRules = rules.filter(
+      ({ type, warning }) =>
+        type === "compulsory" &&
+        warning.includes("who is always the Army's General"),
+    );
+    if (compulsoryRules.length === 0) return roster;
+
+    const [requiredGeneral] = compulsoryRules[0].dependencies;
+    const general = models[requiredGeneral];
+    const warband = roster.warbands[0];
+
+    return calculator.recalculateRoster({
+      ...roster,
+      warbands: [
+        calculator.recalculateWarband({
+          ...warband,
+          hero: calculator.recalculatePointsForUnit({
+            ...general,
+            id: randomUuid(),
+            pointsPerUnit: general.base_points,
+            pointsTotal: general.base_points,
+            quantity: 1,
+            compulsory: true,
+          }),
+        }),
+      ],
+      metadata: {
+        ...roster.metadata,
+        leader: warband.id,
+        leaderCompulsory: true,
+      },
+    });
+  }
+
+  function handleCreateNewRoster(e) {
     e.preventDefault();
+
     const rosterNameValue = rosterName.trim();
-    const validRosterName =
-      rosterNameValue.length > 0 && !rosters.includes(rosterNameValue);
-    setRosterNameValid(validRosterName);
-    if (validRosterName) {
-      saveNewRoster(rosterNameValue);
-      setLastOpenedRoster(rosterNameValue);
-      setActiveRoster(rosterNameValue);
-      useRosterBuildingState.persist.setOptions({
-        name: "mlb-builder-" + rosterNameValue.replaceAll(" ", "_"),
+    const nameValid = !!rosterNameValue;
+
+    setRosterNameValid(nameValid);
+
+    if (nameValid && !!armyList) {
+      let id = slugify(rosterNameValue);
+      if (existingRosterIds.includes(id)) {
+        id = withSuffix(id, existingRosterIds);
+      }
+      const newRoster = validateAndAdjustForCompulsoryRules({
+        ...emptyRoster,
+        id: id,
+        name: rosterNameValue,
+        armyList: armyList.title,
       });
-      setRoster(emptyRoster);
-      updateBuilderSidebar(initialBuilderState);
+
+      createRoster(newRoster);
+      navigate(`/roster/${newRoster.id}`, { viewTransition: true });
       closeModal();
     }
-  };
+  }
+
+  const hasError = (
+    roster: Roster | { error: true; reason: string },
+  ): roster is { error: true; reason: string } =>
+    (roster as { error: true; reason: string }).error === true;
+
+  function handleImportRoster(e) {
+    e.preventDefault();
+
+    const roster = importJsonRoster(JSONImport);
+
+    if (hasError(roster)) {
+      setJSONImportError(roster.reason);
+      return;
+    }
+
+    const id = slugify(roster.name);
+    const importedRoster = {
+      ...roster,
+      id: existingRosterIds.includes(id)
+        ? withSuffix(id, existingRosterIds)
+        : id,
+    };
+    createRoster(importedRoster);
+    navigate(`/roster/${importedRoster.id}`, { viewTransition: true });
+    closeModal();
+  }
+
+  function updateRosterName(value: string) {
+    setRosterName(value);
+    setRosterNameValid(true);
+  }
+
+  // Handler for file selection
+  function handleFileChange(event) {
+    const file = event.target.files[0]; // Get the selected file
+
+    if (file) {
+      // Check if the file is a JSON file
+      if (file.type === "application/json") {
+        const reader = new FileReader();
+
+        // Handler for when the file is successfully read
+        reader.onload = () => {
+          try {
+            setJSONImport(reader.result as string);
+            setTimeout(() => scrollToBottom());
+          } catch (error) {
+            console.error("Error parsing JSON:", error);
+            alert("Invalid JSON file");
+          }
+        };
+
+        // Read the file as text
+        reader.readAsText(file);
+      } else {
+        alert("Please select a JSON file");
+      }
+    }
+
+    // Clear the file input value
+    event.target.value = "";
+  }
+
+  function handleButtonClick() {
+    document.getElementById("file-input").click();
+  }
 
   return (
     <>
-      <DialogContent>
-        <FormControl error={!rosterNameValid} variant="standard" fullWidth>
-          <InputLabel htmlFor="component-error">Roster name</InputLabel>
-          <Input
-            value={rosterName}
-            onChange={(e) => {
-              const filename = e.target.value;
-              setRosterName(filename);
-              const validFilename = filename.length > 0;
-              setRosterNameValid(validFilename);
-            }}
-          />
-          {!rosterNameValid && (
-            <FormHelperText id="component-error-text">
-              Roster name cannot be empty and must not already exist
-            </FormHelperText>
+      <DialogContent sx={{ display: "flex", gap: 1, flexDirection: "column" }}>
+        <Alert severity="info" icon={false}>
+          You can create a <u>new roster from scratch</u> <b>or</b>{" "}
+          <u>
+            import your existing roster<sup>*</sup>
+          </u>
+        </Alert>
+
+        <Divider>
+          <Typography className="middle-earth">Create a Roster</Typography>
+        </Divider>
+
+        <Autocomplete
+          disableClearable
+          options={armyLists}
+          getOptionLabel={(option) => option.title}
+          renderOption={(props, option) => {
+            return (
+              <ListItem {...props} key={option.title}>
+                <ListItemIcon>
+                  <FactionLogo faction={option.army} />
+                </ListItemIcon>
+                <ListItemText>{option.title}</ListItemText>
+              </ListItem>
+            );
+          }}
+          groupBy={(option) => option.type}
+          value={armyList}
+          onChange={(_, newValue) => {
+            setArmyList(newValue);
+          }}
+          filterSelectedOptions
+          blurOnSelect={true}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              placeholder="Type to filter..."
+              label="Army"
+            />
           )}
-        </FormControl>
+        />
+        <TextField
+          fullWidth
+          label="Roster name"
+          error={!rosterNameValid}
+          helperText={!rosterNameValid ? "Roster name cannot be empty." : ""}
+          value={rosterName}
+          onChange={(e) => updateRosterName(e.target.value)}
+        />
+
+        <Divider>
+          <Typography className="middle-earth">
+            Or import an existing roster
+          </Typography>
+        </Divider>
+        <TextField
+          fullWidth
+          label="Roster JSON import"
+          helperText={JSONImportError ? JSONImportError : null}
+          error={!!JSONImportError}
+          multiline
+          rows={6}
+          inputRef={jsonImportTextField}
+          value={JSONImport}
+          onChange={(e) => setJSONImport(e.target.value)}
+        />
+
+        <input
+          id="file-input"
+          type="file"
+          accept=".json"
+          style={{ display: "none" }}
+          onChange={handleFileChange}
+        />
+        <Button
+          variant="contained"
+          onClick={handleButtonClick}
+          fullWidth
+          startIcon={<AttachFileOutlined />}
+        >
+          Select a file
+        </Button>
       </DialogContent>
       <DialogActions sx={{ display: "flex", gap: 2 }}>
         <Button
-          variant="contained"
-          onClick={handleCreateNewRoster}
-          disabled={!rosterNameValid}
+          variant="text"
+          color="inherit"
+          onClick={closeModal}
+          sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--cancel-button"
         >
-          Create roster
+          Cancel
+        </Button>
+        <Button
+          variant="contained"
+          onClick={
+            JSONImport.length > 0 ? handleImportRoster : handleCreateNewRoster
+          }
+          disabled={JSONImport.length === 0 && (!rosterNameValid || !armyList)}
+          data-test-id="dialog--submit-button"
+        >
+          {JSONImport.length > 0 ? "Import" : "Create"} roster
         </Button>
       </DialogActions>
     </>

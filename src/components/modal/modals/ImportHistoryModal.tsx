@@ -13,10 +13,8 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, useState } from "react";
-import { useJsonValidation } from "../../../hooks/json-validation.ts";
+import { useJsonValidation } from "../../../hooks/useJsonValidation.ts";
 import { useAppState } from "../../../state/app";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { PastGame } from "../../../state/recent-games/history";
@@ -40,8 +38,6 @@ const requiredKeys = [
 ];
 
 export const ImportGameHistoryModal = () => {
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const { validateKeys } = useJsonValidation();
   const { importGames } = useRecentGamesState();
   const { closeModal } = useAppState();
@@ -145,7 +141,7 @@ export const ImportGameHistoryModal = () => {
 
   return (
     <>
-      <DialogContent sx={{ minWidth: isTablet ? "80vw" : "50vw" }}>
+      <DialogContent>
         <Grid2 container columnSpacing={1} rowSpacing={3}>
           <Grid2 size={12}>
             <FormControl error={importAlert} variant="standard" fullWidth>
@@ -259,7 +255,20 @@ export const ImportGameHistoryModal = () => {
         </Grid2>
       </DialogContent>
       <DialogActions>
-        <Button variant="contained" onClick={handleImport}>
+        <Button
+          variant="text"
+          color="inherit"
+          onClick={closeModal}
+          sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--cancel-button"
+        >
+          Cancel
+        </Button>
+        <Button
+          variant="contained"
+          onClick={handleImport}
+          data-test-id="dialog--submit-button"
+        >
           Import
         </Button>
       </DialogActions>

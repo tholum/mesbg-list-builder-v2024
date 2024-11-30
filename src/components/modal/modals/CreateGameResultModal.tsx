@@ -1,6 +1,4 @@
 import { Button, DialogActions, DialogContent } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useRef } from "react";
 import { useAppState } from "../../../state/app";
 import {
@@ -10,8 +8,6 @@ import {
 
 export const CreateGameResultModal = () => {
   const { closeModal, modalContext } = useAppState();
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const childRef = useRef<GameResultsFormHandlers>(null);
 
   const saveGameToState = () => {
@@ -24,7 +20,7 @@ export const CreateGameResultModal = () => {
 
   return (
     <>
-      <DialogContent sx={{ minWidth: isTablet ? "80vw" : "50vw" }}>
+      <DialogContent>
         <GameResultsForm ref={childRef} />
       </DialogContent>
       <DialogActions>
@@ -33,6 +29,7 @@ export const CreateGameResultModal = () => {
           color="inherit"
           onClick={closeModal}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--cancel-button"
         >
           Cancel
         </Button>
@@ -41,6 +38,7 @@ export const CreateGameResultModal = () => {
           color="primary"
           onClick={saveGameToState}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--submit-button"
         >
           {modalContext.mode} game
         </Button>

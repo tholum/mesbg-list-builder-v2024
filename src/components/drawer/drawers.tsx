@@ -1,41 +1,71 @@
+import { AutoAwesome, HowToReg } from "@mui/icons-material";
+import { Stack } from "@mui/material";
 import { ReactNode } from "react";
-import { Alliances } from "./drawers/Alliances.tsx";
+
+import { GiMightyForce } from "react-icons/gi";
+import { HiFire } from "react-icons/hi";
 import { Changelog } from "./drawers/Changelog.tsx";
-import { KeywordsSearch } from "./drawers/KeywordsSearch.tsx";
-import { NewEditionNews } from "./drawers/NewEditionNews.tsx";
+import { HeroicActionsSearch } from "./drawers/HeroicActionsSearch.tsx";
+import { MagicalPowersSearch } from "./drawers/MagicalPowersSearch.tsx";
+import { SpecialRulesSearch } from "./drawers/SpecialRulesSearch.tsx";
+import { UnitSelector } from "./drawers/UnitSelector.tsx";
 
 export enum DrawerTypes {
-  ALLIANCE = "ALLIANCE",
-  NEW_EDITION_NEWS = "NEW_EDITION_NEWS",
-  KEYWORD_SEARCH = "KEYWORD_SEARCH",
+  UNIT_SELECTOR = "UNIT_SELECTOR",
+  SPECIAL_RULE_SEARCH = "SPECIAL_RULE_SEARCH",
+  MAGICAL_POWER_SEARCH = "MAGICAL_POWER_SEARCH",
+  HEROIC_ACTION_SEARCH = "HEROIC_ACTION_SEARCH",
   CHANGELOG = "CHANGELOG",
 }
 
 export type DrawerProps = {
   children: ReactNode;
-  title: string;
+  title: string | ReactNode;
 };
 
 export const drawers = new Map<DrawerTypes, DrawerProps>([
   [
-    DrawerTypes.NEW_EDITION_NEWS,
+    DrawerTypes.UNIT_SELECTOR,
     {
-      title: "The New Edition of MESBG",
-      children: <NewEditionNews />,
+      title: (
+        <Stack alignItems="center" direction="row" gap={2}>
+          <HowToReg /> Unit Selector
+        </Stack>
+      ),
+      children: <UnitSelector />,
     },
   ],
   [
-    DrawerTypes.ALLIANCE,
+    DrawerTypes.SPECIAL_RULE_SEARCH,
     {
-      title: "Alliances",
-      children: <Alliances />,
+      title: (
+        <Stack alignItems="center" direction="row" gap={2}>
+          <AutoAwesome /> Special Rules
+        </Stack>
+      ),
+      children: <SpecialRulesSearch />,
     },
   ],
   [
-    DrawerTypes.KEYWORD_SEARCH,
+    DrawerTypes.MAGICAL_POWER_SEARCH,
     {
-      title: "Keyword search",
-      children: <KeywordsSearch />,
+      title: (
+        <Stack alignItems="center" direction="row" gap={2}>
+          <HiFire /> Magical Powers
+        </Stack>
+      ),
+      children: <MagicalPowersSearch />,
+    },
+  ],
+  [
+    DrawerTypes.HEROIC_ACTION_SEARCH,
+    {
+      title: (
+        <Stack alignItems="center" direction="row" gap={2}>
+          <GiMightyForce /> Heroic Actions
+        </Stack>
+      ),
+      children: <HeroicActionsSearch />,
     },
   ],
   [

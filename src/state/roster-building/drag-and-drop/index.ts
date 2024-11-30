@@ -1,10 +1,10 @@
-import { FreshUnit, Unit } from "../../../types/unit.ts";
+import { FreshUnit, SelectedUnit } from "../../../types/roster.ts";
 import { Slice } from "../../Slice.ts";
 import { RosterBuildingState } from "../index.ts";
 
 export type DragAndDropState = {
-  draggedUnit: Unit | FreshUnit | null;
-  setDraggedUnit: (unit: Unit | FreshUnit) => void;
+  draggedUnit: SelectedUnit | FreshUnit | null;
+  setDraggedUnit: (unit: SelectedUnit | FreshUnit) => void;
   clearDraggedUnit: () => void;
 };
 

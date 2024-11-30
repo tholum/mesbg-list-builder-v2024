@@ -1,22 +1,11 @@
-import { isDefinedUnit, Unit } from "../types/unit.ts";
+import { SelectedUnit } from "../types/roster.ts";
 
-export const isHeroWhoLeads = (hero: Unit): boolean => {
-  if (!isDefinedUnit(hero)) return false;
+export const isHeroWhoLeads = (hero: SelectedUnit): boolean => {
+  if (hero.name === "Shank & Wrot") return false;
 
-  if (
-    ["Independent Hero", "Independent Hero*", "Siege Engine"].includes(
+  return (
+    !["Independent Hero", "Independent Hero*", "Siege Engine"].includes(
       hero.unit_type,
-    )
-  )
-    return false;
-
-  if (
-    [
-      "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)",
-      "[desolator_of_the_north] smaug",
-    ].includes(hero.model_id)
-  )
-    return false;
-
-  return true;
+    ) && hero.no_followers !== true
+  );
 };

@@ -1,12 +1,13 @@
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import armyListRules from "../../../../assets/data/army_list_data.json";
 import keywords from "../../../../assets/data/keywords.json";
 
-import { wanderers } from "../../../../constants/wanderers.ts";
-import { useFactionData } from "../../../../hooks/faction-data.ts";
-import { useRosterBuildingState } from "../../../../state/roster-building";
-import { Profile } from "./profile.type.ts";
+import { ArmyListData } from "../../../../types/army-list-data.types.ts";
+import { isMovieQuote } from "../../../../utils/string.ts";
+import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
+import { Profile } from "./profiles/profile.type.ts";
 
 interface SpecialRuleListProps {
   profiles: Profile[];
@@ -43,11 +44,11 @@ function mapSpecialRule(sr: string) {
   }
 
   const rule = keywords.find(
-    (keyword) => keyword.name === sr.split("(")[0].trim(),
+    (keyword) => keyword.name === sr.replace(/\(.*?\)/g, "(X)"),
   );
   return {
     name: rule?.name || sr,
-    type: rule.active_passive,
+    type: rule?.active_passive,
     description: rule?.description,
   };
 }
@@ -64,8 +65,11 @@ function mapAopRule(rule: {
 }
 
 export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
-  const { factions, armyBonusActive } = useRosterBuildingState();
-  const factionData = useFactionData();
+  const {
+    roster: { armyList },
+  } = useRosterInformation();
+  const armyListRule = (armyListRules as ArmyListData)[armyList];
+
   const specialRules: SpecialRule[] = profiles
     .flatMap((profile) => [
       ...profile.active_or_passive_rules.map(mapAopRule),
@@ -81,25 +85,27 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   return (
     <>
       <Box id="pdf-rules">
-        {armyBonusActive && (
-          <Box sx={{ mb: 2 }}>
-            <Typography variant="h5" sx={{ mb: 1 }}>
-              Army bonuses
-            </Typography>
-            {factions
-              .filter((f) => !wanderers.includes(f))
-              .map((f) => (
-                <Typography
-                  key={f}
-                  variant="body1"
-                  component="div"
-                  dangerouslySetInnerHTML={{
-                    __html: factionData[f]["armyBonus"],
-                  }}
-                />
-              ))}
-          </Box>
-        )}
+        <Box sx={{ mb: 2 }}>
+          <Typography variant="h5" sx={{ mb: 1 }}>
+            Army special rules
+          </Typography>
+          {armyListRule.special_rules.map((rule, index) => (
+            <Box key={index}>
+              {isMovieQuote(rule.title) ? (
+                <Typography>
+                  <b>
+                    <i>{rule.title}</i>
+                  </b>
+                </Typography>
+              ) : (
+                <Typography>
+                  <b>{rule.title}</b>
+                </Typography>
+              )}
+              <Typography>{rule.description}</Typography>
+            </Box>
+          ))}
+        </Box>
 
         <Typography variant="h5">Special rules</Typography>
         <Stack gap={1} sx={{ py: 1 }}>

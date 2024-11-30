@@ -1,17 +1,23 @@
 import { AlertColor } from "@mui/material";
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { DownloadFailed } from "./alerts/DownloadFailed.tsx";
 import { ExportAlert } from "./alerts/ExportAlert.tsx";
 import { ExportHistoryAlert } from "./alerts/ExportHistoryAlert.tsx";
-import { GameModeAlert } from "./alerts/GameModeAlert.tsx";
 import { ScreenshotCopiedAlert } from "./alerts/ScreenshotCopiedAlert.tsx";
 
 export enum AlertTypes {
   EXPORT_ALERT = "EXPORT_ALERT",
   EXPORT_HISTORY_ALERT = "EXPORT_HISTORY_ALERT",
   SCREENSHOT_COPIED_ALERT = "SCREENSHOT_COPIED_ALERT",
-  GAMEMODE_ALERT = "GAMEMODE_ALERT",
   DOWNLOAD_FAILED = "DOWNLOAD_FAILED",
+
+  DELETE_UNIT_SUCCESS = "DELETE_UNIT_SUCCESS",
+  DELETE_WARBAND_SUCCESS = "DELETE_WARBAND_SUCCESS",
+  EMPTY_WARBAND_SUCCESS = "EMPTY_WARBAND_SUCCESS",
+  DELETE_ARMY_LIST_SUCCESS = "DELETE_ARMY_LIST_SUCCESS",
+
+  DUPLICATE_UNIT_SUCCESS = "DUPLICATE_UNIT_SUCCESS",
+  DUPLICATE_WARBAND_SUCCESS = "DUPLICATE_WARBAND_SUCCESS",
 }
 
 type AlertOptions = {
@@ -25,16 +31,6 @@ export type AlertProps = {
 };
 
 export const alertMap = new Map<AlertTypes, AlertProps>([
-  [
-    AlertTypes.GAMEMODE_ALERT,
-    {
-      variant: "error",
-      content: <GameModeAlert />,
-      options: {
-        // autoHideAfter: 12000,
-      },
-    },
-  ],
   [
     AlertTypes.EXPORT_ALERT,
     {
@@ -72,6 +68,100 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
       content: <DownloadFailed />,
       options: {
         // autoHideAfter: 5000,
+      },
+    },
+  ],
+  [
+    AlertTypes.DELETE_UNIT_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully deleted</b>
+          <p>Unit was successfully deleted from the warband.</p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
+      },
+    },
+  ],
+  [
+    AlertTypes.DELETE_WARBAND_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully deleted</b>
+          <p>The warband was successfully deleted.</p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
+      },
+    },
+  ],
+  [
+    AlertTypes.EMPTY_WARBAND_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully reset</b>
+          <p>The warband was successfully emptied and can now be rebuilt.</p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
+      },
+    },
+  ],
+  [
+    AlertTypes.DUPLICATE_UNIT_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully duplicated</b>
+          <p>
+            The unit was successfully duplicated and is added to the warband.
+          </p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
+      },
+    },
+  ],
+  [
+    AlertTypes.DUPLICATE_WARBAND_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully duplicated</b>
+          <p>
+            The warband was successfully duplicated and is added to the roster.
+          </p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
+      },
+    },
+  ],
+  [
+    AlertTypes.DELETE_ARMY_LIST_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Successfully deleted</b>
+          <p>Your roster was successfully deleted.</p>
+        </Fragment>
+      ),
+      options: {
+        autoHideAfter: 2400,
       },
     },
   ],
