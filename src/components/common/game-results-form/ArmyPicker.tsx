@@ -3,13 +3,36 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent, useEffect, useState } from "react";
-import { useMesbgData } from "../../../hooks/mesbg-data.ts";
-import { Faction, FactionType } from "../../../types/factions.ts";
+import data from "../../../assets/data/mesbg_data.json";
+import { ArmyType } from "../../../types/mesbg-data.types.ts";
 import { FactionLogo } from "../images/FactionLogo.tsx";
 
+const armiesByType = Object.values(data)
+  .map((item) => ({
+    army: item.army_list,
+    type: item.army_type,
+    faction: item.profile_origin,
+  }))
+  .filter(
+    (item, index, array) =>
+      array.findIndex((other) => other.army === item.army) === index,
+  )
+  .reduce(
+    (a, { army, faction, type }) => {
+      if (!a[type]) a[type] = new Set();
+      a[type].add({ army, faction });
+      return a;
+    },
+    {
+      Good: undefined,
+      Evil: undefined,
+    } as Record<ArmyType, Set<{ army: string; faction: string }>>,
+  );
+
 type Option = {
-  title: Faction;
-  type: FactionType;
+  army: string;
+  faction: string;
+  type: ArmyType;
 };
 
 export type ArmyPickerProps = {
@@ -23,20 +46,14 @@ export type ArmyPickerProps = {
 };
 
 export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
-  const { factionsGroupedByType } = useMesbgData();
-
-  const makeOptions = (type: FactionType): Option[] =>
-    [...factionsGroupedByType[type]].map((f) => ({
-      title: f,
+  const makeOptions = (type: ArmyType): Option[] =>
+    [...armiesByType[type]].map(({ army, faction }) => ({
+      army,
+      faction,
       type,
     }));
 
-  const allOptions = [
-    ...makeOptions("Good Army"),
-    ...makeOptions("Evil Army"),
-    ...makeOptions("Good LL"),
-    ...makeOptions("Evil LL"),
-  ];
+  const allOptions = [...makeOptions("Good"), ...makeOptions("Evil")];
 
   const [value, setValue] = useState<Option[]>([]);
   const [options, setOptions] = useState<Option[]>(allOptions);
@@ -64,7 +81,7 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
   useEffect(() => {
     if (props.defaultSelection) {
       const defaultSelection = allOptions.filter((option) =>
-        props.defaultSelection.includes(option.title),
+        props.defaultSelection.includes(option.army),
       );
       onOptionSelectionChanged(defaultSelection);
     }
@@ -75,15 +92,15 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
     <Autocomplete
       multiple
       options={options}
-      getOptionLabel={(option) => option.title}
+      getOptionLabel={(option) => option.army}
       renderOption={(props, option) => {
         return (
           <ListItem {...props}>
             <ListItemIcon>
-              <FactionLogo faction={option.title} />
+              <FactionLogo faction={option.faction} />
             </ListItemIcon>
             <ListItemText>
-              <Typography>{option.title}</Typography>
+              <Typography>{option.army}</Typography>
             </ListItemText>
           </ListItem>
         );

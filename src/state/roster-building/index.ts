@@ -27,15 +27,7 @@ export const useRosterBuildingState = create<
         }),
         {
           partialize: (state) => ({
-            roster: state.roster,
-            factions: state.factions,
-            factionType: state.factionType,
-            factionMetaData: state.factionMetaData,
-            factionEnabledSpecialRules: state.factionEnabledSpecialRules,
-            allianceLevel: state.allianceLevel,
-            armyBonusActive: state.armyBonusActive,
-            uniqueModels: state.uniqueModels,
-            rosterBuildingWarnings: state.rosterBuildingWarnings,
+            rosters: state.rosters,
           }),
           equality: (pastState, currentState) =>
             deepEqual(pastState, currentState),
@@ -43,8 +35,11 @@ export const useRosterBuildingState = create<
         },
       ),
       {
-        name: "mlb-builder-default",
+        name: "mlb-rosters",
         storage: createJSONStorage(() => localStorage),
+        partialize: (state) => ({
+          rosters: state.rosters,
+        }),
       },
     ),
   ),

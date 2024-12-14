@@ -12,7 +12,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { createGameState } from "../../../../state/gamemode/gamestate/create-game-state.ts";
-import { useRosterBuildingState } from "../../../../state/roster-building";
+import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
 
 const CheckboxList = ({ amount }: { amount: string }) => {
   return (
@@ -33,7 +33,7 @@ const CheckboxList = ({ amount }: { amount: string }) => {
 };
 
 export const StatTrackers = () => {
-  const { roster } = useRosterBuildingState();
+  const { roster } = useRosterInformation();
   const { heroes } = createGameState(roster);
 
   const rows = Object.entries(heroes)

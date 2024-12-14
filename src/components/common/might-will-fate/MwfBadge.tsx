@@ -1,8 +1,10 @@
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Unit } from "../../../types/unit.ts";
+import { Unit } from "../../../types/mesbg-data.types.ts";
 
-export const MwfBadge = ({ unit }: { unit: Unit }) => {
+type MwfBadgeProps = { unit: Pick<Unit, "MWFW"> };
+
+export const MwfBadge = ({ unit }: MwfBadgeProps) => {
   if (!unit.MWFW || unit.MWFW.length === 0) {
     return null;
   }
@@ -16,6 +18,7 @@ export const MwfBadge = ({ unit }: { unit: Unit }) => {
         m: 0,
         p: 0,
       }}
+      data-test-id="mfw-badge"
     >
       <Typography
         variant="body2"

@@ -12,13 +12,13 @@ import { useEffect, useState } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useDownload } from "../../../hooks/download.ts";
 import { useAppState } from "../../../state/app";
-import { useRosterBuildingState } from "../../../state/roster-building";
-import { isDefinedUnit } from "../../../types/unit.ts";
+import { isSelectedUnit } from "../../../types/roster.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
+import { useRosterInformation } from "../../common/warbands/useRosterInformation.ts";
 
 export const DownloadProfileCardModal = () => {
-  const { roster } = useRosterBuildingState();
+  const { roster } = useRosterInformation();
   const { closeModal, triggerAlert } = useAppState();
   const { downloadProfileCards } = useDownload();
   const [profileCards, setProfileCards] = useState<string[]>([]);
@@ -37,17 +37,19 @@ export const DownloadProfileCardModal = () => {
         );
         if (
           warband.hero.unit_type !== "Siege Engine" &&
-          hero_constraint_data[warband.hero.model_id][0]["extra_profiles"]
-            .length > 0
+          hero_constraint_data[warband.hero.model_id]["extra_profiles"].length >
+            0
         ) {
-          hero_constraint_data[warband.hero.model_id][0][
-            "extra_profiles"
-          ].forEach((profile: string) => {
-            profileCards.push([warband.hero.profile_origin, profile].join("|"));
-          });
+          hero_constraint_data[warband.hero.model_id]["extra_profiles"].forEach(
+            (profile: string) => {
+              profileCards.push(
+                [warband.hero.profile_origin, profile].join("|"),
+              );
+            },
+          );
         }
       }
-      warband.units.filter(isDefinedUnit).forEach((unit) => {
+      warband.units.filter(isSelectedUnit).forEach((unit) => {
         if (unit.unit_type !== "Siege") {
           profileCards.push([unit.profile_origin, unit.name].join("|"));
         }
@@ -65,7 +67,7 @@ export const DownloadProfileCardModal = () => {
 
   return (
     <>
-      <DialogContent sx={{ minWidth: "70vw", maxHeight: "50svh" }}>
+      <DialogContent>
         <Alert severity="info">
           The following profile cards will be downloaded (in high resolution).
         </Alert>
@@ -85,6 +87,7 @@ export const DownloadProfileCardModal = () => {
           color="inherit"
           onClick={closeModal}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--cancel-button"
         >
           Cancel
         </Button>
@@ -93,6 +96,7 @@ export const DownloadProfileCardModal = () => {
           color="primary"
           onClick={handleDownload}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--submit-button"
         >
           Download
         </Button>

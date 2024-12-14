@@ -1,9 +1,6 @@
+import { GameModeHero } from "../../../../v2018-archive/gamemode/types.ts";
 import { getSumOfUnits } from "../../../components/common/roster/totalUnits.ts";
-import { GameModeHero } from "../../../components/gamemode/types.ts";
-import { AllianceLevel } from "../../../constants/alliances.ts";
-import { Faction } from "../../../types/factions.ts";
-import { Roster } from "../../../types/roster.ts";
-import { Unit } from "../../../types/unit.ts";
+import { Roster, SelectedUnit } from "../../../types/roster.ts";
 import { Slice } from "../../Slice.ts";
 import { GameModeState } from "../index.ts";
 import { createGameState } from "./create-game-state.ts";
@@ -17,9 +14,10 @@ export type Game = {
 };
 
 export type GameMetaData = {
-  factions: Faction[];
-  heroes: Pick<Unit, "name" | "unit_type" | "quantity" | "profile_origin">[];
-  alliance: AllianceLevel;
+  heroes: Pick<
+    SelectedUnit,
+    "name" | "unit_type" | "quantity" | "profile_origin"
+  >[];
   iGameState: Pick<Game, "heroes">;
   points: number;
   bows: number;
@@ -30,7 +28,7 @@ export type GameState = {
   setGameMode: (gameMode: boolean) => void;
   gameState?: Game;
   gameMetaData?: GameMetaData;
-  startNewGame: (roster: Roster, allianceLevel: AllianceLevel) => void;
+  startNewGame: (roster: Roster) => void;
   restartGame: () => void;
   updateGameState: (update: Partial<Game>) => void;
   initializeGameState: () => void;
@@ -46,7 +44,7 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
   ...initialState,
 
   setGameMode: (gameMode) => set({ gameMode }, undefined, "SET_GAME_MODE"),
-  startNewGame: (roster: Roster, allianceLevel: AllianceLevel) =>
+  startNewGame: (roster: Roster) =>
     set(
       () => {
         return {
@@ -61,13 +59,12 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
             factions: [
               ...new Set(
                 roster.warbands
-                  .flatMap((wb) => wb.hero?.faction)
+                  .flatMap((wb) => wb.hero?.army_list)
                   .filter((f) => !!f),
               ),
             ],
-            alliance: allianceLevel,
-            bows: roster.bow_count,
-            points: roster.points,
+            bows: roster.metadata.bows,
+            points: roster.metadata.points,
             heroes: getSumOfUnits(roster)
               .filter((unit) => unit.unit_type.includes("Hero"))
               .map((hero) => ({

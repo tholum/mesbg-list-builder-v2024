@@ -1,11 +1,15 @@
-import { GameModeHero } from "../../../components/gamemode/types.ts";
-import { Roster } from "../../../types/roster.ts";
-import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { GameModeHero } from "../../../../v2018-archive/gamemode/types.ts";
+import {
+  FreshUnit,
+  isSelectedUnit,
+  Roster,
+  SelectedUnit,
+} from "../../../types/roster.ts";
 
 const convertToStats = (
   name: string | number,
   MWFW: string,
-  unit: Unit,
+  unit: SelectedUnit,
   isArmyLeader: boolean,
 ): GameModeHero => ({
   name: String(name),
@@ -16,11 +20,11 @@ const convertToStats = (
 });
 
 const mapHeroToStats = (
-  unit: Unit | FreshUnit,
+  unit: SelectedUnit | FreshUnit,
   isArmyLeader?: boolean,
 ): Record<string, GameModeHero[]> => {
   // check if a unit is selected (and not an empty selector box)
-  if (!isDefinedUnit(unit)) return null;
+  if (!isSelectedUnit(unit)) return null;
 
   // check if unit is a hero
   if (unit.MWFW.length === 0) return null;
@@ -42,7 +46,7 @@ const mapHeroToStats = (
 const getHeroes = (roster: Roster): Record<string, GameModeHero[]> => {
   return roster.warbands
     .map(({ hero, units, id }) => [
-      mapHeroToStats(hero, roster.leader_warband_id === id),
+      mapHeroToStats(hero, roster.metadata.leader === id),
       ...units.map((unit) => mapHeroToStats(unit)).filter((v) => !!v),
     ])
     .flat()

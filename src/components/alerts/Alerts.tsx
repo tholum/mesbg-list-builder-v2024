@@ -1,49 +1,57 @@
-import { AlertColor, Portal, Slide, Snackbar } from "@mui/material";
+import { AlertColor, Portal, Slide, Snackbar, Stack } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import { useEffect } from "react";
 import { useAppState } from "../../state/app";
-import { alertMap } from "./alert-types.tsx";
+import { slugify } from "../../utils/string.ts";
+import { alertMap, AlertTypes } from "./alert-types.tsx";
 
-export const Alerts = () => {
-  const { activeAlert, dismissAlert } = useAppState();
+const ListBuilderAlert = ({ id, type }: { id: string; type: AlertTypes }) => {
+  const { dismissAlert } = useAppState();
 
-  // Auto hide of alerts, if configured
+  const { variant, content, options } = alertMap.get(type);
+
+  // Auto hide of alert, if configured
   useEffect(() => {
-    if (activeAlert) {
-      const { options } = alertMap.get(activeAlert);
-      if (options.autoHideAfter && options.autoHideAfter) {
-        const timeout = setTimeout(dismissAlert, options.autoHideAfter);
-        return () => {
-          clearTimeout(timeout);
-        };
-      }
+    if (options && options.autoHideAfter) {
+      const timeout = setTimeout(() => dismissAlert(id), options.autoHideAfter);
+      return () => {
+        clearTimeout(timeout);
+      };
     }
     return () => null;
-  }, [activeAlert, dismissAlert]);
+  }, [id, options, dismissAlert]);
 
-  if (!activeAlert) {
-    // no active alert to display
-    return null;
-  }
+  return (
+    <Slide direction="right" in={true}>
+      <Alert
+        onClose={() => dismissAlert(id)}
+        variant="standard"
+        sx={{ width: "100%" }}
+        severity={variant as AlertColor}
+        data-test-id={`global-alert--${slugify(type)}`}
+      >
+        <Box sx={{ maxWidth: "72ch" }}>{content}</Box>
+      </Alert>
+    </Slide>
+  );
+};
 
-  const { variant, content } = alertMap.get(activeAlert);
+export const Alerts = () => {
+  const { activeAlerts } = useAppState();
+
   return (
     <Portal>
       <Snackbar
         open={true}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
         TransitionComponent={Slide}
-        onClose={dismissAlert}
       >
-        <Alert
-          onClose={dismissAlert}
-          variant="standard"
-          sx={{ width: "100%" }}
-          severity={variant as AlertColor}
-        >
-          <Box sx={{ maxWidth: "72ch" }}>{content}</Box>
-        </Alert>
+        <Stack gap={1}>
+          {activeAlerts.map((alert) => (
+            <ListBuilderAlert id={alert.id} key={alert.id} type={alert.type} />
+          ))}
+        </Stack>
       </Snackbar>
     </Portal>
   );

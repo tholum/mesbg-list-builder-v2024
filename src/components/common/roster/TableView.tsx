@@ -12,17 +12,22 @@ import {
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { FcCheckmark } from "react-icons/fc";
+import html2canvas from "html2canvas";
+import { forwardRef, useImperativeHandle, useState } from "react";
 import { GiQueenCrown } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
-import { allianceColours } from "../../../constants/alliances.ts";
-import { useFactionData } from "../../../hooks/faction-data.ts";
-import { useRosterBuildingState } from "../../../state/roster-building";
-import { Roster } from "../../../types/roster.ts";
-import { isDefinedUnit, Unit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
+
+import { armyListData } from "../../../assets/data.ts";
+import { useAppState } from "../../../state/app";
+import {
+  isSelectedUnit,
+  Roster,
+  SelectedUnit,
+  Warband,
+} from "../../../types/roster.ts";
+import { ModalTypes } from "../../modal/modals.tsx";
+import { AdditionalRules } from "../roster-info/sections/AdditionalRules.tsx";
+import { SpecialRules } from "../roster-info/sections/SpecialRules.tsx";
+import { useRosterInformation } from "../warbands/useRosterInformation.ts";
 import { getSumOfUnits } from "./totalUnits.ts";
 
 const UnitRow = ({
@@ -31,7 +36,7 @@ const UnitRow = ({
   rowStyle,
   forceQuantity = false,
 }: {
-  unit: Unit;
+  unit: SelectedUnit;
   leader?: boolean;
   rowStyle: SxProps;
   forceQuantity?: boolean;
@@ -51,10 +56,10 @@ const UnitRow = ({
       </TableCell>
       <TableCell>
         {unit.options
-          .filter((option) => option.opt_quantity > 0)
+          .filter((option) => option.quantity > 0)
           .map(
-            ({ opt_quantity, max, option }) =>
-              `${max > 1 ? `${opt_quantity} ` : ""}${option}`,
+            ({ quantity, max, name }) =>
+              `${max > 1 ? `${quantity} ` : ""}${name}`,
           )
           .join(", ")}
       </TableCell>
@@ -82,101 +87,141 @@ const RosterTotalRows = ({ roster }: { roster: Roster }) => {
 };
 
 const WarbandRows = ({ warband }: { warband: Warband }) => {
-  const { roster } = useRosterBuildingState();
+  const { roster } = useRosterInformation();
 
   const rowStyle: SxProps = {
-    backgroundColor: warband.num % 2 === 0 ? "lightgrey" : "white",
+    backgroundColor: warband.meta.num % 2 === 0 ? "lightgrey" : "white",
   };
 
   return (
     <>
       <UnitRow
         unit={
-          isDefinedUnit(warband.hero)
+          isSelectedUnit(warband.hero)
             ? warband.hero
             : ({
                 name: "-- NO HERO SELECTED --",
                 unit_type: "Hero of something...",
                 options: [],
-              } as Unit)
+              } as SelectedUnit)
         }
         leader={
-          isDefinedUnit(warband.hero) && roster.leader_warband_id === warband.id
+          isSelectedUnit(warband.hero) && roster.metadata.leader === warband.id
         }
         rowStyle={rowStyle}
       />
-      {warband.units.filter(isDefinedUnit).map((unit) => (
+      {warband.units.filter(isSelectedUnit).map((unit) => (
         <UnitRow key={unit.id} unit={unit} rowStyle={rowStyle} />
       ))}
     </>
   );
 };
 
-export function RosterTableView({
-  showArmyBonus,
-  showUnitTotals,
-  screenshotting = false,
-}: {
+export type RosterTableViewHandlers = { createScreenshot: () => void };
+export type RosterTableViewProps = {
   showArmyBonus: boolean;
   showUnitTotals: boolean;
-  screenshotting?: boolean;
-}) {
-  const {
-    allianceLevel,
-    roster,
-    armyBonusActive: hasArmyBonus,
-    factions: factionList,
-  } = useRosterBuildingState();
-  const factionData = useFactionData();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  includeRosterName: boolean;
+};
+export const RosterTableView = forwardRef<
+  RosterTableViewHandlers,
+  RosterTableViewProps
+>(({ showArmyBonus, showUnitTotals, includeRosterName }, ref) => {
+  const { setCurrentModal } = useAppState();
+  const { roster, getAdjustedMetaData } = useRosterInformation();
+  const { break_point } = armyListData[roster.armyList];
+  const { might, will, fate, units, points, bows, throwingWeapons } =
+    getAdjustedMetaData();
+
+  const [screenshotting, setScreenshotting] = useState(false);
+
+  const createScreenshot = () => {
+    const rosterList = document.getElementById("rosterTable");
+    const admission = document.getElementById("admission");
+    if (admission) {
+      admission.style.display = "inline-block";
+    }
+
+    setScreenshotting(true);
+    setTimeout(() => {
+      html2canvas(rosterList).then(function (data) {
+        setCurrentModal(ModalTypes.ROSTER_SCREENSHOT, {
+          screenshot: data.toDataURL(),
+          rawScreenshot: data,
+          onClose: () => setCurrentModal(ModalTypes.ROSTER_SUMMARY),
+        });
+        setScreenshotting(false);
+      });
+
+      if (admission) {
+        admission.style.display = "none";
+      }
+    });
+  };
+
+  useImperativeHandle(ref, () => ({
+    createScreenshot: () => createScreenshot(),
+  }));
 
   return (
-    <>
-      <Stack
-        direction={isMobile && !screenshotting ? "column" : "row"}
-        spacing={isMobile && !screenshotting ? 1 : 3}
-        sx={{
-          mb: 2,
-          "& *": screenshotting ? { fontSize: "1.5rem !important" } : {},
-        }}
-        alignItems={isMobile && !screenshotting ? "start" : "center"}
-      >
-        <Typography flexGrow={1}>
-          Alliance level:
+    <Box id="rosterTable" sx={screenshotting ? { width: "1200px", p: 2 } : {}}>
+      {includeRosterName && (
+        <Divider variant="middle">
           <Typography
-            variant="body2"
-            component="span"
+            className="middle-earth"
+            variant={screenshotting ? "h4" : "h5"}
+          >
+            {roster.name}
+          </Typography>
+        </Divider>
+      )}
+      <Divider variant="middle">
+        <Typography
+          className="middle-earth"
+          variant={screenshotting ? (includeRosterName ? "h5" : "h4") : "h6"}
+        >
+          {roster.armyList}
+        </Typography>
+      </Divider>
+
+      <Stack
+        sx={{
+          mt: 2.5,
+          mb: screenshotting ? 4.5 : 2,
+        }}
+        gap={1}
+      >
+        {[
+          {
+            Points: points,
+            Units: units,
+            Bows: bows,
+            "Throwing weapons": throwingWeapons,
+          },
+          {
+            "Break point":
+              Math.floor((break_point ?? 0.5) * units) + " Remaining",
+            Quartered: Math.floor(0.25 * units) + " Remaining",
+
+            "Might / Will / Fate": `${might} / ${will} / ${fate}`,
+          },
+        ].map((row, index) => (
+          <Stack
+            key={index}
+            direction="row"
+            spacing={1}
+            justifyContent="space-between"
             sx={{
-              ml: 1,
-              fontWeight: "bolder",
-              backgroundColor:
-                theme.palette[allianceColours[allianceLevel]].light,
-              color: "white",
-              px: 2,
-              py: 1,
-              borderRadius: 100,
-              whiteSpace: "nowrap",
+              "& *": screenshotting ? { fontSize: "1.5rem !important" } : {},
             }}
           >
-            {allianceLevel}
-          </Typography>
-        </Typography>
-        <Typography>
-          Points: <b>{roster.points}</b>
-        </Typography>
-        <Typography>
-          Units: <b>{roster.num_units}</b>
-        </Typography>
-        <Typography>
-          Break Point: <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
-        </Typography>
-        <Typography>
-          Bows: <b>{roster.bow_count}</b>
-        </Typography>
-        <Typography>
-          Might: <b>{roster.might_total ?? "N/A"}</b>
-        </Typography>
+            {Object.entries(row).map(([key, value]) => (
+              <Typography key={key}>
+                <span>{key}:</span> <b>{value}</b>
+              </Typography>
+            ))}
+          </Stack>
+        ))}
       </Stack>
       <TableContainer component={Paper} sx={{ mb: 2 }}>
         <Table
@@ -214,57 +259,27 @@ export function RosterTableView({
 
       {showArmyBonus && (
         <Box sx={screenshotting ? { "*": { fontSize: "1.5rem" } } : {}}>
-          {hasArmyBonus ? (
-            <>
-              <Typography variant="body1">
-                Army Bonuses <FcCheckmark />
-              </Typography>
-              <Divider sx={{ my: 1 }} />
-              {factionList.map((f) => (
-                <div key={f}>
-                  <Typography
-                    variant="body2"
-                    component="span"
-                    sx={{
-                      my: 1,
-                      display: "inline-block",
-                      fontWeight: "bolder",
-                      backgroundColor: "black",
-                      color: "white",
-                      px: 2,
-                      py: 1,
-                      borderRadius: 100,
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {f}
-                  </Typography>
-                  <Typography
-                    dangerouslySetInnerHTML={{
-                      __html: factionData[f]["armyBonus"],
-                    }}
-                  />
-                </div>
-              ))}
-            </>
-          ) : (
-            <Typography>
-              Army Bonuses
-              <Typography color="error" component="span" sx={{ ml: 1 }}>
-                <RxCross1 />
-              </Typography>
-            </Typography>
-          )}
+          <AdditionalRules roster={roster} size="dense" />
+          <SpecialRules roster={roster} size="dense" />
         </Box>
       )}
       <Typography
         id="admission"
-        sx={{ mt: 2, display: "none", fontSize: "1.5rem" }}
+        sx={{
+          mt: 2,
+          display: "none",
+          fontSize: "1.2rem",
+          textAlign: "center",
+          width: "100%",
+        }}
         variant="caption"
       >
         Created with MESBG List Builder (
-        <a href="#">https://v2018.mesbg-list-builder.com/</a>)
+        <a href="#" style={{ textDecoration: "none" }}>
+          https://v2024.mesbg-list-builder.com/
+        </a>
+        )
       </Typography>
-    </>
+    </Box>
   );
-}
+});

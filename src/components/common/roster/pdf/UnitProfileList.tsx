@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-import { Profile } from "./profile.type.ts";
+import { Profile } from "./profiles/profile.type.ts";
 
 interface UnitListProps {
   units: Profile[];
@@ -28,12 +28,14 @@ const Stats = ({ profile }: { profile: Profile }) => {
           <TableRow>
             {profile.additional_stats && <TableCell />}
             <TableCell>Mv</TableCell>
-            <TableCell>F</TableCell>
+            <TableCell>Fv</TableCell>
+            <TableCell>Sv</TableCell>
             <TableCell>S</TableCell>
             <TableCell>D</TableCell>
             <TableCell>A</TableCell>
             <TableCell>W</TableCell>
             <TableCell>C</TableCell>
+            <TableCell>I</TableCell>
             {(profile.HM || profile.HW || profile.HF) && (
               <>
                 <TableCell>M</TableCell>
@@ -50,12 +52,14 @@ const Stats = ({ profile }: { profile: Profile }) => {
                 <TableCell>{profile.name}</TableCell>
               )}
               <TableCell>{profile.Mv}</TableCell>
-              <TableCell>{profile.F}</TableCell>
+              <TableCell>{profile.Fv}</TableCell>
+              <TableCell>{profile.Sv}</TableCell>
               <TableCell>{profile.S}</TableCell>
               <TableCell>{profile.D}</TableCell>
               <TableCell>{profile.A}</TableCell>
               <TableCell>{profile.W}</TableCell>
               <TableCell>{profile.C}</TableCell>
+              <TableCell>{profile.I}</TableCell>
               {(profile.HM || profile.HW || profile.HF) && (
                 <>
                   <TableCell>{profile.HM ?? "-"}</TableCell>
@@ -69,12 +73,14 @@ const Stats = ({ profile }: { profile: Profile }) => {
             <TableRow key={index}>
               <TableCell>{stats.name}</TableCell>
               <TableCell>{stats.Mv}</TableCell>
-              <TableCell>{stats.F}</TableCell>
+              <TableCell>{stats.Fv}</TableCell>
+              <TableCell>{stats.Sv}</TableCell>
               <TableCell>{stats.S}</TableCell>
               <TableCell>{stats.D}</TableCell>
               <TableCell>{stats.A}</TableCell>
               <TableCell>{stats.W}</TableCell>
               <TableCell>{stats.C}</TableCell>
+              <TableCell>{stats.I}</TableCell>
               {(stats.HM ||
                 stats.HW ||
                 stats.HF ||

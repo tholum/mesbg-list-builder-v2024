@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-import { Profile } from "./profile.type.ts";
+import { Profile } from "./profiles/profile.type.ts";
 
 interface QuickReferenceTableProps {
   profiles: Profile[];
@@ -21,30 +21,91 @@ const ReferenceRow = ({
 }: {
   row: Pick<
     Profile,
-    "name" | "Mv" | "F" | "S" | "D" | "A" | "W" | "C" | "HM" | "HW" | "HF"
+    | "name"
+    | "Range"
+    | "Mv"
+    | "Fv"
+    | "Sv"
+    | "S"
+    | "D"
+    | "A"
+    | "W"
+    | "C"
+    | "I"
+    | "HM"
+    | "HW"
+    | "HF"
+    | "type"
   >;
   indent?: boolean;
   prefix?: string;
 }) => {
   return (
     <TableRow>
-      <TableCell sx={{ pl: indent ? 6 : 0 }}>
+      <TableCell
+        sx={{
+          pl: indent ? 3 : 0,
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          maxWidth: "24ch",
+          textOverflow: "ellipsis",
+        }}
+        size="small"
+      >
         {prefix}
         {row.name}
       </TableCell>
-      <TableCell>{row.Mv}</TableCell>
-      <TableCell>{row.F}</TableCell>
-      <TableCell>{row.S}</TableCell>
-      <TableCell>{row.D}</TableCell>
-      <TableCell>{row.A}</TableCell>
-      <TableCell>{row.W}</TableCell>
-      <TableCell>{row.C}</TableCell>
-      <TableCell>{row.HM ?? "-"}</TableCell>
-      <TableCell>{row.HW ?? "-"}</TableCell>
-      <TableCell>{row.HF ?? "-"}</TableCell>
+      <TableCell size="small">{row.Mv}</TableCell>
+      <TableCell size="small">{row.Fv}</TableCell>
+      <TableCell size="small">{row.Sv}</TableCell>
+      <TableCell size="small">{row.S}</TableCell>
+      <TableCell size="small">{row.D}</TableCell>
+      <TableCell size="small">{row.A}</TableCell>
+      <TableCell size="small">{row.W}</TableCell>
+      <TableCell size="small">{row.C}</TableCell>
+      <TableCell size="small">{row.I}</TableCell>
+      <TableCell size="small">{row.HM ?? "-"}</TableCell>
+      <TableCell size="small">{row.HW ?? "-"}</TableCell>
+      <TableCell size="small">{row.HF ?? "-"}</TableCell>
     </TableRow>
   );
 };
+
+function AdditionalRows({
+  parentProfile,
+  skippedParentRow,
+  profiles,
+}: {
+  parentProfile: Profile;
+  skippedParentRow?: boolean;
+  profiles: Profile[];
+}) {
+  const prefixes = {
+    "Iron Shield": "Vault Warden - ",
+    "Foe Spear": "Vault Warden - ",
+  };
+
+  return (
+    parentProfile.additional_stats
+      // Hide mounts, which are in a separate table
+      ?.filter((stat) => stat.type !== "mount")
+
+      // Hide additional profiles that are already displayed at top-level.
+      ?.filter(
+        (stat) => !profiles.find((profile) => profile.name === stat.name),
+      )
+
+      // Convert additional rows to table rows
+      ?.map((additionalRow, aIndex) => (
+        <ReferenceRow
+          row={additionalRow}
+          key={aIndex}
+          indent={!skippedParentRow}
+          prefix={skippedParentRow ? prefixes[additionalRow.name] : ""}
+        />
+      ))
+  );
+}
 
 export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
   const mounts = profiles
@@ -56,6 +117,16 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
       return index === self.findIndex((other) => other.name === item.name);
     })
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  const siegeEngines = profiles.filter((row) => row.type === "Siege Engine");
+  const additionProfilesFormSiegeEngines = siegeEngines
+    .flatMap((profile) => profile?.additional_stats || [])
+    .filter((p, i, s) => s.findIndex((o) => o.name === p.name) === i);
+
+  const units = profiles
+    .filter((row) => row.type !== "Siege Engine")
+    .concat(additionProfilesFormSiegeEngines);
+
   return (
     <>
       <TableContainer id="pdf-quick-ref" component="div">
@@ -65,54 +136,124 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
             <TableRow>
               <TableCell />
               <TableCell>Mv</TableCell>
-              <TableCell>F</TableCell>
+              <TableCell>Fv</TableCell>
+              <TableCell>Sv</TableCell>
               <TableCell>S</TableCell>
               <TableCell>D</TableCell>
               <TableCell>A</TableCell>
               <TableCell>W</TableCell>
               <TableCell>C</TableCell>
+              <TableCell>I</TableCell>
               <TableCell>M</TableCell>
               <TableCell>W</TableCell>
               <TableCell>F</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {profiles.map((row, index) => {
+            {units.map((row, index) => {
               const skippedParentRow = [
                 "Vault Warden Team",
                 "Uruk-Hai Demolition Team",
               ].includes(row.name);
-              const prefixes = {
-                "Iron Shield": "Vault Warden - ",
-                "Foe Spear": "Vault Warden - ",
-              };
+
               return (
                 <Fragment key={index}>
                   {!skippedParentRow && <ReferenceRow row={row} />}
-                  {row.additional_stats
-                    ?.filter((stat) => stat.type !== "mount")
-                    ?.filter(
-                      (stat) =>
-                        !profiles.find((profile) => profile.name === stat.name),
-                    )
-                    ?.map((additionalRow, aIndex) => (
-                      <ReferenceRow
-                        row={additionalRow}
-                        key={aIndex}
-                        indent={!skippedParentRow}
-                        prefix={
-                          skippedParentRow ? prefixes[additionalRow.name] : ""
-                        }
-                      />
-                    ))}
+                  <AdditionalRows
+                    parentProfile={row}
+                    skippedParentRow={skippedParentRow}
+                    profiles={profiles}
+                  />
                 </Fragment>
               );
             })}
-            {mounts.map((additionalRow, aIndex) => (
-              <ReferenceRow row={additionalRow} key={aIndex} />
-            ))}
           </TableBody>
         </Table>
+
+        {mounts.length > 0 && (
+          <Table sx={{ mt: 2 }}>
+            <Typography
+              component="caption"
+              style={{
+                captionSide: "top",
+                textAlign: "center",
+                padding: "0px",
+              }}
+            >
+              Mounts
+            </Typography>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableCell>Mv</TableCell>
+                <TableCell>Fv</TableCell>
+                <TableCell>Sv</TableCell>
+                <TableCell>S</TableCell>
+                <TableCell>D</TableCell>
+                <TableCell>A</TableCell>
+                <TableCell>W</TableCell>
+                <TableCell>C</TableCell>
+                <TableCell>I</TableCell>
+                <TableCell>M</TableCell>
+                <TableCell>W</TableCell>
+                <TableCell>F</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {mounts.map((additionalRow, aIndex) => (
+                <ReferenceRow row={additionalRow} key={aIndex} />
+              ))}
+            </TableBody>
+          </Table>
+        )}
+
+        {siegeEngines.length > 0 && (
+          <Table sx={{ mt: 2 }}>
+            <Typography
+              component="caption"
+              style={{
+                captionSide: "top",
+                textAlign: "center",
+                padding: "0px",
+              }}
+            >
+              Siege engines
+            </Typography>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableCell>Range</TableCell>
+                <TableCell>S</TableCell>
+                <TableCell>D</TableCell>
+                <TableCell>W</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {siegeEngines.map((row, aIndex) => (
+                <Fragment key={aIndex}>
+                  <TableRow>
+                    <TableCell
+                      sx={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        maxWidth: "24ch",
+                        textOverflow: "ellipsis",
+                      }}
+                      size="small"
+                    >
+                      {row.name}
+                    </TableCell>
+                    <TableCell size="small">{row.Range}</TableCell>
+
+                    <TableCell size="small">{row.S}</TableCell>
+                    <TableCell size="small">{row.D}</TableCell>
+                    <TableCell size="small">{row.W}</TableCell>
+                  </TableRow>
+                </Fragment>
+              ))}
+            </TableBody>
+          </Table>
+        )}
       </TableContainer>
     </>
   );

@@ -9,11 +9,15 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-import { useRosterBuildingState } from "../../../../state/roster-building";
-import { isDefinedUnit, Unit } from "../../../../types/unit.ts";
+import {
+  FreshUnit,
+  isSelectedUnit,
+  SelectedUnit,
+} from "../../../../types/roster.ts";
+import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
 
-function UnitRow({ unit }: { unit: Unit }) {
-  if (!isDefinedUnit(unit)) {
+function UnitRow({ unit }: { unit: FreshUnit | SelectedUnit }) {
+  if (!isSelectedUnit(unit)) {
     return (
       <TableRow>
         <TableCell size="small" colSpan={2}>
@@ -23,8 +27,7 @@ function UnitRow({ unit }: { unit: Unit }) {
     );
   }
 
-  const options =
-    unit?.options?.filter((option) => option.opt_quantity > 0) || [];
+  const options = unit?.options?.filter((option) => option.quantity > 0) || [];
   return (
     <TableRow>
       <TableCell size="small" width={12}>
@@ -37,8 +40,8 @@ function UnitRow({ unit }: { unit: Unit }) {
             (
             {options
               ?.map(
-                ({ opt_quantity, max, option }) =>
-                  `${max > 1 ? `${opt_quantity} ` : ""}${option}`,
+                ({ quantity, max, name }) =>
+                  `${max > 1 ? `${quantity} ` : ""}${name}`,
               )
               ?.join(", ")}
             )
@@ -50,11 +53,11 @@ function UnitRow({ unit }: { unit: Unit }) {
 }
 
 export const ArmyComposition = () => {
-  const { roster, allianceLevel } = useRosterBuildingState();
+  const { roster } = useRosterInformation();
 
   const warbands = roster.warbands.map((warband) => [
     warband.hero,
-    ...warband.units.filter(isDefinedUnit),
+    ...warband.units.filter(isSelectedUnit),
   ]);
 
   return (
@@ -63,23 +66,21 @@ export const ArmyComposition = () => {
         Army Composition
       </Typography>
       <Stack direction="row" gap={2} sx={{ mb: 1 }}>
-        <Typography flexGrow={1}>
-          Alliance level: <b>{allianceLevel} </b>
+        <Typography>
+          Points: <b>{roster.metadata.points}</b>
         </Typography>
         <Typography>
-          Points: <b>{roster.points}</b>
+          Units: <b>{roster.metadata.units}</b>
         </Typography>
         <Typography>
-          Units: <b>{roster.num_units}</b>
+          Break Point:{" "}
+          <b>{Math.round(0.5 * roster.metadata.units * 100) / 100}</b>
         </Typography>
         <Typography>
-          Break Point: <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
+          Bows: <b>{roster.metadata.bows}</b>
         </Typography>
         <Typography>
-          Bows: <b>{roster.bow_count}</b>
-        </Typography>
-        <Typography>
-          Might: <b>{roster.might_total ?? "N/A"}</b>
+          Might: <b>{roster.metadata.might}</b>
         </Typography>
       </Stack>
       <TableContainer component="div">

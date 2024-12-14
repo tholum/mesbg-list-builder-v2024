@@ -101,11 +101,14 @@ export const ExportHistoryModal = () => {
         </Stack>
       </DialogContent>
       <DialogActions sx={{ display: "flex", gap: 2 }}>
-        <Button onClick={handleCopy}>copy to clipboard</Button>
+        <Button onClick={handleCopy} data-test-id="dialog--secondary-button">
+          copy to clipboard
+        </Button>
         <Button
           variant="contained"
           onClick={handleExport}
           disabled={!filenameValid}
+          data-test-id="dialog--submit-button"
         >
           Save file
         </Button>

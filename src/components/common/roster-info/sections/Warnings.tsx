@@ -1,0 +1,107 @@
+import { Stack } from "@mui/material";
+import Alert from "@mui/material/Alert";
+import Typography from "@mui/material/Typography";
+import { FunctionComponent } from "react";
+import data from "../../../../assets/data/warning_rules.json";
+import { isSelectedUnit, Roster } from "../../../../types/roster.ts";
+import {
+  WarningRule,
+  WarningRules,
+} from "../../../../types/warning-rules.types.ts";
+import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
+import { RosterInformationProps } from "../RosterInformation.tsx";
+import { RosterInformationSection } from "../RosterInformationSection.tsx";
+
+function checkRequiresOne(rule: WarningRule, setOfModelIds: string[]): boolean {
+  return !rule.dependencies.some((compulsoryModel) =>
+    setOfModelIds.includes(compulsoryModel),
+  );
+}
+
+function checkRequiresAll(rule: WarningRule, setOfModelIds: string[]): boolean {
+  return !rule.dependencies.every((compulsoryModel) =>
+    setOfModelIds.includes(compulsoryModel),
+  );
+}
+
+function checkCompulsory(rule: WarningRule, setOfModelIds: string[]): boolean {
+  return !rule.dependencies.every((compulsoryModel) =>
+    setOfModelIds.includes(compulsoryModel),
+  );
+}
+
+function extraScriptedRosterWarnings(roster: Roster): WarningRule[] {
+  if (roster.armyList === "The Eagles") {
+    const units = roster.warbands
+      .flatMap((wb) => [wb.hero, ...wb.units])
+      .filter(isSelectedUnit)
+      .filter((unit) => unit.name.includes("Great Eagle"))
+      .reduce(
+        (a, b) => {
+          if (!a[b.name]) {
+            a[b.name] = 0;
+          }
+          a[b.name] += b.quantity;
+          return a;
+        },
+        { "Great Eagle": 0, "Fledgeling Great Eagle": 0 },
+      );
+    const diff = units["Fledgeling Great Eagle"] - units["Great Eagle"];
+    if (diff > 0) {
+      return [
+        {
+          warning: `The Eagles may not include more Fledgeling Great Eagles than Great Eagles. There are currently ${diff} Fledgeling Great Eagle too many.`,
+          type: undefined,
+          dependencies: [],
+        },
+      ];
+    }
+  }
+  return [];
+}
+
+function isActiveRule(setOfModelIds: string[]) {
+  return (rule: WarningRule) => {
+    switch (rule.type) {
+      case "requires_one":
+        return checkRequiresOne(rule, setOfModelIds);
+      case "requires_all":
+        return checkRequiresAll(rule, setOfModelIds);
+      case "compulsory":
+        return checkCompulsory(rule, setOfModelIds);
+      default:
+        return true;
+    }
+  };
+}
+
+export const Warnings: FunctionComponent<RosterInformationProps> = ({
+  roster,
+}) => {
+  const rosterInformation = useRosterInformation();
+  const setOfModelIds = rosterInformation.getSetOfModelIds();
+  const allWarnings = data as WarningRules;
+
+  const possibleWarnings = [
+    ...(allWarnings[roster.armyList] || []),
+    ...setOfModelIds.flatMap((model) => allWarnings[model]),
+    ...extraScriptedRosterWarnings(roster),
+  ].filter((v) => !!v);
+
+  if (!possibleWarnings || possibleWarnings.length === 0) return <></>;
+
+  const activeWarnings = possibleWarnings.filter(isActiveRule(setOfModelIds));
+  if (activeWarnings.length === 0) return <></>;
+
+  return (
+    <RosterInformationSection title="Warnings">
+      <Stack gap={2}>
+        {activeWarnings.map(({ warning }, index) => (
+          <Alert key={index} icon={false} severity="error">
+            <Typography>{warning}</Typography>
+          </Alert>
+        ))}
+      </Stack>
+    </RosterInformationSection>
+  );
+};

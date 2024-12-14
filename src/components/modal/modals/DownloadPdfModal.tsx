@@ -30,6 +30,7 @@ export const DownloadPdfModal = () => {
           color="inherit"
           onClick={closeModal}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--cancel-button"
         >
           Cancel
         </Button>
@@ -39,6 +40,7 @@ export const DownloadPdfModal = () => {
           onClick={handleDownload}
           disabled={loading}
           sx={{ minWidth: "20ch" }}
+          data-test-id="dialog--submit-button"
         >
           Download
         </Button>

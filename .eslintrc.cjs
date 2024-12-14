@@ -7,6 +7,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
     "prettier",
+    "plugin:storybook/recommended",
   ],
   settings: {
     react: {

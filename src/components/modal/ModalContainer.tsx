@@ -1,28 +1,17 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { Dialog } from "@mui/material";
+import { Dialog, DialogTitle } from "@mui/material";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { useScreenSize } from "../../hooks/useScreenSize.ts";
 import { useAppState } from "../../state/app";
+import { slugify } from "../../utils/string.ts";
 import { modals } from "./modals.tsx";
-
-const style = {
-  position: "absolute" as const,
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  borderRadius: 2,
-};
 
 export const ModalContainer = () => {
   const state = useAppState();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const { isMobile } = useScreenSize();
 
   if (!state.currentlyOpenendModal) {
     // No model is shown, return...
@@ -37,43 +26,39 @@ export const ModalContainer = () => {
       onClose={onClose ? onClose : () => state.closeModal()}
       scroll="paper"
       disableRestoreFocus
+      fullWidth={true}
+      maxWidth={currentModal.maxWidth ?? "lg"}
+      fullScreen={isMobile}
+      data-test-id={`dialog--${slugify(title)}`}
     >
-      <Box
-        sx={{
-          ...style,
-          minWidth: isMobile ? "90vw" : "64ch",
-          maxWidth: "90vw",
-          maxHeight: "90vh",
-          overflowY: currentModal.overflow ?? "scroll",
-        }}
-      >
-        {!currentModal.customModalHeader && (
-          <>
-            <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
+      {!currentModal.customModalHeader && (
+        <>
+          <DialogTitle>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Typography
-                variant="h6"
-                component="h2"
-                flexGrow={1}
+                variant="h5"
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 1,
+                  gap: 2,
                 }}
+                className="middle-earth"
               >
                 {currentModal.icon} {title || currentModal.title}
               </Typography>
               <IconButton
                 onClick={onClose ? onClose : () => state.closeModal()}
                 sx={{ ml: "auto" }}
+                data-test-id="dialog--close-button"
               >
                 <CloseIcon />
               </IconButton>
             </Box>
-            <Divider />
-          </>
-        )}
-        <Box>{currentModal.children}</Box>
-      </Box>
+          </DialogTitle>
+          <Divider />
+        </>
+      )}
+      {currentModal.children}
     </Dialog>
   );
 };

@@ -1,31 +1,31 @@
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import { Button, Stack } from "@mui/material";
-import { useState } from "react";
-import { useFactionData } from "../../../hooks/faction-data.ts";
-import { useRosterBuildingState } from "../../../state/roster-building";
-import { isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { forwardRef, useImperativeHandle } from "react";
+import { armyListData } from "../../../assets/data.ts";
+import {
+  FreshUnit,
+  isSelectedUnit,
+  SelectedUnit,
+} from "../../../types/roster.ts";
+import { useRosterInformation } from "../warbands/useRosterInformation.ts";
 import { getSumOfUnits } from "./totalUnits.ts";
 
-export function RosterTextView({
-  showArmyBonus,
-  showUnitTotals,
-  screenshotting = false,
-}: {
+export type RosterTextViewProps = {
   showArmyBonus: boolean;
   showUnitTotals: boolean;
-  screenshotting?: boolean;
-}) {
-  const {
-    roster,
-    allianceLevel,
-    armyBonusActive: hasArmyBonus,
-    factions: factionList,
-  } = useRosterBuildingState();
-  const [copyLabel, setCopyLabel] = useState("Copy");
-  const factionData = useFactionData();
+};
+export type RosterTextViewHandlers = {
+  copyToClipboard: () => void;
+};
 
-  const heroToText = (hero: Unit, isLeader: boolean) => {
-    if (!isDefinedUnit(hero)) return "";
+export const RosterTextView = forwardRef<
+  RosterTextViewHandlers,
+  RosterTextViewProps
+>(({ showArmyBonus, showUnitTotals }, ref) => {
+  const { roster, getAdjustedMetaData } = useRosterInformation();
+  const { additional_rules, special_rules, break_point } =
+    armyListData[roster.armyList];
+
+  const heroToText = (hero: FreshUnit | SelectedUnit, isLeader: boolean) => {
+    if (!isSelectedUnit(hero)) return "";
 
     const name = isLeader
       ? `  ${hero.name} *LEADER* (${hero.pointsTotal} points)`
@@ -33,8 +33,8 @@ export function RosterTextView({
 
     const options = hero.options
       .map((option) => {
-        if (option.opt_quantity === 0) return null;
-        return `    ~ ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}  `;
+        if (option.quantity === 0) return null;
+        return `    ~ ${option.max > 1 ? option.quantity + " " + option.name : option.name}  `;
       })
       .filter((o) => !!o);
 
@@ -42,73 +42,76 @@ export function RosterTextView({
     return `${name}  \n${options.join("  \n")}`;
   };
 
-  const unitsToText = (units: Unit[]) => {
-    return units
+  const unitsToText = (units: SelectedUnit[]) => {
+    const lines = units
       .map((unit) => {
         const quantity = !unit.unique ? `${unit.quantity}x ` : ``;
         const name = `  ${quantity}${unit.name} (${unit.pointsTotal} points)`;
         const options = unit.options
           .map((option) => {
-            if (option.opt_quantity === 0) return null;
-            return `    ~ ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}  `;
+            if (option.quantity === 0) return null;
+            return `    ~ ${option.max > 1 ? option.quantity + " " + option.name : option.name}  `;
           })
           .filter((o) => !!o);
         if (options.length === 0) return `${name}  `;
         return `${name}  \n${options.join("  \n")}`;
       })
       .join("\n");
+    return lines ? lines + "\n" : "";
   };
 
   const armyBonus = () => {
     if (!showArmyBonus) return "";
-    return `----------------------------------------  
-    ===== Army Bonuses =====
-    
-    ${
-      !hasArmyBonus
-        ? `No Bonuses`
-        : factionList
-            .map((f) => {
-              return `--- ${f} ---
-          
-          ${factionData[f]["armyBonus"]
-            .replaceAll("<b>", "")
-            .replaceAll("</b>", "")
-            .replaceAll("<br/>", "\n")}
-           
-          `;
-            })
-            .join("  ")
-    }
-    `;
+    const header = `  
+      ===== Army Bonuses =====
+
+      `;
+
+    const additionalRules = additional_rules
+      ?.map((rule) => `~ ${rule.description}\n`)
+      ?.join("  ");
+    const specialRules = special_rules
+      ?.map((rule) => `*${rule.title}*\n${rule.description}\n`)
+      ?.join("  \n");
+
+    return (
+      header +
+      (additionalRules ? `${additionalRules}  \n  ` : "") +
+      (specialRules ? `${specialRules}  \n  ` : "")
+    );
   };
 
   const admission = () => {
-    return `---------------------------------------- 
-    Created with MESBG List Builder (https://v2018.mesbg-list-builder.com/)`;
+    return `
+    ----------------------------------------
+    Created with MESBG List Builder 
+    https://v2024.mesbg-list-builder.com/
+    `;
   };
 
   const createTextView = () => {
+    const { might, will, fate, units, points, leader, bows, throwingWeapons } =
+      getAdjustedMetaData();
+
     const unitSections = showUnitTotals
-      ? unitsToText(getSumOfUnits(roster)) + " \n"
+      ? `    
+        ----------------------------------------\n        
+        ${unitsToText(getSumOfUnits(roster))}  
+        `
       : roster.warbands
           .map((warband) => {
-            return `----------------------------------------  
-      Warband ${warband.num} (${warband.points} points)  
-      ${heroToText(warband.hero, warband.id === roster.leader_warband_id)}
-      ${unitsToText(warband.units.filter(isDefinedUnit))}  
-      `;
+            return `    
+              ----------------------------------------
+              Warband ${warband.meta.num} (${warband.meta.points} points)
+              ${heroToText(warband.hero, warband.id === leader)}
+              ${unitsToText(warband.units.filter(isSelectedUnit))}`;
           })
-          .join("  \n");
+          .join("  ");
 
     return `
-    | Points: ${roster.points} | Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} | Bows: ${roster.bow_count} | Might: ${roster.might_total} |
-    
-    Alliance Level: ${allianceLevel}
-    
-    ${unitSections}
-      ${armyBonus()}
-      ${admission()}
+    | Points: ${points} | Units: ${units} | Break Point: ${Math.round((break_point ?? 0.5) * units * 100) / 100} | Quartered: ${Math.round(0.25 * units * 100) / 100} | 
+    | Bows: ${bows} | Throwing weapons: ${throwingWeapons} | Might/Will/Fate: ${might} / ${will} / ${fate} |
+    ${unitSections}${armyBonus()}${admission()}
     `;
   };
 
@@ -118,23 +121,9 @@ export function RosterTextView({
 
   const rosterText = trimMultiline(createTextView());
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(rosterText);
-    setCopyLabel("Copied!");
-    window.setTimeout(() => setCopyLabel("Copy"), 3000);
-  };
+  useImperativeHandle(ref, () => ({
+    copyToClipboard: () => window.navigator.clipboard.writeText(rosterText),
+  }));
 
-  return (
-    <Stack direction="row" spacing={1}>
-      <pre style={{ whiteSpace: "pre-wrap" }}>{rosterText}</pre>
-      <Button
-        variant="outlined"
-        color="inherit"
-        onClick={handleCopy}
-        sx={{ height: "2rem", p: 3, display: screenshotting ? "none" : "" }}
-      >
-        <ContentCopyIcon /> {copyLabel}
-      </Button>
-    </Stack>
-  );
-}
+  return <pre style={{ whiteSpace: "pre-wrap" }}>{rosterText}</pre>;
+});
