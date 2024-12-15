@@ -1,5 +1,14 @@
 {
-  "main": {},
+  "main": {
+    "added": [
+      "Added missing keywords for Heroic Channelling, Combat, March, Move & Shoot"
+    ],
+    "bugfixes": [
+      "Updated the server configuration to allow deeplinking to nested routes like /rosters and /about",
+      "Corrected some mistakes in the datafiles including Prince Haleth's horse, Sauron's warband size and the WoMT's wargear options",
+      "Fixed incorrect option list type for heroes in mobile display, allowing them only to take 1 option"
+    ]
+  },
   "0.1": {
     "added": ["Imported the v2018 code base into v2024"],
     "changed": [

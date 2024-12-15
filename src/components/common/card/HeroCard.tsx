@@ -181,7 +181,7 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
             <Box sx={{ px: 2, py: 1 }}>
               <OptionList
                 options={getOptionsForUnit()}
-                variant={"multiple"}
+                variant="multiple"
                 onSelect={updateOptions}
                 warbandNum={warbandNum}
                 index={index}
