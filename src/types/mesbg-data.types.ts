@@ -19,19 +19,11 @@ export type UnitType =
  */
 type OptionType =
   | "mount"
-  | "passenger"
+  | "throw"
   | "bow"
+  | "passenger"
+  | "mount, throw"
   | "special_warband_upgrade"
-  | "engineer_cpt"
-  | "add_crew"
-  | "special_army_upgrade"
-  | "weapon"
-  | "armour"
-  | "bow, swap"
-  | "swap"
-  | "mahud_chief"
-  | "exclusive"
-  | string
   | null;
 
 export type OptionDependency = {
