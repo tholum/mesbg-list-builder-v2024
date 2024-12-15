@@ -18,12 +18,6 @@
     "warband_size": 18,
     "options": [
       {
-        "id": "OPT0163",
-        "name": "Armoured horse",
-        "points": 25,
-        "type": "mount"
-      },
-      {
         "id": "OPT0164",
         "name": "Armoured horse",
         "points": 25,
@@ -75,6 +69,12 @@
     ],
     "warband_size": 15,
     "options": [
+      {
+        "id": "OPT0667",
+        "name": "Armoured horse",
+        "points": 25,
+        "type": "mount"
+      },
       {
         "id": "OPT0612",
         "name": "Throwing spears",
@@ -1150,7 +1150,7 @@
         "3:6:0:5"
       ]
     ],
-    "warband_size": 18,
+    "warband_size": 24,
     "options": []
   },
   "[barad-dur] the-witch-king-of-angmar": {
@@ -7069,7 +7069,34 @@
     "opt_mandatory": true,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0633",
+        "name": "War horn and shield",
+        "points": 26
+      },
+      {
+        "id": "OPT0634",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT0635",
+        "name": "Shield and spear",
+        "points": 2
+      },
+      {
+        "id": "OPT0636",
+        "name": "Shield",
+        "points": 1
+      },
+      {
+        "id": "OPT0637",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
+      }
+    ]
   },
   "[realms-of-men] warrior-of-dale": {
     "model_id": "[realms-of-men] warrior-of-dale",

@@ -23,7 +23,7 @@ unit_type_order = [
 
 df_models = pd.read_excel("mesbg_data.xlsx", sheet_name="models")
 df_models['warband_size'] = df_models['unit_type'].map(warband_sizes)
-df_models.loc[df_models.name == "Sauron", 'warband_size'] = 24
+df_models.loc[df_models.name == "The Dark Lord Sauron", 'warband_size'] = 24
 df_models.unit_type = pd.Categorical(df_models.unit_type, categories=unit_type_order)
 df_models = df_models.rename(columns={"name": "model"})
 df_options = pd.read_excel("mesbg_data.xlsx", sheet_name="options")
