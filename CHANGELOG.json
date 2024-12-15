@@ -6,7 +6,8 @@
     "bugfixes": [
       "Updated the server configuration to allow deeplinking to nested routes like /rosters and /about",
       "Corrected some mistakes in the datafiles including Prince Haleth's horse, Sauron's warband size and the WoMT's wargear options",
-      "Fixed incorrect option list type for heroes in mobile display, allowing them only to take 1 option"
+      "Fixed incorrect option list type for heroes in mobile display, allowing them only to take 1 option",
+      "Allow special warband upgrade to be take aside from other wargear options"
     ]
   },
   "0.1": {
