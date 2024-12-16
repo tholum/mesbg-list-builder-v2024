@@ -10716,6 +10716,9 @@
           "W": "2",
           "C": "6+",
           "I": "6+",
+          "Might": "2",
+          "Will": "1",
+          "Fate": "1",
           "active_or_passive_rules": [],
           "special_rules": [],
           "heroic_actions": [
@@ -10737,6 +10740,9 @@
           "W": "2",
           "C": "5+",
           "I": "6+",
+          "Might": "2",
+          "Will": "2",
+          "Fate": "1",
           "active_or_passive_rules": [
             {
               "name": "Mahud Beastmaster Chieftain",
