@@ -9833,6 +9833,362 @@
     }
   },
   "The Misty Mountains": {
+    "Bert the Troll": {
+      "Mv": "6\"",
+      "Fv": "7",
+      "Sv": "4+",
+      "S": "7",
+      "D": "7",
+      "A": "3",
+      "W": "3",
+      "C": "6+",
+      "I": "7+",
+      "Might": "2",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Keep 'em for Later",
+          "type": "Active",
+          "description": "If this model wins a Duel Roll, they may choose a single enemy model on a 25mm base instead of making Strikes or using a Brutal Power Attack. The chosen model is stuffed into a bag and suffers the effects of the Paralyse Magical Power; however, the effects will not immediately end should this model have no Will Points or be slain. If the model is still Paralysed at the end of the game, then they will count as slain and be removed as a casualty."
+        },
+        {
+          "name": "Roast 'em slowly",
+          "type": "Brutal Power Attack",
+          "description": "Instead of making Strikes, if he is within 6\" of a Campfire, Bert may choose a single enemy model involved in the Combat. The chosen model is then placed in base contact with the Campfire and is immediately Set Ablaze."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Defence",
+        "Heroic Strength"
+      ],
+      "special_rules": [
+        "Dominant (3)",
+        "Large Target",
+        "Terror",
+        "Throw Stones (range 12\", Strength 8)"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "130"
+    },
+    "Bill the Troll": {
+      "Mv": "6\"",
+      "Fv": "8",
+      "Sv": "4+",
+      "S": "7",
+      "D": "7",
+      "A": "3",
+      "W": "3",
+      "C": "6+",
+      "I": "7+",
+      "Might": "3",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Keep 'em for Later",
+          "type": "Active",
+          "description": "If this model wins a Duel Roll, they may choose a single enemy model on a 25mm base instead of making Strikes or using a Brutal Power Attack. The chosen model is stuffed into a bag and suffers the effects of the Paralyse Magical Power; however, the effects will not immediately end should this model have no Will Points or be slain. If the model is still Paralysed at the end of the game, then they will count as slain and be removed as a casualty."
+        },
+        {
+          "name": "Mince 'em Fine",
+          "type": "Brutal Power Attack",
+          "description": "Instead of making Strikes, Bill may choose a single enemy model involved in the Combat. Bill and the chosen model both roll a D6 and add their respective Strength characteristics. If Bill scores higher after adding Strength characteristics, then the chosen model suffers a number of Wounds equal to the difference between the two scores."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Challenge",
+        "Heroic Strike"
+      ],
+      "special_rules": [
+        "Dominant (5)",
+        "Large Target",
+        "Terror",
+        "Throw Stones (range 12\", Strength 8)"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "150"
+    },
+    "Goblin Captain": {
+      "Mv": "5\"",
+      "Fv": "3",
+      "Sv": "5+",
+      "S": "4",
+      "D": "4",
+      "A": "2",
+      "W": "2",
+      "C": "7+",
+      "I": "7+",
+      "Might": "2",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Chittering Hordes",
+          "type": "Active",
+          "description": "This model may Support as if it had a spear, with the exception that they can only Support another model with this special rule. A model Supporting whilst using this special rule cannot also use a two-handed weapon in the same Combat."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic March"
+      ],
+      "special_rules": [
+        "Cave Dweller"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "40"
+    },
+    "Goblin Warrior": {
+      "Mv": "5\"",
+      "Fv": "2",
+      "Sv": "5+",
+      "S": "3",
+      "D": "3",
+      "A": "1",
+      "W": "1",
+      "C": "8+",
+      "I": "8+",
+      "Might": "",
+      "Will": "",
+      "Fate": "",
+      "active_or_passive_rules": [
+        {
+          "name": "Chittering Hordes",
+          "type": "Active",
+          "description": "This model may Support as if it had a spear, with the exception that they can only Support another model with this special rule. A model Supporting whilst using this special rule cannot also use a two-handed weapon in the same Combat."
+        }
+      ],
+      "options": [
+        {
+          "name": "Two-handed weapon",
+          "points": "1"
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Cave Dweller"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "5"
+    },
+    "Gollum": {
+      "Mv": "5\"",
+      "Fv": "4",
+      "Sv": "4+",
+      "S": "4",
+      "D": "4",
+      "A": "2",
+      "W": "2",
+      "C": "6+",
+      "I": "5+",
+      "Might": "1",
+      "Will": "0",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "The Precious",
+          "type": "Active",
+          "description": "If your opponent's Army contains a Ringbearer, then when Gollum Moves, he must always Charge the enemy Ringbearer if possible. Additionally, if Gollum kills the enemy Ringbearer in Combat, then he will automatically regain the One Ring - from that point onwards he counts as having it as part of his Wargear."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Cave Dweller",
+        "Mountain Dweller",
+        "Stalk Unseen"
+      ],
+      "wargear": [
+        "Strangling fingers"
+      ],
+      "point_cost": "40",
+      "additional_text": [
+        "Gollum has strong, strangling fingers and so is never considered to be Unarmed - ever! If your opponent does not have a Ringbearer in their Army, then Gollum carries the One Ring."
+      ]
+    },
+    "Grinnah, Goblin Jailer": {
+      "Mv": "5\"",
+      "Fv": "3",
+      "Sv": "5+",
+      "S": "4",
+      "D": "4",
+      "A": "2",
+      "W": "2",
+      "C": "7+",
+      "I": "7+",
+      "Might": "2",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Swap with Me",
+          "type": "Active",
+          "description": "At the start of the Fight Phase, before the Declare Heroic Actions Step, Grinnah can choose a friendly Goblin model on a 25mm base within 3\" and swap places with it. This does not count as Moving."
+        },
+        {
+          "name": "Chittering Hordes",
+          "type": "Active",
+          "description": "This model may Support as if it had a spear, with the exception that they can only Support another model with this special rule. A model Supporting whilst using this special rule cannot also use a two-handed weapon in the same Combat."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Challenge"
+      ],
+      "special_rules": [
+        "Cave Dweller"
+      ],
+      "wargear": [
+        "Hand weapon",
+        "whip"
+      ],
+      "point_cost": "50"
+    },
+    "The Goblin King": {
+      "Mv": "6\"",
+      "Fv": "6",
+      "Sv": "5+",
+      "S": "5",
+      "D": "5",
+      "A": "3",
+      "W": "3",
+      "C": "6+",
+      "I": "6+",
+      "Might": "3",
+      "Will": "2",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Relentless Advance",
+          "type": "Active",
+          "description": "The Goblin King may Move through friendly Goblin models when he Charges into Combat, though not when forced to Move by the effects of an enemy Magical Power or special rule. Each friendly Goblin model Moved through in this way immediately suffers a Strength 3 hit. The Goblin King may finish his Move overlapping friendly models, through any friendly models he finishes his Move overlapping will automatically be slain."
+        },
+        {
+          "name": "Goblin Projectile",
+          "type": "Active",
+          "description": "During the Shoot Phase, if the Goblin King is in base contact with a friendly Goblin model and neither are Engaged in Combat, then the Goblin King can make a shooting attack - this has a range of 12\" and counts as a throwing weapon. Remove the friendly Goblin model as a casualty, and then make the To Hit Roll and any In The Way Tests as normal. The shot is resolved at a Strength of 8, and any model that is hit will automatically be knocked Prone."
+        },
+        {
+          "name": "Blubbery Mass",
+          "type": "Passive",
+          "description": "Each time the Goblin King suffers a Wound, roll a D6. On a 3+ the Wound is prevented. Wounds caused by Magical Powers or Elven weapons in Combat ignore this special rule. Wounds caused by Elven missile weapons will cause the Goblin King to suffer a -1 penalty to this roll."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Strength",
+        "Heroic Challenge",
+        "Heroic Strike"
+      ],
+      "special_rules": [
+        "Cave Dweller",
+        "Resistant to Magic",
+        "Terror",
+        "Burly"
+      ],
+      "wargear": [
+        "Two-handed weapon"
+      ],
+      "point_cost": "150"
+    },
+    "The Goblin Scribe": {
+      "Mv": "0\"",
+      "Fv": "1",
+      "Sv": "6+",
+      "S": "2",
+      "D": "2",
+      "A": "1",
+      "W": "1",
+      "C": "7+",
+      "I": "7+",
+      "Might": "0",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Immobile",
+          "type": "Passive",
+          "description": "The Goblin Scribe cannot Move, and will always count as Trapped should it lose a Duel Roll. Additionally, friendly models may carry the Goblin Scribe in which case it will count as a Heavy Object, and must always be put down after a model carrying it has finished its Move. In Scenarios where models Move onto the board, the Goblin Scribe may be carried on by friendly models."
+        },
+        {
+          "name": "Always more where they came from",
+          "type": "Active",
+          "description": "If the Goblin King declares a Heroic Move whilst within 6\" of the Goblin Scribe and chooses to call With Me, then it will affect all friendly models on the battlefield rather than just those within 6', and affected models do not have to finish their Activation within 6\" of the Goblin King. Additionally, any friendly Goblin Hero that begins their Activation within 3\" of the Goblin Scribe can choose to spend a Might Point. If they do, the Goblin King regains a Might Point spent earlier in the battle. This rule can only be used once per turn."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": [
+        "Unarmed"
+      ],
+      "point_cost": "50"
+    },
+    "Tom the Troll": {
+      "Mv": "6\"",
+      "Fv": "7",
+      "Sv": "4+",
+      "S": "6",
+      "D": "6",
+      "A": "3",
+      "W": "3",
+      "C": "7+",
+      "I": "8+",
+      "Might": "1",
+      "Will": "3",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Keep 'em for Later",
+          "type": "Active",
+          "description": "If this model wins a Duel Roll, they may choose a single enemy model on a 25mm base instead of making Strikes or using a Brutal Power Attack. The chosen model is stuffed into a bag and suffers the effects of the Paralyse Magical Power; however, the effects will not immediately end should this model have no Will Points or be slain. If the model is still Paralysed at the end of the game, then they will count as slain and be removed as a casualty."
+        },
+        {
+          "name": "Lingering Cold",
+          "type": "Active",
+          "description": "At the start of any Combat involving Tom, he may spend a Will Point to use this special rule. If he does, he may choose a single enemy model he is Engaged in Combat with. The chosen model immediately halves their Fight Value until the end of the turn."
+        },
+        {
+          "name": "Squash 'em into jelly",
+          "type": "Brutal Power Attack",
+          "description": "Instead of making Strikes, Tom may use this Brutal Power Attack. Each enemy model that was Engaged in Combat with Tom immediately suffers a Strength 6 hit and, if they survive, will be knocked Prone."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Defence"
+      ],
+      "special_rules": [
+        "Dominant (3)",
+        "Large Target",
+        "Terror",
+        "Throw Stones (range 12\", Strength 8)"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "120"
+    },
     "Cave Troll": {
       "Mv": "6\"",
       "Fv": "6",
