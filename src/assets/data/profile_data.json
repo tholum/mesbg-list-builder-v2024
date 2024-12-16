@@ -5257,6 +5257,59 @@
       "special_rules": [
         "Woodland Creature"
       ]
+    },
+    "Great Eagle": {
+      "Mv": "12\"",
+      "Fv": "7",
+      "Sv": "4+",
+      "S": "6",
+      "D": "8",
+      "A": "2",
+      "W": "3",
+      "C": "4+",
+      "I": "4+",
+      "Might": null,
+      "Will": null,
+      "Fate": null,
+      "active_or_passive_rules": [],
+      "special_rules": [
+        "Dominant (3)",
+        "Fly",
+        "Large Target",
+        "Monstrous Charge",
+        "Terror"
+      ],
+      "additional_text": [
+        "If Radagast dismounts from the Great Eagle, it will automatically pass its Courage test for being a Separated Mount."
+      ]
+    },
+    "Radagast's Sleigh": {
+      "Mv": "10\"",
+      "Fv": "2",
+      "Sv": "6+",
+      "S": "3",
+      "D": "3",
+      "A": "2",
+      "W": "4",
+      "C": "8+",
+      "I": "8+",
+      "Might": null,
+      "Will": null,
+      "Fate": null,
+      "active_or_passive_rules": [
+        {
+          "name": "Chariot Charge",
+          "type": "Active",
+          "description": "When Radagast's Sleigh Moves via Chariot Charge, it will inflict 2 Strength 4 Impact hits."
+        }
+      ],
+      "special_rules": [
+        "Dominant (3)",
+        "Woodland Creature",
+      ],
+      "additional_text": [
+        "If Radagast dismounts from his Sleigh, it must be removed from play."
+      ]
     }
   },
   "The Free Peoples": {
@@ -6165,6 +6218,366 @@
       "wargear": [
         "Roots and branches (hand weapon)"
       ]
+    },
+    "Beorn the Bear": {
+      "Mv": "8\"",
+      "Fv": "8",
+      "Sv": "4+",
+      "S": "8",
+      "D": "8",
+      "A": "3",
+      "W": "3",
+      "C": "3+",
+      "I": "6+",
+      "Might": "*",
+      "Will": "*",
+      "Fate": "*",
+      "active_or_passive_rules": [
+        {
+          "name": "Skin-changer",
+          "type": "Active",
+          "description": "At the start of his Activation, Beorn can change his form from Man to Bear. If he does, place the Bear model in base contact with the Man model, and then remove the Man model from play. If there is no space to place the Bear model, then Beorn cannot transform. Once he has transformed, Beorn the Bear may continue his Activation as normal, including Charging in which case check the Line of Sight from the newly placed Bear model to determine whether Beorn can Charge. Once Beorn has transformed, he uses the Beorn the Bear profile - though his Wounds, Might, Will and Fate Points remain the same between both profiles."
+        },
+        {
+          "name": "Berserk",
+          "type": "Passive",
+          "description": "When Beorn the Bear begins his Activation, he must check to see if he can Charge an enemy model. If he can then he may not change form during this Activation and he must Charge an enemy model if possible. Additionally, Beorn the Bear may not benefit from the Heroic Actions of other friendly models, with the exception of friendly Bear models, and friendly models may not benefit from the Heroic Actions or Stand Fast of Beorn unless they have the Beorning keyword."
+        },
+        {
+          "name": "Crushing Strength",
+          "type": "Brutal Power Attack",
+          "description": "If Beorn wins a Duel Roll he can choose to use this Brutal Power Attack. If he does, choose a single enemy model involved in the Combat. The chosen model immediately suffers a Strength 10 hit. If the To Wound Roll is successful (even if the Wound is prevented), the model immediately suffers another Strength 10 hit, and so on until either Beorn fails a To Wound Roll, or the chosen model is slain and removed as a casualty."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Strength",
+        "Heroic Strike",
+        "Heroic Defence"
+      ],
+      "special_rules": [
+        "Burly",
+        "Dominant (5)",
+        "Fearless",
+        "Monstrous Charge",
+        "Resistant to Magic",
+        "Terror",
+        "Woodland Creature"
+      ],
+      "wargear": [
+        "Claws and teeth (hand weapons)"
+      ]
+    },
+    "Beorn": {
+      "Mv": "6\"",
+      "Fv": "6",
+      "Sv": "4+",
+      "S": "5",
+      "D": "5",
+      "A": "3",
+      "W": "3",
+      "C": "3+",
+      "I": "4+",
+      "Might": "3",
+      "Will": "3",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Skin-changer",
+          "type": "Active",
+          "description": "At the start of his Activation, Beorn can change his form from Man to Bear. If he does, place the Bear model in base contact with the Man model, and then remove the Man model from play. If there is no space to place the Bear model, then Beorn cannot transform. Once he has transformed, Beorn the Bear may continue his Activation as normal, including Charging in which case check the Line of Sight from the newly placed Bear model to determine whether Beorn can Charge. Once Beorn has transformed, he uses the Beorn the Bear profile - though his Wounds, Might, Will and Fate Points remain the same between both profiles."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Strength",
+        "Heroic Strike",
+        "Heroic Defence"
+      ],
+      "special_rules": [
+        "Burly",
+        "Dominant (2)",
+        "Fearless",
+        "Resistant to Magic",
+        "Woodland Creature"
+      ],
+      "wargear": [
+        "Two-handed weapon"
+      ],
+      "point_cost": "200"
+    },
+    "Galadriel, Lady of Light": {
+      "Mv": "6\"",
+      "Fv": "6",
+      "Sv": "3+",
+      "S": "4",
+      "D": "3",
+      "A": "3",
+      "W": "3",
+      "C": "3+",
+      "I": "3+",
+      "Might": "3",
+      "Will": "6",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Nenya",
+          "type": "Passive",
+          "description": "Galadriel may re-roll any failed Fate rolls."
+        },
+        {
+          "name": "The Light of Earendil",
+          "type": "Active",
+          "description": "At any point during her Activation, Galadriel can roll a D6. On a 3+, she counts as having cast the Blinding Light Magical Power. This does not prevent her from casting another Magical Power during her Activation."
+        },
+        {
+          "name": "The Lady of Lorien",
+          "type": "Passive",
+          "description": "Galadriel gains a free Will point at the start of each turn. If it is not spent by the end of the turn, then it is lost."
+        },
+        {
+          "name": "War Aspect",
+          "type": "Passive",
+          "description": "Enemies within 6\" of Galadriel suffer a -1 penalty to any Courage tests. Additionally, Galadriel never counts as Unarmed."
+        },
+        {
+          "name": "\"Go back to the void, from whence you came!\"",
+          "type": "Active",
+          "description": "Galadriel may target any enemy with Banishment as if it were a Spirit model, though non-Spirit models targeted will gain an extra free Will point to their Resist test. Once per game instead of casting a Magical Power, as long as she has at least 1 Will point, she may choose an enemy within 6\", who immediately suffers D3 Wounds. After doing this, her Will points becomes 0, she is placed Prone, and no longer benefits from her The Lady of Lorien or War Aspect special rules (and thus becomes Unarmed)."
+        }
+      ],
+      "options": [],
+      "magic_powers": [
+        {
+          "name": "Fortify Spirit",
+          "range": "12\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Banishment",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Instill Fear",
+          "range": "Self",
+          "cast": "4+"
+        }
+      ],
+      "heroic_actions": [
+        "Heroic Channelling",
+        "Heroic Strike"
+      ],
+      "special_rules": [
+        "Terror",
+        "Woodland Creature"
+      ],
+      "wargear": [
+        "The Light of Earendil",
+        "Nenya"
+      ],
+      "point_cost": "125"
+    },
+    "Radagast the Brown": {
+      "Mv": "6\"",
+      "Fv": "5",
+      "Sv": "4+",
+      "S": "4",
+      "D": "5",
+      "A": "2",
+      "W": "3",
+      "C": "3+",
+      "I": "4+",
+      "Might": "3",
+      "Will": "6",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Sebastian",
+          "type": "Active",
+          "description": "During a Combat, Radagast may roll an additional D6 in the Duel roll, and an additional Strike if he wins, with Strength 1. This additional Strike cannot be modified by Might."
+        },
+        {
+          "name": "Master of Birds",
+          "type": "Passive",
+          "description": "Radagast always has Line of Sight to any point on the battlefield. Friendly Eagle models within 12\" of Radagast gain Resistant to Magic."
+        }
+      ],
+      "options": [
+        {
+          "name": "Exchange Staff for Great Eagle",
+          "points": "55"
+        },
+        {
+          "name": "Radagast's Sleigh",
+          "points": "35"
+        }
+      ],
+      "magic_powers": [
+        {
+          "name": "Panic Steed",
+          "range": "12\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Terrifying Aura",
+          "range": "Self",
+          "cast": "3+"
+        },
+        {
+          "name": "Transfix",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Renew",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Nature's Wrath",
+          "range": "Self",
+          "cast": "5+"
+        },
+        {
+          "name": "Aura of Dismay",
+          "range": "Self",
+          "cast": "5+"
+        },
+        {
+          "name": "Writhing Vines",
+          "range": "Self",
+          "cast": "5+"
+        }
+      ],
+      "heroic_actions": [
+        "Heroic Defence",
+        "Heroic Channelling"
+      ],
+      "special_rules": [
+        "Mountain Dweller",
+        "Stalk Unseen",
+        "Woodland Creature"
+      ],
+      "wargear": [
+        "Staff of Power",
+        "hand weapon",
+        "Sebastian"
+      ],
+      "point_cost": "145"
+    },
+    "Saruman": {
+      "Mv": "6\"",
+      "Fv": "5",
+      "Sv": "4+",
+      "S": "4",
+      "D": "5",
+      "A": "1",
+      "W": "3",
+      "C": "3+",
+      "I": "3+",
+      "Might": "3",
+      "Will": "6",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Voice of Curunir",
+          "type": "Active",
+          "description": "Saruman's Stand Fast! Range is 12\", and affects Hero models."
+        },
+        {
+          "name": "Consuming Rivalry",
+          "type": "Passive",
+          "description": "Saruman may never benefit from a friendly Gandalf the Grey's Heroic Actions or targeted by his Magical Powers."
+        },
+        {
+          "name": "Lord of the Istari",
+          "type": "Active",
+          "description": "At the start of each Move Phase, before the Declare Heroic Actions step, Saruman may choose an enemy within 6\" and Line of Sight, which must take an Intelligence test. If failed, that model cannot Activate this turn."
+        }
+      ],
+      "options": [],
+      "magic_powers": [
+        {
+          "name": "Compel",
+          "range": "18\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Fog of Disarray",
+          "range": "Self",
+          "cast": "3+"
+        },
+        {
+          "name": "Protection of the Valar",
+          "range": "12\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Terrifying Aura",
+          "range": "Self",
+          "cast": "3+"
+        },
+        {
+          "name": "Transfix",
+          "range": "18\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Foil Magic",
+          "range": "18\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Sorcerous Blast",
+          "range": "12\"",
+          "cast": "5+"
+        }
+      ],
+      "heroic_actions": [
+        "Heroic Channelling",
+        "Heroic Defence"
+      ],
+      "special_rules": [],
+      "wargear": [
+        "Staff of Power"
+      ],
+      "point_cost": "170"
+    },
+    "Thrain the Broken": {
+      "Mv": "6\"",
+      "Fv": "4",
+      "Sv": "4+",
+      "S": "2",
+      "D": "4",
+      "A": "1",
+      "W": "2",
+      "C": "6+",
+      "I": "6+",
+      "Might": "0",
+      "Will": "0",
+      "Fate": "1",
+      "active_or_passive_rules": [
+        {
+          "name": "Shattered Spirit",
+          "type": "Passive",
+          "description": "At the start of the Move Phase, before the Declare Heroic Actions Step, Thrain must take an Intelligence Test. If the test is passed, Thrain acts normally during the turn. If the test is passed on a double (i.e., both dice show the same score) then until the end of the turn, Thrain increases his Attacks to 3, his Strength to 4, and gains the Fearless special rule. If the test is failed, then the opposing player controls Thrain as if he was one of their models, and will Activate Thrain during their own Activation Phase. Though he is being controlled by the opposing player, Thrain cannot be targeted with shooting attacks, Magical Powers or special rules that affect enemy models. Additionally, if Thrain was a Good model, then other Good models cannot make Strikes against him should they beat him in a Combat or make Shooting Attacks if he would be In The Way as with any other Good model."
+        },
+        {
+          "name": "Gandalf's Intervention",
+          "type": "Active",
+          "description": "If when Thrain takes his Intelligence Test for his Shattered Spirit special rule he is within 3\" of a friendly Gandalf the Grey, then he may alter a single dice rolled as part of his Intelligence Test by 1, either up or down. If after this alteration the score of the Intelligence Test is a double, then Thrain may gain the benefits of rolling a double as described in his Shattered Spirit special rule."
+        }
+      ],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": [
+        "Hand weapon"
+      ],
+      "point_cost": "10"
     }
   },
   "Mordor": {
