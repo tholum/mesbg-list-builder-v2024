@@ -2,32 +2,28 @@
   "[army-of-edoras] captain-of-rohan": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
   "[army-of-edoras] frealaf": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
   "[army-of-edoras] haleth-prince-of-rohan": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
   "[army-of-edoras] hama-prince-of-rohan": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
@@ -42,24 +38,21 @@
   "[army-of-edoras] hera-daughter-of-helm": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
   "[army-of-edoras] lief-page-of-helm": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
   "[army-of-edoras] olwyn-shieldmaiden-of-rohan": {
     "valid_warband_units": [
       "[army-of-edoras] warrior-of-rohan",
-      "[army-of-edoras] rider-of-rohan",
-      "[army-of-edoras] rohan-royal-guard"
+      "[army-of-edoras] rider-of-rohan"
     ],
     "extra_profiles": []
   },
