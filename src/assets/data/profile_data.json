@@ -107,6 +107,179 @@
     }
   },
   "Kingdoms of Men": {
+    "Bard's Family": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
+      "Might": null,
+      "Will": null,
+      "Fate": null,
+      "active_or_passive_rules": [],
+      "options": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Strike"
+      ],
+      "special_rules": [],
+      "wargear": [],
+      "point_cost": "60",
+      "additional_stats": [
+        {
+          "name": "Bain, Son of Bard",
+          "Mv": "6\"",
+          "Fv": "2",
+          "Sv": "4+",
+          "S": "2",
+          "D": "2",
+          "A": "1",
+          "W": "1",
+          "C": "7+",
+          "I": "7+",
+          "Might": "0",
+          "Will": "1",
+          "Fate": "2",
+          "active_or_passive_rules": [
+            {
+              "name": "Family Bond",
+              "type": "Passive",
+              "description": "Whilst within 3\" of Sigrid or Tilda, Bain increases his Attacks to 2, and gains a bonus of +1 to his Courage tests."
+            }
+          ],
+          "magic_powers": [],
+          "heroic_actions": [
+            "Heroic Strike"
+          ],
+          "special_rules": [],
+          "wargear": [
+            "Hand weapon"
+          ]
+        },
+        {
+          "name": "Sigrid",
+          "Mv": "6\"",
+          "Fv": "2",
+          "Sv": "4+",
+          "S": "2",
+          "D": "2",
+          "A": "1",
+          "W": "1",
+          "C": "7+",
+          "I": "7+",
+          "Might": "0",
+          "Will": "1",
+          "Fate": "2",
+          "active_or_passive_rules": [
+            {
+              "name": "Da! Down here!",
+              "type": "Passive",
+              "description": "Whilst within 6\" of Sigrid or Tilda, Bard the Bowman gains a bonus of +1 to his Fight Value. If Bard the Bowman is within 6\" of both Sigrid and Tilda, then he will gain a bonus of +1 to his Fight Value and may re-roll a single D6 when making a Duel Roll. Additionally, during the Declare Heroic Actions Step of the Fight Phase, if Sigrid or Tilda are within 6\" of Bard and are Engaged in Combat, then Bard may declare a Heroic Combat for free. If this Heroic Combat is successful, then Bard must use the following Move to join Sigrid's or Tilda's Combat. If this is not possible, then Bard must move as close as possible to Sigrid or Tilda. Bard cannot use this special rule whilst he is in the same Combat as either Sigrid or Tilda, unless the other one of Sigrid or Tilda is in a different Combat within 6\"."
+            }
+          ],
+          "magic_powers": [],
+          "heroic_actions": [],
+          "special_rules": [
+            "Fearful"
+          ],
+          "wargear": [
+            "Unarmed"
+          ]
+        },
+        {
+          "name": "Tilda",
+          "Mv": "6\"",
+          "Fv": "1",
+          "Sv": "4+",
+          "S": "2",
+          "D": "2",
+          "A": "1",
+          "W": "1",
+          "C": "8+",
+          "I": "7+",
+          "Might": "0",
+          "Will": "1",
+          "Fate": "2",
+          "active_or_passive_rules": [
+            {
+              "name": "Da! Down here!",
+              "type": "Passive",
+              "description": "Whilst within 6\" of Sigrid or Tilda, Bard the Bowman gains a bonus of +1 to his Fight Value. If Bard the Bowman is within 6\" of both Sigrid and Tilda, then he will gain a bonus of +1 to his Fight Value and may re-roll a single D6 when making a Duel Roll. Additionally, during the Declare Heroic Actions Step of the Fight Phase, if Sigrid or Tilda are within 6\" of Bard and are Engaged in Combat, then Bard may declare a Heroic Combat for free. If this Heroic Combat is successful, then Bard must use the following Move to join Sigrid's or Tilda's Combat. If this is not possible, then Bard must move as close as possible to Sigrid or Tilda. Bard cannot use this special rule whilst he is in the same Combat as either Sigrid or Tilda, unless the other one of Sigrid or Tilda is in a different Combat within 6\"."
+            }
+          ],
+          "magic_powers": [],
+          "heroic_actions": [],
+          "special_rules": [
+            "Fearful"
+          ],
+          "wargear": [
+            "Unarmed"
+          ]
+        }
+      ],
+      "additional_text": [
+        "If any member of Bard’s Family is slain, Bard must always Charge any enemy that killed one of his children if he able to do so for the rest of the game. If he is in range of multiple enemy targets that he must Charge, then the controlling player may choose one of them."
+      ]
+    },
+    
+    "Lake-town Militia Captain": {
+      "Mv": "6\"",
+      "Fv": "3",
+      "Sv": "4+",
+      "S": "4",
+      "D": "6",
+      "A": "2",
+      "W": "2",
+      "C": "6+",
+      "I": "7+",
+      "Might": "2",
+      "Will": "1",
+      "Fate": "1",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic March"
+      ],
+      "special_rules": [],
+      "wargear": [
+        "Armour",
+        "shield",
+        "hand weapon",
+        "spear"
+      ]
+    },
+    "Lake-town Militia": {
+      "Mv": "6\"",
+      "Fv": "2",
+      "Sv": "4+",
+      "S": "3",
+      "D": "3",
+      "A": "1",
+      "W": "1",
+      "C": "7+",
+      "I": "8+",
+      "Might": "",
+      "Will": "",
+      "Fate": "",
+      "active_or_passive_rules": [
+        {
+          "name": "Onwards Men of Esgaroth",
+          "type": "Passive",
+          "description": "Lake-town Militia that are within 3\" of a friendly Lake-town Hero model who is Engaged in Combat automatically pass any Courage tests they are required to make for being in a Broken army."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": [
+        "Light armour",
+        "hand weapon"
+      ]
+    },
     "Alfrid the Councillor": {
       "Mv": "6\"",
       "Fv": "2",
@@ -160,6 +333,7 @@
         {
           "name": "Windlance Trained",
           "type": "Passive",
+          "option_dependency": "Windlance",
           "description": "If Bard takes a Windlance, he will be the only crew. but can move more than 6\" away, and rotate it without any penalty. Windlance attacks against Monster models gain a +1 bonus to any rolls on the Scatter Table."
         }
       ],
@@ -294,6 +468,7 @@
         {
           "name": "Windlance Trained",
           "type": "Passive",
+          "option_dependency": "Windlance",
           "description": "If Girion takes a Windlance, he will be the only crew, but can move more than 6\" away, and rotate it without any penalty. Windlance attacks against Monster models gain a +1 bonus to any rolls on the Scatter Table."
         },
         {
@@ -414,32 +589,6 @@
         "bow"
       ]
     },
-    "Sigrid": {
-      "Mv": "6\"",
-      "Fv": "2",
-      "Sv": "4+",
-      "S": "2",
-      "D": "2",
-      "A": "1",
-      "W": "1",
-      "C": "7+",
-      "I": "7+",
-      "active_or_passive_rules": [
-        {
-          "name": "Da! Down here!",
-          "type": "Passive",
-          "description": "Whilst within 6\" of Sigrid or Tilda, Bard the Bowman gains a bonus of +1 to his Fight Value. If Bard the Bowman is within 6\" of both Sigrid and Tilda, then he will gain a bonus of +1 to his Fight Value and may re-roll a single D6 when making a Duel Roll. Additionally, during the Declare Heroic Actions Step of the Fight Phase, if Sigrid or Tilda are within 6\" of Bard and are Engaged in Combat, then Bard may declare a Heroic Combat for free. If this Heroic Combat is successful, then Bard must use the following Move to join Sigrid's or Tilda's Combat. If this is not possible, then Bard must move as close as possible to Sigrid or Tilda. Bard cannot use this special rule whilst he is in the same Combat as either Sigrid or Tilda, unless the other one of Sigrid or Tilda is in a different Combat within 6\"."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
-      "special_rules": [
-        "Fearful"
-      ],
-      "wargear": [
-        "Unarmed"
-      ]
-    },
     "The Master of Lake-town": {
       "Mv": "6\"",
       "Fv": "3",
@@ -471,32 +620,6 @@
       "heroic_actions": [
         "Heroic Defence"
       ],
-      "special_rules": [
-        "Fearful"
-      ],
-      "wargear": [
-        "Unarmed"
-      ]
-    },
-    "Tilda": {
-      "Mv": "6\"",
-      "Fv": "1",
-      "Sv": "4+",
-      "S": "2",
-      "D": "2",
-      "A": "1",
-      "W": "1",
-      "C": "8+",
-      "I": "7+",
-      "active_or_passive_rules": [
-        {
-          "name": "Da! Down here!",
-          "type": "Passive",
-          "description": "Whilst within 6\" of Sigrid or Tilda, Bard the Bowman gains a bonus of +1 to his Fight Value. If Bard the Bowman is within 6\" of both Sigrid and Tilda, then he will gain a bonus of +1 to his Fight Value and may re-roll a single D6 when making a Duel Roll. Additionally, during the Declare Heroic Actions Step of the Fight Phase, if Sigrid or Tilda are within 6\" of Bard and are Engaged in Combat, then Bard may declare a Heroic Combat for free. If this Heroic Combat is successful, then Bard must use the following Move to join Sigrid's or Tilda's Combat. If this is not possible, then Bard must move as close as possible to Sigrid or Tilda. Bard cannot use this special rule whilst he is in the same Combat as either Sigrid or Tilda, unless the other one of Sigrid or Tilda is in a different Combat within 6\"."
-        }
-      ],
-      "magic_powers": [],
-      "heroic_actions": [],
       "special_rules": [
         "Fearful"
       ],
@@ -1692,6 +1815,125 @@
     }
   },
   "Dwarven Holds": {
+    "Bilbo Baggins": {
+      "Mv": "4\"",
+      "Fv": "3",
+      "Sv": "3+",
+      "S": "2",
+      "D": "3",
+      "A": "1",
+      "W": "2",
+      "C": "4+",
+      "I": "4+",
+      "Might": "2",
+      "Will": "3",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Sting",
+          "type": "Active",
+          "description": "Elven hand weapon. Bilbo gains a bonus of +1 to his Strength when making Strikes with Sting."
+        },
+        {
+          "name": "It has not yet Awoken",
+          "type": "Passive",
+          "description": "Bilbo ignores Sauron's Will section of the One Ring rules. If Bilbo if the only model left on his side, he is not removed as a casualty if he is wearing the Ring."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [
+        "Heroic Strike",
+        "Heroic Resolve",
+        "Heroic Defence"
+      ],
+      "special_rules": [
+        "Resistant to Magic",
+        "Throw Stones (range 8\", Strength 1)"
+      ],
+      "wargear": [
+        "Hand weapon"
+      ]
+    },
+    "Gandalf the Grey": {
+      "Mv": "6\"",
+      "Fv": "5",
+      "Sv": "4+",
+      "S": "4",
+      "D": "5",
+      "A": "2",
+      "W": "3",
+      "C": "3+",
+      "I": "3+",
+      "Might": "3",
+      "Will": "6",
+      "Fate": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Glamdring",
+          "type": "Active",
+          "description": "Elven hand-and-a-half weapon. Gandalf's strength is 5 when making strikes with Glamdring."
+        },
+        {
+          "name": "Narya",
+          "type": "Passive",
+          "description": "Gandalf may re-roll any failed Fate rolls."
+        }
+      ],
+      "magic_powers": [
+        {
+          "name": "Protection of the Valar",
+          "range": "6\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Terrifying Aura",
+          "range": "Self",
+          "cast": "3+"
+        },
+        {
+          "name": "Blinding Light",
+          "range": "Self",
+          "cast": "4+"
+        },
+        {
+          "name": "Strengthen Will",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Transfix",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Collapse Rocks",
+          "range": "12\"",
+          "cast": "5+"
+        },
+        {
+          "name": "Foil Magic",
+          "range": "12\"",
+          "cast": "5+"
+        },
+        {
+          "name": "Sorcerous Blast",
+          "range": "12\"",
+          "cast": "5+"
+        }
+      ],
+      "heroic_actions": [
+        "Heroic Resolve",
+        "Heroic Channelling",
+        "Heroic Strike",
+        "Heroic Defence"
+      ],
+      "special_rules": [],
+      "wargear": [
+        "Staff of Power",
+        "Glamdring",
+        "Narya"
+      ]
+    },
     "Balin the Dwarf, Champion of Erebor": {
       "Mv": "5\"",
       "Fv": "4",
@@ -2851,6 +3093,7 @@
         {
           "name": "Orcrist",
           "type": "Active",
+          "option_dependency": "Orcrist",
           "description": "Elven hand-and-a-half weapon, with Orcbane, Goblinbane and Uruk-haibane, Terror (Goblin), Terror (Orc) and Terror (Uruk-hai) special rules."
         },
         {
@@ -2894,11 +3137,13 @@
         {
           "name": "Orcrist",
           "type": "Active",
+          "option_dependency": "Orcrist",
           "description": "Elven hand-and-a-half weapon, with Orcbane, Goblinbane and Uruk-haibane, Terror (Goblin), Terror (Orc) and Terror (Uruk-hai) special rules."
         },
         {
           "name": "The Oakenshield",
           "type": "Active",
+          "option_dependency": "The Oakenshield",
           "description": "If Thorin uses Shielding in a Combat and wins, he may make a single Strength 4 Strike against one enemy involved in the Combat."
         },
         {
@@ -3219,6 +3464,7 @@
         {
           "name": "Merry",
           "type": "Passive",
+          "option_dependency": "Merry",
           "description": "If taken as an option, Merry becomes a passenger on Eowyn's horse. He will have a shield, be an Independent Hero, and still count towards the army's total models and Break Point. He does not take up a space in Eowyn's warband. Whilst he remains mounted, Eowyn gains Resistant to Magic, Attack 3, and can spend Merry's Might, Will and Fate."
         }
       ],
@@ -3286,6 +3532,7 @@
         {
           "name": "Royal Standard of Rohan",
           "type": "Passive",
+          "option_dependency": "Royal Standard of Rohan",
           "description": "Banner with range 6\", Gamling does not suffer the -1 penalty in the Duel roll. If a friendly Rohan Hero model within 6\" spends a Might point, they may roll a D6. On a natural 6, the point of Might is free."
         }
       ],
@@ -4096,6 +4343,7 @@
         {
           "name": "Shield Throw",
           "type": "Passive",
+          "option_dependency": "Shield",
           "description": "If Lurtz has a shield, he may use it as throwing weapon once per game with a Strength of 4. Any 25mm model hit will be knocked prone, and he may re-roll the To Hit roll. Once thrown, Lurtz will no longer carry the shield."
         },
         {
@@ -5092,6 +5340,7 @@
         {
           "name": "Anduril, Flame of the West",
           "type": "Active",
+          "option_dependency": "Anduril, Flame of the West",
           "description": "Elven hand-and-a-half weapon, never needs more than a 4+ To Wound, or a 3+ if using Anduril as a two-handed weapon."
         }
       ],
@@ -5200,16 +5449,19 @@
         {
           "name": "Mithril Coat",
           "type": "Passive",
+          "option_dependency": "Mithril Coat",
           "description": "A piece of Mithril armour, additionally Bilbo may re-roll Fate rolls of a 1."
         },
         {
           "name": "Sting",
           "type": "Active",
+          "option_dependency": "Sting",
           "description": "An Elven hand weapon, Bilbo gains +1 Strength when making strikes with Sting."
         },
         {
           "name": "Slip Away",
           "type": "Passive",
+          "option_dependency": "The One Ring",
           "description": "Whilst wearing the One Ring and Invisible, enemy models Engaged in Combat with Bilbo must halve their Fight value."
         }
       ],
@@ -5432,11 +5684,13 @@
         {
           "name": "Mithril Coat",
           "type": "Passive",
+          "option_dependency": "Mithril Coat",
           "description": "A piece of Mithril armour, additionally Frodo may re-roll Fate rolls of a 1."
         },
         {
           "name": "Sting",
           "type": "Active",
+          "option_dependency": "Sting",
           "description": "An Elven hand weapon, Frodo gains +1 Strength when making strikes with Sting."
         }
       ],
@@ -5952,6 +6206,7 @@
         {
           "name": "Merry & Pippin",
           "type": "Passive",
+          "option_dependency": "Merry & Pippin",
           "description": "Can ride as passengers and not be targeted by enemy attacks and shooting. Treebeard gains Resistant to Magic if one of them remains mounted. May use their Throw Stones rule without a -1 penalty for moving - see pg.24 of Armies of LOTR book for full details."
         },
         {
@@ -6387,6 +6642,7 @@
         {
           "name": "Easterling Halberd",
           "type": "Active",
+          "option_dependency": "Easterling Halberd and shield",
           "description": "This weapon can be used as either a pike or two-handed weapon."
         },
         {
@@ -6959,6 +7215,7 @@
         {
           "name": "Morgul Blade",
           "type": "Active",
+          "option_dependency": "Morgul Blade",
           "description": "Once per game, direct all attacks against one model, and if they suffer at least one wound that is not prevented by Fate, they are instantly killed."
         }
       ],
@@ -7209,11 +7466,13 @@
         {
           "name": "Morgul Blade",
           "type": "Active",
+          "option_dependency": "Morgul Blade",
           "description": "Once per game, direct all attacks against one model, and if they suffer at least one wound that is not prevented by Fate, they are instantly killed."
         },
         {
           "name": "Crown of Morgul",
           "type": "Passive",
+          "option_dependency": "Crown of Morgul",
           "description": "Enemies within 6\" or those who Charge the Witch-king cannot benefit from automatically passing Courage tests, except for Heroic Resolve. Also, once per game in a Fight phase, any model that suffers a Wound from the Witch-king is Set Ablaze."
         }
       ],
@@ -8344,6 +8603,7 @@
         {
           "name": "Hadhafang",
           "type": "Active",
+          "option_dependency": "Hadhafang",
           "description": "Elven hand-and-a-half weapon, Arwen gains a bonus of +1 To Wound when making Strikes again a Spirit model."
         }
       ],
@@ -8619,6 +8879,7 @@
         {
           "name": "Mirror of Galadriel",
           "type": "Passive",
+          "option_dependency": "Mirror of Galadriel",
           "description": "Heavy object on a 40mm base, with Defence 8 and Wounds 3. Deployed within 6\" of Galadriel. During Priority, if Galadriel or Celeborn are in base contact with it, the controlling player may add 1 to their Priority roll. Additionally, during the End phase of each turn, one friendly Hero within 6\" of the Mirror may restore Fate points to their starting value."
         }
       ],
@@ -9591,6 +9852,7 @@
         {
           "name": "Troll Spear",
           "type": "Active",
+          "option_dependency": "Troll Spear",
           "description": "A spear that deals 2 Wounds rather than 1 when rolling a natural 6 on the To Wound roll when making Strikes. This rule only applies when this model is not Supporting."
         }
       ],
@@ -10136,6 +10398,93 @@
             "war horn"
           ]
         }
+      ]
+    }
+  },
+  "Smaug": {
+    "Smaug": {
+      "Mv": "12\"",
+      "Fv": "9",
+      "Sv": "2+",
+      "S": "9",
+      "D": "9",
+      "A": "4",
+      "W": "20",
+      "C": "4+",
+      "I": "4+",
+      "Might": "3",
+      "Will": "6",
+      "Fate": "0",
+      "active_or_passive_rules": [
+        {
+          "name": "Breathe Fire",
+          "type": "Active",
+          "description": "Spend a Will point to Breath Fire, treated as a bow with range 18\". If the shot hits, the target and all models within 2\" suffer a Strength 10 hit. Any model that suffers a Wound which is not prevented is slain, otherwise they are Set Ablaze. If a model is immune to fire-based based attacks, they are immune to this shooting attack."
+        },
+        {
+          "name": "Immovable Object",
+          "type": "Passive",
+          "description": "Cannot be knocked Prone, or forced to Move by Magic Powers and special rules. Smaug never counts as Trapped and never backs away - his opponent must always Back Away instead."
+        },
+        {
+          "name": "Desolator of the North",
+          "type": "Passive",
+          "description": "Smaug may spend a free Will point each turn. If it is not spent by the end of the turn, then the point is lost."
+        },
+        {
+          "name": "Missing Scale",
+          "type": "Passive",
+          "description": "If a model rolls a natural 6 on a shooting attack against Smaug, and the To Wound roll is also successful, he will suffer a number of Wounds equal to the strength of the missile weapon."
+        },
+        {
+          "name": "\"I am fire, I am death\"",
+          "type": "Passive",
+          "description": "Immune to fire-based attacks."
+        },
+        {
+          "name": "Colossal Frame",
+          "type": "Passive",
+          "description": "Enemies may still shoot Smaug even if he is Engaged in Combat. No In The Way test is required for friendly models he is Engaged in Combat with."
+        },
+        {
+          "name": "Unstoppable Momentum",
+          "type": "Brutal Power Attack",
+          "description": "Instead of making Strikes, Smaug can make a single Strength 9 hit on every model he is Engaged with."
+        }
+      ],
+      "magic_powers": [
+        {
+          "name": "Compel",
+          "range": "12\"",
+          "cast": "3+"
+        },
+        {
+          "name": "Transfix",
+          "range": "12\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Foil Magic",
+          "range": "12\"",
+          "cast": "5+"
+        }
+      ],
+      "heroic_actions": [
+        "Heroic Challenge"
+      ],
+      "special_rules": [
+        "Ancient Enemies (Dwarf)",
+        "Dominant (20)",
+        "Fearless",
+        "Fly",
+        "Harbinger of Evil (18\")",
+        "Large Target",
+        "Monstrous Charge",
+        "Resistant to Magic",
+        "Terror"
+      ],
+      "wargear": [
+        "Razor-sharp teeth, massive talons (hand weapons)"
       ]
     }
   }
