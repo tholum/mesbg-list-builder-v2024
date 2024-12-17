@@ -722,6 +722,7 @@
         {
           "name": "Stone flail",
           "type": "Active",
+          "option_dependency": "Stone flail",
           "description": "Two-handed weapon. If Azog uses this in a Combat, he gains Mighty Blow and reduces his Fight value to 6 for that Combat, even after a Heroic Strike. Any model struck by it and not slain is knocked Prone at the end of the combat."
         },
         {
@@ -783,7 +784,7 @@
         "two-handed weapon"
       ]
     },
-    "Catapult Troll": {
+    "Gundabad Catapult Troll": {
       "Mv": "6\"",
       "Fv": "7",
       "Sv": "4+",
@@ -1067,6 +1068,7 @@
         {
           "name": "Scythe Gauntlets",
           "type": "Active",
+          "option_dependency": "Exchange club for Scythe Gauntlets",
           "description": "A Gundabad Troll armed with Scythe Gauntlets increases its Attacks to 4."
         }
       ],
@@ -1260,7 +1262,7 @@
         "Fangs (hand weapons)"
       ]
     },
-    "Narzugl, Hunter Orc Captain": {
+    "Narzug, Hunter Orc Captain": {
       "Mv": "6\"",
       "Fv": "4",
       "Sv": "3+",
@@ -1832,11 +1834,13 @@
         {
           "name": "Sting",
           "type": "Active",
+          "option_dependency": "Sting",
           "description": "Elven hand weapon. Bilbo gains a bonus of +1 to his Strength when making Strikes with Sting."
         },
         {
           "name": "It has not yet Awoken",
           "type": "Passive",
+          "option_dependency": "The One Ring",
           "description": "Bilbo ignores Sauron's Will section of the One Ring rules. If Bilbo if the only model left on his side, he is not removed as a casualty if he is wearing the Ring."
         }
       ],
@@ -2192,7 +2196,7 @@
         "Hand weapon"
       ]
     },
-    "Captain of Erebor": {
+    "Erebor Dwarf Captain": {
       "Mv": "5\"",
       "Fv": "5",
       "Sv": "4+",
@@ -2697,6 +2701,7 @@
         {
           "name": "Mattock",
           "type": "Active",
+          "option_dependency": "Exchange shield and spear for Mattock",
           "description": "Two-handed weapon, where if this model wins a Duel roll, they may choose to try and knock down an enemy instead of making Strikes. Choose a single enemy in the combat, and both models roll a D6, adding their Strength values. If this model has an equal or higher result, then the chosen enemy is knocked Prone. This may be done before any other friendly models make their Strikes."
         }
       ],
@@ -2734,7 +2739,7 @@
         {
           "name": "Chariot Charge",
           "type": "Active",
-          "description": "When moving via Chariot Chare, the Chariot will inflict 3 Strength 6 hits."
+          "description": "When moving via Chariot Charge, the Chariot will inflict 3 Strength 6 hits."
         },
         {
           "name": "Dwarven Crew",
@@ -2788,6 +2793,7 @@
         {
           "name": "Mattock",
           "type": "Active",
+          "option_dependency": "Mattock",
           "description": "Two-handed weapon, where if this model wins a Duel roll, they may choose to try and knock down an enemy instead of making Strikes. Choose a single enemy in the combat, and both models roll a D6, adding their Strength values. If this model has an equal or higher result, then the chosen enemy is knocked Prone. This may be done before any other friendly models make their Strikes."
         }
       ],
@@ -4930,6 +4936,63 @@
     }
   },
   "Mounts": {
+    "Troll Brute": {
+      "Mv": "6\"",
+      "Fv": "5",
+      "Sv": "6+",
+      "S": "7",
+      "D": "6",
+      "A": "3",
+      "W": "4",
+      "C": "6+",
+      "I": "9+",
+      "active_or_passive_rules": [
+        {
+          "name": "Trample",
+          "type": "Active",
+          "description": "When a Troll Brute Tramples, it will inflict 2 Strength 10 hits."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Dominant (5)",
+        "Terror",
+        "Fearless",
+        "Large Target"
+      ]
+    },
+    "Iron Hills Chariot": {
+      "Mv": "8\"",
+      "Fv": "4",
+      "Sv": "4+",
+      "S": "4",
+      "D": "8",
+      "A": "2",
+      "W": "4",
+      "C": "6+",
+      "I": "6+",
+      "active_or_passive_rules": [
+        {
+          "name": "Rapid-fire Bolt Thrower",
+          "type": "Active",
+          "description": "A crossbow that fires D6 shots per turn. Only has a limited field of fire 45\u00b0 to its left or right (can be measured by placing Chariot Pivot Template with the X over the bolt thrower and dotted line running down the wooden shaft connecting the goats). This chariot may move and shoot without any -1 penalty. Can also shoot when Engaged in Combat, with no In The Way tests for models it is in Combat with."
+        },
+        {
+          "name": "Chariot Charge",
+          "type": "Active",
+          "description": "When moving via Chariot Charge, the Chariot will inflict 3 Strength 6 hits."
+        },
+        {
+          "name": "Dwarven Crew",
+          "type": "Active",
+          "description": "Any Iron Hills Warrior that ends their Activation in base contact may join its crew. That Warrior is removed as a casualty and then the chariot immediately regains a Wound lost earlier in the battle."
+        }
+      ],
+      "special_rules": [
+        "Dominant (4)"
+      ]
+    },
     "Horse": {
       "Mv": "10\"",
       "Fv": "2",
@@ -9080,6 +9143,7 @@
         {
           "name": "Wood Elf spear",
           "type": "Active",
+          "option_dependency": "Wood Elf spear",
           "description": "An Elven spear, and this model may use the Shielding rule even if they do not have a shield."
         }
       ],
@@ -9177,6 +9241,7 @@
         {
           "name": "Orcrist",
           "type": "Active",
+          "option_dependency": "Orcrist",
           "description": "Elven hand-and-a-half weapon, with Orcbane, Goblinbane and Uruk-haibane, Terror (Goblin), Terror (Orc) and Terror (Uruk-hai) special rules."
         },
         {
@@ -9278,6 +9343,7 @@
         {
           "name": "Elven Glaive",
           "type": "Active",
+          "option_dependency": "Elven Glaive",
           "description": "Elven spear, when Engaged in Combat and not being Supported, this model may either gain a bonus of +1 Attack for the Duel roll or +1 Attack when making Strikes. This must be decided before the Duel roll takes place."
         }
       ],

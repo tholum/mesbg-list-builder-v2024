@@ -21,9 +21,17 @@ unit_type_order = [
   "Siege Engine"
 ]
 
+def map_warband_sizes(row):
+    if row['name'] == ["The Dark Lord Sauron", "The Goblin King"]:
+        return 24
+    if row['name'] in ["Grinnah, Goblin Jailer", "The Goblin Scribe", "Goblin Captain"]:
+        return 18
+    return warband_sizes[row['unit_type']]
+
 df_models = pd.read_excel("mesbg_data.xlsx", sheet_name="models")
-df_models['warband_size'] = df_models['unit_type'].map(warband_sizes)
+df_models['warband_size'] = df_models.apply(map_warband_sizes, axis=1)
 df_models.loc[df_models.name == "The Dark Lord Sauron", 'warband_size'] = 24
+
 df_models.unit_type = pd.Categorical(df_models.unit_type, categories=unit_type_order)
 df_models = df_models.rename(columns={"name": "model"})
 df_options = pd.read_excel("mesbg_data.xlsx", sheet_name="options")
@@ -59,7 +67,8 @@ df_merged_options = df_merged.groupby([
   'included',
   'quantity',
   'dependencies',
-  'passengers'
+  'passengers',
+  'mount_name'
 
 ]].to_dict(orient='records')).reset_index(name='options')
 df_merged_options = df_merged_options.sort_values(['army_list', 'unit_type', 'base_points', 'model'], ascending=[True, True, False, True])
