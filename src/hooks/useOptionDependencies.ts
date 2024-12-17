@@ -1,5 +1,5 @@
-import { useRosterInformation } from "../components/common/warbands/useRosterInformation.ts";
 import { OptionDependency } from "../types/mesbg-data.types.ts";
+import { useRosterInformation } from "./useRosterInformation.ts";
 
 export const useOptionDependencies = (warbandId: string) => {
   const rosterInformation = useRosterInformation();

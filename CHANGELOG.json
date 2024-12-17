@@ -7,7 +7,10 @@
       "Updated the server configuration to allow deeplinking to nested routes like /rosters and /about",
       "Corrected some mistakes in the datafiles including Prince Haleth's horse, Sauron's warband size and the WoMT's wargear options",
       "Fixed incorrect option list type for heroes in mobile display, allowing them only to take 1 option",
-      "Allow special warband upgrade to be take aside from other wargear options"
+      "Allow special warband upgrade to be take aside from other wargear options",
+      "Remove the Rohan Royal Guard from the unit selector in Army of Edoras where it did not belong",
+      "Updated the MWF value on the War Mumak of Harad when the Beastmaster is chosen as an option",
+      "Correctly remove special rules from the PDF that are linked to an option that is not selected"
     ]
   },
   "0.1": {

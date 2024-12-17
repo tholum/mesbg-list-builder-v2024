@@ -3,9 +3,9 @@ import Stack from "@mui/material/Stack";
 import { ChangeEvent, FunctionComponent, useState } from "react";
 import heroConstraints from "../../../assets/data/hero_constraint_data.json";
 import data from "../../../assets/data/mesbg_data.json";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { HeroConstraintsDataType } from "../../../types/hero-constraints-data.type.ts";
 import { Unit } from "../../../types/mesbg-data.types.ts";
-import { useRosterInformation } from "../warbands/useRosterInformation.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
 
 export type UnitSelectionListProps = {
