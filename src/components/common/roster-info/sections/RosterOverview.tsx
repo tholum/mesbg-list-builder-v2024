@@ -8,7 +8,7 @@ import {
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { armyListData } from "../../../../assets/data.ts";
-import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { RosterInformationProps } from "../RosterInformation.tsx";
 import { RosterInformationSection } from "../RosterInformationSection.tsx";
 

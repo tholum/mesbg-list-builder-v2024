@@ -2,10 +2,10 @@ import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { createRef, FunctionComponent, useEffect, useRef } from "react";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
+import { useRosterMutations } from "../../../hooks/useRosterMutations.ts";
 import { Warband as WarbandType } from "../../../types/roster.ts";
 import { Warband, WarbandActions } from "./Warband.tsx";
-import { useRosterInformation } from "./useRosterInformation.ts";
-import { useRosterMutations } from "./useRosterMutations.ts";
 
 export type WarbandListProps = {
   warbands: WarbandType[];

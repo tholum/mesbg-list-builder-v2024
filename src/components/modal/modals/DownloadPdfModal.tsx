@@ -1,6 +1,6 @@
 import { Button, DialogActions, DialogContent } from "@mui/material";
 import { useState } from "react";
-import { useDownload } from "../../../hooks/download.ts";
+import { useDownload } from "../../../hooks/useDownload.ts";
 import { useAppState } from "../../../state/app";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { PdfView } from "../../common/roster/PdfView.tsx";

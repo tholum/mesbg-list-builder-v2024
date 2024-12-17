@@ -11,10 +11,10 @@ import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
+import { useWarbandMutations } from "../../../../hooks/useWarbandMutations.ts";
 import { Warband } from "../../../../types/roster.ts";
 import { SquareIconButton } from "../../icon-button/SquareIconButton.tsx";
-import { useRosterInformation } from "../useRosterInformation.ts";
-import { useWarbandMutations } from "../useWarbandMutations.ts";
 
 export type WarbandActionButtonsProps = {
   warbandId: string;

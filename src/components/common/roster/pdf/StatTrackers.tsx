@@ -11,8 +11,8 @@ import {
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { createGameState } from "../../../../state/gamemode/gamestate/create-game-state.ts";
-import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
 
 const CheckboxList = ({ amount }: { amount: string }) => {
   return (

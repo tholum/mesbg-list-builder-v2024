@@ -1,6 +1,6 @@
-import { mesbgData } from "../../../../assets/data.ts";
-import { Option } from "../../../../types/mesbg-data.types.ts";
-import { SelectedUnit } from "../../../../types/roster.ts";
+import { mesbgData } from "../../assets/data.ts";
+import { Option } from "../../types/mesbg-data.types.ts";
+import { SelectedUnit } from "../../types/roster.ts";
 import { MwfwUpdater } from "../useMwfMutations.ts";
 import { selectedOptionWithName } from "./utils.ts";
 

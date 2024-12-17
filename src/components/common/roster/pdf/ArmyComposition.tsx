@@ -9,12 +9,12 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import {
   FreshUnit,
   isSelectedUnit,
   SelectedUnit,
 } from "../../../../types/roster.ts";
-import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
 
 function UnitRow({ unit }: { unit: FreshUnit | SelectedUnit }) {
   if (!isSelectedUnit(unit)) {

@@ -3,7 +3,7 @@ import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { useRosterInformation } from "../../components/common/warbands/useRosterInformation.ts";
+import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useRosterBuildingState } from "../../state/roster-building";
 import { CreateRosterCardButton } from "./components/CreateRosterCardButton.tsx";
 import {

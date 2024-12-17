@@ -1,5 +1,5 @@
-import { Option } from "../../../types/mesbg-data.types.ts";
-import { SelectedUnit } from "../../../types/roster.ts";
+import { Option } from "../types/mesbg-data.types.ts";
+import { SelectedUnit } from "../types/roster.ts";
 import { GandalfTheWhite, Treebeard } from "./mwfw";
 
 export interface MwfwUpdater {

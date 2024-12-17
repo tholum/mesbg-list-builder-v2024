@@ -17,6 +17,7 @@ import { forwardRef, useImperativeHandle, useState } from "react";
 import { GiQueenCrown } from "react-icons/gi";
 
 import { armyListData } from "../../../assets/data.ts";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import {
   isSelectedUnit,
@@ -27,7 +28,6 @@ import {
 import { ModalTypes } from "../../modal/modals.tsx";
 import { AdditionalRules } from "../roster-info/sections/AdditionalRules.tsx";
 import { SpecialRules } from "../roster-info/sections/SpecialRules.tsx";
-import { useRosterInformation } from "../warbands/useRosterInformation.ts";
 import { getSumOfUnits } from "./totalUnits.ts";
 
 const UnitRow = ({
