@@ -4,27 +4,26 @@ import { SelectedUnit } from "../../types/roster.ts";
 import { MwfwUpdater } from "../useMwfMutations.ts";
 import { selectedOptionWithName } from "./utils.ts";
 
-export const handledModels = "[fangorn] treebeard";
+export const handledModels = [
+  "[harad] war-mumak-of-harad",
+  "[legions-of-mordor] war-mumak-of-harad",
+];
 
 export const handler: MwfwUpdater = {
   isMatchingUnit(unitId: string): boolean {
-    return [handledModels].includes(unitId);
+    return handledModels.includes(unitId);
   },
   update(unit: SelectedUnit, options: Option[]): SelectedUnit["MWFW"] {
-    const hasMerryAndPippin = !!options.find(
-      selectedOptionWithName("Merry & Pippin"),
+    const hasMahudBeastmasterChieftain = !!options.find(
+      selectedOptionWithName("Mahud Beastmaster Chieftain"),
     );
 
     const untouchedMWFW = mesbgData[unit.model_id].MWFW;
 
-    if (!hasMerryAndPippin) {
+    if (!hasMahudBeastmasterChieftain) {
       return untouchedMWFW;
     }
 
-    return [
-      untouchedMWFW[0],
-      ["Peregrin Took", "0:0:2:1"],
-      ["Meriadoc Brandybuck", "0:0:2:1"],
-    ];
+    return [["Mahud Beastmaster Chieftain", "2:2:1:1"], untouchedMWFW[1]];
   },
 };

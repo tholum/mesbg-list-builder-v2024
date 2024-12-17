@@ -1,23 +1,15 @@
 import { Option } from "../types/mesbg-data.types.ts";
 import { SelectedUnit } from "../types/roster.ts";
-import { GandalfTheWhite, Treebeard } from "./mwfw";
+import handlers, { handledModels } from "./mwfw";
 
 export interface MwfwUpdater {
   isMatchingUnit: (unitId: string) => boolean;
   update: (unit: SelectedUnit, options: Option[]) => SelectedUnit["MWFW"];
 }
 
-const handlers = [GandalfTheWhite, Treebeard];
-
 export const useMwfMutations = () => {
   function hasSpecialMwfRules(unit: SelectedUnit): boolean {
-    return [
-      "[defenders-of-the-pelennor] gandalf-the-white",
-      "[men-of-the-west] gandalf-the-white",
-      "[atop-the-walls] gandalf-the-white",
-      "[riders-of-eomer] gandalf-the-white",
-      "[fangorn] treebeard",
-    ].includes(unit.model_id);
+    return handledModels.includes(unit.model_id);
   }
 
   function handleSpecialMwfForUnit(
