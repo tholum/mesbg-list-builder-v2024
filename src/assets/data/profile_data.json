@@ -3997,9 +3997,9 @@
       "I": "6+",
       "active_or_passive_rules": [
         {
-          "name": "Arise, Riders of Theoden!",
+          "name": "Arise, Riders of Rohan!",
           "type": "Active",
-          "description": "If this model is within 12\" of Theoden and on a horse, it receives +1 bonus to its Fight value on a turn in which they Charge."
+          "description": "If this model is within 12\" of a Rohan General and has the Cavalry keyword, it receives +1 bonus to its Fight value on a turn in which they Charge."
         },
         {
           "name": "Spear Mastery",
@@ -4032,9 +4032,9 @@
       "I": "6+",
       "active_or_passive_rules": [
         {
-          "name": "Arise, Riders of Theoden!",
+          "name": "Arise, Riders of Rohan!",
           "type": "Active",
-          "description": "If this model is within 12\" of Theoden and on a horse, it receives +1 bonus to its Fight value on a turn in which they Charge."
+          "description": "If this model is within 12\" of a Rohan General and has the Cavalry keyword, it receives +1 bonus to its Fight value on a turn in which they Charge."
         },
         {
           "name": "Spear Mastery",
