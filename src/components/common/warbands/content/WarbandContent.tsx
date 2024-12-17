@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { FunctionComponent } from "react";
 import { useParams } from "react-router-dom";
+import { useWarbandMutations } from "../../../../hooks/useWarbandMutations.ts";
 import { useAppState } from "../../../../state/app";
 import { useRosterBuildingState } from "../../../../state/roster-building";
 import { Unit } from "../../../../types/mesbg-data.types.ts";
@@ -13,7 +14,6 @@ import { ModalTypes } from "../../../modal/modals.tsx";
 import { HeroCard } from "../../card/HeroCard.tsx";
 import { SelectUnitCardButton } from "../../card/SelectUnitCardButton.tsx";
 import { WarriorCard } from "../../card/WarriorCard.tsx";
-import { useWarbandMutations } from "../useWarbandMutations.ts";
 
 export type WarbandContentProps = {
   warband: Pick<Warband, "id" | "hero" | "units" | "meta">;

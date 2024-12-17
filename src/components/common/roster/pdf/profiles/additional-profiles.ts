@@ -1,8 +1,8 @@
 import { heroConstraintData, profileData } from "../../../../../assets/data.ts";
+import { selectedOptionWithName } from "../../../../../hooks/mwfw/utils.ts";
 import { Option } from "../../../../../types/mesbg-data.types.ts";
 import { Profile as RawProfile } from "../../../../../types/profile-data.types.ts";
 import { SelectedUnit } from "../../../../../types/roster.ts";
-import { selectedOptionWithName } from "../../../warbands/mwfw/utils.ts";
 import { duplicateProfiles } from "./deduplication.ts";
 import { Profile } from "./profile.type.ts";
 

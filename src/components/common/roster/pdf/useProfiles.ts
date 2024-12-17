@@ -1,4 +1,4 @@
-import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { convertRosterToProfiles } from "./profiles/profiles.ts";
 
 export const useProfiles = () => {

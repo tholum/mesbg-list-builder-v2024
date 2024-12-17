@@ -1,12 +1,14 @@
-import { mesbgData } from "../../../../assets/data.ts";
-import { Option } from "../../../../types/mesbg-data.types.ts";
-import { SelectedUnit } from "../../../../types/roster.ts";
+import { mesbgData } from "../../assets/data.ts";
+import { Option } from "../../types/mesbg-data.types.ts";
+import { SelectedUnit } from "../../types/roster.ts";
 import { MwfwUpdater } from "../useMwfMutations.ts";
 import { selectedOptionWithName } from "./utils.ts";
 
-export const Treebeard: MwfwUpdater = {
+export const handledModels = "[fangorn] treebeard";
+
+export const handler: MwfwUpdater = {
   isMatchingUnit(unitId: string): boolean {
-    return ["[fangorn] treebeard"].includes(unitId);
+    return [handledModels].includes(unitId);
   },
   update(unit: SelectedUnit, options: Option[]): SelectedUnit["MWFW"] {
     const hasMerryAndPippin = !!options.find(

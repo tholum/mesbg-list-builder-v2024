@@ -1,11 +1,11 @@
 import { forwardRef, useImperativeHandle } from "react";
 import { armyListData } from "../../../assets/data.ts";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import {
   FreshUnit,
   isSelectedUnit,
   SelectedUnit,
 } from "../../../types/roster.ts";
-import { useRosterInformation } from "../warbands/useRosterInformation.ts";
 import { getSumOfUnits } from "./totalUnits.ts";
 
 export type RosterTextViewProps = {

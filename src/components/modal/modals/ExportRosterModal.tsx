@@ -10,9 +10,9 @@ import {
 import Alert from "@mui/material/Alert";
 import { useState } from "react";
 import { useExport } from "../../../hooks/useExport.ts";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { slugify } from "../../../utils/string.ts";
-import { useRosterInformation } from "../../common/warbands/useRosterInformation.ts";
 
 export const ExportRosterModal = () => {
   const { closeModal } = useAppState();

@@ -3,12 +3,12 @@ import Alert from "@mui/material/Alert";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import data from "../../../../assets/data/warning_rules.json";
+import { useRosterInformation } from "../../../../hooks/useRosterInformation.ts";
 import { isSelectedUnit, Roster } from "../../../../types/roster.ts";
 import {
   WarningRule,
   WarningRules,
 } from "../../../../types/warning-rules.types.ts";
-import { useRosterInformation } from "../../warbands/useRosterInformation.ts";
 import { RosterInformationProps } from "../RosterInformation.tsx";
 import { RosterInformationSection } from "../RosterInformationSection.tsx";
 

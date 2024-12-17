@@ -10,12 +10,12 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
-import { useDownload } from "../../../hooks/download.ts";
+import { useDownload } from "../../../hooks/useDownload.ts";
+import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { useAppState } from "../../../state/app";
 import { isSelectedUnit } from "../../../types/roster.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
-import { useRosterInformation } from "../../common/warbands/useRosterInformation.ts";
 
 export const DownloadProfileCardModal = () => {
   const { roster } = useRosterInformation();

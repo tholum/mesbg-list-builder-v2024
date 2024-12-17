@@ -3,8 +3,21 @@ import { HTMLOptions, jsPDF } from "jspdf";
 import JSZip from "jszip";
 import { useState } from "react";
 import { heroConstraintData } from "../assets/data.ts";
-import { useRosterInformation } from "../components/common/warbands/useRosterInformation.ts";
 import { isSelectedUnit } from "../types/roster.ts";
+import { useRosterInformation } from "./useRosterInformation.ts";
+
+export function download(
+  content: string,
+  fileName: string,
+  contentType: string,
+) {
+  const a = document.createElement("a");
+  const file = new Blob([content], { type: contentType });
+  a.href = URL.createObjectURL(file);
+  a.download = fileName;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
 
 export const useDownload = () => {
   const [isDownloading, setDownloading] = useState(false);
