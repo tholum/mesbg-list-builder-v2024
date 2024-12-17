@@ -5,6 +5,7 @@ import {
   SelectedUnit,
   Warband,
 } from "../../../../../types/roster.ts";
+import { selectedOptionWithName } from "../../../../../utils/options.ts";
 import { getAdditionalStats } from "./additional-profiles.ts";
 import { combineProfiles, duplicateProfiles } from "./deduplication.ts";
 import { getMightWillAndFate } from "./might-will-fate.ts";
@@ -67,6 +68,15 @@ function transformUnitToListOfProfiles(
 
   const additional_stats = getAdditionalStats(unit, profile);
   const additional_special_rules = getAdditionalSpecialRules(unit);
+  const used_active_or_passive_rules = profile.active_or_passive_rules.filter(
+    (rule) => {
+      if (!rule.option_dependency) return true;
+      const option = unit.options.find(
+        selectedOptionWithName(rule.option_dependency),
+      );
+      return !!option; // return true if the option was found with quantity >0
+    },
+  );
 
   return [
     {
@@ -76,6 +86,7 @@ function transformUnitToListOfProfiles(
       ...getMightWillAndFate(unit),
       additional_stats,
       special_rules: [...profile.special_rules, ...additional_special_rules],
+      active_or_passive_rules: used_active_or_passive_rules,
     },
   ];
 }

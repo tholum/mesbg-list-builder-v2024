@@ -22,6 +22,7 @@ type ActivePassiveRule = {
   name: string;
   type: "Active" | "Passive"; // Restrict to either "Active" or "Passive"
   description: string;
+  option_dependency?: string;
 };
 
 type MagicPower = {
