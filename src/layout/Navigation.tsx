@@ -3,6 +3,7 @@ import {
   ChevronLeftOutlined,
   FolderOutlined,
   Info,
+  OpenInNew,
   Segment,
   Settings,
 } from "@mui/icons-material";
@@ -399,6 +400,14 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       label: "App Settings",
       action: () => navigate("/settings"),
       active: location.pathname === "/settings",
+    },
+    { divider: true },
+    {
+      icon: <OpenInNew />,
+      label: "v2018 edition",
+      action: () =>
+        window.open("https://v2018.mesbg-list-builder.com/", "_blank").focus(),
+      active: false,
     },
   ];
 
