@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.0": {
     "removed": ["Removed the Work in Progress banner from the my rosters page"]
   },
   "0.3": {
