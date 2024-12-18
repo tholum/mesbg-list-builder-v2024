@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "0.2": {
     "added": [
       "Added missing keywords for Heroic Channelling, Combat, March, Move & Shoot",
       "Added toolbar with roster overview data when screensize dictates that the roster info collapses",
