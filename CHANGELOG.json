@@ -1,12 +1,11 @@
 {
   "main": {
-    "added": [
-      "The Men of the West army list now shows a warning when the roster includes cavalry and eagles"
-    ]
+    "removed": ["Removed the Work in Progress banner from the my rosters page"]
   },
   "0.3": {
     "added": [
-      "Add the armies listed in the 'The Hobbit' army book to the selectable armies"
+      "Add the armies listed in the 'The Hobbit' army book to the selectable armies",
+      "The Men of the West army list now shows a warning when the roster includes cavalry and eagles"
     ]
   },
   "0.2": {

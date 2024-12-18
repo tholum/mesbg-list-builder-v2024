@@ -5,8 +5,6 @@ import {
   Droppable,
   DropResult,
 } from "@hello-pangea/dnd";
-import { AlertTitle } from "@mui/material";
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
@@ -101,31 +99,6 @@ export const Rosters: FunctionComponent = () => {
           Note: You can create roster groups by simply dragging and dropping one
           roster onto another, or onto an existing group.
         </Typography>
-
-        <Alert severity="warning" sx={{ maxWidth: "98ch", my: 2, ml: 0.5 }}>
-          <AlertTitle>
-            <Typography sx={{ maxWidth: "80ch" }}>
-              <strong>
-                You are currently looking at a &quot;Work in Progress&quot;
-                build.
-              </strong>
-            </Typography>
-          </AlertTitle>
-          <Stack sx={{ maxWidth: "80ch" }} gap={2}>
-            <Typography>
-              The MESBG List Builder for the new &apos;24 edition of MESBG is
-              still in a work in progress state. This means that there are still
-              missing profiles and there can be errors.
-            </Typography>
-            <Typography>
-              Feel free to help us test and report any errors you see or find to
-              us via:{" "}
-              <a href="mailto:support@mesbg-list-builder.com?subject=MESBG List Builder (v2024) - Bug/Correction">
-                support@mesbg-list-builder.com
-              </a>
-            </Typography>
-          </Stack>
-        </Alert>
 
         <Stack direction="row" gap={2} sx={{ my: 0 }} flexWrap="wrap" flex={1}>
           <DragDropContext onDragEnd={onDragEnd} onDragStart={onDragStart}>
