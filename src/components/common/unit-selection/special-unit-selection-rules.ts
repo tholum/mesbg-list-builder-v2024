@@ -6,7 +6,7 @@ export function handleGarrisonOfIthilien(unit: Unit, selectedUnits: string[]) {
         "[garrison-of-ithilien] samwise-gamgee",
         "[garrison-of-ithilien] smeagol",
       ].includes(unit.model_id) ||
-        !selectedUnits.includes("[garrison-of-ithilien] frodo-baggins")
+        selectedUnits.includes("[garrison-of-ithilien] frodo-baggins")
     : true;
 }
 
