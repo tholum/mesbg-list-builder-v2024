@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.2": {
     "added": [
       "Allow draging and dropping of entire warband so you can reorder them after you build your roster"
     ],
