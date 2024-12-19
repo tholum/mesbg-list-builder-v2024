@@ -7503,7 +7503,7 @@
     "army_list": "Lurtz's Scouts",
     "profile_origin": "Isengard",
     "name": "Uruk-Hai Scout Captain",
-    "unit_type": "Minor Hero",
+    "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
     "MWFW": [
@@ -7512,7 +7512,7 @@
         "2:1:1:2"
       ]
     ],
-    "warband_size": 6,
+    "warband_size": 12,
     "options": []
   },
   "[lurtz's-scouts] uruk-hai-drummer": {
