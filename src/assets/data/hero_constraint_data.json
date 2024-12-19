@@ -3328,9 +3328,7 @@
   },
   "[usurpers-of-edoras] lord-thorne-of-the-wold": {
     "valid_warband_units": [
-      "[usurpers-of-edoras] hill-tribesman",
-      "[usurpers-of-edoras] rohirrim-traitor",
-      "[usurpers-of-edoras] crebain"
+      "[usurpers-of-edoras] rohirrim-traitor"
     ],
     "extra_profiles": []
   },
