@@ -8,6 +8,8 @@ export const SpecialRulesSearch = () => {
   );
   const usedSpecialRules = useUsedSpecialRules();
 
+  console.log(usedSpecialRules);
+
   return (
     <KeywordSearch keywords={allSpecialRules} usedKeywords={usedSpecialRules} />
   );

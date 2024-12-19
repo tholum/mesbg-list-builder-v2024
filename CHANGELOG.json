@@ -7,7 +7,8 @@
     "bugfixes": [
       "Fixed issue with duplicating warbands causing an error.",
       "Fixed an issue where Uruk-hai Scout options were mandatory in Muster of Isengard.",
-      "Fixed an issue where the downloaded profile cards would not open."
+      "Fixed an issue where the downloaded profile cards would not open.",
+      "Fixed special rules not being highlighted if they have a (x) specification like Hatred."
     ]
   },
   "1.1": {
