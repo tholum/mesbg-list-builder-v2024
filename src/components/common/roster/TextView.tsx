@@ -109,7 +109,7 @@ export const RosterTextView = forwardRef<
           .join("  ");
 
     return `
-    | Points: ${points} | Units: ${units} | Break Point: ${Math.round((break_point ?? 0.5) * units * 100) / 100} | Quartered: ${Math.round(0.25 * units * 100) / 100} | 
+    | Points: ${points} | Units: ${units} | Break Point: ${Math.round((break_point ?? 0.49) * units * 100) / 100} | Quartered: ${Math.round(0.25 * units * 100) / 100} | 
     | Bows: ${bows} | Throwing weapons: ${throwingWeapons} | Might/Will/Fate: ${might} / ${will} / ${fate} |
     ${unitSections}${armyBonus()}${admission()}
     `;

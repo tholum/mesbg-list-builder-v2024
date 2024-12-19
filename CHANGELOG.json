@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Change the breakpoint calculation so that it reflects 'more than 50%' rather than just 50%"
+    ]
+  },
   "1.2": {
     "added": [
       "Allow draging and dropping of entire warband so you can reorder them after you build your roster"

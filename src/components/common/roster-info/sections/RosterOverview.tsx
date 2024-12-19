@@ -20,7 +20,7 @@ export const RosterOverview: FunctionComponent<RosterInformationProps> = ({
   const metadata = getAdjustedMetaData(roster);
 
   const breakPoint = Math.floor(
-    metadata.units * (1 - (armyListMetadata.break_point ?? 0.5)),
+    metadata.units * (1 - (armyListMetadata.break_point ?? 0.49)),
   );
   const quarter = Math.floor(metadata.units * 0.25);
 
@@ -40,11 +40,16 @@ export const RosterOverview: FunctionComponent<RosterInformationProps> = ({
     },
     {
       label: "Break point",
-      value: (
-        <>
-          {metadata.units - breakPoint} dead / {breakPoint} alive
-        </>
-      ),
+      value:
+        metadata.units - breakPoint === breakPoint ? (
+          <>
+            {metadata.units - breakPoint + 1} dead / {breakPoint - 1} alive
+          </>
+        ) : (
+          <>
+            {metadata.units - breakPoint} dead / {breakPoint} alive
+          </>
+        ),
     },
     {
       label: "Quartered",

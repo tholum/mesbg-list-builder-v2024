@@ -103,7 +103,7 @@ export const ArmyComposition = () => {
       >
         <Typography>
           Break Point:{" "}
-          <b>{Math.floor((break_point ?? 0.5) * units)} Remaining</b>
+          <b>{Math.floor((break_point ?? 0.49) * units)} Remaining</b>
         </Typography>
         <Typography>
           Quartered: <b>{Math.floor(0.25 * units)} Remaining</b>
