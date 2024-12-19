@@ -33,7 +33,7 @@ export const RosterTextView = forwardRef<
 
     const options = hero.options
       .map((option) => {
-        if (option.quantity === 0) return null;
+        if (!option.quantity || option.quantity === 0) return null;
         return `    ~ ${option.max > 1 ? option.quantity + " " + option.name : option.name}  `;
       })
       .filter((o) => !!o);
@@ -49,7 +49,7 @@ export const RosterTextView = forwardRef<
         const name = `  ${quantity}${unit.name} (${unit.pointsTotal} points)`;
         const options = unit.options
           .map((option) => {
-            if (option.quantity === 0) return null;
+            if (!option.quantity || option.quantity === 0) return null;
             return `    ~ ${option.max > 1 ? option.quantity + " " + option.name : option.name}  `;
           })
           .filter((o) => !!o);

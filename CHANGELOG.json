@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Allow draging and dropping of entire warband so you can reorder them after you build your roster"
+    ],
     "changed": [
       "Updated the items in the roadmap to reflect what we have done and will do next",
       "Added a suffix to the image resource urls which will force a reload upon version updates"
@@ -10,7 +13,8 @@
       "Fixed an issue where the downloaded profile cards would not open.",
       "Fixed special rules not being highlighted if they have a (x) specification like Hatred.",
       "Fixed issue in Iron Hills where captains and ballistas could only be added once.",
-      "Fixed a typo that resulted in an incorrect bow limit calculation for Rivendell"
+      "Fixed a typo that resulted in an incorrect bow limit calculation for Rivendell",
+      "Fix option being listed on the text view even if its not selected"
     ]
   },
   "1.1": {
