@@ -6,7 +6,8 @@
     "bugfixes": [
       "Fix the incorrect point display for The Three Trolls on the Mobile Toolbar, PDF and roster sharing tables",
       "Hide army list option for the The Three Trolls in the PDF if they are not selected",
-      "Update the MWF trackers and badge if the Full Bellies option is selected for The Three Trolls"
+      "Update the MWF trackers and badge if the Full Bellies option is selected for The Three Trolls",
+      "Warriors of Dale option for Spear has been corrected to Shield, for 1 point."
     ]
   },
   "1.0": {
