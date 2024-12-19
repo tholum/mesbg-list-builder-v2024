@@ -3,6 +3,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import ShareIcon from "@mui/icons-material/Share";
 import {
   Badge,
+  Breadcrumbs,
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
@@ -12,7 +13,7 @@ import Container from "@mui/material/Container";
 import Drawer from "@mui/material/Drawer";
 import Typography from "@mui/material/Typography";
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { RosterInformation } from "../../components/common/roster-info/RosterInformation.tsx";
 import { WarbandList } from "../../components/common/warbands/WarbandList.tsx";
 import { ModalTypes } from "../../components/modal/modals.tsx";
@@ -143,6 +144,30 @@ export const Roster = () => {
             width: screen.isDesktop ? `calc(100% - ${drawerWidth}ch)` : "100%",
           }}
         >
+          <Breadcrumbs sx={{ mb: 1 }}>
+            <Link
+              to="/rosters"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              My Rosters
+            </Link>
+            {roster.group && (
+              <Link
+                to={`/rosters/${roster.group}`}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                {roster.group}
+              </Link>
+            )}
+            <Typography sx={{ color: "text.secondary" }}>
+              {roster.name}
+            </Typography>
+          </Breadcrumbs>
+
           <WarbandList warbands={roster.warbands} />
         </Box>
         <Drawer
