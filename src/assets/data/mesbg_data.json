@@ -13896,7 +13896,6 @@
     "name": "Dwarf King",
     "unit_type": "Hero of Valour",
     "base_points": 85,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
