@@ -3,7 +3,8 @@
     "changed": [
       "Updated the items in the roadmap to reflect what we have done and will do next",
       "Added a suffix to the image resource urls which will force a reload upon version updates"
-    ]
+    ],
+    "bugfixes": ["Fixed issue with duplicating warbands causing an error."]
   },
   "1.1": {
     "added": [

@@ -112,6 +112,7 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
   const screen = useScreenSize();
 
   const valid =
+    followerOf === undefined ||
     followerOf === null ||
     heroConstraintData[followerOf].valid_warband_units.includes(unit.model_id);
 
