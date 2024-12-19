@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.1": {
     "added": [
       "Added in red overlay on follower cards when a hero is reselected which would make the follower selection invalid",
       "Readded the drag and drop utilities in roster builder allowing you to sort your models and move them between warbands"
