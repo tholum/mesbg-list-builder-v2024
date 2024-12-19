@@ -132,6 +132,18 @@ export const About = () => (
         <Stack component="ul" sx={{ listStyle: "none", pl: 0 }} gap={1}>
           <Box component="li">
             <Typography>
+              <strong>Restoring old goods;</strong> With the transition to new
+              edition of MESBG we redeveloped quite a lot of the building blocks
+              of the list builder. This gave us a lot of freedom to do
+              improvements as well as allowed us to develop at a higher
+              velocity. There are some features that are currently not yet
+              reimplemented. This includes the digital MWFW trackers (Gamemode)
+              and the match history breakdown. Our first focus is bringing back
+              old features.
+            </Typography>
+          </Box>
+          <Box component="li">
+            <Typography>
               <strong>Accounts;</strong> Allowing users to login using their
               favorite authentication provider, like Facebook, Google and maybe
               others platform. Or let them create an custom email/password
@@ -143,11 +155,14 @@ export const About = () => (
           </Box>
           <Box component="li">
             <Typography>
-              <strong>Customizations;</strong> We know that every user is
-              different and some of us want to have something slightly adjusted.
-              Making this possible though the means of user preferences in the{" "}
-              <u>App Settings</u> would (hopefully) create the perfect user
-              experience for each and everyone.
+              <strong>Sharing rosters;</strong> The MESBG List Builder providers
+              multiple ways of exporting your roster and sharing it with the
+              world. One way to share rosters is currently impossible: Sharing
+              the a link to the actual roster. Once we set up our database for
+              creating and managing rosters based on an authenticated account we
+              can provide more fancy stuff like that. Such as creating a link to
+              a readonly roster and allowing users to import it into their own
+              accounts.
             </Typography>
           </Box>
         </Stack>

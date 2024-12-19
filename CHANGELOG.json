@@ -1,5 +1,10 @@
 {
-  "main": {},
+  "main": {
+    "changed": [
+      "Updated the items in the roadmap to reflect what we have done and will do next",
+      "Added a suffix to the image resource urls which will force a reload upon version updates"
+    ]
+  },
   "1.1": {
     "added": [
       "Added in red overlay on follower cards when a hero is reselected which would make the follower selection invalid",
