@@ -4,7 +4,10 @@
       "Updated the items in the roadmap to reflect what we have done and will do next",
       "Added a suffix to the image resource urls which will force a reload upon version updates"
     ],
-    "bugfixes": ["Fixed issue with duplicating warbands causing an error."]
+    "bugfixes": [
+      "Fixed issue with duplicating warbands causing an error.",
+      "Fixed an issue where Uruk-hai Scout options were mandatory in Muster of Isengard."
+    ]
   },
   "1.1": {
     "added": [
