@@ -13,7 +13,7 @@ export const UnitProfileCard: FunctionComponent<
         army +
         "/cards/" +
         profile +
-        ".jpg"
+        `.jpg?version=${BUILD_VERSION}`
       }
       fallbackImageSource={fallbackCard}
       className="profile_card"
