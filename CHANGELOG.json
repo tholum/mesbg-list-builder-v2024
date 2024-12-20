@@ -1,7 +1,10 @@
 {
   "main": {
     "bugfixes": [
-      "Change the breakpoint calculation so that it reflects 'more than 50%' rather than just 50%"
+      "Change the breakpoint calculation so that it reflects 'more than 50%' rather than just 50%",
+      "Fixed Lindir's missing magical powers from his profile.",
+      "Fixed Rivendell Captains who could only be added once to your Rivendell roster",
+      "Corrected a typo in Arwen's full name on her profile card."
     ]
   },
   "1.2": {
