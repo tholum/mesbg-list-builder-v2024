@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.3": {
     "bugfixes": [
       "Change the breakpoint calculation so that it reflects 'more than 50%' rather than just 50%",
       "Fixed Lindir's missing magical powers from his profile.",
