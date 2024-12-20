@@ -9768,7 +9768,18 @@
           "description": "If Lindir is within 6\" of Elrond, then Elrond may spend a single point of Will each turn for free. If he does not use this point by the end of the turn, then it is lost."
         }
       ],
-      "magic_powers": [],
+      "magic_powers": [
+        {
+          "name": "Foil Magic",
+          "range": "6\"",
+          "cast": "4+"
+        },
+        {
+          "name": "Renew",
+          "range": "6\"",
+          "cast": "4+"
+        }
+      ],
       "heroic_actions": [
         "Heroic Channelling"
       ],

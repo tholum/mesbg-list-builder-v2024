@@ -11660,7 +11660,6 @@
     "name": "Rivendell Captain",
     "unit_type": "Hero of Fortitude",
     "base_points": 70,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
