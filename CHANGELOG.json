@@ -5,7 +5,8 @@
       "Fixed Lindir's missing magical powers from his profile.",
       "Fixed Rivendell Captains who could only be added once to your Rivendell roster",
       "Corrected a typo in Arwen's full name on her profile card.",
-      "Fixed an issue for options that consist of multiple types, such as mount & throwing weapon for Horse and throwing spears"
+      "Fixed an issue for options that consist of multiple types, such as mount & throwing weapon for Horse and throwing spears",
+      "Fixed an issue with Defenders of Helm's Deep where Aldor and Haleth couldn't be included in other warbands."
     ],
     "added": [
       "All armies from the Armies of Arnor and Angmar supplement PDF have been added to the builder."
