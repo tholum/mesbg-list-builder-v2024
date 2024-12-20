@@ -51,7 +51,13 @@ export const useCalculator = () => {
     if (!unit.bow_limit) return 0;
 
     const hasBowOption = unit.options.find(
-      (option) => option.type === "bow" && option.quantity > 0,
+      (option) =>
+        option.type &&
+        option.type
+          .split(",")
+          .map((o) => o.trim())
+          .includes("bow") &&
+        option.quantity > 0,
     );
 
     if (unit.default_bow || hasBowOption)
@@ -73,7 +79,13 @@ export const useCalculator = () => {
     if (unit.unit_type.includes("Hero")) return 0;
 
     const hasThrowingWeapon = unit.options.find(
-      (option) => option.type === "throw" && option.quantity > 0,
+      (option) =>
+        option.type &&
+        option.type
+          .split(",")
+          .map((o) => o.trim())
+          .includes("throw") &&
+        option.quantity > 0,
     );
 
     if (unit.default_throw || hasThrowingWeapon)
