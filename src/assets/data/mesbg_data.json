@@ -15764,7 +15764,16 @@
         "id": "OPT0390",
         "name": "Upgrade to King's Guard",
         "points": 1,
-        "type": "special_warband_upgrade"
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[the-last-alliance] gil-galad"
+            ]
+          }
+        ]
       }
     ]
   },
