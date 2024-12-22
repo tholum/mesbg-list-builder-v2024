@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.4": {
     "added": [
       "Rosters can now be renamed and deleted from the My Rosters page.",
       "Roster groups can now be renamed, disbanded or deleted, either from the My Rosters page or within the roster group.",
