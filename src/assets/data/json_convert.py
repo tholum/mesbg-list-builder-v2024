@@ -99,8 +99,9 @@ df_faction = pd.read_excel("mesbg_data.xlsx", sheet_name="army_lists")
 df_faction.index = df_faction.name
 df_faction['additional_rules'] = df_faction['additional_rules'].apply(eval)
 df_faction['special_rules'] = df_faction['special_rules'].apply(eval)
+df_faction['rule_highlights'] = df_faction['rule_highlights'].apply(eval)
 df_faction['break_point'] = df_faction['break_point'].fillna("")
-df_faction = df_faction[['additional_rules', 'special_rules', 'bow_limit', 'throw_limit', 'break_point']]
+df_faction = df_faction[['additional_rules', 'special_rules', 'bow_limit', 'throw_limit', 'break_point', 'rule_highlights']]
 json_dict = df_faction.to_dict(orient='index')
 json_dict = {f:{k:v for k,v in json_dict[f].items() if v != ""} for f in json_dict.keys()}
 

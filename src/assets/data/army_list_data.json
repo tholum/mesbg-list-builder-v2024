@@ -16,7 +16,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Muster of Isengard": {
     "additional_rules": [
@@ -40,7 +41,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "break_point": 0.66
+    "break_point": 0.66,
+    "rule_highlights": []
   },
   "Wraiths on Wings": {
     "additional_rules": [
@@ -59,7 +61,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Rivendell": {
     "additional_rules": [
@@ -82,7 +85,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Defenders of Helm's Deep": {
     "additional_rules": [
@@ -108,7 +112,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Harad": {
     "additional_rules": [
@@ -131,7 +136,8 @@
       }
     ],
     "bow_limit": 0.5,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Army of Gothmog": {
     "additional_rules": [
@@ -154,7 +160,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Beseigers of the Hornburg": {
     "additional_rules": [
@@ -177,7 +184,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Numenor": {
     "additional_rules": [],
@@ -196,7 +204,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "General Hunter",
+      "Resistant to Magic"
+    ]
   },
   "Lurtz's Scouts": {
     "additional_rules": [
@@ -220,7 +232,11 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "break_point": 0.66
+    "break_point": 0.66,
+    "rule_highlights": [
+      "General Hunter",
+      "Woodland Creature"
+    ]
   },
   "Breaking of the Fellowship": {
     "additional_rules": [
@@ -253,7 +269,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Woodland Creature"
+    ]
   },
   "Road to Helm's Deep": {
     "additional_rules": [
@@ -279,7 +299,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Lindon": {
     "additional_rules": [
@@ -298,7 +319,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Army of Edoras": {
     "additional_rules": [
@@ -317,7 +341,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Wolves of Isengard": {
     "additional_rules": [
@@ -347,7 +372,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.5
+    "throw_limit": 0.5,
+    "rule_highlights": []
   },
   "Minas Morgul": {
     "additional_rules": [
@@ -370,7 +396,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Blades of the Dead"
+    ]
   },
   "Corsair Fleet": {
     "additional_rules": [
@@ -393,7 +422,12 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Backstabbers",
+      "Fearless",
+      "Sharpshooter"
+    ]
   },
   "Usurpers of Edoras": {
     "additional_rules": [
@@ -415,7 +449,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Barad-dur": {
     "additional_rules": [
@@ -438,7 +473,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Depths of Moria": {
     "additional_rules": [],
@@ -461,7 +497,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Set Ablaze"
+    ]
   },
   "The Black Gate": {
     "additional_rules": [
@@ -484,7 +523,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless"
+    ]
   },
   "Legions of Mordor": {
     "additional_rules": [
@@ -505,7 +547,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The Fellowship": {
     "additional_rules": [
@@ -528,7 +571,12 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Mountain Dweller",
+      "Woodland Creature"
+    ]
   },
   "Road to Rivendell": {
     "additional_rules": [
@@ -558,7 +606,12 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Resistant to Magic",
+      "Woodland Creature"
+    ]
   },
   "Ride Out": {
     "additional_rules": [
@@ -584,7 +637,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Terror"
+    ]
   },
   "Ugluk's Scouts": {
     "additional_rules": [
@@ -613,7 +670,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Woodland Creature"
+    ]
   },
   "The Black Riders": {
     "additional_rules": [
@@ -643,7 +703,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Assault Upon Helm's Deep": {
     "additional_rules": [
@@ -667,7 +728,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "break_point": 0.66
+    "break_point": 0.66,
+    "rule_highlights": []
   },
   "Army of the White Hand": {
     "additional_rules": [],
@@ -686,7 +748,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearful"
+    ]
   },
   "Cirith Ungol": {
     "additional_rules": [
@@ -715,7 +780,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The Shire": {
     "additional_rules": [
@@ -742,7 +808,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The Last Alliance": {
     "additional_rules": [
@@ -771,7 +838,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Riders of Eomer": {
     "additional_rules": [
@@ -797,7 +865,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Riders of Theoden": {
     "additional_rules": [
@@ -823,7 +892,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Defenders of the Hornburg": {
     "additional_rules": [
@@ -846,7 +916,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Minas Tirith": {
     "additional_rules": [
@@ -869,7 +940,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless"
+    ]
   },
   "Garrison of Ithilien": {
     "additional_rules": [
@@ -902,7 +976,11 @@
       }
     ],
     "bow_limit": 0.5,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Mountain Dweller",
+      "Woodland Creature"
+    ]
   },
   "Reclamation of Osgiliath": {
     "additional_rules": [
@@ -925,7 +1003,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Mountain Dweller"
+    ]
   },
   "Atop the Walls": {
     "additional_rules": [
@@ -948,7 +1029,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Return of the King": {
     "additional_rules": [
@@ -971,7 +1053,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Defenders of the Pelennor": {
     "additional_rules": [
@@ -992,7 +1075,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Men of the West": {
     "additional_rules": [
@@ -1028,7 +1112,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Lothlorien": {
     "additional_rules": [],
@@ -1043,7 +1128,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Fangorn": {
     "additional_rules": [
@@ -1066,7 +1154,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Mighty Blow"
+    ]
   },
   "The Eagles": {
     "additional_rules": [
@@ -1085,7 +1176,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Realms of Men": {
     "additional_rules": [
@@ -1107,7 +1199,8 @@
     ],
     "special_rules": [],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Army of Gundabad": {
     "additional_rules": [],
@@ -1130,7 +1223,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Pits of Dol Guldur": {
     "additional_rules": [
@@ -1157,7 +1251,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Azog's Hunters": {
     "additional_rules": [],
@@ -1180,7 +1277,11 @@
       }
     ],
     "bow_limit": 0.5,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Mountain Dweller",
+      "Woodland Creature"
+    ]
   },
   "Rise of the Necromancer": {
     "additional_rules": [
@@ -1199,7 +1300,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Goblin-town": {
     "additional_rules": [
@@ -1226,7 +1330,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Terror"
+    ]
   },
   "The Three Trolls": {
     "additional_rules": [
@@ -1308,7 +1415,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Cave Dweller",
+      "Resistant to Magic"
+    ]
   },
   "Desolator of the North": {
     "additional_rules": [
@@ -1331,7 +1442,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Thorin's Company": {
     "additional_rules": [
@@ -1363,7 +1475,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Army of Thror": {
     "additional_rules": [],
@@ -1378,7 +1491,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The Iron Hills": {
     "additional_rules": [
@@ -1405,7 +1519,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Mountain Dweller"
+    ]
   },
   "Erebor Reclaimed": {
     "additional_rules": [],
@@ -1424,7 +1541,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Army of Lake-town": {
     "additional_rules": [
@@ -1454,7 +1572,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Survivors of Lake-town": {
     "additional_rules": [
@@ -1481,7 +1600,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Mighty Hero"
+    ]
   },
   "Garrison of Dale": {
     "additional_rules": [
@@ -1508,7 +1631,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless"
+    ]
   },
   "Erebor & Dale": {
     "additional_rules": [
@@ -1540,7 +1666,8 @@
       }
     ],
     "bow_limit": 0.5,
-    "throw_limit": 0.5
+    "throw_limit": 0.5,
+    "rule_highlights": []
   },
   "Halls of Thranduil": {
     "additional_rules": [],
@@ -1555,7 +1682,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Rangers of Mirkwood": {
     "additional_rules": [
@@ -1595,7 +1723,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The Battle of Five Armies": {
     "additional_rules": [
@@ -1622,7 +1751,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Assault on Ravenhill": {
     "additional_rules": [
@@ -1656,7 +1786,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Radagast's Alliance": {
     "additional_rules": [
@@ -1678,7 +1809,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "The White Council": {
     "additional_rules": [
@@ -1708,7 +1840,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Battle of Fornost": {
     "additional_rules": [
@@ -1743,7 +1878,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Resistant to Magic"
+    ]
   },
   "Arathorn's Stand": {
     "additional_rules": [
@@ -1766,7 +1904,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Arnor": {
     "additional_rules": [
@@ -1792,7 +1931,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Host of the Witch-king": {
     "additional_rules": [
@@ -1818,7 +1958,10 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Terror"
+    ]
   },
   "Shadows of Angmar": {
     "additional_rules": [],
@@ -1837,7 +1980,11 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Stalk Unseen",
+      "Terror"
+    ]
   },
   "Buhrdur's Horde": {
     "additional_rules": [
@@ -1860,7 +2007,12 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": [
+      "Fearless",
+      "Mountain Dweller",
+      "Woodland Creature"
+    ]
   },
   "Wolf Pack of Angmar": {
     "additional_rules": [
@@ -1890,7 +2042,8 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   },
   "Army of Carn Dum": {
     "additional_rules": [
@@ -1913,6 +2066,7 @@
       }
     ],
     "bow_limit": 0.33,
-    "throw_limit": 0.33
+    "throw_limit": 0.33,
+    "rule_highlights": []
   }
 }
