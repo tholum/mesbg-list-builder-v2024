@@ -1,11 +1,20 @@
 {
   "main": {
+    "added": [
+      "Rosters can now be renamed and deleted from the My Rosters page.",
+      "Roster groups can now be renamed, disbanded or deleted, either from the My Rosters page or within the roster group.",
+      "The unit counter on a warband now indicates you have gone over the limit by recolouring the counter",
+      "Added a direct link to the FAQs and Errata in the navigation"
+    ],
     "changed": [
       "Navigating to a PDF printable link for a roster that doesn't exist will now inform you of such and let you go back to the My Rosters page."
     ],
     "bugfixes": [
+      "Corrected profile data errors for Grima Wormtongue, Uruk-hai Scout, Uruk-hai Captain, and Nazgul of Dol Guldur.",
       "Handle the bow and throw limits for Erebor & Dale using their army special rules",
-      "Fixed typos on the profiles for Faramir and Iron Hills Ballista"
+      "Fixed typos on the profiles for Faramir and Iron Hills Ballista",
+      "Warbands now get renumbered after deleting a whole warband making sure there is no gaps in numbers",
+      "Special rules coming from the army bonus now get properly highlighted and added to the printable PDF"
     ]
   },
   "1.3": {
