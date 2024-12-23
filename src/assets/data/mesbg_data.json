@@ -1451,7 +1451,23 @@
     "siege_crew": 0,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0872",
+        "name": "Upgrade to Guardians of the King",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[army-of-thror] thror-king-under-the-mountain"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "[army-of-thror] erebor-dwarf-warrior": {
     "model_id": "[army-of-thror] erebor-dwarf-warrior",
@@ -5741,7 +5757,23 @@
     "siege_crew": 0,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0873",
+        "name": "Upgrade to Guardians of the King",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[erebor-&-dale] thror-king-under-the-mountain"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "[erebor-&-dale] erebor-dwarf-warrior": {
     "model_id": "[erebor-&-dale] erebor-dwarf-warrior",

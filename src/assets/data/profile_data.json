@@ -4057,6 +4057,9 @@
         "hand weapon",
         "Arkenstone",
         "Ring of Durin"
+      ],
+      "additional_text": [
+        "Any Grim Hammer Warriors upgraded to Guardians of the King in Thror's warband will have a Strength value of 4."
       ]
     },
     "Young Balin the Dwarf": {

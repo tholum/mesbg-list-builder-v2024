@@ -112,7 +112,7 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
           ))}
         </Box>
       )}
-      {!multiple && (
+      {!multiple && wargearOptions.length > 0 && (
         <FormHelperText>
           You can only select a single wargear option
         </FormHelperText>
