@@ -2756,6 +2756,42 @@
       }
     ]
   },
+  "[barad-dur] mordor-troll-chieftain": {
+    "model_id": "[barad-dur] mordor-troll-chieftain",
+    "army_type": "Evil",
+    "army_list": "Barad-dur",
+    "profile_origin": "Mordor",
+    "name": "Mordor Troll Chieftain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 150,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:4"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[barad-dur] mordor-orc-captain": {
+    "model_id": "[barad-dur] mordor-orc-captain",
+    "army_type": "Evil",
+    "army_list": "Barad-dur",
+    "profile_origin": "Mordor",
+    "name": "Mordor Orc Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 45,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[barad-dur] ringwraith": {
     "model_id": "[barad-dur] ringwraith",
     "army_type": "Evil",
@@ -2793,42 +2829,6 @@
         "points": 10
       }
     ]
-  },
-  "[barad-dur] mordor-troll-chieftain": {
-    "model_id": "[barad-dur] mordor-troll-chieftain",
-    "army_type": "Evil",
-    "army_list": "Barad-dur",
-    "profile_origin": "Mordor",
-    "name": "Mordor Troll Chieftain",
-    "unit_type": "Minor Hero",
-    "base_points": 150,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:1:1:4"
-      ]
-    ],
-    "warband_size": 6,
-    "options": []
-  },
-  "[barad-dur] mordor-orc-captain": {
-    "model_id": "[barad-dur] mordor-orc-captain",
-    "army_type": "Evil",
-    "army_list": "Barad-dur",
-    "profile_origin": "Mordor",
-    "name": "Mordor Orc Captain",
-    "unit_type": "Minor Hero",
-    "base_points": 45,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:1:1:2"
-      ]
-    ],
-    "warband_size": 6,
-    "options": []
   },
   "[barad-dur] mordor-orc-drummer": {
     "model_id": "[barad-dur] mordor-orc-drummer",
@@ -14938,6 +14938,53 @@
     "warband_size": 12,
     "options": []
   },
+  "[the-black-gate] morannon-orc-captain": {
+    "model_id": "[the-black-gate] morannon-orc-captain",
+    "army_type": "Evil",
+    "army_list": "The Black Gate",
+    "profile_origin": "Mordor",
+    "name": "Morannon Orc Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 55,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT0260",
+        "name": "Shield",
+        "points": 5
+      },
+      {
+        "id": "OPT0261",
+        "name": "Two-handed weapon",
+        "points": 5
+      }
+    ]
+  },
+  "[the-black-gate] mordor-orc-taskmaster": {
+    "model_id": "[the-black-gate] mordor-orc-taskmaster",
+    "army_type": "Evil",
+    "army_list": "The Black Gate",
+    "profile_origin": "Mordor",
+    "name": "Mordor Orc Taskmaster",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 45,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "1:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[the-black-gate] ringwraith": {
     "model_id": "[the-black-gate] ringwraith",
     "army_type": "Evil",
@@ -14977,53 +15024,6 @@
         "points": 10
       }
     ]
-  },
-  "[the-black-gate] morannon-orc-captain": {
-    "model_id": "[the-black-gate] morannon-orc-captain",
-    "army_type": "Evil",
-    "army_list": "The Black Gate",
-    "profile_origin": "Mordor",
-    "name": "Morannon Orc Captain",
-    "unit_type": "Minor Hero",
-    "base_points": 55,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:1:1:2"
-      ]
-    ],
-    "warband_size": 6,
-    "options": [
-      {
-        "id": "OPT0260",
-        "name": "Shield",
-        "points": 5
-      },
-      {
-        "id": "OPT0261",
-        "name": "Two-handed weapon",
-        "points": 5
-      }
-    ]
-  },
-  "[the-black-gate] mordor-orc-taskmaster": {
-    "model_id": "[the-black-gate] mordor-orc-taskmaster",
-    "army_type": "Evil",
-    "army_list": "The Black Gate",
-    "profile_origin": "Mordor",
-    "name": "Mordor Orc Taskmaster",
-    "unit_type": "Minor Hero",
-    "base_points": 45,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "1:1:1:2"
-      ]
-    ],
-    "warband_size": 6,
-    "options": []
   },
   "[the-black-gate] mordor-troll": {
     "model_id": "[the-black-gate] mordor-troll",
