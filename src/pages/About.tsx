@@ -171,8 +171,8 @@ export const About = () => (
               the many different MESBG communities all around the world. With
               accessibility being one of our top priorities, we would also like
               to make it linguistically available for everyone. Staring with
-              Spanish as our first focus, we'd like to open our gates for those
-              willing to help translate the many rules and profiles.
+              Spanish as our first focus, we&apos;d like to open our gates for
+              those willing to help translate the many rules and profiles.
             </Typography>
           </Box>
         </Stack>
