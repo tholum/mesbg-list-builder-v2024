@@ -8040,7 +8040,7 @@
     "name": "War Mumak of Harad",
     "unit_type": "Hero of Fortitude",
     "base_points": 250,
-    "siege_crew": 0,
+    "siege_crew": 1,
     "MWFW": [
       [
         "Haradrim Commander",
