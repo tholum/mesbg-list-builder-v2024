@@ -11362,7 +11362,7 @@
         {
           "name": "Trample",
           "type": "Active",
-          "description": "When the Royal War Mumak Tramples, it will inflict 4 Strength 9 Impact Hits."
+          "description": "When a Mumak Tramples, it will inflict 3 Strength 9 Impact Hits."
         },
         {
           "name": "Awesome Presence",
