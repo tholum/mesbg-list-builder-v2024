@@ -28,7 +28,7 @@ export const RosterTextView = forwardRef<
     if (!isSelectedUnit(hero)) return "";
 
     const name = isLeader
-      ? `  ${hero.name} *LEADER* (${hero.pointsTotal} points)`
+      ? `  ${hero.name} *GENERAL* (${hero.pointsTotal} points)`
       : `  ${hero.name} (${hero.pointsTotal} points)`;
 
     const options = hero.options

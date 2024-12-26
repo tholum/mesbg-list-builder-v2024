@@ -50,7 +50,7 @@ const UnitRow = ({
         {unit.name}{" "}
         {leader && (
           <Typography component="span" variant="body2">
-            - <GiQueenCrown /> Leader
+            - <GiQueenCrown /> General
           </Typography>
         )}
       </TableCell>
