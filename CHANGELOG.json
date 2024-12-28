@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.5": {
     "added": [
       "Reimplemented and enabled the fan favorite 'Game Mode' feature.",
       "Also updated and re-enabled the Match History screen."
