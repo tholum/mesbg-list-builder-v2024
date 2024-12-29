@@ -20,7 +20,9 @@ export const RosterOverview: FunctionComponent<RosterInformationProps> = ({
   const metadata = getAdjustedMetaData(roster);
 
   const breakPointDead =
-    Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1;
+    metadata.units > 0
+      ? Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1
+      : 0;
   const quarter = Math.floor(metadata.units * 0.25);
 
   const bowLimit = Math.ceil(metadata.bowLimit * armyListMetadata.bow_limit);

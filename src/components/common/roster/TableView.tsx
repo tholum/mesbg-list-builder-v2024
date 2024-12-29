@@ -200,9 +200,9 @@ export const RosterTableView = forwardRef<
           },
           {
             "Break point":
-              units -
-              (Math.floor(units * (break_point ?? 0.5)) + 1) +
-              " Remaining",
+              (units > 0
+                ? units - (Math.floor(units * (break_point ?? 0.5)) + 1)
+                : 0) + " Remaining",
             Quartered: Math.floor(0.25 * units) + " Remaining",
             "Might / Will / Fate": `${might} / ${will} / ${fate}`,
           },

@@ -57,7 +57,9 @@ export const GamemodeToolbar = () => {
   const armyListMetadata = armyListData[roster.armyList];
   const metadata = getAdjustedMetaData(roster);
   const breakPointDead =
-    Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1;
+    metadata.units > 0
+      ? Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1
+      : 0;
   const quarter = metadata.units - Math.floor(metadata.units * 0.25);
   const casualties = game.casualties + game.heroCasualties;
 

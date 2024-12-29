@@ -32,7 +32,7 @@ function heroAdditionalUnitWarbandCount(warband: Warband) {
     const passenger = warband.hero.options.find(
       (option) => option.type === "passenger",
     );
-    if (passenger) return passenger.passengers * passenger.quantity;
+    if (passenger) return passenger.passengers * (passenger.quantity ?? 0);
   }
 
   if (

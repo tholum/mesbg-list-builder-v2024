@@ -9,7 +9,6 @@ export interface MwfwUpdater {
 
 export const useMwfMutations = () => {
   function hasSpecialMwfRules(unit: SelectedUnit): boolean {
-    console.log(unit);
     return handledModels.includes(unit.model_id);
   }
 
