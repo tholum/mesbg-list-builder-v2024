@@ -56,9 +56,8 @@ export const GamemodeToolbar = () => {
 
   const armyListMetadata = armyListData[roster.armyList];
   const metadata = getAdjustedMetaData(roster);
-  const breakPoint =
-    metadata.units -
-    Math.floor(metadata.units * (1 - (armyListMetadata.break_point ?? 0.49)));
+  const breakPointDead =
+    Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1;
   const quarter = metadata.units - Math.floor(metadata.units * 0.25);
   const casualties = game.casualties + game.heroCasualties;
 
@@ -84,11 +83,13 @@ export const GamemodeToolbar = () => {
         </Button>
       </Stack>
       <Stack direction="row" justifyContent="space-around" sx={{ m: 2 }}>
-        <Typography color={breakPoint - casualties <= 0 ? "error" : "inherit"}>
+        <Typography
+          color={breakPointDead - casualties <= 0 ? "error" : "inherit"}
+        >
           Until Broken:{" "}
           <b>
-            {breakPoint - casualties > 0 ? (
-              breakPoint - casualties
+            {breakPointDead - casualties > 0 ? (
+              breakPointDead - casualties
             ) : (
               <GiCrackedShield />
             )}
@@ -186,12 +187,12 @@ export const GamemodeToolbar = () => {
       <Box>
         <Typography
           sx={{ display: "flex", justifyContent: "space-between", gap: 2 }}
-          color={breakPoint - casualties <= 0 ? "error" : "inherit"}
+          color={breakPointDead - casualties <= 0 ? "error" : "inherit"}
         >
           Until Broken:{" "}
           <b>
-            {breakPoint - casualties > 0 ? (
-              breakPoint - casualties
+            {breakPointDead - casualties > 0 ? (
+              breakPointDead - casualties
             ) : (
               <GiCrackedShield />
             )}
