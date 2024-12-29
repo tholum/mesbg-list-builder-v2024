@@ -22,6 +22,8 @@ A very special thank you to [@mhollink](https://github.com/mhollink) for his hug
 - Browser storage used to persist your army lists and game sessions.
 - Import/Export functionality for your army lists and match history.
 
+---
+
 ### List Building Mode
 
 ![Screenshot image](https://pasteimg.com/images/2024/12/18/01.png)
@@ -30,4 +32,6 @@ A very special thank you to [@mhollink](https://github.com/mhollink) for his hug
 
 ### Game Mode
 
-// TODO: Add new screenshot here!
+![1](https://github.com/user-attachments/assets/98dc2c99-2192-42d4-b97b-9a6e96e0893a)
+
+
