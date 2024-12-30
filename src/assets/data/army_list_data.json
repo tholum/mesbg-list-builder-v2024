@@ -163,6 +163,30 @@
     "throw_limit": 0.33,
     "rule_highlights": []
   },
+  "Besiegers of the Hornburg": {
+    "additional_rules": [
+      {
+        "description": "A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
+      }
+    ],
+    "special_rules": [
+      {
+        "title": "Wulf's Revenge",
+        "description": "Whenever Wulf Moves, he must always Charge an enemy model if possible. Additionally, once per game Wulf may declare a Heroic Challenge for free, though this Heroic Challenge must target the enemy General. Wulf may still do this even if the enemy General has a lower Heroic Tier."
+      },
+      {
+        "title": "The Promise of Wealth",
+        "description": "Friendly Dunland Warrior models within range of an Objective Marker gain a bonus of +1 To Wound when making Strikes."
+      },
+      {
+        "title": "Shank & Wrot",
+        "description": "Friendly Mordor models cannot benefit from the Heroic Actions or Stand Fast of friendly Dunland models and friendly Dunland models cannot benefit from the Heroic Actions or Stand Fast of friendly Mordor models."
+      }
+    ],
+    "bow_limit": 0.33,
+    "throw_limit": 0.33,
+    "rule_highlights": []
+  },
   "Beseigers of the Hornburg": {
     "additional_rules": [
       {

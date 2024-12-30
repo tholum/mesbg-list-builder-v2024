@@ -96,6 +96,15 @@
       "warning":"A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
     }
   ],
+  "Besiegers of the Hornburg":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[beseigers-of-the-hornburg] wulf"
+      ],
+      "warning":"A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
+    }
+  ],
   "Breaking of the Fellowship":[
     {
       "type":"compulsory",

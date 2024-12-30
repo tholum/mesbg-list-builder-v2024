@@ -3282,7 +3282,7 @@
   "[beseigers-of-the-hornburg] wulf": {
     "model_id": "[beseigers-of-the-hornburg] wulf",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "The Hill Tribes",
     "name": "Wulf",
     "unit_type": "Hero of Legend",
@@ -3309,7 +3309,7 @@
   "[beseigers-of-the-hornburg] general-targg": {
     "model_id": "[beseigers-of-the-hornburg] general-targg",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "The Hill Tribes",
     "name": "General Targg",
     "unit_type": "Hero of Fortitude",
@@ -3336,7 +3336,7 @@
   "[beseigers-of-the-hornburg] hill-tribes-chieftain": {
     "model_id": "[beseigers-of-the-hornburg] hill-tribes-chieftain",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "The Hill Tribes",
     "name": "Hill Tribes Chieftain",
     "unit_type": "Hero of Fortitude",
@@ -3365,7 +3365,7 @@
   "[beseigers-of-the-hornburg] shank_&_wrot": {
     "model_id": "[beseigers-of-the-hornburg] shank_&_wrot",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "The Hill Tribes",
     "name": "Shank & Wrot",
     "unit_type": "Minor Hero",
@@ -3388,7 +3388,7 @@
   "[beseigers-of-the-hornburg] crebain": {
     "model_id": "[beseigers-of-the-hornburg] crebain",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "Isengard",
     "name": "Crebain",
     "unit_type": "Warrior",
@@ -3402,7 +3402,7 @@
   "[beseigers-of-the-hornburg] hill-tribesman": {
     "model_id": "[beseigers-of-the-hornburg] hill-tribesman",
     "army_type": "Evil",
-    "army_list": "Beseigers of the Hornburg",
+    "army_list": "Besiegers of the Hornburg",
     "profile_origin": "The Hill Tribes",
     "name": "Hill Tribesman",
     "unit_type": "Warrior",
