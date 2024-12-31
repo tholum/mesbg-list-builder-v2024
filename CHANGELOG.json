@@ -4,7 +4,8 @@
       "Fixed issue with break point calculation in Game Mode and Roster Summary/Plain text view.",
       "Fixed an issue with the roster/warband unit counts for Fangorn.",
       "Corrected the point cost for an Iron Hills Chariot.",
-      "Corrected a typo in the Besiegers of the Hornburg army list name."
+      "Corrected a typo in the Besiegers of the Hornburg army list name.",
+      "Corrected the Attack value of the War Mumak of Harad."
     ]
   },
   "1.5": {
