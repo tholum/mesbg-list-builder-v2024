@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.6": {
     "changed": [
       "Updated the look and feel on the roster summary and pretty share image. The old table can still be used by changing the user preferences."
     ],
