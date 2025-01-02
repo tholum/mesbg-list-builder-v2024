@@ -104,6 +104,7 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
                 <Box
                   key={index}
                   component={rule.troll_purchase === true ? "ul" : "div"}
+                  sx={{ pageBreakInside: "avoid" }}
                 >
                   {isMovieQuote(rule.title) ? (
                     <Typography
@@ -133,7 +134,7 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
         <Typography variant="h5">Special rules</Typography>
         <Stack gap={1} sx={{ py: 1 }}>
           {specialRules.map((rule) => (
-            <Box key={rule.name} sx={{ py: 0.8 }}>
+            <Box key={rule.name} sx={{ py: 0.8, pageBreakInside: "avoid" }}>
               <Typography variant="body1">
                 <b>
                   {rule.name} {rule.type && <>({rule.type})</>}

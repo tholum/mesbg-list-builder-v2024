@@ -210,7 +210,7 @@ const AdditionalProfiles = ({
 const ListItem = ({ profile }: { profile: Profile }) => {
   return (
     <>
-      <Box sx={{ py: 2 }}>
+      <Box sx={{ py: 2, pageBreakInside: "avoid" }}>
         <Typography variant="h6">
           <b>{profile.name}</b>
         </Typography>

@@ -41,7 +41,7 @@ export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
           <Typography variant="h5">Magical Powers</Typography>
           <Stack gap={1} sx={{ py: 1 }}>
             {magicalPowers.map((rule) => (
-              <Box key={rule.name}>
+              <Box key={rule.name} sx={{ pageBreakInside: "avoid" }}>
                 <Typography variant="h6">
                   <b>{rule.name}</b>
                 </Typography>

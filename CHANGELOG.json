@@ -9,7 +9,8 @@
     "bugfixes": [
       "Fixed the Morannon Orc Warrior options to no longer require a mandatory choice.",
       "Added a 'save image' button the pretty image to allow to be stored to the device more easily",
-      "Fixed Aranarth's profile statbar values."
+      "Fixed Aranarth's profile statbar values.",
+      "Corrected PDF page breaks to avoid breaks occuring in the middle of rules and profiles etc."
     ]
   },
   "1.6": {
