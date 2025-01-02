@@ -22,6 +22,14 @@ function heroAdditionalUnitRosterCount(warband: Warband) {
     return 1 + (passengers?.passengers ?? 0);
   }
 
+  if (
+    ["Mumak War Leader", "War Mumak of Harad", "Troll Brute"].includes(
+      warband.hero?.name,
+    )
+  ) {
+    return 2;
+  }
+
   return 1;
 }
 
@@ -38,7 +46,9 @@ function heroAdditionalUnitWarbandCount(warband: Warband) {
   if (
     warband.units
       .filter(isSelectedUnit)
-      .find((unit) => unit.name === "Farmer Maggot")
+      .find(
+        (unit) => unit.name === "Farmer Maggot" || unit.name === "Troll Brute",
+      )
   ) {
     return 1;
   }

@@ -3898,7 +3898,7 @@
     "MWFW": [
       [
         "",
-        "3:1:1:2"
+        "3:2:1:2"
       ]
     ],
     "warband_size": 15,
@@ -7056,7 +7056,7 @@
     "unit_type": "Hero of Legend",
     "base_points": 400,
     "unique": true,
-    "siege_crew": 1,
+    "siege_crew": 0,
     "MWFW": [
       [
         "Mumak War Leader",
@@ -7078,7 +7078,7 @@
     "name": "War Mumak of Harad",
     "unit_type": "Hero of Fortitude",
     "base_points": 250,
-    "siege_crew": 1,
+    "siege_crew": 0,
     "MWFW": [
       [
         "Haradrim Commander",
@@ -7947,7 +7947,7 @@
     "unit_type": "Hero of Valour",
     "base_points": 400,
     "unique": true,
-    "siege_crew": 1,
+    "siege_crew": 0,
     "MWFW": [
       [
         "Mumak War Leader",
@@ -8041,7 +8041,7 @@
     "name": "War Mumak of Harad",
     "unit_type": "Hero of Fortitude",
     "base_points": 250,
-    "siege_crew": 1,
+    "siege_crew": 0,
     "MWFW": [
       [
         "Haradrim Commander",
