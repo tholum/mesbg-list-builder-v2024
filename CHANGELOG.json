@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Fixed the Morannon Orc Warrior options to no longer require a mandatory choice."
+      "Fixed the Morannon Orc Warrior options to no longer require a mandatory choice.",
+      "Added a 'save image' button the pretty image to allow to be stored to the device more easily"
     ]
   },
   "1.6": {
