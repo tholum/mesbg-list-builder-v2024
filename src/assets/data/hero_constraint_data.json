@@ -142,7 +142,6 @@
   },
   "[army-of-gundabad] azog-the-defiler": {
     "valid_warband_units": [
-      "[army-of-gundabad] troll-brute",
       "[army-of-gundabad] gundabad-catapult-troll",
       "[army-of-gundabad] gundabad-orc-warrior",
       "[army-of-gundabad] gundabad-berserker",
@@ -155,7 +154,6 @@
   },
   "[army-of-gundabad] bolg-spawn-of-azog": {
     "valid_warband_units": [
-      "[army-of-gundabad] troll-brute",
       "[army-of-gundabad] gundabad-catapult-troll",
       "[army-of-gundabad] gundabad-orc-warrior",
       "[army-of-gundabad] gundabad-berserker",
@@ -168,7 +166,6 @@
   },
   "[army-of-gundabad] goblin-mercenary-captain": {
     "valid_warband_units": [
-      "[army-of-gundabad] troll-brute",
       "[army-of-gundabad] gundabad-catapult-troll",
       "[army-of-gundabad] gundabad-orc-warrior",
       "[army-of-gundabad] gundabad-berserker",
@@ -185,7 +182,6 @@
   },
   "[army-of-gundabad] gundabad-orc-captain": {
     "valid_warband_units": [
-      "[army-of-gundabad] troll-brute",
       "[army-of-gundabad] gundabad-catapult-troll",
       "[army-of-gundabad] gundabad-orc-warrior",
       "[army-of-gundabad] gundabad-berserker",

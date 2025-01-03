@@ -1,7 +1,8 @@
 {
   "main": {
     "changed": [
-      "All roster summary views now use 'X dead' for broken, and 'X alive' for 25%/quartered."
+      "All roster summary views now use 'X dead' for broken, and 'X alive' for 25%/quartered.",
+      "Troll Brutes can no longer be added as a follower in another hero's warband for Army of Gundabad."
     ],
     "added": [
       "Added a option to the roster popover menu which allows duplicating a roster so you can make small edits and keep the original roster intact"
@@ -11,7 +12,8 @@
       "Added a 'save image' button the pretty image to allow to be stored to the device more easily",
       "Fixed Aranarth's profile statbar values.",
       "Corrected PDF page breaks to avoid breaks occuring in the middle of rules and profiles etc.",
-      "Fixed the counting of War Beasts for warband and roster unit totals, such as for War Mumaks."
+      "Fixed the counting of War Beasts for warband and roster unit totals, such as for War Mumaks.",
+      "Cave Trolls now correctly count towards the throwing weapon limit."
     ]
   },
   "1.6": {

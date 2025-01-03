@@ -5507,6 +5507,7 @@
     "name": "Cave Troll",
     "unit_type": "Warrior",
     "base_points": 75,
+    "default_throw": true,
     "bow_limit": true,
     "siege_crew": 0,
     "opt_mandatory": true,

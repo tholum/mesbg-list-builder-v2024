@@ -46,9 +46,7 @@ function heroAdditionalUnitWarbandCount(warband: Warband) {
   if (
     warband.units
       .filter(isSelectedUnit)
-      .find(
-        (unit) => unit.name === "Farmer Maggot" || unit.name === "Troll Brute",
-      )
+      .find((unit) => unit.name === "Farmer Maggot")
   ) {
     return 1;
   }
