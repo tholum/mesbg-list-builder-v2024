@@ -13,7 +13,8 @@
       "Fixed Aranarth's profile statbar values.",
       "Corrected PDF page breaks to avoid breaks occuring in the middle of rules and profiles etc.",
       "Fixed the counting of War Beasts for warband and roster unit totals, such as for War Mumaks.",
-      "Cave Trolls now correctly count towards the throwing weapon limit."
+      "Cave Trolls now correctly count towards the throwing weapon limit.",
+      "Fixed the plain text roster summary to better display on reddit posts/comments."
     ]
   },
   "1.6": {

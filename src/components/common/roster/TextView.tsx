@@ -102,14 +102,16 @@ export const RosterTextView = forwardRef<
           .map((warband) => {
             return `    
               ----------------------------------------
-              Warband ${warband.meta.num} (${warband.meta.points} points)
+              Warband ${warband.meta.num} (${warband.meta.points} points)    
               ${heroToText(warband.hero, warband.id === leader)}
               ${unitsToText(warband.units.filter(isSelectedUnit))}`;
           })
           .join("  ");
 
     return `
-    | Points: ${points} | Units: ${units} | Break Point: ${units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0} dead | Quartered: ${Math.floor(0.25 * units)} left | 
+    ${roster.armyList}
+    ----------------------------------------
+    | Points: ${points} | Units: ${units} | Broken: ${units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0} dead | Quartered: ${Math.floor(0.25 * units)} left |  
     | Bows: ${bows} | Throwing weapons: ${throwingWeapons} | Might/Will/Fate: ${might} / ${will} / ${fate} |
     ${unitSections}${armyBonus()}${admission()}
     `;
