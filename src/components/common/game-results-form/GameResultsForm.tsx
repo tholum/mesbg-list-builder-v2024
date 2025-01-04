@@ -104,29 +104,49 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   }
 
   function isAboveZero(value: number) {
-    return hasValue(value) && value > 0;
+    return hasValue(value) && value > 0 && value % 1 == 0;
+  }
+
+  function isPositiveInteger(value: number) {
+    return hasValue(value) && value >= 0 && value % 1 == 0;
   }
 
   const saveToState = (): boolean => {
     const missingFields = [];
 
-    if (!hasValue(formValues.gameDate)) missingFields.push("Date of the game");
+    if (!hasValue(formValues.gameDate)) missingFields.push("Date of the Game");
     if (!isAboveZero(formValues.points)) missingFields.push("Points");
-    if (!hasValue(formValues.result)) missingFields.push("Match result");
+    if (!hasValue(formValues.result)) missingFields.push("Match Results");
     if (!hasValue(formValues.armies)) missingFields.push("Armies");
-    if (!hasValue(formValues.victoryPoints))
-      missingFields.push("Victory points");
-    if (!hasValue(formValues.bows)) missingFields.push("Bows");
-    if (!hasValue(formValues.throwingWeapons))
-      missingFields.push("throwingWeapons");
+    if (
+      !hasValue(formValues.victoryPoints) ||
+      !isPositiveInteger(formValues.victoryPoints) ||
+      formValues.victoryPoints > 20
+    )
+      missingFields.push("Victory Points");
+    if (!hasValue(formValues.bows) || !isPositiveInteger(formValues.bows))
+      missingFields.push("Bows");
+    if (
+      !hasValue(formValues.throwingWeapons) ||
+      !isPositiveInteger(formValues.throwingWeapons)
+    )
+      missingFields.push("Throwing Weapons");
+    if (hasValue(formValues.duration)) {
+      if (!isPositiveInteger(formValues.duration))
+        missingFields.push("Duration");
+    }
     if (
       hasValue(formValues.opponentName) ||
       hasValue(formValues.opponentVictoryPoints)
     ) {
       if (!hasValue(formValues.opponentName))
-        missingFields.push("Opponent's Victory points");
-      if (!hasValue(formValues.opponentVictoryPoints)) {
-        missingFields.push("Opponent name");
+        missingFields.push("Opponent Name");
+      if (
+        !hasValue(formValues.opponentVictoryPoints) ||
+        !isPositiveInteger(formValues.opponentVictoryPoints) ||
+        formValues.opponentVictoryPoints > 20
+      ) {
+        missingFields.push("Opponent's Victory Points");
       }
     }
 
@@ -187,7 +207,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
           <Grid2 size={12}>
             <TextField
               fullWidth
-              label="Date of the game"
+              label="Date of the Game"
               name="gameDate"
               type="date"
               slotProps={{ inputLabel: { shrink: true } }}
@@ -203,6 +223,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               label="Duration"
               name="duration"
               value={formValues.duration}
+              error={missingRequiredFields.includes("Duration")}
               autoFocus={!formValues.duration}
               onChange={handleChangeByEvent}
               slotProps={{
@@ -279,9 +300,9 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label="Match results"
+                    label="Match Results"
                     required
-                    error={missingRequiredFields.includes("Match result")}
+                    error={missingRequiredFields.includes("Match Results")}
                   />
                 )}
                 fullWidth
@@ -339,7 +360,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
           <Grid2 size={isMobile ? 12 : 3}>
             <TextField
               required
-              error={missingRequiredFields.includes("throwingWeapons")}
+              error={missingRequiredFields.includes("Throwing Weapons")}
               fullWidth
               label="Throwing Weapons"
               name="throwingWeapons"
@@ -353,7 +374,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
           <Grid2 size={isMobile ? 12 : 6}>
             <TextField
               required
-              error={missingRequiredFields.includes("Victory points")}
+              error={missingRequiredFields.includes("Victory Points")}
               fullWidth
               label="Victory Points"
               name="victoryPoints"
@@ -361,6 +382,11 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               slotProps={{ htmlInput: { min: 0 } }}
               value={formValues.victoryPoints}
               onChange={handleChangeVictoryPoints}
+              helperText={
+                formValues.victoryPoints > 20 || formValues.victoryPoints < 0
+                  ? "Victory Points must be between 0 and 20"
+                  : ""
+              }
               size="small"
             />
           </Grid2>
@@ -389,6 +415,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               fullWidth
               label="Opponent Name"
               name="opponentName"
+              error={missingRequiredFields.includes("Opponent Name")}
               value={formValues.opponentName}
               onChange={handleChangeByEvent}
               required={
@@ -404,8 +431,17 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               name="opponentVictoryPoints"
               value={formValues.opponentVictoryPoints}
               type="number"
+              error={missingRequiredFields.includes(
+                "Opponent's Victory Points",
+              )}
               slotProps={{ htmlInput: { min: 0 } }}
               onChange={handleChangeVictoryPoints}
+              helperText={
+                formValues.opponentVictoryPoints > 20 ||
+                formValues.opponentVictoryPoints < 0
+                  ? "Victory Points must be between 0 and 20"
+                  : ""
+              }
               size="small"
               required={
                 !!formValues.opponentName || !!formValues.opponentVictoryPoints
