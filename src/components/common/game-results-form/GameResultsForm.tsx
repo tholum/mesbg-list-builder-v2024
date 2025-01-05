@@ -104,7 +104,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   }
 
   function isAboveZero(value: number) {
-    return hasValue(value) && value > 0 && value % 1 == 0;
+    return hasValue(value) && value > 0;
   }
 
   function isPositiveInteger(value: number) {
@@ -118,11 +118,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     if (!isAboveZero(formValues.points)) missingFields.push("Points");
     if (!hasValue(formValues.result)) missingFields.push("Match Results");
     if (!hasValue(formValues.armies)) missingFields.push("Armies");
-    if (
-      !hasValue(formValues.victoryPoints) ||
-      !isPositiveInteger(formValues.victoryPoints) ||
-      formValues.victoryPoints > 20
-    )
+    if (!hasValue(formValues.victoryPoints))
       missingFields.push("Victory Points");
     if (!hasValue(formValues.bows) || !isPositiveInteger(formValues.bows))
       missingFields.push("Bows");
@@ -132,8 +128,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     )
       missingFields.push("Throwing Weapons");
     if (hasValue(formValues.duration)) {
-      if (!isPositiveInteger(formValues.duration))
-        missingFields.push("Duration");
+      if (!isAboveZero(formValues.duration)) missingFields.push("Duration");
     }
     if (
       hasValue(formValues.opponentName) ||
@@ -141,11 +136,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     ) {
       if (!hasValue(formValues.opponentName))
         missingFields.push("Opponent Name");
-      if (
-        !hasValue(formValues.opponentVictoryPoints) ||
-        !isPositiveInteger(formValues.opponentVictoryPoints) ||
-        formValues.opponentVictoryPoints > 20
-      ) {
+      if (!hasValue(formValues.opponentVictoryPoints)) {
         missingFields.push("Opponent's Victory Points");
       }
     }
@@ -382,11 +373,6 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               slotProps={{ htmlInput: { min: 0 } }}
               value={formValues.victoryPoints}
               onChange={handleChangeVictoryPoints}
-              helperText={
-                formValues.victoryPoints > 20 || formValues.victoryPoints < 0
-                  ? "Victory Points must be between 0 and 20"
-                  : ""
-              }
               size="small"
             />
           </Grid2>
@@ -436,12 +422,6 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               )}
               slotProps={{ htmlInput: { min: 0 } }}
               onChange={handleChangeVictoryPoints}
-              helperText={
-                formValues.opponentVictoryPoints > 20 ||
-                formValues.opponentVictoryPoints < 0
-                  ? "Victory Points must be between 0 and 20"
-                  : ""
-              }
               size="small"
               required={
                 !!formValues.opponentName || !!formValues.opponentVictoryPoints
