@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.7": {
     "added": [
       "Added a option to the roster popover menu which allows duplicating a roster so you can make small edits and keep the original roster intact",
       "Added a table containing all the selectable units and their profiles including the profile cards"
