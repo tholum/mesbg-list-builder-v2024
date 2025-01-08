@@ -78,6 +78,7 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
         ...additionalProfile.special_rules.map(mapSpecialRule),
       ]) || []),
     ])
+    .concat(armyListRules.rule_highlights?.map(mapSpecialRule))
     .filter(duplicates)
     .sort((a, b) => a.name.localeCompare(b.name));
 

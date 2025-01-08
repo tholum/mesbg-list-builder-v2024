@@ -141,7 +141,7 @@
     "name":"Drain Courage",
     "type":"magical_power",
     "active_passive":null,
-    "description":"<b>Duration<\/b>: Instant\n\nThis Magical Power targets one enemy model in range. The target immediately worsens their Courage value by 1 (to a minimum of 5+ that is affected by the game; so a model with a Courage of 6 would be affected by this Magical Power and have a Courage of 4+). A model can be affected by this Magical Power multiple times over the course of the battle, worsening its Courage value each time. If this Magical Power targets a Cavalry model, the caster must choose whether the rider or the Mount is the target."
+    "description":"<b>Duration<\/b>: Instant\n\nThis Magical Power targets one enemy model in range. The target immediately worsens their Courage value by 1 for the remainder of the game; so a model with a Courage of 5+ that is affected by this Magical Power would then have a Courage of 6+. A model can be affected by this Magical Power multiple times over the course of the battle, worsening its Courage value each time. If this Magical Power targets a Cavalry model, the caster must choose whether the rider or the Mount is the target."
   },
   {
     "name":"Enchant Blades",

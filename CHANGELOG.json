@@ -18,7 +18,8 @@
       "Fixed the counting of War Beasts for warband and roster unit totals, such as for War Mumaks.",
       "Cave Trolls now correctly count towards the throwing weapon limit.",
       "Fixed the plain text roster summary to better display on reddit posts/comments.",
-      "Corrected the profile special rules shown for Aragorn, King Elessar."
+      "Corrected the profile special rules shown for Aragorn, King Elessar.",
+      "Fixed the special rules shown in the PDF print-out to correctly include any additional rules provided by the army list special rules."
     ]
   },
   "1.6": {
