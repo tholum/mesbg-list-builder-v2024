@@ -1,7 +1,9 @@
 {
   "main": {
     "added": [
-      "Added a warning when you reopen the game mode after your roster was changed, allowing you to reload with the updated roster."
+      "Added a warning when you reopen Game Mode after your roster was changed, allowing you to reload the Game Mode session with the updated roster."
+    "bugfixes": [
+      "Updated the import roster function so it respects the group which was opened when importing it."
     ]
   },
   "1.7": {
