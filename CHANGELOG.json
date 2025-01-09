@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.8": {
     "added": [
       "Added the ability to manage your collection of miniatures in the list builder",
       "Added a user preference setting to enable/disable warnings during roster builder based on your collection",
