@@ -150,9 +150,9 @@ export const AddToCollection = () => {
             Add <strong>{unit.name}</strong> to you collection of miniatures.
           </AlertTitle>
           <Typography>
-            Adding different load-outs based on the available options will help
-            you ensure your rosters only include models that you own, providing
-            a seamless way to plan and optimize your lineup.
+            Adding different loadouts based on the available options will help
+            you to ensure your rosters only include models that you own,
+            providing a seamless way to plan and optimise your army lists.
           </Typography>
         </Alert>
 
@@ -162,9 +162,9 @@ export const AddToCollection = () => {
               <strong>Generic profiles</strong>
             </AlertTitle>
             <Typography>
-              Select the &apos;Generic&apos; option to indicate the model will
-              be counted as any other model under the same name, regardless of
-              options.
+              Select the &apos;Generic&apos; option to indicate that the model
+              can be counted as any model under the same name, regardless of
+              options (with the exception of being mounted/on-foot).
             </Typography>
           </Alert>
         )}
