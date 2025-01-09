@@ -19,9 +19,10 @@ export const GamemodeToolbar = () => {
   const screen = useScreenSize();
   const { setCurrentModal } = useAppState();
   const { gameState, updateGameState } = useGameModeState();
-  const { roster, getAdjustedMetaData } = useRosterInformation();
+  const { roster } = useRosterInformation();
 
   const game = gameState[roster.id];
+  const metadata = game.rosterMetadata;
 
   const openEndGameDialog = () => {
     const gameStartTime = new Date(game.started);
@@ -38,8 +39,8 @@ export const GamemodeToolbar = () => {
         scenarioPlayed: null,
         tags: [],
         armies: roster.armyList,
-        bows: roster.metadata.bows as unknown as number,
-        throwingWeapons: roster.metadata.throwingWeapons as unknown as number,
+        bows: metadata.bows as unknown as number,
+        throwingWeapons: metadata.throwingWeapons as unknown as number,
         victoryPoints: "" as unknown as number,
         opponentArmies: "",
         opponentName: "",
@@ -55,7 +56,6 @@ export const GamemodeToolbar = () => {
   };
 
   const armyListMetadata = armyListData[roster.armyList];
-  const metadata = getAdjustedMetaData(roster);
   const breakPointDead =
     metadata.units > 0
       ? Math.floor(metadata.units * (armyListMetadata.break_point ?? 0.5)) + 1

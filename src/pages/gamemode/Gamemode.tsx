@@ -1,4 +1,5 @@
-import { Tab, Tabs } from "@mui/material";
+import { AlertTitle, Button, Tab, Tabs } from "@mui/material";
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -6,6 +7,7 @@ import { SyntheticEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
+import { useGameModeState } from "../../state/gamemode";
 import { drawerWidth, RosterInfoDrawer } from "../builder/RosterInfoDrawer.tsx";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
@@ -17,7 +19,10 @@ import { TabPanel } from "./components/tabs/TabPanel.tsx";
 export const Gamemode = () => {
   const screen = useScreenSize();
   const { roster } = useRosterInformation();
+  const { gameState, startNewGame } = useGameModeState();
+
   const [value, setValue] = useState(0);
+  const [rosterChangedWarning, setRosterChangedWarning] = useState(true);
 
   if (!roster) {
     return (
@@ -41,6 +46,13 @@ export const Gamemode = () => {
     setValue(newValue);
   };
 
+  const resetMatch = () => {
+    startNewGame(roster);
+  };
+
+  const changedSinceStart =
+    roster.metadata !== gameState[roster.id].rosterMetadata;
+
   return (
     <Container
       maxWidth={false}
@@ -54,11 +66,29 @@ export const Gamemode = () => {
         }}
       >
         <GamemodeToolbar />
+        {changedSinceStart && rosterChangedWarning && (
+          <Alert
+            severity="warning"
+            onClose={() => setRosterChangedWarning(false)}
+          >
+            <AlertTitle>
+              <Typography>
+                <strong>Your roster was changed!</strong>
+              </Typography>
+            </AlertTitle>
+            <Typography
+              sx={{ display: "flex", alignItems: "center", gap: 0.4 }}
+            >
+              Your roster was changed after starting this match.{" "}
+              <Button onClick={resetMatch}>Click here</Button> to reset your
+              game to your current roster.
+            </Typography>
+          </Alert>
+        )}
         <Box sx={{ width: "100%", bgcolor: "background.paper", mt: 2 }}>
           <Tabs
             value={value}
             onChange={handleChange}
-            centered
             variant="scrollable"
             scrollButtons
             allowScrollButtonsMobile

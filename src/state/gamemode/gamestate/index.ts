@@ -17,6 +17,7 @@ export type Game = {
   heroCasualties: number;
   started: number;
   lastUpdated: number;
+  rosterMetadata: Roster["metadata"];
 };
 
 export type GameState = {
@@ -42,6 +43,7 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
             ...createGameState(roster),
             started: Date.now(),
             lastUpdated: Date.now(),
+            rosterMetadata: roster.metadata,
           },
         },
       }),
