@@ -51,9 +51,10 @@ export const Gamemode = () => {
     startNewGame(roster);
   };
 
-  const changedSinceStart =
-    gameState[roster.id].rosterMetadata &&
-    !deepEqual(roster.metadata, gameState[roster.id].rosterMetadata);
+  const changedSinceStart = !deepEqual(
+    roster.metadata,
+    gameState[roster.id].rosterMetadata,
+  );
 
   return (
     <Container
