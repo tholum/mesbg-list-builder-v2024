@@ -73,16 +73,15 @@ export const Gamemode = () => {
           <Alert
             severity="warning"
             onClose={() => setRosterChangedWarning(false)}
+            sx={{ mt: 2 }}
           >
             <AlertTitle>
               <Typography>
                 <strong>Your roster was changed!</strong>
               </Typography>
             </AlertTitle>
-            <Typography
-              sx={{ display: "flex", alignItems: "center", gap: 0.4 }}
-            >
-              Your roster was changed after starting this match.{" "}
+            <Typography>
+              Your roster was changed after starting this match.
               <Button onClick={resetMatch}>Click here</Button> to reset your
               game to your current roster.
             </Typography>
