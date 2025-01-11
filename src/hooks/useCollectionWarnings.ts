@@ -78,23 +78,23 @@ export const useCollectionWarnings = (
     options,
   );
 
-  // Debug line given a specific profile name,
-  // ~ Keep commented until needed!! ~
-  if (unit.name.includes("Cave Troll")) {
-    console.dir({
-      name: unit.name,
-      generics,
-      mount,
-      bestMatchingMount,
-      amountOfGenericsForGivenMount,
-      totalGenericsUsed,
-      collection,
-      options,
-      totalSelected,
-      available,
-      selected,
-    });
-  }
+  // // Debug line given a specific profile name,
+  // // ~ Keep commented until needed!! ~
+  // if (unit.name.includes("Cave Troll")) {
+  //   console.dir({
+  //     name: unit.name,
+  //     generics,
+  //     mount,
+  //     bestMatchingMount,
+  //     amountOfGenericsForGivenMount,
+  //     totalGenericsUsed,
+  //     collection,
+  //     options,
+  //     totalSelected,
+  //     available,
+  //     selected,
+  //   });
+  // }
 
   return {
     warnings: "on",
