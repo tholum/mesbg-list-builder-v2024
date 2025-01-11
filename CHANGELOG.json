@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.9": {
     "added": [
       "A Total Might counter has been added to Game Mode.",
       "Rosters can now be searched using a filter provided at the top of the rosters view."
