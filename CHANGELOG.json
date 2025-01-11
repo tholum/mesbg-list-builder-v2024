@@ -1,6 +1,9 @@
 {
   "main": {
-    "added": ["A Total Might counter has been added to Game Mode."],
+    "added": [
+      "A Total Might counter has been added to Game Mode.",
+      "Rosters can now be searched using a filter provided at the top of the rosters view."
+    ],
     "changed": [
       "Roster names are now optional when creating a new roster. If you do not provide one, a default name will be used instead."
     ],
