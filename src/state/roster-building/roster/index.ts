@@ -48,6 +48,7 @@ export const emptyRoster: Roster = {
     throwingWeapons: 0,
     throwLimit: 0,
     heroes: 0,
+    siegeRoster: false,
   },
 };
 
