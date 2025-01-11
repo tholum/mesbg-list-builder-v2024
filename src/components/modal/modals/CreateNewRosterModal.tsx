@@ -118,9 +118,6 @@ export const CreateNewRosterModal = () => {
         ...roster.metadata,
         leader: warband.id,
         leaderCompulsory: true,
-        maxPoints: maxRosterPoints ? Number(maxRosterPoints) : undefined,
-        siegeRoster: enableSiege,
-        siegeRole: enableSiege ? rosterSiegeRole : undefined,
       },
     });
   }
@@ -167,6 +164,12 @@ export const CreateNewRosterModal = () => {
         group: groupId,
         name: rosterNameValue,
         armyList: armyList.title,
+        metadata: {
+          ...emptyRoster.metadata,
+          maxPoints: maxRosterPoints ? Number(maxRosterPoints) : undefined,
+          siegeRoster: enableSiege,
+          siegeRole: enableSiege ? rosterSiegeRole : undefined,
+        },
       });
 
       createRoster(newRoster);
