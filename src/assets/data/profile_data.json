@@ -10320,14 +10320,14 @@
     },
     "Hill Tribes Chieftain": {
       "Mv": "6\"",
-      "Fv": "5",
+      "Fv": "4",
       "Sv": "4+",
       "S": "4",
-      "D": "6",
+      "D": "4",
       "A": "2",
       "W": "2",
       "C": "6+",
-      "I": "6+",
+      "I": "7+",
       "active_or_passive_rules": [],
       "magic_powers": [],
       "heroic_actions": [

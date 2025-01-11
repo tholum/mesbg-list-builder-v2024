@@ -1,5 +1,7 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": ["Corrected the profile stats for the Hill Tribes Chieftain."]
+  },
   "1.9": {
     "added": [
       "A Total Might counter has been added to Game Mode.",
