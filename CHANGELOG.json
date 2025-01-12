@@ -1,5 +1,11 @@
 {
   "main": {
+    "bugfixes": [
+      "Make sure all rosters can benifit from the Siege Equipment and points limit",
+      "Add the new metadata fields to the roster export allowing a correct reimport at a later moment or on another device."
+    ]
+  },
+  "1.10": {
     "added": [
       "Allow setting a points limit on your roster so you get notified when exceeding your set maximum",
       "Make it possible to mark your roster for siege games allowing you to select siege equipment from the 'Sieges' chapter of the main rule book."

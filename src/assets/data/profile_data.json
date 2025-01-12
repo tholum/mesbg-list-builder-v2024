@@ -11540,6 +11540,15 @@
   },
   "Siege Equipment": {
     "Siege Ladder": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Siege Ladder",
@@ -11551,6 +11560,15 @@
       "magic_powers": []
     },
     "Siege Tower": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Siege Tower",
@@ -11562,6 +11580,15 @@
       "magic_powers": []
     },
     "Battering Ram": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Battering Ram",
@@ -11573,6 +11600,15 @@
       "magic_powers": []
     },
     "Rallying Point": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Rallying Point",
@@ -11584,6 +11620,15 @@
       "magic_powers": []
     },
     "Rocks": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Rocks",
@@ -11595,6 +11640,15 @@
       "magic_powers": []
     },
     "Boiling Oil": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Boiling Oil",
@@ -11606,6 +11660,15 @@
       "magic_powers": []
     },
     "Barricade": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Barricade",
@@ -11617,6 +11680,15 @@
       "magic_powers": []
     },
     "Spiked Barricade": {
+      "Mv": "-",
+      "Fv": "-",
+      "Sv": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "I": "-",
       "active_or_passive_rules": [
         {
           "name": "Barricade",
