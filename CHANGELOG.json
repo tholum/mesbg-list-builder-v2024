@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Make sure all rosters can benifit from the Siege Equipment and points limit",
-      "Add the new metadata fields to the roster export allowing a correct reimport at a later moment or on another device."
+      "Add the new metadata fields to the roster export allowing a correct reimport at a later moment or on another device.",
+      "Fixed the incorrect break point value shown on the PDF view."
     ]
   },
   "1.10": {
@@ -10,10 +11,7 @@
       "Allow setting a points limit on your roster so you get notified when exceeding your set maximum",
       "Make it possible to mark your roster for siege games allowing you to select siege equipment from the 'Sieges' chapter of the main rule book."
     ],
-    "bugfixes": [
-      "Corrected the profile stats for the Hill Tribes Chieftain.",
-      "Fixed the incorrect break point value shown on the PDF view."
-    ]
+    "bugfixes": ["Corrected the profile stats for the Hill Tribes Chieftain."]
   },
   "1.9": {
     "added": [
