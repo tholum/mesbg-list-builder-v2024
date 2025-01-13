@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.11": {
     "added": ["Darkmode."],
     "changed": [
       "Removed the custom page margin on the PDF printout, which hopefully resolve some printing errors."
