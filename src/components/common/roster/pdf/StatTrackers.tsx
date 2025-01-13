@@ -22,6 +22,7 @@ const CheckboxList = ({ amount }: { amount: string }) => {
       {Array.from({ length: Number(amount) }).map((_, index) => (
         <div
           key={index}
+          className="stat-tracker-box"
           style={{
             width: "20px",
             height: "20px",

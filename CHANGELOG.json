@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfix": [
+      "Make sure the border color of the MWF trackers appear black on the print-out, even when using dark mode."
+    ]
+  },
   "1.11": {
     "added": ["Darkmode."],
     "changed": [
