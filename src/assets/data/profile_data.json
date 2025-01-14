@@ -8402,7 +8402,7 @@
       "magic_powers": [],
       "heroic_actions": [
         "Heroic March",
-        "Heroic Strength",
+        "Heroic Strike",
         "Heroic Resolve"
       ],
       "special_rules": [
@@ -8433,7 +8433,7 @@
       "magic_powers": [],
       "heroic_actions": [
         "Heroic March",
-        "Heroic Strength",
+        "Heroic Strike",
         "Heroic Resolve"
       ],
       "special_rules": [],
@@ -8456,7 +8456,7 @@
       "magic_powers": [],
       "heroic_actions": [
         "Heroic March",
-        "Heroic Strength",
+        "Heroic Strike",
         "Heroic Resolve"
       ],
       "special_rules": [
@@ -8483,7 +8483,7 @@
       "magic_powers": [],
       "heroic_actions": [
         "Heroic March",
-        "Heroic Strength",
+        "Heroic Strike",
         "Heroic Resolve"
       ],
       "special_rules": [
@@ -8508,7 +8508,7 @@
       "magic_powers": [],
       "heroic_actions": [
         "Heroic March",
-        "Heroic Strength",
+        "Heroic Strike",
         "Heroic Resolve"
       ],
       "special_rules": [
@@ -11469,7 +11469,7 @@
         {
           "name": "Breathe Fire",
           "type": "Active",
-          "description": "Spend a Will point to Breath Fire, treated as a bow with range 18\". If the shot hits, the target and all models within 2\" suffer a Strength 10 hit. Any model that suffers a Wound which is not prevented is slain, otherwise they are Set Ablaze. If a model is immune to fire-based based attacks, they are immune to this shooting attack."
+          "description": "This is treated as a bow with range 18\". If the shot hits, the target and all models within 2\" suffer a Strength 10 hit. Any model that suffers a Wound which is not prevented is slain, otherwise they are Set Ablaze. If a model is immune to fire-based based attacks, they are immune to this shooting attack."
         },
         {
           "name": "Immovable Object",
