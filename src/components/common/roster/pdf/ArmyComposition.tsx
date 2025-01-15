@@ -92,12 +92,6 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
             <Typography>
               Throwing weapons: <b>{throwingWeapons}</b>
             </Typography>
-            <Typography>
-              Might / Will / Fate:{" "}
-              <b>
-                {might} / {will} / {fate}
-              </b>
-            </Typography>
           </Stack>{" "}
           <Stack
             direction="row"
@@ -105,6 +99,12 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
             sx={{ mb: 1 }}
             justifyContent="space-around"
           >
+            <Typography>
+              Might / Will / Fate:{" "}
+              <b>
+                {might} / {will} / {fate}
+              </b>
+            </Typography>
             <Typography>
               Break Point:{" "}
               <b>

@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Make sure that the PDF print out is always black on white, even in darkmode.",
-      "Profile typo corrections for Smaug, the Kings of Men, and Riders of Rohan now correctly count towards the Bow Limit in Realms of Men."
+      "Profile typo corrections for Smaug, the Kings of Men, and Riders of Rohan now correctly count towards the Bow Limit in Realms of Men.",
+      "Fix the positioning of the Army Composition totals in the PDF print-out."
     ]
   },
   "1.11": {
