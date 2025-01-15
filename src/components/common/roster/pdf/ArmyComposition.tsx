@@ -109,11 +109,11 @@ export const ArmyComposition = ({ noCaption }: { noCaption?: boolean }) => {
               Break Point:{" "}
               <b>
                 {units > 0 ? Math.floor(units * (break_point ?? 0.5)) + 1 : 0}{" "}
-                Remaining
+                dead
               </b>
             </Typography>
             <Typography>
-              Quartered: <b>{Math.floor(0.25 * units)} Remaining</b>
+              Quartered: <b>{Math.floor(0.25 * units)} alive</b>
             </Typography>
           </Stack>
         </>
