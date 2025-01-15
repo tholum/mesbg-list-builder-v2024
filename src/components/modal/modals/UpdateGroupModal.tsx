@@ -56,8 +56,8 @@ export const UpdateGroupModal = () => {
         </CustomAlert>
         <CustomAlert severity="warning" title="">
           <Typography>
-            Keep in mind that changing the name to the name of an other existing
-            group will merge the 2 groups together!
+            Please note that if the new name matches an existing group&apos;s
+            name, the two groups will be merged into one!
           </Typography>
         </CustomAlert>
 
