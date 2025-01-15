@@ -15,7 +15,8 @@ const Template: StoryFn<FactionLogoProps> = (args) => <FactionLogo {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  faction: "Rohan",
+  faction: "Kingdom of Rohan",
+  size: 100,
 };
 
 export const ImageNotFound = Template.bind({});

@@ -1,7 +1,7 @@
 {
   "main": {
     "bugfixes": [
-      "Make sure the border color of the MWF trackers appear black on the print-out, even when using dark mode.",
+      "Make sure that the PDF print out is always black on white, even in darkmode.",
       "Profile typo corrections for Smaug, the Kings of Men, and Riders of Rohan now correctly count towards the Bow Limit in Realms of Men."
     ]
   },
