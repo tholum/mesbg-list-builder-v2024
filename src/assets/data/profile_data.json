@@ -2172,7 +2172,7 @@
         {
           "name": "Drain Soul",
           "type": "Active",
-          "description": "Any model that suffers a Wound from the Necromancer, and is not prevented, will be automatically slain."
+          "description": "Any model that suffers a Wound from the Necromancer in Combat, and is not prevented, will be automatically slain."
         },
         {
           "name": "Master of the Nazgul",
