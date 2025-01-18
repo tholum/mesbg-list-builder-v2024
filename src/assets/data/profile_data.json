@@ -8828,6 +8828,7 @@
         {
           "name": "Pippin",
           "type": "Passive",
+          "option_dependency": "Pippin",
           "description": "Whilst Pippin is Mounted, Gandalf gains Resistant to Magic, can re-roll natural 1s on To Wound rolls, and spend Pippin's Might, Will and Fate points - see pg.53 of Armies of LOTR for full details."
         },
         {
