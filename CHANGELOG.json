@@ -11,7 +11,8 @@
       "Corrected Gandalf the White's special rule for Pippin to only appear on the PDF if Pippin is selected as an option.",
       "Corrected the Special Rules that appear in the profile of Hera, The Bride of Death.",
       "Corrected the Wounds on the trackables (PDF & Gamemode) for the Mahud Beastmaster Chieftain."
-    ]
+    ],
+    "security": ["Upgrade application bundler to resolve vulnerability."]
   },
   "1.11": {
     "added": ["Darkmode."],
