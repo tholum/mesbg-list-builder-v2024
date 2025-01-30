@@ -1,7 +1,9 @@
 function getNestedValue<T>(obj: T, path: string) {
-  return path
+  const value = path
     .split(".")
     .reduce((acc, part) => (acc ? acc[part] : undefined), obj);
+  const numberValue = parseInt(value);
+  return !isNaN(numberValue) ? numberValue : value;
 }
 
 function descendingComparator<T>(a: T, b: T, orderBy: string) {

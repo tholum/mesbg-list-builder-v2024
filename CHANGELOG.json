@@ -10,7 +10,8 @@
       "Wording correction for Sauron The Necromancer profile special rule.",
       "Corrected Gandalf the White's special rule for Pippin to only appear on the PDF if Pippin is selected as an option.",
       "Corrected the Special Rules that appear in the profile of Hera, The Bride of Death.",
-      "Corrected the Wounds on the trackables (PDF & Gamemode) for the Mahud Beastmaster Chieftain."
+      "Corrected the Wounds on the trackables (PDF & Gamemode) for the Mahud Beastmaster Chieftain.",
+      "Added correct comparator for sorting numerical table columns in the profile database."
     ],
     "security": ["Upgrade application bundler to resolve vulnerability."]
   },
