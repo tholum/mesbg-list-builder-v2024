@@ -8587,7 +8587,7 @@
         {
           "name": "The Banner of Minas Tirith",
           "type": "Passive",
-          "description": "A banner with a range of 6\". Friendly Gondor Warrior models within range will automatically win a Drawn Combat (unless the enemy has the same special rule). Boromir does not suffer a -1 penalty in the Duel roll for carrying a banner."
+          "description": "A banner with a range of 6\". If a friendly Gondor Warrior model within range is involved in a Drawn Combat, and the Combat is tied at the Gondor Warriors’ Fight value, they will automatically win (unless the enemy has the same special rule). Boromir does not suffer a -1 penalty in the Duel roll for carrying a banner."
         },
         {
           "name": "Son of Gondor",
