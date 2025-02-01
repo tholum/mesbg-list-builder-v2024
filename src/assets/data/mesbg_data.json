@@ -12185,6 +12185,10 @@
       [
         "Gandalf the White",
         "3:6:3:3"
+      ],
+      [
+        "Shadowfax",
+        "0:2:1:1"
       ]
     ],
     "warband_size": 15,
@@ -16169,7 +16173,7 @@
     "model_id": "[the-white-council] gandalf-the-grey",
     "army_type": "Good",
     "army_list": "The White Council",
-    "profile_origin": "The Free Peoples",
+    "profile_origin": "Dwarven Holds",
     "name": "Gandalf the Grey",
     "unit_type": "Hero of Valour",
     "base_points": 170,
@@ -16283,7 +16287,7 @@
     "model_id": "[thorin's-company] gandalf-the-grey",
     "army_type": "Good",
     "army_list": "Thorin's Company",
-    "profile_origin": "The Free Peoples",
+    "profile_origin": "Dwarven Holds",
     "name": "Gandalf the Grey",
     "unit_type": "Hero of Valour",
     "base_points": 170,

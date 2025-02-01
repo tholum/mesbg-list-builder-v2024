@@ -12,7 +12,9 @@
       "Corrected the Special Rules that appear in the profile of Hera, The Bride of Death.",
       "Corrected the wording of The Banner of Minas Tirith special rule on Boromir's profile.",
       "Corrected the Wounds on the trackables (PDF & Gamemode) for the Mahud Beastmaster Chieftain.",
-      "Added correct comparator for sorting numerical table columns in the profile database."
+      "Added correct comparator for sorting numerical table columns in the profile database.",
+      "Corrected Gandalf's profile card for Thorin's Company to be from The Hobbit, not LotR.",
+      "Shadowfax now correctly displays in Game Mode for Gandalf in Riders of Eomer."
     ],
     "security": ["Upgrade application bundler to resolve vulnerability."]
   },
