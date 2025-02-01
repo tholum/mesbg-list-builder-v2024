@@ -2143,7 +2143,8 @@
   "[realms-of-men] captain-of-minas-tirith": {
     "valid_warband_units": [
       "[realms-of-men] warrior-of-minas-tirith",
-      "[realms-of-men] knight-of-minas-tirith"
+      "[realms-of-men] knight-of-minas-tirith",
+      "[realms-of-men] ranger-of-gondor"
     ],
     "extra_profiles": []
   },
@@ -2183,7 +2184,8 @@
       "[realms-of-men] warrior-of-minas-tirith",
       "[realms-of-men] knight-of-minas-tirith",
       "[realms-of-men] citadel-guard",
-      "[realms-of-men] guard-of-the-fountain-court"
+      "[realms-of-men] guard-of-the-fountain-court",
+      "[realms-of-men] ranger-of-gondor"
     ],
     "extra_profiles": []
   },

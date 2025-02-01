@@ -11303,6 +11303,37 @@
       }
     ]
   },
+  "[realms-of-men] ranger-of-gondor": {
+    "model_id": "[realms-of-men] ranger-of-gondor",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Ranger of Gondor",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "default_bow": true,
+    "bow_limit": true,
+    "siege_crew": 0,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT0874",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT0875",
+        "name": "War horn",
+        "points": 25
+      },
+      {
+        "id": "OPT0876",
+        "name": "Spear",
+        "points": 1
+      }
+    ]
+  },
   "[realms-of-men] warrior-of-arnor": {
     "model_id": "[realms-of-men] warrior-of-arnor",
     "army_type": "Good",
