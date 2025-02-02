@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.12": {
     "added": [
       "Added increment quantity buttons for non-unique heroes that are following another hero.",
       "Added Export/Import options for the user created collection data."
