@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Amend comparator for sorting numerical table columns in the profile database for values that are unknown (- or *)"
+    ]
+  },
   "1.12": {
     "added": [
       "Added increment quantity buttons for non-unique heroes that are following another hero.",

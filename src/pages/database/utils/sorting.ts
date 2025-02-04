@@ -1,7 +1,12 @@
 function getNestedValue<T>(obj: T, path: string) {
-  const value = path
+  let value = path
     .split(".")
     .reduce((acc, part) => (acc ? acc[part] : undefined), obj);
+
+  // Patch values that supposed to be numbers, making sure sorting goes from [ - , * , 0 , 1 , ... ]
+  value = value === "-" ? "-2" : value === "*" ? "-1" : value;
+
+  // return a numeric value if possible, otherwise return the raw (probably string) value.
   const numberValue = parseInt(value);
   return !isNaN(numberValue) ? numberValue : value;
 }
