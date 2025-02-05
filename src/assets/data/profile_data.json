@@ -8211,7 +8211,7 @@
         {
           "name": "A Fell Light is in Them",
           "type": "Active",
-          "description": "During its move, a spectre can choose an enemy model within 12\" and in Line of Sight. The model must pass an Intelligence test. If failed, the model makes a full move under the Spectre's control, even if it has already moved that turn. The model will stop moving if it would enter an enemy Control Zone, comes into contact with an Obstacle, impassable terrain, cliff edge, or another model. This cannot be used to move a model out of Combat, make them dismount, drop an item, or Lie Down. However this move can be used to make the model Charge the spectre. A model affected by this special rule cannot Move any further that turn, and may not use Active abilities."
+          "description": "During its move, a spectre can choose an enemy model within 12” and in Line of Sight. The model must pass an Intelligence test. If failed, you may move that model directly towards the spectre, up to its maximum Move value. The model will stop moving if it would enter an enemy Control Zone, comes into contact with an Obstacle, impassable terrain, cliff edge, or another model. This cannot be used to move a model out of Combat, make them dismount, drop an item, or Lie Down. However this move can be used to make the model Charge the spectre. A model affected by this special rule cannot Move any further that turn, and may not use Active abilities."
         }
       ],
       "magic_powers": [],
