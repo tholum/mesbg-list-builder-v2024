@@ -3,7 +3,8 @@
     "bugfixes": [
       "Amend comparator for sorting numerical table columns in the profile database for values that are unknown (- or *)",
       "Corrected the wording of the Spectre's special rule on their profile card.",
-      "Corrected Bain, Son of Bard's profile statbar and MWF values."
+      "Corrected Bain, Son of Bard's profile statbar and MWF values.",
+      "Corrected the Courage and Intelligence stat in the PDF print-out for Warriors of Rohan."
     ]
   },
   "1.12": {
