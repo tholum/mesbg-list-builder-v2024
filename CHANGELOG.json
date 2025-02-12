@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.13": {
     "changed": [
       "Replace the initial game result form with a stepper guiding you through the victory conditions."
     ],
