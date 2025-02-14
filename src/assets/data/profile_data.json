@@ -6458,7 +6458,7 @@
         {
           "name": "Horn of Gondor",
           "type": "Active",
-          "description": "A war horn, where if Boromir is outnumbered in a Combat, you may choose one enemy involved. That model must take a Courage test. If they fail, Boromir wins the Duel roll."
+          "description": "A war horn, where if Boromir is outnumbered in a Combat, you may ask your opponent to choose one of their models involved, who must take a Courage test. If they fail, Boromir wins the Duel roll."
         },
         {
           "name": "Protect the little ones!",
@@ -8582,7 +8582,7 @@
         {
           "name": "Horn of Gondor",
           "type": "Active",
-          "description": "A war horn, where if Boromir is outnumbered in a Combat, you may choose one enemy involved. That model must take a Courage test. If they fail, Boromir wins the Duel roll."
+          "description": "A war horn, where if Boromir is outnumbered in a Combat, you may ask your opponent to choose one of their models involved, who must take a Courage test. If they fail, Boromir wins the Duel roll."
         },
         {
           "name": "The Banner of Minas Tirith",
