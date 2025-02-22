@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.14": {
     "added": [
       "Add the ability to add custom trackers to your games while using the Game Mode",
       "Add trackers for most, if not all, of the multi-wound models"
