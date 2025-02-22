@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.15": {
     "added": [
       "Added user preference option to enable removing mandatory army generals from rosters",
       "Added extra warnings regarding the army general and their Heroic Tier"
