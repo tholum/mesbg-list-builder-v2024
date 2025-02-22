@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Corrected the wording for the Mercenary Ambush special rule for Goblin Mercenaries."
+      "Corrected the wording for the Mercenary Ambush special rule for Goblin Mercenaries.",
+      "Corrected the Defence and Intelligence stat for Rohirrim Traitors."
     ]
   },
   "1.15": {
