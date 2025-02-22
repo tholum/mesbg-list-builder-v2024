@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected the wording for the Mercenary Ambush special rule for Goblin Mercenaries."
+    ]
+  },
   "1.15": {
     "added": [
       "Added user preference option to enable removing mandatory army generals from rosters",
