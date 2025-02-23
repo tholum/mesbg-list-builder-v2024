@@ -2,7 +2,9 @@
   "main": {},
   "1.17": {
     "added": [
-      "Enabled sorting rosters based on their name, army list, points and total units."
+      "Enabled sorting rosters based on their name, army list, points and total units.",
+      "Added a button to automatically update your roster to the latest version of the data files.",
+      "Enabled the user preference option to allow auto updating rosters when they are opened."
     ]
   },
   "1.16": {
