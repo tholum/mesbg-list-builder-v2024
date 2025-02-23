@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import { getSumOfUnits } from "../../../components/common/roster/totalUnits.ts";
 import { convertRosterToProfiles } from "../../../hooks/profile-utils/profiles.ts";
+import { SiegeEquipment } from "../../../types/mesbg-data.types.ts";
 import { Profile } from "../../../types/profile-data.types.ts";
 import {
   FreshUnit,
@@ -24,7 +25,7 @@ const convertToStats = (
 });
 
 const mapHeroToStats = (
-  unit: SelectedUnit | FreshUnit,
+  unit: SelectedUnit | FreshUnit | SiegeEquipment,
   isArmyLeader?: boolean,
 ): Trackable[] => {
   // check if a unit is selected (and not an empty selector box)
