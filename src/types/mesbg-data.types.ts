@@ -72,4 +72,4 @@ export type Unit = {
 export type SiegeEquipment = Pick<
   Unit,
   "name" | "unit_type" | "base_points" | "model_id" | "profile_origin"
-> & { siege_role: "Attacker" | "Defender" };
+> & { id: string; siege_role: "Attacker" | "Defender" };
