@@ -1,5 +1,6 @@
 import { DragStart, DropResult } from "@hello-pangea/dnd";
 import { useRosterBuildingState } from "../state/roster-building";
+import { SiegeEquipment } from "../types/mesbg-data.types.ts";
 import { FreshUnit, SelectedUnit, Warband } from "../types/roster.ts";
 import { moveItem, moveItemBetweenLists } from "../utils/array.ts";
 import { useCalculator } from "./useCalculator.ts";
@@ -16,7 +17,7 @@ export const useRosterSorting = () => {
 
   const getResortedWarband = (
     wb: Warband,
-    reorderedSource: (FreshUnit | SelectedUnit)[],
+    reorderedSource: (FreshUnit | SelectedUnit | SiegeEquipment)[],
   ) =>
     calculator.recalculateWarband({
       ...wb,
