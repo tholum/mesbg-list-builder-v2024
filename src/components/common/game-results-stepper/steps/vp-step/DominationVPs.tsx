@@ -87,13 +87,13 @@ export const DominationVPs: FunctionComponent<QuestionListProps> = (props) => {
         <Stack>
           <GeneralWoundVPs
             label="Your General"
-            value={generalVPs[0]}
-            setValue={(VPs) => setGeneralVPs((prev) => [VPs, prev[1]])}
+            value={-generalVPs[1]}
+            setValue={(VPs) => setGeneralVPs((prev) => [prev[0], -VPs])}
           />
           <GeneralWoundVPs
             label="Enemy General"
-            value={-generalVPs[1]}
-            setValue={(VPs) => setGeneralVPs((prev) => [prev[0], -VPs])}
+            value={generalVPs[0]}
+            setValue={(VPs) => setGeneralVPs((prev) => [VPs, prev[1]])}
           />
         </Stack>
       )}

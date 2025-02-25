@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected the General VP calculation for the Domination scenario."
+    ]
+  },
   "1.17": {
     "added": [
       "Enabled sorting rosters based on their name, army list, points and total units.",
