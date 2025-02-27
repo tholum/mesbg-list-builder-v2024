@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.18": {
     "changed": [
       "Made roster groups their own distinct entity allowing more data such as icons to be added to them.",
       "You can now include multiple roster groups with the same name."
