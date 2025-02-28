@@ -297,6 +297,9 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       children: [
         ...Object.entries(groupedRosters)
           .filter(([key]) => key !== "ungrouped")
+          .sort((a, b) =>
+            groupMap[a[0]].name.localeCompare(groupMap[b[0]].name),
+          )
           .map(([group, groupRosters]) => ({
             action: () => {},
             active:

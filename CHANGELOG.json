@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected the sorting of roster groups in the navigation sidebar."
+    ]
+  },
   "1.18": {
     "changed": [
       "Made roster groups their own distinct entity allowing more data such as icons to be added to them.",
