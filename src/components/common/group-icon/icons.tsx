@@ -27,7 +27,9 @@ export const factionLogos = {
   Corsairs: <FactionLogo faction="Corsair Fleet" />,
   Harad: <FactionLogo faction="Harad" />,
   "Barad-dur": <FactionLogo faction="Barad-dur" />,
-  Necromancer: <FactionLogo faction="Rise of the Necromancer" />,
+  "Dol Guldur": <FactionLogo faction="Rise of the Necromancer" />,
+  Wildman: <FactionLogo faction="Usurpers of Edoras" />,
+  Gundabad: <FactionLogo faction="Army of Gundabad" />,
 };
 
 export const gameIcons = {
