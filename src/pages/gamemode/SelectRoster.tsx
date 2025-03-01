@@ -76,8 +76,9 @@ const RosterGroup = ({
 
 export const SelectRoster = () => {
   const { gameState } = useGameModeState();
-  const { rosters } = useRosterBuildingState();
+  const { rosters, groups } = useRosterBuildingState();
   const navigate = useNavigate();
+  const groupMap = Object.fromEntries(groups.map((group) => [group.id, group]));
 
   const gameIds = Object.keys(gameState);
   const games = Object.entries(gameState).filter(([gameId]) => {
@@ -163,7 +164,11 @@ export const SelectRoster = () => {
       {groupedRosters
         .filter(([group]) => group !== "ungrouped")
         .map(([group, rosters], index) => (
-          <RosterGroup group={group} rosters={rosters} key={index} />
+          <RosterGroup
+            group={groupMap[group].name}
+            rosters={rosters}
+            key={index}
+          />
         ))}
 
       <List sx={{ width: "100%", bgcolor: "background.paper" }} dense>

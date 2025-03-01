@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Corrected the sorting of roster groups in the navigation sidebar.",
-      "Sum of all units in roster summary now correctly accounts for selected options."
+      "Sum of all units in roster summary now correctly accounts for selected options.",
+      "The groups listed on the Game Mode page now correctly show the group names rather then their ids."
     ]
   },
   "1.18": {
