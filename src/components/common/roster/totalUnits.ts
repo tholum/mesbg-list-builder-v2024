@@ -2,7 +2,7 @@ import { UnitType } from "../../../types/mesbg-data.types.ts";
 import { isSelectedUnit, Roster, SelectedUnit } from "../../../types/roster.ts";
 
 const defaultOptions = {
-  ignoreOptions: true,
+  ignoreOptions: false,
 };
 
 export const getSumOfUnits = (
