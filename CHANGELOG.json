@@ -3,7 +3,9 @@
     "bugfixes": [
       "Corrected the sorting of roster groups in the navigation sidebar.",
       "Sum of all units in roster summary now correctly accounts for selected options.",
-      "The groups listed on the Game Mode page now correctly show the group names rather then their ids."
+      "The groups listed on the Game Mode page now correctly show the group names rather then their ids.",
+      "Corrected Saruman's (White Council) Attack value.",
+      "Corrected the Dale Siege Crew Attack/Defence values."
     ]
   },
   "1.18": {
