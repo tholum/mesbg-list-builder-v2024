@@ -74,7 +74,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
 
   return (
     <Stack sx={{ p: 1 }} gap={1}>
-      {hero ? (
+      {isSelectedUnit(hero) ? (
         <HeroCard
           unit={hero}
           warbandId={warbandId}
