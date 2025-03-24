@@ -1528,7 +1528,7 @@
         {
           "name": "Piercing Shot",
           "type": "Active",
-          "description": "A model hit will be flung back D6\" if it has a Strength of 5 or lower. Any models passed over are knocked prone and take a Strength 5 hit. The flung model stops if it hits impassable terrain or a model with Strength 6 or higher, and both take a Strength 6 hit. The flung model is knocked prone if it survives. If the flung model would end its movement over other models, those models are moved the minimum distance to allow the flung model to be placed."
+          "description": "A model hit will be flung back D3\" if it has a Strength of 5 or lower. Any models passed over are knocked prone and take a Strength 5 hit. The flung model stops if it hits impassable terrain or a model with Strength 6 or higher, and both take a Strength 6 hit. The flung model is knocked prone if it survives. If the flung model would end its movement over other models, those models are moved the minimum distance to allow the flung model to be placed."
         }
       ],
       "magic_powers": [],
