@@ -5286,7 +5286,7 @@
         {
           "name": "Riding Dagger",
           "type": "Active",
-          "description": "Whenever an enemy Hero resolves a strike against Sharku and fails To Wound, Sharku may immediately make one Strength 4 Strike against that model."
+          "description": "Whenever an enemy model resolves a strike against Sharku (but not his warg) and fails To Wound, Sharku may immediately make one Strength 4 Strike against that model."
         },
         {
           "name": "Fury of the Pack",
