@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected custom tracker calculation for the Snow Troll in the Shank & Wrot profile."
+    ]
+  },
   "1.19": {
     "added": [
       "Added a new settings option which allows the removal of certain sections of the PDF based on user preference.",
