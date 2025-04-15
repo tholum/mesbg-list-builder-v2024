@@ -91,6 +91,7 @@ export const Database = () => {
           fullWidth
           onChange={(event: ChangeEvent<HTMLInputElement>) => {
             setFilter(event.target.value);
+            setPage(0);
           }}
           slotProps={{
             input: {
