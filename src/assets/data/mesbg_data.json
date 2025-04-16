@@ -3487,6 +3487,13 @@
         "name": "Bow",
         "points": 5,
         "type": "bow"
+      },
+      {
+        "id": "OPT0880",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
       }
     ]
   },
@@ -3507,7 +3514,15 @@
       ]
     ],
     "warband_size": 15,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0882",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
+      }
+    ]
   },
   "[breaking-of-the-fellowship] legolas": {
     "model_id": "[breaking-of-the-fellowship] legolas",
@@ -3526,7 +3541,15 @@
       ]
     ],
     "warband_size": 15,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0881",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
+      }
+    ]
   },
   "[breaking-of-the-fellowship] boromir-of-gondor": {
     "model_id": "[breaking-of-the-fellowship] boromir-of-gondor",
@@ -3550,6 +3573,13 @@
         "id": "OPT0130",
         "name": "Shield",
         "points": 5
+      },
+      {
+        "id": "OPT0883",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
       }
     ]
   },
@@ -3578,6 +3608,7 @@
         "type": "bow"
       },
       {
+        "id": "OPT0888",
         "name": "Elven cloak",
         "points": 0,
         "included": true,
@@ -3612,6 +3643,13 @@
         "id": "OPT0132",
         "name": "Sting",
         "points": 5
+      },
+      {
+        "id": "OPT0884",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
       }
     ]
   },
@@ -3632,7 +3670,15 @@
       ]
     ],
     "warband_size": 12,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0885",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
+      }
+    ]
   },
   "[breaking-of-the-fellowship] meriadoc-brandybuck": {
     "model_id": "[breaking-of-the-fellowship] meriadoc-brandybuck",
@@ -3651,7 +3697,15 @@
       ]
     ],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0886",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
+      }
+    ]
   },
   "[breaking-of-the-fellowship] peregrin-took": {
     "model_id": "[breaking-of-the-fellowship] peregrin-took",
@@ -3670,7 +3724,15 @@
       ]
     ],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT0887",
+        "name": "Elven cloak",
+        "points": 0,
+        "included": true,
+        "quantity": 1
+      }
+    ]
   },
   "[breaking-of-the-fellowship] lothlorien-warrior": {
     "model_id": "[breaking-of-the-fellowship] lothlorien-warrior",
