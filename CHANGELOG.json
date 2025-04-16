@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Corrected custom tracker calculation for the Snow Troll in the Shank & Wrot profile.",
-      "Correctly jump back to page 1 when a new filter is applied to the profile database."
+      "Correctly jump back to page 1 when a new filter is applied to the profile database.",
+      "Haldir now correctly includes an Elven cloak for free in Breaking of the Fellowship"
     ]
   },
   "1.19": {

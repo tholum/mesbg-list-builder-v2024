@@ -3576,6 +3576,12 @@
         "name": "Elf bow",
         "points": 5,
         "type": "bow"
+      },
+      {
+        "name": "Elven cloak",
+        "points": 5,
+        "included": true,
+        "quantity": 1
       }
     ]
   },
