@@ -1758,7 +1758,7 @@
         {
           "name": "Mercenary Ambush",
           "type": "Active",
-          "description": "Warbands lead by a Goblin Mercenary Captain that contain solely Goblin Mercenaries do not have to deploy at the start of the game, as may be kept in reserve. From turn 2 onwards, the Captain may take an Intelligence test at the end of each of the controlling player’s Activation phases. If passed, the player decides whether the warband arrives. If failed, the opposing player decides. If they arrive, they should be fully placed within a terrain piece that the entire warband can hide within or behind. They cannot be placed in enemy Control Zones, cannot Move that turn, but may otherwise act normally. If the Mercenaries cannot be placed as described above, then they may arrive from any board edge via the rules for Reinforcements."
+          "description": "Warbands lead by a Goblin Mercenary Captain that contain solely Goblin      Mercenaries do not have to deploy at the start of the game, as they may be kept in reserve. If you choose to do so, then from turn 2 onwards, the Captain must take an Intelligence test at the end of each of the controlling player’s Activation phases. If passed, the player decides whether the warband arrives. If failed, the opposing player decides. If they arrive, they should be fully placed within a terrain piece that the entire warband can hide within or behind. They cannot be placed in enemy Control Zones, cannot Move that turn, but may otherwise act normally. If the Mercenaries cannot be placed as described above, then they may arrive from any board edge via the rules for Reinforcements."
         }
       ],
       "magic_powers": [],
@@ -1792,7 +1792,7 @@
         {
           "name": "Mercenary Ambush",
           "type": "Active",
-          "description": "Warbands lead by a Goblin Mercenary Captain that contain solely Goblin Mercenaries do not have to deploy at the start of the game, as may be kept in reserve. From turn 2 onwards, the Captain may take an Intelligence test at the end of each of the controlling player’s Activation phases. If passed, the player decides whether the warband arrives. If failed, the opposing player decides. If they arrive, they should be fully placed within a terrain piece that the entire warband can hide within or behind. They cannot be placed in enemy Control Zones, cannot Move that turn, but may otherwise act normally. If the Mercenaries cannot be placed as described above, then they may arrive from any board edge via the rules for Reinforcements."
+          "description": "Warbands lead by a Goblin Mercenary Captain that contain solely Goblin      Mercenaries do not have to deploy at the start of the game, as they may be kept in reserve. If you choose to do so, then from turn 2 onwards, the Captain must take an Intelligence test at the end of each of the controlling player’s Activation phases. If passed, the player decides whether the warband arrives. If failed, the opposing player decides. If they arrive, they should be fully placed within a terrain piece that the entire warband can hide within or behind. They cannot be placed in enemy Control Zones, cannot Move that turn, but may otherwise act normally. If the Mercenaries cannot be placed as described above, then they may arrive from any board edge via the rules for Reinforcements."
         }
       ],
       "magic_powers": [],
