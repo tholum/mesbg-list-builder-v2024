@@ -18,12 +18,12 @@ export const unitSortOrder: Record<UnitType, number> = {
  * @param b
  */
 export function byHeroicTier(a: SelectedUnit, b: SelectedUnit) {
-  if (a.unit_type.includes("Hero") && a.unique) {
-    if (b.unit_type.includes("Hero") && b.unique) {
-      return unitSortOrder[a.unit_type] - unitSortOrder[b.unit_type];
-    }
-    return -1;
-  }
+  // if (a.unit_type.includes("Hero") && a.unique) {
+  //   if (b.unit_type.includes("Hero") && b.unique) {
+  //     return unitSortOrder[a.unit_type] - unitSortOrder[b.unit_type];
+  //   }
+  //   return -1;
+  // }
 
   if (a.unit_type === "Warrior" && b.unit_type === "Warrior") {
     return a.name.localeCompare(b.name);
