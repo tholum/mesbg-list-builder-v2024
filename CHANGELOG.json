@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Added the missing Hearthguard option for Khazad Guard in Durin's warband."
+      "Added the missing Hearthguard option for Khazad Guard in Durin's warband.",
+      "Corrected the point cost of the Gondor Avenger Bolt Thrower from 50 to 60."
     ]
   },
   "1.20": {

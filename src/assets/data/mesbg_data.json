@@ -3783,7 +3783,7 @@
     "profile_origin": "Gondor",
     "name": "Gondor Avenger Bolt Thrower",
     "unit_type": "Siege Engine",
-    "base_points": 50,
+    "base_points": 60,
     "siege_crew": 2,
     "bow_limit": true,
     "MWFW": [
@@ -8253,7 +8253,7 @@
     "profile_origin": "Gondor",
     "name": "Gondor Avenger Bolt Thrower",
     "unit_type": "Siege Engine",
-    "base_points": 50,
+    "base_points": 60,
     "siege_crew": 2,
     "bow_limit": true,
     "MWFW": [
@@ -15011,7 +15011,7 @@
     "profile_origin": "Gondor",
     "name": "Gondor Avenger Bolt Thrower",
     "unit_type": "Siege Engine",
-    "base_points": 50,
+    "base_points": 60,
     "siege_crew": 2,
     "bow_limit": true,
     "MWFW": [
