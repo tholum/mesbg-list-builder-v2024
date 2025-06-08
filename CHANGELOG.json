@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Added the missing Hearthguard option for Khazad Guard in Durin's warband."
+    ]
+  },
   "1.20": {
     "added": [
       "Incorporated the leaked profiles  and army lists from \"Armies of Middle Earth\""

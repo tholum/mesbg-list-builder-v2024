@@ -11833,7 +11833,22 @@
     "bow_limit": true,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "name": "Hearthguard",
+        "points": 2,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[kingdom-of-khazad-dum] durin-king-of-khazad-dum"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "[kingdom-of-khazad-dum] dwarf-ranger": {
     "model_id": "[kingdom-of-khazad-dum] dwarf-ranger",
