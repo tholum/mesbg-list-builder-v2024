@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Added the missing Hearthguard option for Khazad Guard in Durin's warband.",
-      "Corrected the point cost of the Gondor Avenger Bolt Thrower from 50 to 60."
+      "Corrected the point cost of the Gondor Avenger Bolt Thrower from 50 to 60.",
+      "Added the missing army special rule to the Army of the Great Eye."
     ]
   },
   "1.20": {

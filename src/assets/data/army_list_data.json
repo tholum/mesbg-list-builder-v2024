@@ -2382,7 +2382,12 @@
         "description": "An Army of the Great Eye must always contain a Ringwraith model as the Army's General."
       }
     ],
-    "special_rules": [],
+    "special_rules": [
+      {
+        "title": "The Great Eye",
+        "description": "At the beginning of the game, place a 25mm Great Eye Marker on the battlefield in your deployment zone. At the end of each Move Phase, remove the Great Eye Marker and roll a D6. On a 2+ you may place it anywhere within 6\" of where it was. On a 1, Sauron has been distracted and your opponent may place it anywhere within 12\" of where it was. The Great Eye Marker can never be placed so that it overlaps another model's base, though models may finish their Move overlapping the Great Eye Marker. Friendly models treat the Great Eye Marker as a banner. Enemy models within 3\" of the Great Eye Marker suffer a -1 penalty to any Courage or Intelligence Tests they are required to take.\nIf your opponent's Army contains a Ringbearer (with the exception of Sauron), then if during the End Phase of any turn they are wearing the Ring and within 3\" of the Great Eye Marker, they must roll a D6. On a 3+, they succumb to Sauron and are immediately removed as a casualty."
+      }
+    ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
     "rule_highlights": []
