@@ -15663,6 +15663,369 @@
       }
     ]
   },
+  "[paths-of-the-druadan] theoden": {
+    "model_id": "[paths-of-the-druadan] theoden",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Theoden",
+    "unit_type": "Hero of Legend",
+    "base_points": 75,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "3:3:1:2"
+      ]
+    ],
+    "warband_size": 18,
+    "options": [
+      {
+        "id": "OPT1222",
+        "name": "Snowmane with armour",
+        "points": 25,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Snowmane with armour",
+        "quantity": 1
+      },
+      {
+        "id": "OPT1223",
+        "name": "Exchange armour for heavy armour",
+        "points": 5,
+        "included": true,
+        "quantity": 1
+      },
+      {
+        "id": "OPT1224",
+        "name": "Shield",
+        "points": 5,
+        "included": true,
+        "quantity": 1
+      }
+    ]
+  },
+  "[paths-of-the-druadan] eomer": {
+    "model_id": "[paths-of-the-druadan] eomer",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Eomer",
+    "unit_type": "Hero of Valour",
+    "base_points": 110,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "3:3:3:3"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1225",
+        "name": "Firefoot with armour",
+        "points": 25,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Firefoot with armour",
+        "quantity": 1
+      },
+      {
+        "id": "OPT1226",
+        "name": "Shield",
+        "points": 5
+      },
+      {
+        "id": "OPT1227",
+        "name": "Throwing spears",
+        "points": 5,
+        "type": "throw"
+      }
+    ]
+  },
+  "[paths-of-the-druadan] ghan-buri-ghan": {
+    "model_id": "[paths-of-the-druadan] ghan-buri-ghan",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "The Free Peoples",
+    "name": "Ghan-Buri-Ghan",
+    "unit_type": "Hero of Valour",
+    "base_points": 65,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "3:1:1:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": []
+  },
+  "[paths-of-the-druadan] deorwine-chief-of-the-king's-knights": {
+    "model_id": "[paths-of-the-druadan] deorwine-chief-of-the-king's-knights",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Deorwine, Chief of the King's Knights",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1231",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      }
+    ]
+  },
+  "[paths-of-the-druadan] elfhelm-captain-of-rohan": {
+    "model_id": "[paths-of-the-druadan] elfhelm-captain-of-rohan",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Elfhelm, Captain of Rohan",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1232",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      }
+    ]
+  },
+  "[paths-of-the-druadan] gamling": {
+    "model_id": "[paths-of-the-druadan] gamling",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Gamling",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 55,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1233",
+        "name": "Royal Standard of Rohan",
+        "points": 40
+      },
+      {
+        "id": "OPT1234",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      }
+    ]
+  },
+  "[paths-of-the-druadan] captain-of-rohan": {
+    "model_id": "[paths-of-the-druadan] captain-of-rohan",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Captain of Rohan",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 45,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1228",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      },
+      {
+        "id": "OPT1229",
+        "name": "Exchange armour for heavy armour",
+        "points": 5
+      },
+      {
+        "id": "OPT1230",
+        "name": "Shield",
+        "points": 5
+      }
+    ]
+  },
+  "[paths-of-the-druadan] eowyn": {
+    "model_id": "[paths-of-the-druadan] eowyn",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Eowyn",
+    "unit_type": "Independent Hero",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "Eowyn",
+        "2:2:3:2"
+      ],
+      [
+        "Meriadoc Brandybuck",
+        "1:1:2:2"
+      ]
+    ],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1235",
+        "name": "Merry",
+        "points": 25,
+        "type": "passenger",
+        "included": true,
+        "passengers": 1,
+        "quantity": 1
+      },
+      {
+        "id": "OPT1236",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      },
+      {
+        "id": "OPT1237",
+        "name": "Armour",
+        "points": 5,
+        "included": true,
+        "quantity": 1
+      },
+      {
+        "id": "OPT1238",
+        "name": "Shield",
+        "points": 5
+      },
+      {
+        "id": "OPT1239",
+        "name": "Throwing spears",
+        "points": 5,
+        "type": "throw"
+      }
+    ]
+  },
+  "[paths-of-the-druadan] rider-of-rohan": {
+    "model_id": "[paths-of-the-druadan] rider-of-rohan",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Rider of Rohan",
+    "unit_type": "Warrior",
+    "base_points": 14,
+    "default_bow": true,
+    "siege_crew": 0,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1240",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT1241",
+        "name": "Throwing spears",
+        "points": 2,
+        "type": "throw"
+      }
+    ]
+  },
+  "[paths-of-the-druadan] rohan-royal-guard": {
+    "model_id": "[paths-of-the-druadan] rohan-royal-guard",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "Rohan",
+    "name": "Rohan Royal Guard",
+    "unit_type": "Warrior",
+    "base_points": 11,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1242",
+        "name": "Horse",
+        "points": 5,
+        "type": "mount",
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
+      },
+      {
+        "id": "OPT1243",
+        "name": "Throwing spears",
+        "points": 2,
+        "type": "throw"
+      }
+    ]
+  },
+  "[paths-of-the-druadan] woses-warrior": {
+    "model_id": "[paths-of-the-druadan] woses-warrior",
+    "army_type": "Good",
+    "army_list": "Paths of the Druadan",
+    "profile_origin": "The Free Peoples",
+    "name": "Woses Warrior",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[pits-of-dol-guldur] azog-the-defiler": {
     "model_id": "[pits-of-dol-guldur] azog-the-defiler",
     "army_type": "Evil",

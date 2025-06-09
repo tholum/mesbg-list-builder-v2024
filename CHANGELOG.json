@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Added the Paths of the Druadan army list which was missing from update v1.20."
+    ],
     "bugfixes": [
       "Added the missing Hearthguard option for Khazad Guard in Durin's warband.",
       "Corrected the point cost of the Gondor Avenger Bolt Thrower from 50 to 60.",

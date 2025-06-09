@@ -2275,7 +2275,9 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [
+      "Fearless"
+    ]
   },
   "The Beornings": {
     "additional_rules": [],
@@ -2598,5 +2600,35 @@
       "Sworn Protector (Suladan)",
       "Bane of Kings"
     ]
+  },
+  "Paths of the Druadan": {
+    "additional_rules": [
+      {
+        "description": "A Paths of the Druadan Army must always contain Theoden, who is always the Army's General."
+      },
+      {
+        "description": "A Paths of the Druadan Army must always contain Ghan-buri-Ghan and a Warband of at least 12 Woses Warriors."
+      },
+      {
+        "description": "Riders of Rohan do not count towards this Army's bow limit."
+      }
+    ],
+    "special_rules": [
+      {
+        "title": "Know All Paths",
+        "description": "If during the Declare Heroic Actions step of a Move Phase, both sides have declared a Heroic Move and a roll-off is required to see which side's Heroic Move happens first, this Army will gain a bonus to that roll. If they would normally win the roll-off on a 4+, they will instead win it on a 3+. If they would normally win the roll-off on a 1, 2, or 3, they will instead win the roll-off on a 1, 2, 3, or 4."
+      },
+      {
+        "title": "Kill Orc-folk",
+        "description": "Friendly models may re-roll To Wound Rolls of a natural 1 when making Strikes against Orc, Goblin, or Uruk-hai models."
+      },
+      {
+        "title": "Waypoints",
+        "description": "At the start of the game, after both sides have been deployed, you may place up to three 25mm Waypoint Markers anywhere on the battlefield. Whilst within 6\" of a friendly Waypoint Marker, friendly Rohan models don't suffer penalties for Moving, or Charging, through Difficult Terrain."
+      }
+    ],
+    "bow_limit": 0.33,
+    "throw_limit": 0.33,
+    "rule_highlights": []
   }
 }

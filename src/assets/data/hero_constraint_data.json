@@ -3385,6 +3385,72 @@
     ],
     "extra_profiles": []
   },
+  "[paths-of-the-druadan] captain-of-rohan": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] deorwine-chief-of-the-king's-knights": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] rohan-royal-guard",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] elfhelm-captain-of-rohan": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] eomer": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] rohan-royal-guard",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] eowyn": {
+    "valid_warband_units": [],
+    "extra_profiles": [
+      "Meriadoc Brandybuck"
+    ]
+  },
+  "[paths-of-the-druadan] gamling": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] rohan-royal-guard",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] ghan-buri-ghan": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[paths-of-the-druadan] theoden": {
+    "valid_warband_units": [
+      "[paths-of-the-druadan] eowyn",
+      "[paths-of-the-druadan] rider-of-rohan",
+      "[paths-of-the-druadan] rohan-royal-guard",
+      "[paths-of-the-druadan] woses-warrior"
+    ],
+    "extra_profiles": []
+  },
   "[pits-of-dol-guldur] azog-the-defiler": {
     "valid_warband_units": [
       "[pits-of-dol-guldur] gundabad-orc-warrior",

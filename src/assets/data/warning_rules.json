@@ -145,15 +145,6 @@
       "warning":"A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
     }
   ],
-  "Besiegers of the Hornburg":[
-    {
-      "type":"compulsory",
-      "dependencies":[
-        "[beseigers-of-the-hornburg] wulf"
-      ],
-      "warning":"A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
-    }
-  ],
   "Breaking of the Fellowship":[
     {
       "type":"compulsory",
@@ -375,6 +366,22 @@
         "[muster-of-isengard] saruman"
       ],
       "warning":"A Muster of Isengard Army must always contain Saruman, who is always the Army's General."
+    }
+  ],
+  "Paths of the Druadan":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[paths-of-the-druadan] theoden"
+      ],
+      "warning":"A Paths of the Druadan Army must always contain Theoden, who is always the Army's General."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[paths-of-the-druadan] ghan-buri-ghan"
+      ],
+      "warning":"A Paths of the Druadan Army must always contain Ghan-buri-Ghan"
     }
   ],
   "Pits of Dol Guldur":[
