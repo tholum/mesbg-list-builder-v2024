@@ -11335,14 +11335,14 @@
     },
     "Blackroot Vale Archer": {
       "Mv": "6\"",
-      "Fv": "3/3+",
-      "Sv": "",
+      "Fv": "3",
+      "Sv": "3+",
       "S": "3",
       "D": "4",
       "A": "1",
       "W": "1",
-      "C": "2",
-      "I": "",
+      "C": "8+",
+      "I": "7+",
       "active_or_passive_rules": [
         {
           "name": "Dead-eye Shot",
