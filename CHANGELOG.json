@@ -14,7 +14,8 @@
       "Hobbit Shirriffs can now only be included in the warbands of Shirriff Leaders.",
       "Corrected the Shield option for Warriors of Dale in the Army of Dale list.",
       "Corrected the statbar for the Blackroot Vale Archer.",
-      "Corrected the Shield and spear point cost for Morannon Orcs in Army of the Great Eye."
+      "Corrected the Shield and spear point cost for Morannon Orcs in Army of the Great Eye.",
+      "Updated the warnings for the Corsair Fleet army list so that you must always choose a Corsair Captain (Fleetmaster), but the General is no longer auto-selected for you in case you wish to add Dalamyr (who must become General instead)."
     ]
   },
   "1.20": {
