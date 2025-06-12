@@ -1,7 +1,8 @@
 {
   "main": {
     "added": [
-      "Added the Paths of the Druadan army list which was missing from update v1.20."
+      "Added the Paths of the Druadan army list which was missing from update v1.20.",
+      "Profile data and army lists from the Good Legacies PDF has been added."
     ],
     "bugfixes": [
       "Added the missing Hearthguard option for Khazad Guard in Durin's warband.",
