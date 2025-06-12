@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.21": {
     "added": [
       "Added the Paths of the Druadan army list which was missing from update v1.20.",
       "Profile data and army lists from the Good Legacies PDF has been added."
