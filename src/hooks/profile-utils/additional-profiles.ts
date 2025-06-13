@@ -195,6 +195,11 @@ function getAdditionalProfilesFromProfileData(
           return { ...profile, HM, HW, HF };
         }
 
+        if (unit.name === "King's Champion" && profile.name === "Herald") {
+          const [HM, HW, HF] = unit.MWFW[1][1].split(":");
+          return { ...profile, HM, HW, HF };
+        }
+
         return { ...profile };
       }) || []
   );
