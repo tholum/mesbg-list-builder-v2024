@@ -14,6 +14,44 @@ import {
 } from "../types/roster.ts";
 import { useCalculator } from "./useCalculator.ts";
 
+function getBrotherId(unit: Unit, [left, right]: [string, string]) {
+  const otherBrotherName = unit.name === left ? right : left;
+  const otherBrotherId = unit.model_id.replace(
+    /\]\s.*$/,
+    `] ${otherBrotherName.toLowerCase()}`,
+  );
+  return otherBrotherId;
+}
+
+function addWarbandWithSpecificUnit(
+  updatedRoster: Roster,
+  otherBrotherId: string,
+) {
+  const rosterContainsTheOtherBrother = updatedRoster.warbands
+    .map((wb) => wb.hero)
+    .filter(isSelectedUnit)
+    .map((hero) => hero.model_id)
+    .includes(otherBrotherId);
+
+  if (!rosterContainsTheOtherBrother) {
+    const otherBrother = mesbgData[otherBrotherId];
+    updatedRoster.warbands = [
+      ...updatedRoster.warbands,
+      {
+        ...newWarband,
+        id: randomUuid(),
+        hero: {
+          ...otherBrother,
+          id: randomUuid(),
+          pointsPerUnit: otherBrother.base_points,
+          pointsTotal: otherBrother.base_points,
+          quantity: 1,
+        },
+      },
+    ];
+  }
+}
+
 export const useWarbandMutations = (rosterId: string, warbandId: string) => {
   const calculator = useCalculator();
 
@@ -61,35 +99,13 @@ export const useWarbandMutations = (rosterId: string, warbandId: string) => {
     };
 
     if (["Elladan", "Elrohir"].includes(unit.name)) {
-      const otherBrotherName = unit.name === "Elladan" ? "Elrohir" : "Elladan";
-      const otherBrotherId = unit.model_id.replace(
-        /\]\s.*$/,
-        `] ${otherBrotherName.toLowerCase()}`,
-      );
+      const otherBrotherId = getBrotherId(unit, ["Elladan", "Elrohir"]);
+      addWarbandWithSpecificUnit(updatedRoster, otherBrotherId);
+    }
 
-      const rosterContainsTheOtherBrother = updatedRoster.warbands
-        .map((wb) => wb.hero)
-        .filter(isSelectedUnit)
-        .map((hero) => hero.model_id)
-        .includes(otherBrotherId);
-
-      if (!rosterContainsTheOtherBrother) {
-        const otherBrother = mesbgData[otherBrotherId];
-        updatedRoster.warbands = [
-          ...updatedRoster.warbands,
-          {
-            ...newWarband,
-            id: randomUuid(),
-            hero: {
-              ...otherBrother,
-              id: randomUuid(),
-              pointsPerUnit: otherBrother.base_points,
-              pointsTotal: otherBrother.base_points,
-              quantity: 1,
-            },
-          },
-        ];
-      }
+    if (["Murin", "Drar"].includes(unit.name)) {
+      const otherBrotherId = getBrotherId(unit, ["Murin", "Drar"]);
+      addWarbandWithSpecificUnit(updatedRoster, otherBrotherId);
     }
 
     updateRoster(updatedRoster);
