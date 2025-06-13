@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected the mandatory option selection label when selecting an hero specific unit upgrade (such as Helmingas or Hearthgaurd)."
+    ]
+  },
   "1.21": {
     "added": [
       "Added the Paths of the Druadan army list which was missing from update v1.20.",

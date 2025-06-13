@@ -127,16 +127,20 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
           testName={`option-toggle--${slugify(unitName)}--${slugify(option.name)}`}
         />
       ))}
-      {mandatory && !options.find((option) => option.quantity === 1) && (
-        <FormHelperText
-          sx={{
-            marginBottom: ".8rem",
-            color: ({ palette }) => palette.error.dark,
-          }}
-        >
-          You must select one option for this model
-        </FormHelperText>
-      )}
+      {mandatory &&
+        !options.find(
+          (option) =>
+            option.quantity === 1 && option.type !== "special_warband_upgrade",
+        ) && (
+          <FormHelperText
+            sx={{
+              marginBottom: ".8rem",
+              color: ({ palette }) => palette.error.dark,
+            }}
+          >
+            You must select one option for this model
+          </FormHelperText>
+        )}
     </FormGroup>
   );
 };
