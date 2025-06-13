@@ -933,6 +933,24 @@
       "warning":"Elrohir and Elladan must always be chosen together in your army, you cannot have one on their own."
     }
   ],
+  "[the-iron-hills] drar":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[the-iron-hills] murin"
+      ],
+      "warning":"Murin & Drar must always be included together in your army, you cannot have one on their own."
+    }
+  ],
+  "[the-iron-hills] murin":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[the-iron-hills] drar"
+      ],
+      "warning":"Murin & Drar must always be included together in your army, you cannot have one on their own."
+    }
+  ],
   "[thorin's-company] great-eagle":[
     {
       "type":"requires_all",

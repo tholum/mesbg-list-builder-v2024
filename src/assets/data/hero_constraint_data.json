@@ -2789,6 +2789,15 @@
     "valid_warband_units": [],
     "extra_profiles": []
   },
+  "[kingdom-of-khazad-dum] king's-champion": {
+    "valid_warband_units": [
+      "[kingdom-of-khazad-dum] dwarf-warrior",
+      "[kingdom-of-khazad-dum] dwarf-ranger",
+      "[kingdom-of-khazad-dum] iron-guard",
+      "[kingdom-of-khazad-dum] vault-warden-team"
+    ],
+    "extra_profiles": []
+  },
   "[kingdom-of-khazad-dum] mardin-the-king's-ward": {
     "valid_warband_units": [
       "[kingdom-of-khazad-dum] dwarf-warrior",
@@ -5488,6 +5497,14 @@
     ],
     "extra_profiles": []
   },
+  "[the-iron-hills] drar": {
+    "valid_warband_units": [
+      "[the-iron-hills] iron-hills-warrior",
+      "[the-iron-hills] iron-hills-goat-rider",
+      "[the-iron-hills] iron-hills-chariot"
+    ],
+    "extra_profiles": []
+  },
   "[the-iron-hills] dwarf-king": {
     "valid_warband_units": [
       "[the-iron-hills] iron-hills-warrior",
@@ -5509,6 +5526,14 @@
     "extra_profiles": [
       "Iron Hills Chariot"
     ]
+  },
+  "[the-iron-hills] murin": {
+    "valid_warband_units": [
+      "[the-iron-hills] iron-hills-warrior",
+      "[the-iron-hills] iron-hills-goat-rider",
+      "[the-iron-hills] iron-hills-chariot"
+    ],
+    "extra_profiles": []
   },
   "[the-last-alliance] captain-of-numenor": {
     "valid_warband_units": [

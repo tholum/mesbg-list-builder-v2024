@@ -598,7 +598,7 @@
   },
   "[army-of-edoras] kings-huntsman": {
     "model_id": "[army-of-edoras] kings-huntsman",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Army of Edoras",
     "profile_origin": "Good Legacy",
     "name": "King's Huntsman",
@@ -3602,7 +3602,7 @@
   },
   "[atop-the-walls] knight-of-the-white-tower": {
     "model_id": "[atop-the-walls] knight-of-the-white-tower",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Atop the Walls",
     "profile_origin": "Good Legacy",
     "name": "Knight of the White Tower",
@@ -6946,7 +6946,7 @@
   },
   "[defenders-of-helm's-deep] kings-huntsman": {
     "model_id": "[defenders-of-helm's-deep] kings-huntsman",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Defenders of Helm's Deep",
     "profile_origin": "Good Legacy",
     "name": "King's Huntsman",
@@ -7674,7 +7674,7 @@
   },
   "[defenders-of-the-pelennor] knight-of-the-white-tower": {
     "model_id": "[defenders-of-the-pelennor] knight-of-the-white-tower",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Defenders of the Pelennor",
     "profile_origin": "Good Legacy",
     "name": "Knight of the White Tower",
@@ -8268,7 +8268,7 @@
   },
   "[defenders-of-the-pelennor] man-at-arms-of-dol-amroth": {
     "model_id": "[defenders-of-the-pelennor] man-at-arms-of-dol-amroth",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Defenders of the Pelennor",
     "profile_origin": "Good Legacy",
     "name": "Man-at-arms of Dol Amroth",
@@ -9974,7 +9974,7 @@
   },
   "[fords-of-isen] grimbold-of-grimslade": {
     "model_id": "[fords-of-isen] grimbold-of-grimslade",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Fords of Isen",
     "profile_origin": "Good Legacy",
     "name": "Grimbold of Grimslade",
@@ -10056,7 +10056,7 @@
   },
   "[fords-of-isen] kings-huntsman": {
     "model_id": "[fords-of-isen] kings-huntsman",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Fords of Isen",
     "profile_origin": "Good Legacy",
     "name": "King's Huntsman",
@@ -10137,7 +10137,7 @@
   },
   "[fords-of-isen] rohan-outrider": {
     "model_id": "[fords-of-isen] rohan-outrider",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Fords of Isen",
     "profile_origin": "Good Legacy",
     "name": "Rohan Outrider",
@@ -10480,7 +10480,7 @@
   },
   "[garrison-of-ithilien] anborn-ranger-of-ithilien": {
     "model_id": "[garrison-of-ithilien] anborn-ranger-of-ithilien",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Garrison of Ithilien",
     "profile_origin": "Good Legacy",
     "name": "Anborn, Ranger of Ithilien",
@@ -10500,7 +10500,7 @@
   },
   "[garrison-of-ithilien] mublung-ranger-of-ithilien": {
     "model_id": "[garrison-of-ithilien] mublung-ranger-of-ithilien",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Garrison of Ithilien",
     "profile_origin": "Good Legacy",
     "name": "Mablung, Ranger of Ithilien",
@@ -12548,6 +12548,32 @@
     "warband_size": 15,
     "options": []
   },
+  "[kingdom-of-khazad-dum] king's-champion": {
+    "model_id": "[kingdom-of-khazad-dum] king's-champion",
+    "army_type": "Good",
+    "army_list": "Kingdom of Khazad-Dum",
+    "profile_origin": "Good Legacy",
+    "name": "King's Champion",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 140,
+    "siege_crew": 2,
+    "MWFW": [
+      [
+        "King's Champion",
+        "2:1:1:2"
+      ],
+      [
+        "Herald",
+        "0:1:2:2"
+      ],
+      [
+        "Herald",
+        "0:1:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[kingdom-of-khazad-dum] dwarf-captain": {
     "model_id": "[kingdom-of-khazad-dum] dwarf-captain",
     "army_type": "Good",
@@ -12568,7 +12594,7 @@
   },
   "[kingdom-of-khazad-dum] dwarf-shieldbeearer": {
     "model_id": "[kingdom-of-khazad-dum] dwarf-shieldbeearer",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Kingdom of Khazad-Dum",
     "profile_origin": "Good Legacy",
     "name": "Dwarf Shieldbearer",
@@ -12861,7 +12887,7 @@
   },
   "[kingdom-of-rohan] erkenbrand-captain-of-rohan": {
     "model_id": "[kingdom-of-rohan] erkenbrand-captain-of-rohan",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Kingdom of Rohan",
     "profile_origin": "Good Legacy",
     "name": "Erkenbrand, Captain of Rohan",
@@ -12907,7 +12933,7 @@
   },
   "[kingdom-of-rohan] grimbold-of-grimslade": {
     "model_id": "[kingdom-of-rohan] grimbold-of-grimslade",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Kingdom of Rohan",
     "profile_origin": "Good Legacy",
     "name": "Grimbold of Grimslade",
@@ -13083,7 +13109,7 @@
   },
   "[kingdom-of-rohan] kings-huntsman": {
     "model_id": "[kingdom-of-rohan] kings-huntsman",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Kingdom of Rohan",
     "profile_origin": "Good Legacy",
     "name": "King's Huntsman",
@@ -13177,7 +13203,7 @@
   },
   "[kingdom-of-rohan] rohan-outrider": {
     "model_id": "[kingdom-of-rohan] rohan-outrider",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Kingdom of Rohan",
     "profile_origin": "Good Legacy",
     "name": "Rohan Outrider",
@@ -14202,7 +14228,7 @@
   },
   "[lindon] erestor": {
     "model_id": "[lindon] erestor",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Lindon",
     "profile_origin": "Good Legacy",
     "name": "Erestor",
@@ -14272,7 +14298,7 @@
   },
   "[lindon] rivendell-stormcaller": {
     "model_id": "[lindon] rivendell-stormcaller",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Lindon",
     "profile_origin": "Good Legacy",
     "name": "Rivendell Stormcaller",
@@ -14529,7 +14555,7 @@
   },
   "[lothlorien] lothlorien-stormcaller": {
     "model_id": "[lothlorien] lothlorien-stormcaller",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Lothlorien",
     "profile_origin": "Good Legacy",
     "name": "Lothlorien Stormcaller",
@@ -15255,7 +15281,7 @@
   },
   "[men-of-the-west] man-at-arms-of-dol-amroth": {
     "model_id": "[men-of-the-west] man-at-arms-of-dol-amroth",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Men of the West",
     "profile_origin": "Good Legacy",
     "name": "Man-at-arms of Dol Amroth",
@@ -15803,7 +15829,7 @@
   },
   "[minas-tirith] knight-of-the-white-tower": {
     "model_id": "[minas-tirith] knight-of-the-white-tower",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Minas Tirith",
     "profile_origin": "Good Legacy",
     "name": "Knight of the White Tower",
@@ -15860,7 +15886,7 @@
   },
   "[minas-tirith] cirion-lieutenant-of-amon-barad": {
     "model_id": "[minas-tirith] cirion-lieutenant-of-amon-barad",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Minas Tirith",
     "profile_origin": "Good Legacy",
     "name": "Cirion, Lieutenant of Amon Barad",
@@ -17040,7 +17066,7 @@
   },
   "[paths-of-the-druadan] rohan-outrider": {
     "model_id": "[paths-of-the-druadan] rohan-outrider",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Paths of the Druadan",
     "profile_origin": "Good Legacy",
     "name": "Rohan Outrider",
@@ -19491,7 +19517,7 @@
   },
   "[riders-of-eomer] erkenbrand-captain-of-rohan": {
     "model_id": "[riders-of-eomer] erkenbrand-captain-of-rohan",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Riders of Eomer",
     "profile_origin": "Good Legacy",
     "name": "Erkenbrand, Captain of Rohan",
@@ -20324,7 +20350,7 @@
   },
   "[rivendell] erestor": {
     "model_id": "[rivendell] erestor",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Rivendell",
     "profile_origin": "Good Legacy",
     "name": "Erestor",
@@ -20489,7 +20515,7 @@
   },
   "[rivendell] rivendell-stormcaller": {
     "model_id": "[rivendell] rivendell-stormcaller",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Rivendell",
     "profile_origin": "Good Legacy",
     "name": "Rivendell Stormcaller",
@@ -20877,7 +20903,7 @@
   },
   "[road-to-helm's-deep] rohan-outrider": {
     "model_id": "[road-to-helm's-deep] rohan-outrider",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Road to Helm's Deep",
     "profile_origin": "Good Legacy",
     "name": "Rohan Outrider",
@@ -20968,7 +20994,7 @@
   },
   "[road-to-rivendell] gildor-inglorion": {
     "model_id": "[road-to-rivendell] gildor-inglorion",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Road to Rivendell",
     "profile_origin": "Good Legacy",
     "name": "Gildor Inglorion",
@@ -21170,7 +21196,7 @@
   },
   "[road-to-rivendell] noldorin-exiles": {
     "model_id": "[road-to-rivendell] noldorin-exiles",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "Road to Rivendell",
     "profile_origin": "Good Legacy",
     "name": "Noldorin Exiles",
@@ -23726,7 +23752,7 @@
   },
   "[the-fiefdoms] man-at-arms-of-dol-amroth": {
     "model_id": "[the-fiefdoms] man-at-arms-of-dol-amroth",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "The Fiefdoms",
     "profile_origin": "Good Legacy",
     "name": "Man-at-arms of Dol Amroth",
@@ -24250,7 +24276,7 @@
   },
   "[the-grief-of-eomer] man-at-arms-of-dol-amroth": {
     "model_id": "[the-grief-of-eomer] man-at-arms-of-dol-amroth",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "The Grief of Eomer",
     "profile_origin": "Good Legacy",
     "name": "Man-at-arms of Dol Amroth",
@@ -24424,6 +24450,46 @@
         "points": 0
       }
     ]
+  },
+  "[the-iron-hills] drar": {
+    "model_id": "[the-iron-hills] drar",
+    "army_type": "Good",
+    "army_list": "The Iron Hills",
+    "profile_origin": "Good Legacy",
+    "name": "Drar",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[the-iron-hills] murin": {
+    "model_id": "[the-iron-hills] murin",
+    "army_type": "Good",
+    "army_list": "The Iron Hills",
+    "profile_origin": "Good Legacy",
+    "name": "Murin",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[the-iron-hills] iron-hills-chariot": {
     "model_id": "[the-iron-hills] iron-hills-chariot",
@@ -24629,7 +24695,7 @@
   },
   "[the-last-alliance] erestor": {
     "model_id": "[the-last-alliance] erestor",
-    "army_type": "Good (Legacy)",
+    "army_type": "Good",
     "army_list": "The Last Alliance",
     "profile_origin": "Good Legacy",
     "name": "Erestor",
