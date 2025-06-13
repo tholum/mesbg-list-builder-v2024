@@ -37,9 +37,13 @@ class ModelDataConverter:
         self.__models["unit_type"] = pandas.Categorical(self.__models.unit_type, categories=unit_type_order)
         # Make sure the MWFW becomes an actual array.
         self.__models["MWFW"] = self.__models["MWFW"].apply(eval)
-        # Converter fiels from 0/1 to a bool (true/false)
-        self.__models["opt_mandatory"] = self.__models["opt_mandatory"] == 1
-        self.__models["no_followers"] = self.__models["no_followers"] == 1
+        # Converter fields from 0/1 to a bool (true/false)
+        self.__models['default_throw'] = self.__models['default_throw'] == 1
+        self.__models['default_bow'] = self.__models['default_bow'] == 1
+        self.__models['unique'] = self.__models['unique'] == 1
+        self.__models['bow_limit'] = self.__models['bow_limit'] == 1
+        self.__models['opt_mandatory'] = self.__models['opt_mandatory'] == 1
+        self.__models['no_followers'] = self.__models['no_followers'] == 1
         self.__models['legacy'] = self.__models['legacy'] == 1
 
     def __convert_option_column_to_wanted_data_type(self):
