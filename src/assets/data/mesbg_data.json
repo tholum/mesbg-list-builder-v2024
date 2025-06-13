@@ -10199,6 +10199,20 @@
         "name": "Bow",
         "points": 1,
         "type": "bow"
+      },
+      {
+        "name": "Upgrade to Helmingas",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[fords-of-isen] grimbold-of-grimslade"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -13109,6 +13123,20 @@
         "name": "Throwing spears",
         "points": 2,
         "type": "throw"
+      },
+      {
+        "name": "Upgrade to Westfold Redshield",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[kingdom-of-rohan] erkenbrand-captain-of-rohan"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -13211,6 +13239,20 @@
         "name": "Bow",
         "points": 1,
         "type": "bow"
+      },
+      {
+        "name": "Upgrade to Helmingas",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[kingdom-of-rohan] grimbold-of-grimslade"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -19527,6 +19569,20 @@
         "name": "Throwing spears",
         "points": 2,
         "type": "throw"
+      },
+      {
+        "name": "Upgrade to Westfold Redshield",
+        "points": 1,
+        "type": "special_warband_upgrade",
+        "dependencies": [
+          {
+            "type": "requires-all",
+            "condition": "in-warband",
+            "dependencies": [
+              "[riders-of-eomer] erkenbrand-captain-of-rohan"
+            ]
+          }
+        ]
       }
     ]
   },
