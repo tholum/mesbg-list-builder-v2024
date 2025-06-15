@@ -146,7 +146,7 @@ function extraScriptedRosterWarnings(
       "[assault-on-lothlorien] mordor-orc-captain",
       "[assault-on-lothlorien] mordor-orc-shaman",
       "[assault-on-lothlorien] mordor-orc-warrior",
-      "[assault-on-lothlorien] morder-warg-rider",
+      "[assault-on-lothlorien] mordor-warg-rider",
       "[assault-on-lothlorien] orc-tracker",
     ];
     const goblins = [
