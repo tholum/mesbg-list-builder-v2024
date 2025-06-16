@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.22": {
     "added": [
       "Added army lists from the Evil Legacies PDF to the builder, including profile cards and profile data.",
       "Added Evil Legacy models into non-legacy army lists, where applicable.",
