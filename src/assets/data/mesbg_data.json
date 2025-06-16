@@ -218,6 +218,22 @@
       }
     ]
   },
+  "[army-of-carn-dum] orc-tracker": {
+    "model_id": "[army-of-carn-dum] orc-tracker",
+    "army_type": "Evil",
+    "army_list": "Army of Carn Dum",
+    "profile_origin": "Evil Legacy",
+    "name": "Orc Tracker",
+    "unit_type": "Warrior",
+    "base_points": 6,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[army-of-carn-dum] angmar-orc-warrior": {
     "model_id": "[army-of-carn-dum] angmar-orc-warrior",
     "army_type": "Evil",
@@ -402,6 +418,7 @@
     "base_points": 90,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -427,6 +444,7 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -446,6 +464,7 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -464,6 +483,7 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -516,6 +536,7 @@
     "base_points": 12,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -530,6 +551,7 @@
     "base_points": 11,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -545,6 +567,7 @@
     "siege_crew": 0,
     "bow_limit": true,
     "opt_mandatory": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -1279,6 +1302,26 @@
       }
     ]
   },
+  "[army-of-gothmog] goroth-captain-of-the-morannon": {
+    "model_id": "[army-of-gothmog] goroth-captain-of-the-morannon",
+    "army_type": "Evil",
+    "army_list": "Army of Gothmog",
+    "profile_origin": "Evil Legacy",
+    "name": "Goroth, Captain of the Morannon",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 85,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[army-of-gothmog] guritz": {
     "model_id": "[army-of-gothmog] guritz",
     "army_type": "Evil",
@@ -1293,6 +1336,26 @@
       [
         "",
         "2:2:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-gothmog] zagdush-orc-captain": {
+    "model_id": "[army-of-gothmog] zagdush-orc-captain",
+    "army_type": "Evil",
+    "army_list": "Army of Gothmog",
+    "profile_origin": "Evil Legacy",
+    "name": "Zagdush, Orc Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
       ]
     ],
     "warband_size": 12,
@@ -2272,6 +2335,230 @@
       }
     ]
   },
+  "[army-of-the-great-eye] khamul-the-easterling": {
+    "model_id": "[army-of-the-great-eye] khamul-the-easterling",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Khamul the Easterling",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1364",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-betrayer": {
+    "model_id": "[army-of-the-great-eye] the-betrayer",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Betrayer",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1380",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-dark-marshal": {
+    "model_id": "[army-of-the-great-eye] the-dark-marshal",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Dark Marshal",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1374",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-dwimmerlaik": {
+    "model_id": "[army-of-the-great-eye] the-dwimmerlaik",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Dwimmerlaik",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "0:16:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1371",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-knight-of-umbar": {
+    "model_id": "[army-of-the-great-eye] the-knight-of-umbar",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Knight of Umbar",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1385",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-shadow-lord": {
+    "model_id": "[army-of-the-great-eye] the-shadow-lord",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Shadow Lord",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1376",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-tainted": {
+    "model_id": "[army-of-the-great-eye] the-tainted",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Tainted",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1368",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-great-eye] the-undying": {
+    "model_id": "[army-of-the-great-eye] the-undying",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "The Undying",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:18:0:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1378",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[army-of-the-great-eye] gothmog": {
     "model_id": "[army-of-the-great-eye] gothmog",
     "army_type": "Evil",
@@ -2303,6 +2590,26 @@
         "points": 5
       }
     ]
+  },
+  "[army-of-the-great-eye] razgush-war-leader-of-the-north": {
+    "model_id": "[army-of-the-great-eye] razgush-war-leader-of-the-north",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Razgush, War Leader of the North",
+    "unit_type": "Hero of Valour",
+    "base_points": 120,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "3:3:1:3"
+      ]
+    ],
+    "warband_size": 15,
+    "options": []
   },
   "[army-of-the-great-eye] mouth-of-sauron": {
     "model_id": "[army-of-the-great-eye] mouth-of-sauron",
@@ -2385,6 +2692,31 @@
       }
     ]
   },
+  "[army-of-the-great-eye] great-beast-of-gorgoroth": {
+    "model_id": "[army-of-the-great-eye] great-beast-of-gorgoroth",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Great Beast of Gorgoroth",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 175,
+    "siege_crew": 10,
+    "bow_limit": true,
+    "no_followers": true,
+    "legacy": true,
+    "MWFW": [
+      [
+        "Orc Commander",
+        "2:1:1:2"
+      ],
+      [
+        "Great Beast",
+        "0:0:0:6"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[army-of-the-great-eye] mordor-troll-chieftain": {
     "model_id": "[army-of-the-great-eye] mordor-troll-chieftain",
     "army_type": "Evil",
@@ -2422,6 +2754,26 @@
     "warband_size": 12,
     "options": []
   },
+  "[army-of-the-great-eye] goroth-captain-of-the-morannon": {
+    "model_id": "[army-of-the-great-eye] goroth-captain-of-the-morannon",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Goroth, Captain of the Morannon",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 85,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[army-of-the-great-eye] black-numenorean-marshal": {
     "model_id": "[army-of-the-great-eye] black-numenorean-marshal",
     "army_type": "Evil",
@@ -2452,6 +2804,45 @@
         "points": 5
       }
     ]
+  },
+  "[army-of-the-great-eye] captain-of-the-black-guard": {
+    "model_id": "[army-of-the-great-eye] captain-of-the-black-guard",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Captain of the Black Guard",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-great-eye] muzgur-orc-shaman": {
+    "model_id": "[army-of-the-great-eye] muzgur-orc-shaman",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Muzgur, Orc Shaman",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:4:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[army-of-the-great-eye] guritz": {
     "model_id": "[army-of-the-great-eye] guritz",
@@ -2486,6 +2877,46 @@
       [
         "",
         "3:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-great-eye] kardush-the-firecaller": {
+    "model_id": "[army-of-the-great-eye] kardush-the-firecaller",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Kardush the Firecaller",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "1:3:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-great-eye] zagdush-orc-captain": {
+    "model_id": "[army-of-the-great-eye] zagdush-orc-captain",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Zagdush, Orc Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
       ]
     ],
     "warband_size": 12,
@@ -2619,6 +3050,25 @@
     "warband_size": 0,
     "options": []
   },
+  "[army-of-the-great-eye] black-guard-drummer": {
+    "model_id": "[army-of-the-great-eye] black-guard-drummer",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Black Guard Drummer",
+    "unit_type": "Independent Hero",
+    "base_points": 35,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "0:0:1:1"
+      ]
+    ],
+    "warband_size": 0,
+    "options": []
+  },
   "[army-of-the-great-eye] mordor-orc-drummer": {
     "model_id": "[army-of-the-great-eye] mordor-orc-drummer",
     "army_type": "Evil",
@@ -2657,6 +3107,21 @@
       }
     ]
   },
+  "[army-of-the-great-eye] bat-swarm": {
+    "model_id": "[army-of-the-great-eye] bat-swarm",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "The Misty Mountains",
+    "name": "Bat Swarm",
+    "unit_type": "Warrior",
+    "base_points": 35,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[army-of-the-great-eye] black-numenorean-knight": {
     "model_id": "[army-of-the-great-eye] black-numenorean-knight",
     "army_type": "Evil",
@@ -2678,6 +3143,57 @@
       {
         "id": "OPT1039",
         "name": "Exchange lance for war horn",
+        "points": 25
+      }
+    ]
+  },
+  "[army-of-the-great-eye] mirkwood-giant-spider": {
+    "model_id": "[army-of-the-great-eye] mirkwood-giant-spider",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Gundabad & Dol Guldur",
+    "name": "Mirkwood Giant Spider",
+    "unit_type": "Warrior",
+    "base_points": 20,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-great-eye] mirkwood-hunting-spider": {
+    "model_id": "[army-of-the-great-eye] mirkwood-hunting-spider",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Gundabad & Dol Guldur",
+    "name": "Mirkwood Hunting Spider",
+    "unit_type": "Warrior",
+    "base_points": 20,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-great-eye] black-guard-of-barad-dur": {
+    "model_id": "[army-of-the-great-eye] black-guard-of-barad-dur",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Black Guard of Barad-dur",
+    "unit_type": "Warrior",
+    "base_points": 12,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1388",
+        "name": "Exchange shield for banner",
         "points": 25
       }
     ]
@@ -2731,6 +3247,36 @@
     "base_points": 10,
     "siege_crew": 0,
     "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-great-eye] morgul-stalker": {
+    "model_id": "[army-of-the-great-eye] morgul-stalker",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Morgul Stalker",
+    "unit_type": "Warrior",
+    "base_points": 10,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-great-eye] fell-warg": {
+    "model_id": "[army-of-the-great-eye] fell-warg",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Gundabad & Dol Guldur",
+    "name": "Fell Warg",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -2790,6 +3336,22 @@
         "points": 1
       }
     ]
+  },
+  "[army-of-the-great-eye] orc-tracker": {
+    "model_id": "[army-of-the-great-eye] orc-tracker",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Evil Legacy",
+    "name": "Orc Tracker",
+    "unit_type": "Warrior",
+    "base_points": 6,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
   },
   "[army-of-the-great-eye] mordor-orc-warrior": {
     "model_id": "[army-of-the-great-eye] mordor-orc-warrior",
@@ -2914,6 +3476,113 @@
         "mount_name": "Horse"
       }
     ]
+  },
+  "[army-of-the-white-hand] thrydan-wolfsbane": {
+    "model_id": "[army-of-the-white-hand] thrydan-wolfsbane",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Thrydan Wolfsbane",
+    "unit_type": "Hero of Valour",
+    "base_points": 90,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "3:2:2:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1391",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[army-of-the-white-hand] dunlending-chieftain": {
+    "model_id": "[army-of-the-white-hand] dunlending-chieftain",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Dunlending Chieftain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-white-hand] frida-tallspear": {
+    "model_id": "[army-of-the-white-hand] frida-tallspear",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Frida Tallspear",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-white-hand] gorulf-ironskin": {
+    "model_id": "[army-of-the-white-hand] gorulf-ironskin",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Gorulf Ironskin",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[army-of-the-white-hand] vrasku": {
+    "model_id": "[army-of-the-white-hand] vrasku",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Vrasku",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[army-of-the-white-hand] uruk-hai-scout-captain": {
     "model_id": "[army-of-the-white-hand] uruk-hai-scout-captain",
@@ -3107,6 +3776,51 @@
     "warband_size": 0,
     "options": []
   },
+  "[army-of-the-white-hand] feral-uruk-hai": {
+    "model_id": "[army-of-the-white-hand] feral-uruk-hai",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Feral Uruk-Hai",
+    "unit_type": "Warrior",
+    "base_points": 13,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-white-hand] dunlending-horseman": {
+    "model_id": "[army-of-the-white-hand] dunlending-horseman",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Dunlending Horseman",
+    "unit_type": "Warrior",
+    "base_points": 12,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[army-of-the-white-hand] dunlending-huscarl": {
+    "model_id": "[army-of-the-white-hand] dunlending-huscarl",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Dunlending Huscarl",
+    "unit_type": "Warrior",
+    "base_points": 11,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[army-of-the-white-hand] isengard-warg-rider": {
     "model_id": "[army-of-the-white-hand] isengard-warg-rider",
     "army_type": "Evil",
@@ -3174,6 +3888,43 @@
         "name": "Uruk-hai bow",
         "points": 1,
         "type": "bow"
+      }
+    ]
+  },
+  "[army-of-the-white-hand] dunlending-warrior": {
+    "model_id": "[army-of-the-white-hand] dunlending-warrior",
+    "army_type": "Evil",
+    "army_list": "Army of the White Hand",
+    "profile_origin": "Evil Legacy",
+    "name": "Dunlending Warrior",
+    "unit_type": "Warrior",
+    "base_points": 7,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1392",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT1393",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
+      },
+      {
+        "id": "OPT1394",
+        "name": "Shield",
+        "points": 1
+      },
+      {
+        "id": "OPT1395",
+        "name": "Two-handed weapon",
+        "points": 1
       }
     ]
   },
@@ -3652,6 +4403,7 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -3671,6 +4423,7 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -3802,6 +4555,7 @@
     "default_bow": true,
     "siege_crew": 3,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -3915,6 +4669,7 @@
     "default_bow": true,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -4977,6 +5732,22 @@
     "warband_size": 0,
     "options": []
   },
+  "[barad-dur] orc-tracker": {
+    "model_id": "[barad-dur] orc-tracker",
+    "army_type": "Evil",
+    "army_list": "Barad-dur",
+    "profile_origin": "Evil Legacy",
+    "name": "Orc Tracker",
+    "unit_type": "Warrior",
+    "base_points": 6,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[barad-dur] mordor-orc-warrior": {
     "model_id": "[barad-dur] mordor-orc-warrior",
     "army_type": "Evil",
@@ -5809,6 +6580,7 @@
     "base_points": 50,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -6733,6 +7505,22 @@
       }
     ]
   },
+  "[cirith-ungol] orc-tracker": {
+    "model_id": "[cirith-ungol] orc-tracker",
+    "army_type": "Evil",
+    "army_list": "Cirith Ungol",
+    "profile_origin": "Evil Legacy",
+    "name": "Orc Tracker",
+    "unit_type": "Warrior",
+    "base_points": 6,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[cirith-ungol] mordor-orc-warrior": {
     "model_id": "[cirith-ungol] mordor-orc-warrior",
     "army_type": "Evil",
@@ -6954,6 +7742,21 @@
       ]
     ],
     "warband_size": 6,
+    "options": []
+  },
+  "[corsair-fleets] corsair-reaver": {
+    "model_id": "[corsair-fleets] corsair-reaver",
+    "army_type": "Evil",
+    "army_list": "Corsair Fleets",
+    "profile_origin": "Evil Legacy",
+    "name": "Corsair Reaver",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
     "options": []
   },
   "[defenders-of-erebor] dain-ironfoot-king-under-the-mountain": {
@@ -9073,6 +9876,25 @@
     "warband_size": 18,
     "options": []
   },
+  "[depths-of-moria] moria-blackshield-captain": {
+    "model_id": "[depths-of-moria] moria-blackshield-captain",
+    "army_type": "Evil",
+    "army_list": "Depths of Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 45,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[depths-of-moria] moria-goblin-captain": {
     "model_id": "[depths-of-moria] moria-goblin-captain",
     "army_type": "Evil",
@@ -9097,6 +9919,25 @@
         "type": "bow"
       }
     ]
+  },
+  "[depths-of-moria] moria-blackshield-shaman": {
+    "model_id": "[depths-of-moria] moria-blackshield-shaman",
+    "army_type": "Evil",
+    "army_list": "Depths of Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Shaman",
+    "unit_type": "Minor Hero",
+    "base_points": 45,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "1:3:1:2"
+      ]
+    ],
+    "warband_size": 6,
+    "options": []
   },
   "[depths-of-moria] moria-goblin-shaman": {
     "model_id": "[depths-of-moria] moria-goblin-shaman",
@@ -9159,6 +10000,42 @@
         "id": "OPT0255",
         "name": "Troll Spear",
         "points": 5
+      }
+    ]
+  },
+  "[depths-of-moria] moria-blackshield-drum": {
+    "model_id": "[depths-of-moria] moria-blackshield-drum",
+    "army_type": "Evil",
+    "army_list": "Depths of Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Drum",
+    "unit_type": "Warrior",
+    "base_points": 75,
+    "siege_crew": 2,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[depths-of-moria] moria-blackshield-warrior": {
+    "model_id": "[depths-of-moria] moria-blackshield-warrior",
+    "army_type": "Evil",
+    "army_list": "Depths of Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Warrior",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1390",
+        "name": "Spear",
+        "points": 1
       }
     ]
   },
@@ -9980,6 +10857,7 @@
     "base_points": 65,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10018,6 +10896,7 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10037,6 +10916,7 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10323,6 +11203,7 @@
     "unit_type": "Hero of Valour",
     "base_points": 70,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10348,6 +11229,7 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10389,6 +11271,7 @@
     "base_points": 25,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -10409,6 +11292,7 @@
     "base_points": 17,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -10434,6 +11318,7 @@
     "base_points": 8,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -10459,6 +11344,7 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10478,6 +11364,7 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10665,6 +11552,7 @@
     "default_bow": true,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -10721,6 +11609,7 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10837,6 +11726,7 @@
     "base_points": 20,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -11865,6 +12755,110 @@
       }
     ]
   },
+  "[grand-army-of-the-south] khamul-the-easterling": {
+    "model_id": "[grand-army-of-the-south] khamul-the-easterling",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khamul the Easterling",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1366",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] the-betrayer": {
+    "model_id": "[grand-army-of-the-south] the-betrayer",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "The Betrayer",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1383",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] the-golden-king-of-abrakhan": {
+    "model_id": "[grand-army-of-the-south] the-golden-king-of-abrakhan",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "The Golden King of Abrakhan",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:6:2:4"
+      ]
+    ],
+    "warband_size": 15,
+    "options": []
+  },
+  "[grand-army-of-the-south] the-knight-of-umbar": {
+    "model_id": "[grand-army-of-the-south] the-knight-of-umbar",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "The Knight of Umbar",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1387",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[grand-army-of-the-south] delgamar-gatemaster-of-umbar": {
     "model_id": "[grand-army-of-the-south] delgamar-gatemaster-of-umbar",
     "army_type": "Evil",
@@ -11883,6 +12877,87 @@
     ],
     "warband_size": 15,
     "options": []
+  },
+  "[grand-army-of-the-south] haradrim-king": {
+    "model_id": "[grand-army-of-the-south] haradrim-king",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Haradrim King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1399",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] khandish-king": {
+    "model_id": "[grand-army-of-the-south] khandish-king",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:1:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1416",
+        "name": "Khandish Chariot",
+        "points": 35,
+        "type": "mount",
+        "mount_name": "Khandish Chariot"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] mahud-king": {
+    "model_id": "[grand-army-of-the-south] mahud-king",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Mahud King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:1:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1406",
+        "name": "War Camel",
+        "points": 25,
+        "type": "mount",
+        "mount_name": "War Camel"
+      }
+    ]
   },
   "[grand-army-of-the-south] war-mumak-of-harad": {
     "model_id": "[grand-army-of-the-south] war-mumak-of-harad",
@@ -12066,6 +13141,75 @@
       }
     ]
   },
+  "[grand-army-of-the-south] khandish-chieftain": {
+    "model_id": "[grand-army-of-the-south] khandish-chieftain",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish Chieftain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 55,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1417",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] mahud-tribesmaster": {
+    "model_id": "[grand-army-of-the-south] mahud-tribesmaster",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Mahud Tribesmaster",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 55,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1407",
+        "name": "War Camel",
+        "points": 25,
+        "type": "mount",
+        "mount_name": "War Camel"
+      },
+      {
+        "id": "OPT1408",
+        "name": "Blowpipe",
+        "points": 5
+      },
+      {
+        "id": "OPT1409",
+        "name": "Shield",
+        "points": 5
+      },
+      {
+        "id": "OPT1410",
+        "name": "War spear",
+        "points": 5
+      }
+    ]
+  },
   "[grand-army-of-the-south] corsair-bo'sun": {
     "model_id": "[grand-army-of-the-south] corsair-bo'sun",
     "army_type": "Evil",
@@ -12160,6 +13304,49 @@
       }
     ]
   },
+  "[grand-army-of-the-south] khandish-charioteer": {
+    "model_id": "[grand-army-of-the-south] khandish-charioteer",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish Charioteer",
+    "unit_type": "Warrior",
+    "base_points": 40,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1419",
+        "name": "Exchange hand-and-a-half weapon for bow",
+        "points": 0,
+        "type": "bow"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] half-troll": {
+    "model_id": "[grand-army-of-the-south] half-troll",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Half Troll",
+    "unit_type": "Warrior",
+    "base_points": 25,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1415",
+        "name": "Exchange hand weapon for two-handed weapon",
+        "points": 0
+      }
+    ]
+  },
   "[grand-army-of-the-south] war-drake-of-rhun": {
     "model_id": "[grand-army-of-the-south] war-drake-of-rhun",
     "army_type": "Evil",
@@ -12173,6 +13360,32 @@
     "MWFW": [],
     "warband_size": 0,
     "options": []
+  },
+  "[grand-army-of-the-south] mahud-raider": {
+    "model_id": "[grand-army-of-the-south] mahud-raider",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Mahud Raider",
+    "unit_type": "Warrior",
+    "base_points": 17,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1413",
+        "name": "Blowpipe",
+        "points": 1
+      },
+      {
+        "id": "OPT1414",
+        "name": "War spear",
+        "points": 1
+      }
+    ]
   },
   "[grand-army-of-the-south] easterling-kataphrakt": {
     "model_id": "[grand-army-of-the-south] easterling-kataphrakt",
@@ -12198,6 +13411,22 @@
         "points": 25
       }
     ]
+  },
+  "[grand-army-of-the-south] khandish-horseman": {
+    "model_id": "[grand-army-of-the-south] khandish-horseman",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish Horseman",
+    "unit_type": "Warrior",
+    "base_points": 14,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
   },
   "[grand-army-of-the-south] serpent-rider": {
     "model_id": "[grand-army-of-the-south] serpent-rider",
@@ -12306,6 +13535,64 @@
     "warband_size": 0,
     "options": []
   },
+  "[grand-army-of-the-south] abrakhan-merchant-guard": {
+    "model_id": "[grand-army-of-the-south] abrakhan-merchant-guard",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Abrakhan Merchant Guard",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[grand-army-of-the-south] corsair-reaver": {
+    "model_id": "[grand-army-of-the-south] corsair-reaver",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Corsair Reaver",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[grand-army-of-the-south] watcher-of-karna": {
+    "model_id": "[grand-army-of-the-south] watcher-of-karna",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Watcher of Karna",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "opt_mandatory": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1402",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
+      },
+      {
+        "id": "OPT1405",
+        "name": "Twin Blades",
+        "points": 1
+      }
+    ]
+  },
   "[grand-army-of-the-south] corsair-of-umbar": {
     "model_id": "[grand-army-of-the-south] corsair-of-umbar",
     "army_type": "Evil",
@@ -12371,6 +13658,54 @@
         "name": "Bow",
         "points": 1,
         "type": "bow"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] khandish-warrior": {
+    "model_id": "[grand-army-of-the-south] khandish-warrior",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish Warrior",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1418",
+        "name": "Exchange hand-and-a-half weapon for bow",
+        "points": 0,
+        "type": "bow"
+      }
+    ]
+  },
+  "[grand-army-of-the-south] mahud-warrior": {
+    "model_id": "[grand-army-of-the-south] mahud-warrior",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Mahud Warrior",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1411",
+        "name": "Blowpipe",
+        "points": 1
+      },
+      {
+        "id": "OPT1412",
+        "name": "Spear",
+        "points": 1
       }
     ]
   },
@@ -12709,6 +14044,81 @@
     "warband_size": 18,
     "options": []
   },
+  "[harad] the-betrayer": {
+    "model_id": "[harad] the-betrayer",
+    "army_type": "Evil",
+    "army_list": "Harad",
+    "profile_origin": "Evil Legacy",
+    "name": "The Betrayer",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1381",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[harad] the-golden-king-of-abrakhan": {
+    "model_id": "[harad] the-golden-king-of-abrakhan",
+    "army_type": "Evil",
+    "army_list": "Harad",
+    "profile_origin": "Evil Legacy",
+    "name": "The Golden King of Abrakhan",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:6:2:4"
+      ]
+    ],
+    "warband_size": 15,
+    "options": []
+  },
+  "[harad] haradrim-king": {
+    "model_id": "[harad] haradrim-king",
+    "army_type": "Evil",
+    "army_list": "Harad",
+    "profile_origin": "Evil Legacy",
+    "name": "Haradrim King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1397",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[harad] war-mumak-of-harad": {
     "model_id": "[harad] war-mumak-of-harad",
     "army_type": "Evil",
@@ -12844,6 +14254,49 @@
       {
         "id": "OPT1220",
         "name": "War spear",
+        "points": 1
+      }
+    ]
+  },
+  "[harad] abrakhan-merchant-guard": {
+    "model_id": "[harad] abrakhan-merchant-guard",
+    "army_type": "Evil",
+    "army_list": "Harad",
+    "profile_origin": "Evil Legacy",
+    "name": "Abrakhan Merchant Guard",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[harad] watcher-of-karna": {
+    "model_id": "[harad] watcher-of-karna",
+    "army_type": "Evil",
+    "army_list": "Harad",
+    "profile_origin": "Evil Legacy",
+    "name": "Watcher of Karna",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "opt_mandatory": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1401",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
+      },
+      {
+        "id": "OPT1404",
+        "name": "Twin Blades",
         "points": 1
       }
     ]
@@ -13182,6 +14635,62 @@
         "id": "OPT0842",
         "name": "Morgul Blade",
         "points": 10
+      }
+    ]
+  },
+  "[host-of-the-witch-king] the-dwimmerlaik": {
+    "model_id": "[host-of-the-witch-king] the-dwimmerlaik",
+    "army_type": "Evil",
+    "army_list": "Host of the Witch-king",
+    "profile_origin": "Evil Legacy",
+    "name": "The Dwimmerlaik",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "0:16:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1372",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[host-of-the-witch-king] the-tainted": {
+    "model_id": "[host-of-the-witch-king] the-tainted",
+    "army_type": "Evil",
+    "army_list": "Host of the Witch-king",
+    "profile_origin": "Evil Legacy",
+    "name": "The Tainted",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1369",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
       }
     ]
   },
@@ -14382,6 +15891,250 @@
       }
     ]
   },
+  "[legions-of-mordor] khamul-the-easterling": {
+    "model_id": "[legions-of-mordor] khamul-the-easterling",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Khamul the Easterling",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1363",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-betrayer": {
+    "model_id": "[legions-of-mordor] the-betrayer",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Betrayer",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1379",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-dark-marshal": {
+    "model_id": "[legions-of-mordor] the-dark-marshal",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Dark Marshal",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1373",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-dwimmerlaik": {
+    "model_id": "[legions-of-mordor] the-dwimmerlaik",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Dwimmerlaik",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "0:16:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1370",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-golden-king-of-abrakhan": {
+    "model_id": "[legions-of-mordor] the-golden-king-of-abrakhan",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Golden King of Abrakhan",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:6:2:4"
+      ]
+    ],
+    "warband_size": 15,
+    "options": []
+  },
+  "[legions-of-mordor] the-knight-of-umbar": {
+    "model_id": "[legions-of-mordor] the-knight-of-umbar",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Knight of Umbar",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1384",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-shadow-lord": {
+    "model_id": "[legions-of-mordor] the-shadow-lord",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Shadow Lord",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1375",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-tainted": {
+    "model_id": "[legions-of-mordor] the-tainted",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Tainted",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1367",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] the-undying": {
+    "model_id": "[legions-of-mordor] the-undying",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "The Undying",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:18:0:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1377",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[legions-of-mordor] gothmog": {
     "model_id": "[legions-of-mordor] gothmog",
     "army_type": "Evil",
@@ -14438,6 +16191,33 @@
         "points": 25,
         "type": "mount",
         "mount_name": "Armoured horse"
+      }
+    ]
+  },
+  "[legions-of-mordor] haradrim-king": {
+    "model_id": "[legions-of-mordor] haradrim-king",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Haradrim King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1396",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
       }
     ]
   },
@@ -14540,6 +16320,31 @@
       }
     ]
   },
+  "[legions-of-mordor] great-beast-of-gorgoroth": {
+    "model_id": "[legions-of-mordor] great-beast-of-gorgoroth",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Great Beast of Gorgoroth",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 175,
+    "siege_crew": 10,
+    "bow_limit": true,
+    "no_followers": true,
+    "legacy": true,
+    "MWFW": [
+      [
+        "Orc Commander",
+        "2:1:1:2"
+      ],
+      [
+        "Great Beast",
+        "0:0:0:6"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[legions-of-mordor] easterling-kataphrakt-captain": {
     "model_id": "[legions-of-mordor] easterling-kataphrakt-captain",
     "army_type": "Evil",
@@ -14553,6 +16358,26 @@
       [
         "",
         "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[legions-of-mordor] goroth-captain-of-the-morannon": {
+    "model_id": "[legions-of-mordor] goroth-captain-of-the-morannon",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Goroth, Captain of the Morannon",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 85,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
       ]
     ],
     "warband_size": 12,
@@ -14688,6 +16513,26 @@
         "mount_name": "Armoured horse"
       }
     ]
+  },
+  "[legions-of-mordor] zagdush-orc-captain": {
+    "model_id": "[legions-of-mordor] zagdush-orc-captain",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Zagdush, Orc Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[legions-of-mordor] gothmog's-enforcer": {
     "model_id": "[legions-of-mordor] gothmog's-enforcer",
@@ -14978,6 +16823,49 @@
     "MWFW": [],
     "warband_size": 0,
     "options": []
+  },
+  "[legions-of-mordor] abrakhan-merchant-guard": {
+    "model_id": "[legions-of-mordor] abrakhan-merchant-guard",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Abrakhan Merchant Guard",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[legions-of-mordor] watcher-of-karna": {
+    "model_id": "[legions-of-mordor] watcher-of-karna",
+    "army_type": "Evil",
+    "army_list": "Legions of Mordor",
+    "profile_origin": "Evil Legacy",
+    "name": "Watcher of Karna",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "opt_mandatory": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1400",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
+      },
+      {
+        "id": "OPT1403",
+        "name": "Twin Blades",
+        "points": 1
+      }
+    ]
   },
   "[legions-of-mordor] easterling-warrior": {
     "model_id": "[legions-of-mordor] easterling-warrior",
@@ -15772,6 +17660,26 @@
     "warband_size": 12,
     "options": []
   },
+  "[lurtz's-scouts] mauhur": {
+    "model_id": "[lurtz's-scouts] mauhur",
+    "army_type": "Evil",
+    "army_list": "Lurtz's Scouts",
+    "profile_origin": "Evil Legacy",
+    "name": "Mauhur",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 65,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[lurtz's-scouts] uruk-hai-scout-captain": {
     "model_id": "[lurtz's-scouts] uruk-hai-scout-captain",
     "army_type": "Evil",
@@ -16486,6 +18394,26 @@
       }
     ]
   },
+  "[minas-morgul] kardush-the-firecaller": {
+    "model_id": "[minas-morgul] kardush-the-firecaller",
+    "army_type": "Evil",
+    "army_list": "Minas Morgul",
+    "profile_origin": "Evil Legacy",
+    "name": "Kardush the Firecaller",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "1:3:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[minas-morgul] morannon-orc-captain": {
     "model_id": "[minas-morgul] morannon-orc-captain",
     "army_type": "Evil",
@@ -16629,6 +18557,21 @@
     "warband_size": 0,
     "options": []
   },
+  "[minas-morgul] morgul-stalker": {
+    "model_id": "[minas-morgul] morgul-stalker",
+    "army_type": "Evil",
+    "army_list": "Minas Morgul",
+    "profile_origin": "Evil Legacy",
+    "name": "Morgul Stalker",
+    "unit_type": "Warrior",
+    "base_points": 10,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[minas-morgul] morannon-orc": {
     "model_id": "[minas-morgul] morannon-orc",
     "army_type": "Evil",
@@ -16663,6 +18606,22 @@
         "points": 1
       }
     ]
+  },
+  "[minas-morgul] orc-tracker": {
+    "model_id": "[minas-morgul] orc-tracker",
+    "army_type": "Evil",
+    "army_list": "Minas Morgul",
+    "profile_origin": "Evil Legacy",
+    "name": "Orc Tracker",
+    "unit_type": "Warrior",
+    "base_points": 6,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
   },
   "[minas-morgul] mordor-orc-warrior": {
     "model_id": "[minas-morgul] mordor-orc-warrior",
@@ -17147,6 +19106,65 @@
     "warband_size": 12,
     "options": []
   },
+  "[moria] ashrak": {
+    "model_id": "[moria] ashrak",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Ashrak",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 60,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "1:4:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[moria] groblog": {
+    "model_id": "[moria] groblog",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Groblog",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 55,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:3:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[moria] moria-blackshield-captain": {
+    "model_id": "[moria] moria-blackshield-captain",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Captain",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 45,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[moria] moria-goblin-captain": {
     "model_id": "[moria] moria-goblin-captain",
     "army_type": "Evil",
@@ -17190,6 +19208,25 @@
     "warband_size": 6,
     "options": []
   },
+  "[moria] moria-blackshield-shaman": {
+    "model_id": "[moria] moria-blackshield-shaman",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Shaman",
+    "unit_type": "Minor Hero",
+    "base_points": 45,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "1:3:1:2"
+      ]
+    ],
+    "warband_size": 6,
+    "options": []
+  },
   "[moria] moria-goblin-shaman": {
     "model_id": "[moria] moria-goblin-shaman",
     "army_type": "Evil",
@@ -17227,6 +19264,21 @@
     "warband_size": 0,
     "options": []
   },
+  "[moria] dweller-in-the-dark": {
+    "model_id": "[moria] dweller-in-the-dark",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Dweller in the Dark",
+    "unit_type": "Warrior",
+    "base_points": 80,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[moria] cave-troll": {
     "model_id": "[moria] cave-troll",
     "army_type": "Evil",
@@ -17253,6 +19305,21 @@
       }
     ]
   },
+  "[moria] moria-blackshield-drum": {
+    "model_id": "[moria] moria-blackshield-drum",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Drum",
+    "unit_type": "Warrior",
+    "base_points": 75,
+    "siege_crew": 2,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[moria] moria-goblin-drum": {
     "model_id": "[moria] moria-goblin-drum",
     "army_type": "Evil",
@@ -17277,6 +19344,22 @@
     "base_points": 35,
     "siege_crew": 0,
     "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[moria] warg-marauder": {
+    "model_id": "[moria] warg-marauder",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Warg Marauder",
+    "unit_type": "Warrior",
+    "base_points": 35,
+    "default_bow": true,
+    "siege_crew": 3,
+    "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -17308,6 +19391,27 @@
     "MWFW": [],
     "warband_size": 0,
     "options": []
+  },
+  "[moria] moria-blackshield-warrior": {
+    "model_id": "[moria] moria-blackshield-warrior",
+    "army_type": "Evil",
+    "army_list": "Moria",
+    "profile_origin": "Evil Legacy",
+    "name": "Moria Blackshield Warrior",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1389",
+        "name": "Spear",
+        "points": 1
+      }
+    ]
   },
   "[moria] moria-goblin-prowler": {
     "model_id": "[moria] moria-goblin-prowler",
@@ -17382,6 +19486,26 @@
         "mount_name": "Horse"
       }
     ]
+  },
+  "[muster-of-isengard] vrasku": {
+    "model_id": "[muster-of-isengard] vrasku",
+    "army_type": "Evil",
+    "army_list": "Muster of Isengard",
+    "profile_origin": "Evil Legacy",
+    "name": "Vrasku",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[muster-of-isengard] uruk-hai-captain": {
     "model_id": "[muster-of-isengard] uruk-hai-captain",
@@ -17515,6 +19639,21 @@
     "base_points": 15,
     "siege_crew": 0,
     "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[muster-of-isengard] feral-uruk-hai": {
+    "model_id": "[muster-of-isengard] feral-uruk-hai",
+    "army_type": "Evil",
+    "army_list": "Muster of Isengard",
+    "profile_origin": "Evil Legacy",
+    "name": "Feral Uruk-Hai",
+    "unit_type": "Warrior",
+    "base_points": 13,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -18842,6 +20981,7 @@
     "base_points": 45,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -19716,6 +21856,7 @@
     "base_points": 110,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -19752,6 +21893,7 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 140,
     "siege_crew": 2,
+    "legacy": true,
     "MWFW": [
       [
         "King's Champion",
@@ -19779,6 +21921,7 @@
     "base_points": 75,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -19853,6 +21996,7 @@
     "unit_type": "Minor Hero",
     "base_points": 60,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -21344,6 +23488,25 @@
         "points": 5
       }
     ]
+  },
+  "[rise-of-the-necromancer] castellan-of-dol-guldur": {
+    "model_id": "[rise-of-the-necromancer] castellan-of-dol-guldur",
+    "army_type": "Evil",
+    "army_list": "Rise of the Necromancer",
+    "profile_origin": "Evil Legacy",
+    "name": "Castellan of Dol Guldur",
+    "unit_type": "Independent Hero",
+    "base_points": 50,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "0:10:0:1"
+      ]
+    ],
+    "warband_size": 0,
+    "options": []
   },
   "[rise-of-the-necromancer] mirkwood-giant-spider": {
     "model_id": "[rise-of-the-necromancer] mirkwood-giant-spider",
@@ -24343,6 +26506,34 @@
       }
     ]
   },
+  "[the-easterlings] khamul-the-easterling": {
+    "model_id": "[the-easterlings] khamul-the-easterling",
+    "army_type": "Evil",
+    "army_list": "The Easterlings",
+    "profile_origin": "Evil Legacy",
+    "name": "Khamul the Easterling",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1365",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[the-easterlings] easterling-kataphrakt-captain": {
     "model_id": "[the-easterlings] easterling-kataphrakt-captain",
     "army_type": "Evil",
@@ -26045,6 +28236,61 @@
       }
     ]
   },
+  "[the-serpent-horde] the-betrayer": {
+    "model_id": "[the-serpent-horde] the-betrayer",
+    "army_type": "Evil",
+    "army_list": "The Serpent Horde",
+    "profile_origin": "Evil Legacy",
+    "name": "The Betrayer",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:14:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1382",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
+  "[the-serpent-horde] haradrim-king": {
+    "model_id": "[the-serpent-horde] haradrim-king",
+    "army_type": "Evil",
+    "army_list": "The Serpent Horde",
+    "profile_origin": "Evil Legacy",
+    "name": "Haradrim King",
+    "unit_type": "Hero of Valour",
+    "base_points": 70,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1398",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[the-serpent-horde] war-mumak-of-harad": {
     "model_id": "[the-serpent-horde] war-mumak-of-harad",
     "army_type": "Evil",
@@ -26664,6 +28910,7 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -27350,6 +29597,26 @@
     "warband_size": 15,
     "options": []
   },
+  "[ugluk's-scouts] mauhur": {
+    "model_id": "[ugluk's-scouts] mauhur",
+    "army_type": "Evil",
+    "army_list": "Ugluk's Scouts",
+    "profile_origin": "Evil Legacy",
+    "name": "Mauhur",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 65,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[ugluk's-scouts] grishnakh": {
     "model_id": "[ugluk's-scouts] grishnakh",
     "army_type": "Evil",
@@ -27552,6 +29819,34 @@
     "warband_size": 18,
     "options": []
   },
+  "[umbar] the-knight-of-umbar": {
+    "model_id": "[umbar] the-knight-of-umbar",
+    "army_type": "Evil",
+    "army_list": "Umbar",
+    "profile_origin": "Evil Legacy",
+    "name": "The Knight of Umbar",
+    "unit_type": "Hero of Valour",
+    "base_points": 130,
+    "unique": true,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:12:2:1"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1386",
+        "name": "Horse",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Horse"
+      }
+    ]
+  },
   "[umbar] delgamar-gatemaster-of-umbar": {
     "model_id": "[umbar] delgamar-gatemaster-of-umbar",
     "army_type": "Evil",
@@ -27692,6 +29987,21 @@
     "base_points": 10,
     "siege_crew": 0,
     "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[umbar] corsair-reaver": {
+    "model_id": "[umbar] corsair-reaver",
+    "army_type": "Evil",
+    "army_list": "Umbar",
+    "profile_origin": "Evil Legacy",
+    "name": "Corsair Reaver",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -27998,6 +30308,7 @@
     "unit_type": "Hero of Valour",
     "base_points": 100,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -28024,6 +30335,7 @@
     "base_points": 100,
     "unique": true,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -28049,6 +30361,7 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [
       [
         "",
@@ -28074,6 +30387,7 @@
     "unit_type": "Warrior",
     "base_points": 40,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -28094,6 +30408,7 @@
     "unit_type": "Warrior",
     "base_points": 14,
     "siege_crew": 0,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -28108,6 +30423,7 @@
     "base_points": 8,
     "siege_crew": 0,
     "bow_limit": true,
+    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [

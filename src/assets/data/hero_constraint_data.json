@@ -20,7 +20,8 @@
       "[army-of-carn-dum] warrior-of-carn-dum",
       "[army-of-carn-dum] angmar-orc-warrior",
       "[army-of-carn-dum] angmar-warg-rider",
-      "[army-of-carn-dum] hill-troll"
+      "[army-of-carn-dum] hill-troll",
+      "[army-of-carn-dum] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -29,7 +30,8 @@
       "[army-of-carn-dum] warrior-of-carn-dum",
       "[army-of-carn-dum] angmar-orc-warrior",
       "[army-of-carn-dum] angmar-warg-rider",
-      "[army-of-carn-dum] hill-troll"
+      "[army-of-carn-dum] hill-troll",
+      "[army-of-carn-dum] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -38,7 +40,8 @@
       "[army-of-carn-dum] warrior-of-carn-dum",
       "[army-of-carn-dum] angmar-orc-warrior",
       "[army-of-carn-dum] angmar-warg-rider",
-      "[army-of-carn-dum] hill-troll"
+      "[army-of-carn-dum] hill-troll",
+      "[army-of-carn-dum] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -47,7 +50,8 @@
       "[army-of-carn-dum] warrior-of-carn-dum",
       "[army-of-carn-dum] angmar-orc-warrior",
       "[army-of-carn-dum] angmar-warg-rider",
-      "[army-of-carn-dum] hill-troll"
+      "[army-of-carn-dum] hill-troll",
+      "[army-of-carn-dum] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -265,6 +269,13 @@
     ],
     "extra_profiles": []
   },
+  "[army-of-gothmog] goroth-captain-of-the-morannon": {
+    "valid_warband_units": [
+      "[army-of-gothmog] morannon-orc",
+      "[army-of-gothmog] mordor-troll"
+    ],
+    "extra_profiles": []
+  },
   "[army-of-gothmog] gothmog": {
     "valid_warband_units": [
       "[army-of-gothmog] morannon-orc",
@@ -306,6 +317,13 @@
   },
   "[army-of-gothmog] mordor-war-catapult": {
     "valid_warband_units": [],
+    "extra_profiles": []
+  },
+  "[army-of-gothmog] zagdush-orc-captain": {
+    "valid_warband_units": [
+      "[army-of-gothmog] morannon-orc",
+      "[army-of-gothmog] mordor-troll"
+    ],
     "extra_profiles": []
   },
   "[army-of-gundabad] azog-the-defiler": {
@@ -430,6 +448,10 @@
     ],
     "extra_profiles": []
   },
+  "[army-of-the-great-eye] black-guard-drummer": {
+    "valid_warband_units": [],
+    "extra_profiles": []
+  },
   "[army-of-the-great-eye] black-numenorean-marshal": {
     "valid_warband_units": [
       "[army-of-the-great-eye] mordor-orc-drummer",
@@ -439,7 +461,28 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] captain-of-the-black-guard": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -452,7 +495,28 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] goroth-captain-of-the-morannon": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -465,7 +529,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -478,8 +546,16 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] great-beast-of-gorgoroth": {
+    "valid_warband_units": [],
     "extra_profiles": []
   },
   "[army-of-the-great-eye] guritz": {
@@ -491,7 +567,45 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] kardush-the-firecaller": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] khamul-the-easterling": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -504,7 +618,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -517,7 +635,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -534,7 +656,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -551,7 +677,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -564,7 +694,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -581,7 +715,49 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] muzgur-orc-shaman": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] razgush-war-leader-of-the-north": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker",
+      "[army-of-the-great-eye] bat-swarm",
+      "[army-of-the-great-eye] fell-warg",
+      "[army-of-the-great-eye] mirkwood-giant-spider",
+      "[army-of-the-great-eye] mirkwood-hunting-spider"
     ],
     "extra_profiles": []
   },
@@ -594,7 +770,11 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -607,12 +787,135 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
     ],
     "extra_profiles": []
   },
   "[army-of-the-great-eye] shelob": {
     "valid_warband_units": [],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-betrayer": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-dark-marshal": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-dwimmerlaik": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-knight-of-umbar": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-shadow-lord": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-tainted": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] the-undying": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
     "extra_profiles": []
   },
   "[army-of-the-great-eye] the-witch-king-of-angmar": {
@@ -624,7 +927,75 @@
       "[army-of-the-great-eye] mordor-uruk-hai",
       "[army-of-the-great-eye] mordor-troll",
       "[army-of-the-great-eye] black-numenorean-warrior",
-      "[army-of-the-great-eye] black-numenorean-knight"
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-great-eye] zagdush-orc-captain": {
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-white-hand] dunlending-chieftain": {
+    "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
+      "[army-of-the-white-hand] uruk-hai-scout",
+      "[army-of-the-white-hand] wild-man-of-dunland",
+      "[army-of-the-white-hand] isengard-orc-warrior",
+      "[army-of-the-white-hand] isengard-warg-rider",
+      "[army-of-the-white-hand] crebain",
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-white-hand] frida-tallspear": {
+    "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
+      "[army-of-the-white-hand] uruk-hai-scout",
+      "[army-of-the-white-hand] wild-man-of-dunland",
+      "[army-of-the-white-hand] isengard-orc-warrior",
+      "[army-of-the-white-hand] isengard-warg-rider",
+      "[army-of-the-white-hand] crebain",
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman",
+      "[army-of-the-white-hand] dunlending-huscarl"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-white-hand] gorulf-ironskin": {
+    "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
+      "[army-of-the-white-hand] uruk-hai-scout",
+      "[army-of-the-white-hand] wild-man-of-dunland",
+      "[army-of-the-white-hand] isengard-orc-warrior",
+      "[army-of-the-white-hand] isengard-warg-rider",
+      "[army-of-the-white-hand] crebain",
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman",
+      "[army-of-the-white-hand] dunlending-huscarl"
     ],
     "extra_profiles": []
   },
@@ -634,23 +1005,31 @@
   },
   "[army-of-the-white-hand] isengard-orc-captain": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
   "[army-of-the-white-hand] isengard-orc-shaman": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
@@ -662,51 +1041,101 @@
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-white-hand] thrydan-wolfsbane": {
+    "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
+      "[army-of-the-white-hand] uruk-hai-scout",
+      "[army-of-the-white-hand] wild-man-of-dunland",
+      "[army-of-the-white-hand] isengard-orc-warrior",
+      "[army-of-the-white-hand] isengard-warg-rider",
+      "[army-of-the-white-hand] crebain",
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman",
+      "[army-of-the-white-hand] dunlending-huscarl"
     ],
     "extra_profiles": []
   },
   "[army-of-the-white-hand] uruk-hai-scout-captain": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
   "[army-of-the-white-hand] uruk-hai-shaman": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
+    ],
+    "extra_profiles": []
+  },
+  "[army-of-the-white-hand] vrasku": {
+    "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
+      "[army-of-the-white-hand] uruk-hai-scout",
+      "[army-of-the-white-hand] wild-man-of-dunland",
+      "[army-of-the-white-hand] isengard-orc-warrior",
+      "[army-of-the-white-hand] isengard-warg-rider",
+      "[army-of-the-white-hand] crebain",
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
   "[army-of-the-white-hand] wild-man-chieftain": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
   "[army-of-the-white-hand] wild-man-oathmaker": {
     "valid_warband_units": [
+      "[army-of-the-white-hand] grima",
       "[army-of-the-white-hand] uruk-hai-scout",
       "[army-of-the-white-hand] wild-man-of-dunland",
       "[army-of-the-white-hand] isengard-orc-warrior",
       "[army-of-the-white-hand] isengard-warg-rider",
       "[army-of-the-white-hand] crebain",
-      "[army-of-the-white-hand] isengard-troll"
+      "[army-of-the-white-hand] isengard-troll",
+      "[army-of-the-white-hand] feral-uruk-hai",
+      "[army-of-the-white-hand] dunlending-warrior",
+      "[army-of-the-white-hand] dunlending-horseman"
     ],
     "extra_profiles": []
   },
@@ -1101,7 +1530,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1112,7 +1542,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1127,7 +1558,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1142,7 +1574,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1157,7 +1590,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1168,7 +1602,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1179,7 +1614,8 @@
       "[barad-dur] mordor-warg-rider",
       "[barad-dur] mordor-troll",
       "[barad-dur] black-numenorean-knight",
-      "[barad-dur] black-numenorean-warrior"
+      "[barad-dur] black-numenorean-warrior",
+      "[barad-dur] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1504,14 +1940,16 @@
   "[cirith-ungol] gorbag": {
     "valid_warband_units": [
       "[cirith-ungol] mordor-orc-drummer",
-      "[cirith-ungol] mordor-orc-warrior"
+      "[cirith-ungol] mordor-orc-warrior",
+      "[cirith-ungol] orc-tracker"
     ],
     "extra_profiles": []
   },
   "[cirith-ungol] mordor-orc-captain": {
     "valid_warband_units": [
       "[cirith-ungol] mordor-orc-drummer",
-      "[cirith-ungol] mordor-orc-warrior"
+      "[cirith-ungol] mordor-orc-warrior",
+      "[cirith-ungol] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -1522,14 +1960,16 @@
   "[cirith-ungol] mordor-orc-shaman": {
     "valid_warband_units": [
       "[cirith-ungol] mordor-orc-drummer",
-      "[cirith-ungol] mordor-orc-warrior"
+      "[cirith-ungol] mordor-orc-warrior",
+      "[cirith-ungol] orc-tracker"
     ],
     "extra_profiles": []
   },
   "[cirith-ungol] mordor-orc-taskmaster": {
     "valid_warband_units": [
       "[cirith-ungol] mordor-orc-drummer",
-      "[cirith-ungol] mordor-orc-warrior"
+      "[cirith-ungol] mordor-orc-warrior",
+      "[cirith-ungol] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -2076,11 +2516,33 @@
     ],
     "extra_profiles": []
   },
+  "[depths-of-moria] moria-blackshield-captain": {
+    "valid_warband_units": [
+      "[depths-of-moria] moria-goblin-warrior",
+      "[depths-of-moria] cave-troll",
+      "[depths-of-moria] moria-goblin-prowler",
+      "[depths-of-moria] moria-blackshield-drum",
+      "[depths-of-moria] moria-blackshield-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[depths-of-moria] moria-blackshield-shaman": {
+    "valid_warband_units": [
+      "[depths-of-moria] moria-goblin-warrior",
+      "[depths-of-moria] cave-troll",
+      "[depths-of-moria] moria-goblin-prowler",
+      "[depths-of-moria] moria-blackshield-drum",
+      "[depths-of-moria] moria-blackshield-warrior"
+    ],
+    "extra_profiles": []
+  },
   "[depths-of-moria] moria-goblin-captain": {
     "valid_warband_units": [
       "[depths-of-moria] moria-goblin-warrior",
       "[depths-of-moria] cave-troll",
-      "[depths-of-moria] moria-goblin-prowler"
+      "[depths-of-moria] moria-goblin-prowler",
+      "[depths-of-moria] moria-blackshield-drum",
+      "[depths-of-moria] moria-blackshield-warrior"
     ],
     "extra_profiles": []
   },
@@ -2088,7 +2550,9 @@
     "valid_warband_units": [
       "[depths-of-moria] moria-goblin-warrior",
       "[depths-of-moria] cave-troll",
-      "[depths-of-moria] moria-goblin-prowler"
+      "[depths-of-moria] moria-goblin-prowler",
+      "[depths-of-moria] moria-blackshield-drum",
+      "[depths-of-moria] moria-blackshield-warrior"
     ],
     "extra_profiles": []
   },
@@ -2096,7 +2560,9 @@
     "valid_warband_units": [
       "[depths-of-moria] moria-goblin-warrior",
       "[depths-of-moria] cave-troll",
-      "[depths-of-moria] moria-goblin-prowler"
+      "[depths-of-moria] moria-goblin-prowler",
+      "[depths-of-moria] moria-blackshield-drum",
+      "[depths-of-moria] moria-blackshield-warrior"
     ],
     "extra_profiles": []
   },
@@ -2618,28 +3084,32 @@
   "[grand-army-of-the-south] corsair-bo'sun": {
     "valid_warband_units": [
       "[grand-army-of-the-south] corsair-of-umbar",
-      "[grand-army-of-the-south] corsair-crossbowman"
+      "[grand-army-of-the-south] corsair-crossbowman",
+      "[grand-army-of-the-south] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] corsair-captain": {
     "valid_warband_units": [
       "[grand-army-of-the-south] corsair-of-umbar",
-      "[grand-army-of-the-south] corsair-crossbowman"
+      "[grand-army-of-the-south] corsair-crossbowman",
+      "[grand-army-of-the-south] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] dalamyr-fleetmaster-of-umbar": {
     "valid_warband_units": [
       "[grand-army-of-the-south] corsair-of-umbar",
-      "[grand-army-of-the-south] corsair-crossbowman"
+      "[grand-army-of-the-south] corsair-crossbowman",
+      "[grand-army-of-the-south] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] delgamar-gatemaster-of-umbar": {
     "valid_warband_units": [
       "[grand-army-of-the-south] corsair-of-umbar",
-      "[grand-army-of-the-south] corsair-crossbowman"
+      "[grand-army-of-the-south] corsair-crossbowman",
+      "[grand-army-of-the-south] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -2677,21 +3147,76 @@
   "[grand-army-of-the-south] haradrim-chieftain": {
     "valid_warband_units": [
       "[grand-army-of-the-south] haradrim-warrior",
-      "[grand-army-of-the-south] haradrim-raider"
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] haradrim-king": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
     ],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] haradrim-taskmaster": {
     "valid_warband_units": [
       "[grand-army-of-the-south] haradrim-warrior",
-      "[grand-army-of-the-south] haradrim-raider"
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
     ],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] hasharin": {
     "valid_warband_units": [
       "[grand-army-of-the-south] haradrim-warrior",
-      "[grand-army-of-the-south] haradrim-raider"
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] khamul-the-easterling": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] easterling-kataphrakt",
+      "[grand-army-of-the-south] war-drake-of-rhun",
+      "[grand-army-of-the-south] easterling-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] khandish-chieftain": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] khandish-warrior",
+      "[grand-army-of-the-south] khandish-horseman",
+      "[grand-army-of-the-south] khandish-charioteer"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] khandish-king": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] khandish-warrior",
+      "[grand-army-of-the-south] khandish-horseman",
+      "[grand-army-of-the-south] khandish-charioteer"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] mahud-king": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] mahud-tribesmaster": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -2708,7 +3233,9 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] serpent-guard",
-      "[grand-army-of-the-south] serpent-rider"
+      "[grand-army-of-the-south] serpent-rider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
     ],
     "extra_profiles": []
   },
@@ -2717,7 +3244,35 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] serpent-guard",
-      "[grand-army-of-the-south] serpent-rider"
+      "[grand-army-of-the-south] serpent-rider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] the-betrayer": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] the-golden-king-of-abrakhan": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[grand-army-of-the-south] the-knight-of-umbar": {
+    "valid_warband_units": [
+      "[grand-army-of-the-south] corsair-of-umbar",
+      "[grand-army-of-the-south] corsair-crossbowman",
+      "[grand-army-of-the-south] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -2794,14 +3349,27 @@
   "[harad] haradrim-chieftain": {
     "valid_warband_units": [
       "[harad] haradrim-warrior",
-      "[harad] haradrim-raider"
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[harad] haradrim-king": {
+    "valid_warband_units": [
+      "[harad] haradrim-warrior",
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
     ],
     "extra_profiles": []
   },
   "[harad] haradrim-taskmaster": {
     "valid_warband_units": [
       "[harad] haradrim-warrior",
-      "[harad] haradrim-raider"
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
     ],
     "extra_profiles": []
   },
@@ -2812,6 +3380,24 @@
     "extra_profiles": [
       "Royal War Mumak"
     ]
+  },
+  "[harad] the-betrayer": {
+    "valid_warband_units": [
+      "[harad] haradrim-warrior",
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[harad] the-golden-king-of-abrakhan": {
+    "valid_warband_units": [
+      "[harad] haradrim-warrior",
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
+    ],
+    "extra_profiles": []
   },
   "[harad] war-mumak-of-harad": {
     "valid_warband_units": [
@@ -2960,7 +3546,27 @@
     ],
     "extra_profiles": []
   },
+  "[host-of-the-witch-king] the-dwimmerlaik": {
+    "valid_warband_units": [
+      "[host-of-the-witch-king] angmar-orc-warrior",
+      "[host-of-the-witch-king] angmar-warg-rider",
+      "[host-of-the-witch-king] warrior-of-carn-dum",
+      "[host-of-the-witch-king] werewolf",
+      "[host-of-the-witch-king] spectre"
+    ],
+    "extra_profiles": []
+  },
   "[host-of-the-witch-king] the-shadow-of-rhudaur": {
+    "valid_warband_units": [
+      "[host-of-the-witch-king] angmar-orc-warrior",
+      "[host-of-the-witch-king] angmar-warg-rider",
+      "[host-of-the-witch-king] warrior-of-carn-dum",
+      "[host-of-the-witch-king] werewolf",
+      "[host-of-the-witch-king] spectre"
+    ],
+    "extra_profiles": []
+  },
+  "[host-of-the-witch-king] the-tainted": {
     "valid_warband_units": [
       "[host-of-the-witch-king] angmar-orc-warrior",
       "[host-of-the-witch-king] angmar-warg-rider",
@@ -3186,6 +3792,15 @@
     ],
     "extra_profiles": []
   },
+  "[legions-of-mordor] goroth-captain-of-the-morannon": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
   "[legions-of-mordor] gothmog": {
     "valid_warband_units": [
       "[legions-of-mordor] morannon-orc",
@@ -3204,6 +3819,10 @@
     ],
     "extra_profiles": []
   },
+  "[legions-of-mordor] great-beast-of-gorgoroth": {
+    "valid_warband_units": [],
+    "extra_profiles": []
+  },
   "[legions-of-mordor] guritz": {
     "valid_warband_units": [
       "[legions-of-mordor] morannon-orc",
@@ -3220,17 +3839,41 @@
     ],
     "extra_profiles": []
   },
+  "[legions-of-mordor] haradrim-king": {
+    "valid_warband_units": [
+      "[legions-of-mordor] haradrim-warrior",
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
   "[legions-of-mordor] haradrim-taskmaster": {
     "valid_warband_units": [
       "[legions-of-mordor] haradrim-warrior",
-      "[legions-of-mordor] haradrim-raider"
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
     ],
     "extra_profiles": []
   },
   "[legions-of-mordor] hasharin": {
     "valid_warband_units": [
       "[legions-of-mordor] haradrim-warrior",
-      "[legions-of-mordor] haradrim-raider"
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] khamul-the-easterling": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior",
+      "[legions-of-mordor] easterling-warrior",
+      "[legions-of-mordor] easterling-kataphrakt"
     ],
     "extra_profiles": []
   },
@@ -3271,7 +3914,9 @@
   "[legions-of-mordor] raza-fang-of-the-serpent": {
     "valid_warband_units": [
       "[legions-of-mordor] haradrim-warrior",
-      "[legions-of-mordor] haradrim-raider"
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
     ],
     "extra_profiles": []
   },
@@ -3287,7 +3932,85 @@
   "[legions-of-mordor] suladan-the-serpent-lord": {
     "valid_warband_units": [
       "[legions-of-mordor] haradrim-warrior",
-      "[legions-of-mordor] haradrim-raider"
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-betrayer": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior",
+      "[legions-of-mordor] haradrim-warrior",
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-dark-marshal": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-dwimmerlaik": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-golden-king-of-abrakhan": {
+    "valid_warband_units": [
+      "[legions-of-mordor] haradrim-warrior",
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-knight-of-umbar": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-shadow-lord": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-tainted": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
+  },
+  "[legions-of-mordor] the-undying": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
     ],
     "extra_profiles": []
   },
@@ -3307,6 +4030,15 @@
     "extra_profiles": [
       "War Mumak of Harad (Options)"
     ]
+  },
+  "[legions-of-mordor] zagdush-orc-captain": {
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
+    "extra_profiles": []
   },
   "[lindon] cirdan": {
     "valid_warband_units": [
@@ -3438,6 +4170,13 @@
     "extra_profiles": []
   },
   "[lurtz's-scouts] lurtz": {
+    "valid_warband_units": [
+      "[lurtz's-scouts] uruk-hai-drummer",
+      "[lurtz's-scouts] uruk-hai-scout"
+    ],
+    "extra_profiles": []
+  },
+  "[lurtz's-scouts] mauhur": {
     "valid_warband_units": [
       "[lurtz's-scouts] uruk-hai-drummer",
       "[lurtz's-scouts] uruk-hai-scout"
@@ -3603,13 +4342,27 @@
     ],
     "extra_profiles": []
   },
+  "[minas-morgul] kardush-the-firecaller": {
+    "valid_warband_units": [
+      "[minas-morgul] mordor-orc-drummer",
+      "[minas-morgul] mordor-orc-warrior",
+      "[minas-morgul] morannon-orc",
+      "[minas-morgul] mordor-troll",
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
+    ],
+    "extra_profiles": []
+  },
   "[minas-morgul] morannon-orc-captain": {
     "valid_warband_units": [
       "[minas-morgul] mordor-orc-drummer",
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3619,7 +4372,9 @@
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3633,7 +4388,9 @@
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3643,7 +4400,9 @@
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3653,7 +4412,9 @@
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3663,7 +4424,9 @@
       "[minas-morgul] mordor-orc-warrior",
       "[minas-morgul] morannon-orc",
       "[minas-morgul] mordor-troll",
-      "[minas-morgul] spectre"
+      "[minas-morgul] spectre",
+      "[minas-morgul] morgul-stalker",
+      "[minas-morgul] orc-tracker"
     ],
     "extra_profiles": []
   },
@@ -3746,12 +4509,29 @@
     ],
     "extra_profiles": []
   },
+  "[moria] ashrak": {
+    "valid_warband_units": [
+      "[moria] moria-goblin-warrior",
+      "[moria] moria-goblin-prowler",
+      "[moria] moria-goblin-drum",
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
+    ],
+    "extra_profiles": []
+  },
   "[moria] cave-drake": {
     "valid_warband_units": [
       "[moria] moria-goblin-warrior",
       "[moria] moria-goblin-prowler",
       "[moria] moria-goblin-drum",
-      "[moria] cave-troll"
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3760,7 +4540,11 @@
       "[moria] moria-goblin-warrior",
       "[moria] moria-goblin-prowler",
       "[moria] moria-goblin-drum",
-      "[moria] cave-troll"
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3772,7 +4556,11 @@
       "[moria] cave-troll",
       "[moria] bat-swarm",
       "[moria] mirkwood-hunting-spider",
-      "[moria] fell-warg"
+      "[moria] fell-warg",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3781,7 +4569,50 @@
       "[moria] moria-goblin-warrior",
       "[moria] moria-goblin-prowler",
       "[moria] moria-goblin-drum",
-      "[moria] cave-troll"
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
+    ],
+    "extra_profiles": []
+  },
+  "[moria] groblog": {
+    "valid_warband_units": [
+      "[moria] moria-goblin-warrior",
+      "[moria] moria-goblin-prowler",
+      "[moria] moria-goblin-drum",
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
+    ],
+    "extra_profiles": []
+  },
+  "[moria] moria-blackshield-captain": {
+    "valid_warband_units": [
+      "[moria] moria-goblin-warrior",
+      "[moria] moria-goblin-prowler",
+      "[moria] moria-goblin-drum",
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
+    ],
+    "extra_profiles": []
+  },
+  "[moria] moria-blackshield-shaman": {
+    "valid_warband_units": [
+      "[moria] moria-goblin-warrior",
+      "[moria] moria-goblin-prowler",
+      "[moria] moria-goblin-drum",
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3790,7 +4621,11 @@
       "[moria] moria-goblin-warrior",
       "[moria] moria-goblin-prowler",
       "[moria] moria-goblin-drum",
-      "[moria] cave-troll"
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3799,7 +4634,11 @@
       "[moria] moria-goblin-warrior",
       "[moria] moria-goblin-prowler",
       "[moria] moria-goblin-drum",
-      "[moria] cave-troll"
+      "[moria] cave-troll",
+      "[moria] moria-blackshield-drum",
+      "[moria] moria-blackshield-warrior",
+      "[moria] warg-marauder",
+      "[moria] dweller-in-the-dark"
     ],
     "extra_profiles": []
   },
@@ -3816,9 +4655,9 @@
       "[muster-of-isengard] uruk-hai-warrior",
       "[muster-of-isengard] uruk-hai-berserker",
       "[muster-of-isengard] uruk-hai-scout",
-      "[muster-of-isengard] grima",
       "[muster-of-isengard] uruk-hai-drummer",
-      "[muster-of-isengard] isengard-troll"
+      "[muster-of-isengard] isengard-troll",
+      "[muster-of-isengard] feral-uruk-hai"
     ],
     "extra_profiles": []
   },
@@ -3828,7 +4667,8 @@
       "[muster-of-isengard] uruk-hai-berserker",
       "[muster-of-isengard] uruk-hai-scout",
       "[muster-of-isengard] uruk-hai-drummer",
-      "[muster-of-isengard] isengard-troll"
+      "[muster-of-isengard] isengard-troll",
+      "[muster-of-isengard] feral-uruk-hai"
     ],
     "extra_profiles": []
   },
@@ -3842,7 +4682,8 @@
       "[muster-of-isengard] uruk-hai-berserker",
       "[muster-of-isengard] uruk-hai-scout",
       "[muster-of-isengard] uruk-hai-drummer",
-      "[muster-of-isengard] isengard-troll"
+      "[muster-of-isengard] isengard-troll",
+      "[muster-of-isengard] feral-uruk-hai"
     ],
     "extra_profiles": []
   },
@@ -3852,7 +4693,19 @@
       "[muster-of-isengard] uruk-hai-berserker",
       "[muster-of-isengard] uruk-hai-scout",
       "[muster-of-isengard] uruk-hai-drummer",
-      "[muster-of-isengard] isengard-troll"
+      "[muster-of-isengard] isengard-troll",
+      "[muster-of-isengard] feral-uruk-hai"
+    ],
+    "extra_profiles": []
+  },
+  "[muster-of-isengard] vrasku": {
+    "valid_warband_units": [
+      "[muster-of-isengard] uruk-hai-warrior",
+      "[muster-of-isengard] uruk-hai-berserker",
+      "[muster-of-isengard] uruk-hai-scout",
+      "[muster-of-isengard] uruk-hai-drummer",
+      "[muster-of-isengard] isengard-troll",
+      "[muster-of-isengard] feral-uruk-hai"
     ],
     "extra_profiles": []
   },
@@ -4445,13 +5298,18 @@
     ],
     "extra_profiles": []
   },
+  "[rise-of-the-necromancer] castellan-of-dol-guldur": {
+    "valid_warband_units": [],
+    "extra_profiles": []
+  },
   "[rise-of-the-necromancer] hunter-orc-captain": {
     "valid_warband_units": [
       "[rise-of-the-necromancer] hunter-orc-warrior",
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4472,7 +5330,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4493,7 +5352,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4514,7 +5374,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4535,7 +5396,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4556,7 +5418,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4577,7 +5440,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4598,7 +5462,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4619,7 +5484,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4640,7 +5506,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4661,7 +5528,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -4682,7 +5550,8 @@
       "[rise-of-the-necromancer] hunter-orc-warg-rider",
       "[rise-of-the-necromancer] fell-warg",
       "[rise-of-the-necromancer] mirkwood-giant-spider",
-      "[rise-of-the-necromancer] mirkwood-hunting-spider"
+      "[rise-of-the-necromancer] mirkwood-hunting-spider",
+      "[rise-of-the-necromancer] castellan-of-dol-guldur"
     ],
     "extra_profiles": []
   },
@@ -5453,6 +6322,14 @@
     ],
     "extra_profiles": []
   },
+  "[the-easterlings] khamul-the-easterling": {
+    "valid_warband_units": [
+      "[the-easterlings] easterling-kataphrakt",
+      "[the-easterlings] war-drake-of-rhun",
+      "[the-easterlings] easterling-warrior"
+    ],
+    "extra_profiles": []
+  },
   "[the-fellowship] aragorn-strider": {
     "valid_warband_units": [
       "[the-fellowship] gandalf-the-grey",
@@ -5841,6 +6718,13 @@
     ],
     "extra_profiles": []
   },
+  "[the-serpent-horde] haradrim-king": {
+    "valid_warband_units": [
+      "[the-serpent-horde] haradrim-warrior",
+      "[the-serpent-horde] haradrim-raider"
+    ],
+    "extra_profiles": []
+  },
   "[the-serpent-horde] haradrim-taskmaster": {
     "valid_warband_units": [
       "[the-serpent-horde] haradrim-warrior",
@@ -5863,6 +6747,13 @@
       "[the-serpent-horde] haradrim-raider",
       "[the-serpent-horde] serpent-guard",
       "[the-serpent-horde] serpent-rider"
+    ],
+    "extra_profiles": []
+  },
+  "[the-serpent-horde] the-betrayer": {
+    "valid_warband_units": [
+      "[the-serpent-horde] haradrim-warrior",
+      "[the-serpent-horde] haradrim-raider"
     ],
     "extra_profiles": []
   },
@@ -6368,6 +7259,13 @@
     ],
     "extra_profiles": []
   },
+  "[ugluk's-scouts] mauhur": {
+    "valid_warband_units": [
+      "[ugluk's-scouts] uruk-hai-drummer",
+      "[ugluk's-scouts] uruk-hai-scout"
+    ],
+    "extra_profiles": []
+  },
   "[ugluk's-scouts] snaga": {
     "valid_warband_units": [
       "[ugluk's-scouts] isengard-orc-warrior"
@@ -6396,7 +7294,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6404,7 +7303,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6412,7 +7312,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6420,7 +7321,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6428,7 +7330,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6436,7 +7339,8 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -6444,7 +7348,17 @@
     "valid_warband_units": [
       "[umbar] haradrim-warrior",
       "[umbar] corsair-of-umbar",
-      "[umbar] black-numenorean-warrior"
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
+    ],
+    "extra_profiles": []
+  },
+  "[umbar] the-knight-of-umbar": {
+    "valid_warband_units": [
+      "[umbar] haradrim-warrior",
+      "[umbar] corsair-of-umbar",
+      "[umbar] black-numenorean-warrior",
+      "[umbar] corsair-reaver"
     ],
     "extra_profiles": []
   },
