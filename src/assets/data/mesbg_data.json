@@ -418,7 +418,6 @@
     "base_points": 90,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -444,7 +443,6 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -464,7 +462,6 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -483,7 +480,6 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -536,7 +532,6 @@
     "base_points": 12,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -551,7 +546,6 @@
     "base_points": 11,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -567,7 +561,6 @@
     "siege_crew": 0,
     "bow_limit": true,
     "opt_mandatory": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -4403,7 +4396,6 @@
     "base_points": 70,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -4423,7 +4415,6 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -4555,7 +4546,6 @@
     "default_bow": true,
     "siege_crew": 3,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -4669,7 +4659,6 @@
     "default_bow": true,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -6580,7 +6569,6 @@
     "base_points": 50,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10857,7 +10845,6 @@
     "base_points": 65,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10896,7 +10883,6 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -10916,7 +10902,6 @@
     "base_points": 60,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11203,7 +11188,6 @@
     "unit_type": "Hero of Valour",
     "base_points": 70,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11229,7 +11213,6 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11271,7 +11254,6 @@
     "base_points": 25,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -11292,7 +11274,6 @@
     "base_points": 17,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -11318,7 +11299,6 @@
     "base_points": 8,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -11344,7 +11324,6 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11364,7 +11343,6 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11552,7 +11530,6 @@
     "default_bow": true,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -11609,7 +11586,6 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -11726,7 +11702,6 @@
     "base_points": 20,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -20981,7 +20956,6 @@
     "base_points": 45,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -21856,7 +21830,6 @@
     "base_points": 110,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -21893,7 +21866,6 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 140,
     "siege_crew": 2,
-    "legacy": true,
     "MWFW": [
       [
         "King's Champion",
@@ -21921,7 +21893,6 @@
     "base_points": 75,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -21996,7 +21967,6 @@
     "unit_type": "Minor Hero",
     "base_points": 60,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -28910,7 +28880,6 @@
     "base_points": 120,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -30308,7 +30277,6 @@
     "unit_type": "Hero of Valour",
     "base_points": 100,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -30335,7 +30303,6 @@
     "base_points": 100,
     "unique": true,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -30361,7 +30328,6 @@
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [
       [
         "",
@@ -30387,7 +30353,6 @@
     "unit_type": "Warrior",
     "base_points": 40,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
@@ -30408,7 +30373,6 @@
     "unit_type": "Warrior",
     "base_points": 14,
     "siege_crew": 0,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": []
@@ -30423,7 +30387,6 @@
     "base_points": 8,
     "siege_crew": 0,
     "bow_limit": true,
-    "legacy": true,
     "MWFW": [],
     "warband_size": 0,
     "options": [
