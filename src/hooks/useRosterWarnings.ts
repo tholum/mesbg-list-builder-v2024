@@ -54,7 +54,10 @@ function extraScriptedRosterWarnings(
           a[b.name] += b.quantity;
           return a;
         },
-        { "Great Eagle": 0, "Fledgeling Great Eagle": 0 },
+        {
+          "Great Eagle": roster.armyList === "Radagast's Alliance" ? 1 : 0,
+          "Fledgeling Great Eagle": 0,
+        },
       );
     const diff = units["Fledgeling Great Eagle"] - units["Great Eagle"];
     if (diff > 0) {

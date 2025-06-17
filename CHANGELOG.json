@@ -3,7 +3,8 @@
     "bugfixes": [
       "Fixed the lookup for Fury special rules by replacing the value of X during the lookup.",
       "Added a missing mapping for Xbane special rule to highlight the 'Bane Weapons' special rule.",
-      "Fixed the bow limit calculation on the Warg Marauders."
+      "Fixed the bow limit calculation on the Warg Marauders.",
+      "Include Radagast's mount in the Fledgeling calculations."
     ]
   },
   "1.22": {
