@@ -32,9 +32,12 @@ function heroAdditionalUnitRosterCount(warband: Warband) {
   }
 
   if (
-    ["Mumak War Leader", "War Mumak of Harad", "Troll Brute"].includes(
-      warband.hero?.name,
-    )
+    [
+      "Mumak War Leader",
+      "War Mumak of Harad",
+      "Troll Brute",
+      "Great Beast of Gorgoroth",
+    ].includes(warband.hero?.name)
   ) {
     return 2;
   }

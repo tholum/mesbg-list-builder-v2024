@@ -17,7 +17,8 @@
       "Corrected the mandatory option selection label when selecting an hero specific unit upgrade (such as Helmingas or Hearthgaurd).",
       "Added missing warning on ruffian warbands in Sharkey's Rouges",
       "Corrected the points value of Khandish King in Grand Army of the South",
-      "Added the Harad warrior models to Mahud hero warbands, and Mahud Warriors to Harad hero warbands."
+      "Added the Harad warrior models to Mahud hero warbands, and Mahud Warriors to Harad hero warbands.",
+      "The Great Beast of Gorgoroth can now lead up to 12 warriors in its warband."
     ]
   },
   "1.21": {

@@ -2693,9 +2693,8 @@
     "name": "Great Beast of Gorgoroth",
     "unit_type": "Hero of Fortitude",
     "base_points": 175,
-    "siege_crew": 2,
+    "siege_crew": 0,
     "bow_limit": true,
-    "no_followers": true,
     "legacy": true,
     "MWFW": [
       [
@@ -2705,6 +2704,10 @@
       [
         "Great Beast",
         "0:0:0:6"
+      ],
+      [
+        "Great Beast Howdah",
+        "0:0:0:9"
       ]
     ],
     "warband_size": 12,
@@ -16303,9 +16306,8 @@
     "name": "Great Beast of Gorgoroth",
     "unit_type": "Hero of Fortitude",
     "base_points": 175,
-    "siege_crew": 2,
+    "siege_crew": 0,
     "bow_limit": true,
-    "no_followers": true,
     "legacy": true,
     "MWFW": [
       [
@@ -16315,6 +16317,10 @@
       [
         "Great Beast",
         "0:0:0:6"
+      ],
+      [
+        "Great Beast Howdah",
+        "0:0:0:9"
       ]
     ],
     "warband_size": 12,

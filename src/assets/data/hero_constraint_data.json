@@ -555,7 +555,20 @@
     "extra_profiles": []
   },
   "[army-of-the-great-eye] great-beast-of-gorgoroth": {
-    "valid_warband_units": [],
+    "valid_warband_units": [
+      "[army-of-the-great-eye] mordor-orc-drummer",
+      "[army-of-the-great-eye] morannon-orc-warrior",
+      "[army-of-the-great-eye] mordor-orc-warrior",
+      "[army-of-the-great-eye] mordor-warg-rider",
+      "[army-of-the-great-eye] mordor-uruk-hai",
+      "[army-of-the-great-eye] mordor-troll",
+      "[army-of-the-great-eye] black-numenorean-warrior",
+      "[army-of-the-great-eye] black-numenorean-knight",
+      "[army-of-the-great-eye] black-guard-drummer",
+      "[army-of-the-great-eye] black-guard-of-barad-dur",
+      "[army-of-the-great-eye] morgul-stalker",
+      "[army-of-the-great-eye] orc-tracker"
+    ],
     "extra_profiles": []
   },
   "[army-of-the-great-eye] guritz": {
@@ -3857,7 +3870,12 @@
     "extra_profiles": []
   },
   "[legions-of-mordor] great-beast-of-gorgoroth": {
-    "valid_warband_units": [],
+    "valid_warband_units": [
+      "[legions-of-mordor] morannon-orc",
+      "[legions-of-mordor] mordor-troll",
+      "[legions-of-mordor] black-numenorean-knight",
+      "[legions-of-mordor] black-numenorean-warrior"
+    ],
     "extra_profiles": []
   },
   "[legions-of-mordor] guritz": {
