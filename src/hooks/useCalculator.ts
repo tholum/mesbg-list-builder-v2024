@@ -81,14 +81,14 @@ export const useCalculator = () => {
         option.quantity > 0,
     );
 
-    if (unit.default_bow || hasBowOption)
-      return unit.quantity * (unit.siege_crew || 1);
+    if (unit.default_bow || hasBowOption) return getBowLimit(unit);
 
     return 0;
   }
 
   function getBowLimit(unit: SelectedUnit): number {
     if (!unit.bow_limit) return 0;
+    if (unit.name === "Warg Marauder") return unit.quantity;
     return unit.quantity * (unit.siege_crew || 1);
   }
 
