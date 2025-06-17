@@ -3260,7 +3260,13 @@
   },
   "[grand-army-of-the-south] mumak-war-leader": {
     "valid_warband_units": [
-      "[grand-army-of-the-south] haradrim-warrior"
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": [
       "Royal War Mumak"
@@ -3328,7 +3334,13 @@
   },
   "[grand-army-of-the-south] war-mumak-of-harad": {
     "valid_warband_units": [
-      "[grand-army-of-the-south] haradrim-warrior"
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": [
       "War Mumak of Harad (Options)"
@@ -3425,7 +3437,10 @@
   },
   "[harad] mumak-war-leader": {
     "valid_warband_units": [
-      "[harad] haradrim-warrior"
+      "[harad] haradrim-warrior",
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
     ],
     "extra_profiles": [
       "Royal War Mumak"
@@ -3451,7 +3466,10 @@
   },
   "[harad] war-mumak-of-harad": {
     "valid_warband_units": [
-      "[harad] haradrim-warrior"
+      "[harad] haradrim-warrior",
+      "[harad] haradrim-raider",
+      "[harad] abrakhan-merchant-guard",
+      "[harad] watcher-of-karna"
     ],
     "extra_profiles": [
       "War Mumak of Harad (Options)"
@@ -3960,7 +3978,10 @@
   },
   "[legions-of-mordor] mumak-war-leader": {
     "valid_warband_units": [
-      "[legions-of-mordor] haradrim-warrior"
+      "[legions-of-mordor] haradrim-warrior",
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
     ],
     "extra_profiles": [
       "Royal War Mumak"
@@ -4080,7 +4101,10 @@
   },
   "[legions-of-mordor] war-mumak-of-harad": {
     "valid_warband_units": [
-      "[legions-of-mordor] haradrim-warrior"
+      "[legions-of-mordor] haradrim-warrior",
+      "[legions-of-mordor] haradrim-raider",
+      "[legions-of-mordor] abrakhan-merchant-guard",
+      "[legions-of-mordor] watcher-of-karna"
     ],
     "extra_profiles": [
       "War Mumak of Harad (Options)"
@@ -6814,7 +6838,8 @@
   },
   "[the-serpent-horde] war-mumak-of-harad": {
     "valid_warband_units": [
-      "[the-serpent-horde] haradrim-warrior"
+      "[the-serpent-horde] haradrim-warrior",
+      "[the-serpent-horde] haradrim-raider"
     ],
     "extra_profiles": [
       "War Mumak of Harad (Options)"

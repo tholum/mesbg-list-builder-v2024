@@ -9,7 +9,8 @@
       "Added the missing special army rules for Battle of Bywater.",
       "Corrected the combined point cost of Murin & Drar.",
       "Fixed an issue with heroes that have armoured versions of their mounts not working correctly with the collection warnings.",
-      "Deorwine and Elfhelm now have their horses auto-selected in Riders of Theoden."
+      "Deorwine and Elfhelm now have their horses auto-selected in Riders of Theoden.",
+      "Updated the valid warband units for Mumaks to allow more than just Haradrim Warriors."
     ]
   },
   "1.22": {
