@@ -71,7 +71,7 @@ export function getTotalSelectedModelsGroupedPerChosenOptions(
               return unit.options.length === 0 && unit.mount === c.mount;
             }
             return (
-              c.mount === unit.mount &&
+              unit.mount.includes(c.mount) &&
               arraysMatch(
                 unit.options.filter((o) => o !== unit.mount),
                 c.options,
@@ -144,7 +144,7 @@ export function getAmountOfAvailableUnitsIncludingGenerics(
             options.length === 0
               ? ["None"]
               : options.filter((o) => o !== mount),
-          ) && mount === ts.mount,
+          ) && mount.includes(ts.mount),
       )?.amount || "0",
     ) + Math.max(amountOfGenericsForGivenMount - totalGenericsUsedElseWhere, 0)
   );

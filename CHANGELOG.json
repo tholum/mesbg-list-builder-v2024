@@ -7,7 +7,8 @@
       "Include Radagast's mount in the Fledgeling calculations.",
       "Fixed the incorrect statbar on the Orc Tracker profile.",
       "Added the missing special army rules for Battle of Bywater.",
-      "Corrected the combined point cost of Murin & Drar."
+      "Corrected the combined point cost of Murin & Drar.",
+      "Fixed an issue with heroes that have armoured versions of their mounts not working correctly with the collection warnings."
     ]
   },
   "1.22": {
