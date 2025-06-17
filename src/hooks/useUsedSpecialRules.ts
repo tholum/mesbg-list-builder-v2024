@@ -7,10 +7,12 @@ export const useUsedSpecialRules = () => {
   try {
     const profiles = useProfiles();
 
+    console.log(profiles);
     return [
       ...armyListData[roster.armyList].rule_highlights,
       ...profiles.profiles
         .flatMap((profile) => profile.special_rules)
+        .map((keyword) => (keyword.endsWith("bane") ? "Bane Weapons" : keyword))
         .map((keyword) => keyword.replace(/\(.*?\)/g, "(X)")),
     ];
   } catch {

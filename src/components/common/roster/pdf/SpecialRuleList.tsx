@@ -42,6 +42,14 @@ function mapSpecialRule(sr: string) {
       description: rule?.description,
     };
   }
+  if (sr.endsWith("bane")) {
+    const rule = keywords.find((keyword) => keyword.name === "Bane Weapons");
+    return {
+      name: sr,
+      type: rule?.active_passive,
+      description: rule?.description,
+    };
+  }
 
   const rule = keywords.find(
     (keyword) => keyword.name === sr.replace(/\(.*?\)/g, "(X)"),
