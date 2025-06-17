@@ -10838,6 +10838,44 @@
       }
     ]
   },
+  "[expedition-to-the-east] drar": {
+    "model_id": "[expedition-to-the-east] drar",
+    "army_type": "Good (Legacy)",
+    "army_list": "Expedition to the East",
+    "profile_origin": "Good Legacy",
+    "name": "Drar",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
+  "[expedition-to-the-east] murin": {
+    "model_id": "[expedition-to-the-east] murin",
+    "army_type": "Good (Legacy)",
+    "army_list": "Expedition to the East",
+    "profile_origin": "Good Legacy",
+    "name": "Murin",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 70,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:2:2:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[expedition-to-the-east] cirion-lieutenant-of-amon-barad": {
     "model_id": "[expedition-to-the-east] cirion-lieutenant-of-amon-barad",
     "army_type": "Good (Legacy)",
@@ -10871,44 +10909,6 @@
       [
         "",
         "2:1:1:2"
-      ]
-    ],
-    "warband_size": 12,
-    "options": []
-  },
-  "[expedition-to-the-east] drar": {
-    "model_id": "[expedition-to-the-east] drar",
-    "army_type": "Good (Legacy)",
-    "army_list": "Expedition to the East",
-    "profile_origin": "Good Legacy",
-    "name": "Drar",
-    "unit_type": "Hero of Fortitude",
-    "base_points": 60,
-    "unique": true,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:2:2:2"
-      ]
-    ],
-    "warband_size": 12,
-    "options": []
-  },
-  "[expedition-to-the-east] murin": {
-    "model_id": "[expedition-to-the-east] murin",
-    "army_type": "Good (Legacy)",
-    "army_list": "Expedition to the East",
-    "profile_origin": "Good Legacy",
-    "name": "Murin",
-    "unit_type": "Hero of Fortitude",
-    "base_points": 60,
-    "unique": true,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:2:2:2"
       ]
     ],
     "warband_size": 12,
@@ -27798,7 +27798,7 @@
     "profile_origin": "Good Legacy",
     "name": "Drar",
     "unit_type": "Hero of Fortitude",
-    "base_points": 60,
+    "base_points": 70,
     "unique": true,
     "siege_crew": 0,
     "legacy": true,
@@ -27818,7 +27818,7 @@
     "profile_origin": "Good Legacy",
     "name": "Murin",
     "unit_type": "Hero of Fortitude",
-    "base_points": 60,
+    "base_points": 70,
     "unique": true,
     "siege_crew": 0,
     "legacy": true,
