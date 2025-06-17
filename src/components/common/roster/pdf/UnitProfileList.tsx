@@ -127,7 +127,11 @@ const SpecialRules = ({ profile }: { profile: Profile }) => {
   const specialRules: { name: string; description: string }[] = [
     ...profile.active_or_passive_rules,
     ...profile.special_rules.map((rule) => ({
-      ...keywords.find((kw) => kw.name === rule.replace(/\(.*?\)/g, "(X)")),
+      ...keywords.find((kw) =>
+        rule.endsWith("bane")
+          ? kw.name === "Bane Weapons"
+          : kw.name === rule.replace(/\(.*?\)/g, "(X)"),
+      ),
       name: rule,
     })),
   ].sort((a, b) => a.name.localeCompare(b.name));
