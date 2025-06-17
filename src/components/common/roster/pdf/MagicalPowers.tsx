@@ -27,7 +27,7 @@ export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
   const magicalPowers: MagicalPower[] = profiles
     .flatMap((profile) =>
       profile.magic_powers
-        .map(({ name }) => name.split("(")[0].trim())
+        .map(({ name }) => name.replace(/\(.*?\)/g, "(X)"))
         .map((name) => {
           const power = keywords.find((keyword) => keyword.name === name);
           return {

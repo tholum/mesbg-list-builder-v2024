@@ -5,7 +5,8 @@ export const useUsedMagicalPowers = () => {
     const profiles = useProfiles();
     return profiles.profiles
       .flatMap((profile) => profile.magic_powers)
-      .map((mp) => mp.name);
+      .map((mp) => mp.name)
+      .map((keyword) => keyword.replace(/\(.*?\)/g, "(X)"));
   } catch {
     return [];
   }
