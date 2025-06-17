@@ -23001,7 +23001,9 @@
         "name": "Horse",
         "points": 20,
         "type": "mount",
-        "mount_name": "Horse"
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
       }
     ]
   },
@@ -23028,7 +23030,9 @@
         "name": "Horse",
         "points": 20,
         "type": "mount",
-        "mount_name": "Horse"
+        "included": true,
+        "mount_name": "Horse",
+        "quantity": 1
       }
     ]
   },
