@@ -2693,7 +2693,7 @@
     "name": "Great Beast of Gorgoroth",
     "unit_type": "Hero of Fortitude",
     "base_points": 175,
-    "siege_crew": 10,
+    "siege_crew": 2,
     "bow_limit": true,
     "no_followers": true,
     "legacy": true,
@@ -7680,6 +7680,21 @@
     "warband_size": 0,
     "options": []
   },
+  "[corsair-fleet] corsair-reaver": {
+    "model_id": "[corsair-fleet] corsair-reaver",
+    "army_type": "Evil",
+    "army_list": "Corsair Fleet",
+    "profile_origin": "Evil Legacy",
+    "name": "Corsair Reaver",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[corsair-fleet] corsair-of-umbar": {
     "model_id": "[corsair-fleet] corsair-of-umbar",
     "army_type": "Evil",
@@ -7730,21 +7745,6 @@
       ]
     ],
     "warband_size": 6,
-    "options": []
-  },
-  "[corsair-fleets] corsair-reaver": {
-    "model_id": "[corsair-fleets] corsair-reaver",
-    "army_type": "Evil",
-    "army_list": "Corsair Fleets",
-    "profile_origin": "Evil Legacy",
-    "name": "Corsair Reaver",
-    "unit_type": "Warrior",
-    "base_points": 9,
-    "siege_crew": 0,
-    "bow_limit": true,
-    "legacy": true,
-    "MWFW": [],
-    "warband_size": 0,
     "options": []
   },
   "[defenders-of-erebor] dain-ironfoot-king-under-the-mountain": {
@@ -12834,6 +12834,33 @@
       }
     ]
   },
+  "[grand-army-of-the-south] khandish-king": {
+    "model_id": "[grand-army-of-the-south] khandish-king",
+    "army_type": "Evil",
+    "army_list": "Grand Army of the South",
+    "profile_origin": "Evil Legacy",
+    "name": "Khandish King",
+    "unit_type": "Hero of Valour",
+    "base_points": 100,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:2:1:2"
+      ]
+    ],
+    "warband_size": 15,
+    "options": [
+      {
+        "id": "OPT1416",
+        "name": "Khandish Chariot",
+        "points": 35,
+        "type": "mount",
+        "mount_name": "Khandish Chariot"
+      }
+    ]
+  },
   "[grand-army-of-the-south] delgamar-gatemaster-of-umbar": {
     "model_id": "[grand-army-of-the-south] delgamar-gatemaster-of-umbar",
     "army_type": "Evil",
@@ -12877,33 +12904,6 @@
         "points": 20,
         "type": "mount",
         "mount_name": "Horse"
-      }
-    ]
-  },
-  "[grand-army-of-the-south] khandish-king": {
-    "model_id": "[grand-army-of-the-south] khandish-king",
-    "army_type": "Evil",
-    "army_list": "Grand Army of the South",
-    "profile_origin": "Evil Legacy",
-    "name": "Khandish King",
-    "unit_type": "Hero of Valour",
-    "base_points": 70,
-    "siege_crew": 0,
-    "legacy": true,
-    "MWFW": [
-      [
-        "",
-        "2:2:1:2"
-      ]
-    ],
-    "warband_size": 15,
-    "options": [
-      {
-        "id": "OPT1416",
-        "name": "Khandish Chariot",
-        "points": 35,
-        "type": "mount",
-        "mount_name": "Khandish Chariot"
       }
     ]
   },
@@ -16303,7 +16303,7 @@
     "name": "Great Beast of Gorgoroth",
     "unit_type": "Hero of Fortitude",
     "base_points": 175,
-    "siege_crew": 10,
+    "siege_crew": 2,
     "bow_limit": true,
     "no_followers": true,
     "legacy": true,

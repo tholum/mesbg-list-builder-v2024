@@ -1996,35 +1996,40 @@
   "[corsair-fleet] corsair-bo'sun": {
     "valid_warband_units": [
       "[corsair-fleet] corsair-of-umbar",
-      "[corsair-fleet] corsair-crossbowman"
+      "[corsair-fleet] corsair-crossbowman",
+      "[corsair-fleet] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[corsair-fleet] corsair-captain": {
     "valid_warband_units": [
       "[corsair-fleet] corsair-of-umbar",
-      "[corsair-fleet] corsair-crossbowman"
+      "[corsair-fleet] corsair-crossbowman",
+      "[corsair-fleet] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[corsair-fleet] corsair-captain-general": {
     "valid_warband_units": [
       "[corsair-fleet] corsair-of-umbar",
-      "[corsair-fleet] corsair-crossbowman"
+      "[corsair-fleet] corsair-crossbowman",
+      "[corsair-fleet] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[corsair-fleet] dalamyr-fleetmaster-of-umbar": {
     "valid_warband_units": [
       "[corsair-fleet] corsair-of-umbar",
-      "[corsair-fleet] corsair-crossbowman"
+      "[corsair-fleet] corsair-crossbowman",
+      "[corsair-fleet] corsair-reaver"
     ],
     "extra_profiles": []
   },
   "[corsair-fleet] delgamar-gatemaster-of-umbar": {
     "valid_warband_units": [
       "[corsair-fleet] corsair-of-umbar",
-      "[corsair-fleet] corsair-crossbowman"
+      "[corsair-fleet] corsair-crossbowman",
+      "[corsair-fleet] corsair-reaver"
     ],
     "extra_profiles": []
   },
@@ -3149,7 +3154,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3158,7 +3166,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3167,7 +3178,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3176,7 +3190,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3208,7 +3225,11 @@
     "valid_warband_units": [
       "[grand-army-of-the-south] mahud-warrior",
       "[grand-army-of-the-south] mahud-raider",
-      "[grand-army-of-the-south] half-troll"
+      "[grand-army-of-the-south] half-troll",
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
     ],
     "extra_profiles": []
   },
@@ -3216,7 +3237,11 @@
     "valid_warband_units": [
       "[grand-army-of-the-south] mahud-warrior",
       "[grand-army-of-the-south] mahud-raider",
-      "[grand-army-of-the-south] half-troll"
+      "[grand-army-of-the-south] half-troll",
+      "[grand-army-of-the-south] haradrim-warrior",
+      "[grand-army-of-the-south] haradrim-raider",
+      "[grand-army-of-the-south] abrakhan-merchant-guard",
+      "[grand-army-of-the-south] watcher-of-karna"
     ],
     "extra_profiles": []
   },
@@ -3235,7 +3260,10 @@
       "[grand-army-of-the-south] serpent-guard",
       "[grand-army-of-the-south] serpent-rider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3246,7 +3274,10 @@
       "[grand-army-of-the-south] serpent-guard",
       "[grand-army-of-the-south] serpent-rider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3255,7 +3286,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
@@ -3264,7 +3298,10 @@
       "[grand-army-of-the-south] haradrim-warrior",
       "[grand-army-of-the-south] haradrim-raider",
       "[grand-army-of-the-south] abrakhan-merchant-guard",
-      "[grand-army-of-the-south] watcher-of-karna"
+      "[grand-army-of-the-south] watcher-of-karna",
+      "[grand-army-of-the-south] mahud-warrior",
+      "[grand-army-of-the-south] mahud-raider",
+      "[grand-army-of-the-south] half-troll"
     ],
     "extra_profiles": []
   },
