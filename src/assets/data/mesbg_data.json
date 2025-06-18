@@ -21464,6 +21464,52 @@
       }
     ]
   },
+  "[realms-of-men] knight-of-dol-amroth": {
+    "model_id": "[realms-of-men] knight-of-dol-amroth",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Knight of Dol Amroth",
+    "unit_type": "Warrior",
+    "base_points": 11,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1421",
+        "name": "Armoured horse and banner",
+        "points": 33,
+        "type": "mount",
+        "mount_name": "Armoured horse"
+      },
+      {
+        "id": "OPT1422",
+        "name": "Armoured horse and war horn",
+        "points": 33,
+        "type": "mount",
+        "mount_name": "Armoured horse"
+      },
+      {
+        "id": "OPT1423",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT1424",
+        "name": "War horn",
+        "points": 25
+      },
+      {
+        "id": "OPT1425",
+        "name": "Armoured horse and lance",
+        "points": 9,
+        "type": "mount",
+        "mount_name": "Armoured horse"
+      }
+    ]
+  },
   "[realms-of-men] rohan-royal-guard": {
     "model_id": "[realms-of-men] rohan-royal-guard",
     "army_type": "Good",
@@ -21513,6 +21559,35 @@
     "warband_size": 0,
     "options": []
   },
+  "[realms-of-men] man-at-arms-of-dol-amroth": {
+    "model_id": "[realms-of-men] man-at-arms-of-dol-amroth",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Good Legacy",
+    "name": "Man-at-arms of Dol Amroth",
+    "unit_type": "Warrior",
+    "base_points": 10,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
+  "[realms-of-men] axeman-of-lossarnach": {
+    "model_id": "[realms-of-men] axeman-of-lossarnach",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Axeman of Lossarnach",
+    "unit_type": "Warrior",
+    "base_points": 9,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[realms-of-men] warrior-of-numenor": {
     "model_id": "[realms-of-men] warrior-of-numenor",
     "army_type": "Good",
@@ -21545,6 +21620,37 @@
       }
     ]
   },
+  "[realms-of-men] blackroot-vale-archer": {
+    "model_id": "[realms-of-men] blackroot-vale-archer",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Blackroot Vale Archer",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": [
+      {
+        "id": "OPT1426",
+        "name": "War horn",
+        "points": 25
+      },
+      {
+        "id": "OPT1427",
+        "name": "Banner",
+        "points": 25
+      },
+      {
+        "id": "OPT1428",
+        "name": "Spear",
+        "points": 1
+      }
+    ]
+  },
   "[realms-of-men] citadel-guard": {
     "model_id": "[realms-of-men] citadel-guard",
     "army_type": "Good",
@@ -21571,6 +21677,20 @@
         "points": 1
       }
     ]
+  },
+  "[realms-of-men] clansman-of-lamedon": {
+    "model_id": "[realms-of-men] clansman-of-lamedon",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Clansman of Lamedon",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
   },
   "[realms-of-men] ranger-of-arnor": {
     "model_id": "[realms-of-men] ranger-of-arnor",

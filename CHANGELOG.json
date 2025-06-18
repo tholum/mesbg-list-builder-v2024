@@ -1,5 +1,11 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Updated the Move value of Khandish Charioteer to 10 inches.",
+      "Added the new additional army rule for The Spider Queen's Brood.",
+      "Added the Fiefdom warrior models to the warband of the King of Men (Gondor) for Realms of Men."
+    ]
+  },
   "1.23": {
     "added": [
       "Added a warning on Defenders of Helm's Deep indicating the overuse of Lothlorien models.",

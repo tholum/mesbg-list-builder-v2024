@@ -2932,6 +2932,9 @@
     "additional_rules": [
       {
         "description": "The Spider Queen\u2019s Brood Army must always contain The Spider Queen, who is always the Army\u2019s General."
+      },
+      {
+        "description": "Friendly models can still pick up Objective Markers even though they have the Beast keyword."
       }
     ],
     "special_rules": [
