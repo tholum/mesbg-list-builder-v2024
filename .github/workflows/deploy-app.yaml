@@ -39,4 +39,4 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           RELEASE_VERSION: ${{ github.ref_name }}
-        run: node notify-discord.js
+        run: node scripts/notify-discord.js
