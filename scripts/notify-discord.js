@@ -25,6 +25,10 @@ function getChangelogVersion(version) {
 function postToWebhook(data, options) {
   const req = https.request(options, (res) => {
     console.log(`statusCode: ${res.statusCode}`);
+
+    // let body = "";
+    // res.on("data", (chunk) => (body += chunk));
+    // res.on("end", () => console.log("Response body:", body));
   });
 
   req.on("error", (error) => {
@@ -48,13 +52,26 @@ function buildRequestOptions(data) {
   };
 }
 
+function toMarkdownList(items) {
+  const maxItems = 4;
+  const visibleItems = items.slice(0, maxItems);
+  const remainingCount = items.length - maxItems;
+
+  let markdown = visibleItems.map((item) => `- ${item}`).join("\n");
+  if (remainingCount > 0) {
+    markdown += `\n- ...and ${remainingCount} more`;
+  }
+
+  return markdown;
+}
+
 function getMessageFields() {
   const raw = fs.readFileSync("./CHANGELOG.json", "utf-8");
   const changelog = JSON.parse(raw);
   const recentChanges = changelog[getChangelogVersion(version)];
   return Object.entries(recentChanges).map(([key, values]) => ({
     name: key.slice(0, 1).toUpperCase() + key.slice(1) + ":",
-    value: " * " + values.join("\n * "),
+    value: toMarkdownList(values),
   }));
 }
 
@@ -64,9 +81,13 @@ function buildPayload(version) {
     embeds: [
       {
         title: `We have just released version ${version}!`,
+        url: "https://mesbg-list-builder.com/changelog",
         description:
           "Below are some of the most important changes released in this version.",
         fields: changes,
+        footer: {
+          text: "For the full changelog, please visit https://mesbg-list-builder.com/changelog.",
+        },
       },
     ],
   });

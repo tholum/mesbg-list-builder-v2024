@@ -2,7 +2,7 @@
   "main": {},
   "1.23": {
     "added": [
-      "Added a warning on Defenders of Helm's Deep indicating the overuse of Lothlórien models.",
+      "Added a warning on Defenders of Helm's Deep indicating the overuse of Lothlorien models.",
       "Added utility to automatically create the warband full of woses in Paths of the Druadan."
     ],
     "bugfixes": [
