@@ -7622,7 +7622,7 @@
     "army_type": "Evil",
     "army_list": "Corsair Fleet",
     "profile_origin": "Fallen Realms",
-    "name": "Corsair Captain (Fleetmaster)",
+    "name": "Corsair Captain (General)",
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
     "unique": true,
@@ -28364,7 +28364,14 @@
       ]
     ],
     "warband_size": 12,
-    "options": []
+    "options": [
+      {
+        "id": "OPT1420",
+        "name": "Bow",
+        "points": 5,
+        "type": "bow"
+      }
+    ]
   },
   "[the-serpent-horde] haradrim-taskmaster": {
     "model_id": "[the-serpent-horde] haradrim-taskmaster",

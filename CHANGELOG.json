@@ -10,7 +10,10 @@
       "Corrected the combined point cost of Murin & Drar.",
       "Fixed an issue with heroes that have armoured versions of their mounts not working correctly with the collection warnings.",
       "Deorwine and Elfhelm now have their horses auto-selected in Riders of Theoden.",
-      "Updated the valid warband units for Mumaks to allow more than just Haradrim Warriors."
+      "Updated the valid warband units for Mumaks to allow more than just Haradrim Warriors.",
+      "Added the missing bow option for the Haradrim Chieftain in The Serpent Horde.",
+      "Removed Rohan Royal Guard from all heroes that were not allowed to lead them in Defenders of Helm's Deep.",
+      "Reverted the warning rules for Corsair Fleet regarding the inclusion of both Dalamyr and the Corsair Captain (General) together."
     ]
   },
   "1.22": {

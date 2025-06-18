@@ -2137,7 +2137,6 @@
   "[defenders-of-helm's-deep] aragorn-strider": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
@@ -2147,7 +2146,6 @@
   "[defenders-of-helm's-deep] captain-of-rohan": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
@@ -2157,7 +2155,6 @@
   "[defenders-of-helm's-deep] galadhrim-captain": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
@@ -2177,7 +2174,6 @@
   "[defenders-of-helm's-deep] gimli": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
@@ -2187,7 +2183,6 @@
   "[defenders-of-helm's-deep] haldir-galadhrim-captain": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
@@ -2210,7 +2205,6 @@
   "[defenders-of-helm's-deep] legolas": {
     "valid_warband_units": [
       "[defenders-of-helm's-deep] warrior-of-rohan",
-      "[defenders-of-helm's-deep] rohan-royal-guard",
       "[defenders-of-helm's-deep] galadhrim-warrior",
       "[defenders-of-helm's-deep] aldor",
       "[defenders-of-helm's-deep] haleth-son-of-hama"
