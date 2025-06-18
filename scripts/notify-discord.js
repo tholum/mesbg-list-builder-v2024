@@ -64,6 +64,8 @@ function buildPayload(version) {
     embeds: [
       {
         title: `We have just released version ${version}!`,
+        description:
+          "Below are some of the most important changes released in this version.",
         fields: changes,
       },
     ],
