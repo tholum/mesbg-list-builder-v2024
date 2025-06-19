@@ -3,7 +3,8 @@
     "bugfixes": [
       "Updated the Move value of Khandish Charioteer to 10 inches.",
       "Added the new additional army rule for The Spider Queen's Brood.",
-      "Added the Fiefdom warrior models to the warband of the King of Men (Gondor) for Realms of Men."
+      "Added the Fiefdom warrior models to the warband of the King of Men (Gondor) for Realms of Men.",
+      "Added the missing valid warband units for the captain of dol amroth in the Defenders of the Pelennor army list."
     ]
   },
   "1.23": {
@@ -24,8 +25,7 @@
       "Updated the valid warband units for Mumaks to allow more than just Haradrim Warriors.",
       "Added the missing bow option for the Haradrim Chieftain in The Serpent Horde.",
       "Removed Rohan Royal Guard from all heroes that were not allowed to lead them in Defenders of Helm's Deep.",
-      "Reverted the warning rules for Corsair Fleet regarding the inclusion of both Dalamyr and the Corsair Captain (General) together.",
-      "Added the missing valid warband units for the captain of dol amroth in the Defenders of the Pelennor army list."
+      "Reverted the warning rules for Corsair Fleet regarding the inclusion of both Dalamyr and the Corsair Captain (General) together."
     ]
   },
   "1.22": {
