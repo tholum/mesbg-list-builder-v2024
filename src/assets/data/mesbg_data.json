@@ -322,7 +322,6 @@
     "name": "Captain of Dale",
     "unit_type": "Hero of Fortitude",
     "base_points": 55,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -2639,7 +2638,6 @@
     "name": "Ringwraith",
     "unit_type": "Hero of Valour",
     "base_points": 0,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -10903,7 +10901,6 @@
     "name": "Captain of Minas Tirith",
     "unit_type": "Hero of Fortitude",
     "base_points": 60,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -20019,7 +20016,6 @@
     "name": "Captain of Rohan",
     "unit_type": "Hero of Fortitude",
     "base_points": 45,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -21099,7 +21095,6 @@
     "name": "King of Men (Arnor)",
     "unit_type": "Hero of Legend",
     "base_points": 75,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -21141,7 +21136,6 @@
     "name": "King of Men (Dale)",
     "unit_type": "Hero of Legend",
     "base_points": 75,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -21183,7 +21177,6 @@
     "name": "King of Men (Gondor)",
     "unit_type": "Hero of Legend",
     "base_points": 75,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -21225,7 +21218,6 @@
     "name": "King of Men (Numenor)",
     "unit_type": "Hero of Legend",
     "base_points": 75,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -21267,7 +21259,6 @@
     "name": "King of Men (Rohan)",
     "unit_type": "Hero of Legend",
     "base_points": 75,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
@@ -30438,7 +30429,6 @@
     "name": "Khandish King",
     "unit_type": "Hero of Valour",
     "base_points": 100,
-    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [

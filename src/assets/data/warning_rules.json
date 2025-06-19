@@ -48,8 +48,16 @@
     {
       "type":"requires_one",
       "dependencies":[
+        "[army-of-the-great-eye] ringwraith",
         "[army-of-the-great-eye] the-witch-king-of-angmar",
-        "[army-of-the-great-eye] ringwraith"
+        "[army-of-the-great-eye] khamul-the-easterling",
+        "[army-of-the-great-eye] the-tainted",
+        "[army-of-the-great-eye] the-dwimmerlaik",
+        "[army-of-the-great-eye] the-dark-marshal",
+        "[army-of-the-great-eye] the-shadow-lord",
+        "[army-of-the-great-eye] the-undying",
+        "[army-of-the-great-eye] the-betrayer",
+        "[army-of-the-great-eye] the-knight-of-umbar"
       ],
       "warning":"An Army of the Great Eye must always contain a Ringwraith model as the Army's General."
     }
