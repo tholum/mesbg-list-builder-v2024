@@ -1,5 +1,10 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected Duinhir to be a Hero of Fortitude in Defenders of the Pelennor.",
+      "Corrected the Fate points shown on the The Undying's profile card."
+    ]
+  },
   "1.24": {
     "added": [
       "Added hero names to the search box when creating an army allowing users to select an army list based on a hero they want to play with. This hero is automatically added to the created roster."

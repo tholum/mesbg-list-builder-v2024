@@ -9002,25 +9002,6 @@
       }
     ]
   },
-  "[defenders-of-the-pelennor] duinhir-lord-of-the-blackroot-vale": {
-    "model_id": "[defenders-of-the-pelennor] duinhir-lord-of-the-blackroot-vale",
-    "army_type": "Good",
-    "army_list": "Defenders of the Pelennor",
-    "profile_origin": "Gondor",
-    "name": "Duinhir, Lord of the Blackroot Vale",
-    "unit_type": "Hero of Valour",
-    "base_points": 65,
-    "unique": true,
-    "siege_crew": 0,
-    "MWFW": [
-      [
-        "",
-        "2:1:1:2"
-      ]
-    ],
-    "warband_size": 15,
-    "options": []
-  },
   "[defenders-of-the-pelennor] elladan": {
     "model_id": "[defenders-of-the-pelennor] elladan",
     "army_type": "Good",
@@ -9230,6 +9211,25 @@
         "mount_name": "Armoured horse"
       }
     ]
+  },
+  "[defenders-of-the-pelennor] duinhir-lord-of-the-blackroot-vale": {
+    "model_id": "[defenders-of-the-pelennor] duinhir-lord-of-the-blackroot-vale",
+    "army_type": "Good",
+    "army_list": "Defenders of the Pelennor",
+    "profile_origin": "Gondor",
+    "name": "Duinhir, Lord of the Blackroot Vale",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 65,
+    "unique": true,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
   },
   "[defenders-of-the-pelennor] irolas": {
     "model_id": "[defenders-of-the-pelennor] irolas",
