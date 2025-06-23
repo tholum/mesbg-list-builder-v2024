@@ -5073,7 +5073,21 @@
   },
   "[realms-of-men] captain-of-dale": {
     "valid_warband_units": [
-      "[realms-of-men] warrior-of-dale"
+      "[realms-of-men] warrior-of-dale",
+      "[realms-of-men] knight-of-dale"
+    ],
+    "extra_profiles": []
+  },
+  "[realms-of-men] captain-of-dol-amroth": {
+    "valid_warband_units": [
+      "[realms-of-men] warrior-of-minas-tirith",
+      "[realms-of-men] knight-of-minas-tirith",
+      "[realms-of-men] ranger-of-gondor",
+      "[realms-of-men] axeman-of-lossarnach",
+      "[realms-of-men] blackroot-vale-archer",
+      "[realms-of-men] clansman-of-lamedon",
+      "[realms-of-men] knight-of-dol-amroth",
+      "[realms-of-men] man-at-arms-of-dol-amroth"
     ],
     "extra_profiles": []
   },
@@ -5081,7 +5095,12 @@
     "valid_warband_units": [
       "[realms-of-men] warrior-of-minas-tirith",
       "[realms-of-men] knight-of-minas-tirith",
-      "[realms-of-men] ranger-of-gondor"
+      "[realms-of-men] ranger-of-gondor",
+      "[realms-of-men] axeman-of-lossarnach",
+      "[realms-of-men] blackroot-vale-archer",
+      "[realms-of-men] clansman-of-lamedon",
+      "[realms-of-men] knight-of-dol-amroth",
+      "[realms-of-men] man-at-arms-of-dol-amroth"
     ],
     "extra_profiles": []
   },
@@ -5094,12 +5113,25 @@
   "[realms-of-men] captain-of-rohan": {
     "valid_warband_units": [
       "[realms-of-men] warrior-of-rohan",
-      "[realms-of-men] rider-of-rohan"
+      "[realms-of-men] rider-of-rohan",
+      "[realms-of-men] rohan-outrider"
     ],
+    "extra_profiles": []
+  },
+  "[realms-of-men] gondor-avenger-bolt-thrower": {
+    "valid_warband_units": [],
     "extra_profiles": []
   },
   "[realms-of-men] gondor-battlecry-trebuchet": {
     "valid_warband_units": [],
+    "extra_profiles": []
+  },
+  "[realms-of-men] king's-huntsman": {
+    "valid_warband_units": [
+      "[realms-of-men] warrior-of-rohan",
+      "[realms-of-men] rider-of-rohan",
+      "[realms-of-men] rohan-outrider"
+    ],
     "extra_profiles": []
   },
   "[realms-of-men] king-of-men-arnor": {
@@ -5141,7 +5173,21 @@
     "valid_warband_units": [
       "[realms-of-men] warrior-of-rohan",
       "[realms-of-men] rider-of-rohan",
-      "[realms-of-men] rohan-royal-guard"
+      "[realms-of-men] rohan-royal-guard",
+      "[realms-of-men] rohan-outrider"
+    ],
+    "extra_profiles": []
+  },
+  "[realms-of-men] knight-of-the-white-tower": {
+    "valid_warband_units": [
+      "[realms-of-men] warrior-of-minas-tirith",
+      "[realms-of-men] knight-of-minas-tirith",
+      "[realms-of-men] ranger-of-gondor",
+      "[realms-of-men] axeman-of-lossarnach",
+      "[realms-of-men] blackroot-vale-archer",
+      "[realms-of-men] clansman-of-lamedon",
+      "[realms-of-men] knight-of-dol-amroth",
+      "[realms-of-men] man-at-arms-of-dol-amroth"
     ],
     "extra_profiles": []
   },

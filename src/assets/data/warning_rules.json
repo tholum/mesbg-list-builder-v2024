@@ -880,6 +880,15 @@
       "warning":"A Captain of Dale may only be included if your army also contains a King of Men (Dale)"
     }
   ],
+  "[realms-of-men] captain-of-dol-amroth":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[realms-of-men] king-of-men-gondor"
+      ],
+      "warning":"A Captain of Dol Amroth may only be included if your army also contains a King of Men (Gondor)"
+    }
+  ],
   "[realms-of-men] captain-of-minas-tirith":[
     {
       "type":"requires_all",
@@ -907,6 +916,15 @@
       "warning":"A Captain of Rohan may only be included if your army also contains a King of Men (Rohan)"
     }
   ],
+  "[realms-of-men] gondor-avenger-bolt-thrower":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[realms-of-men] king-of-men-gondor"
+      ],
+      "warning":"A Gondor Avenger Bolt Thrower may only be included if your army also contains a King of Men (Gondor)"
+    }
+  ],
   "[realms-of-men] gondor-battlecry-trebuchet":[
     {
       "type":"requires_all",
@@ -914,6 +932,24 @@
         "[realms-of-men] king-of-men-gondor"
       ],
       "warning":"A Gondor Battlecry Trebuchet may only be included if your army also contains a King of Men (Gondor)"
+    }
+  ],
+  "[realms-of-men] king's-huntsman":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[realms-of-men] king-of-men-rohan"
+      ],
+      "warning":"A King's Huntsman may only be included if your army also contains a King of Men (Rohan)"
+    }
+  ],
+  "[realms-of-men] knight-of-the-white-tower":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[realms-of-men] king-of-men-gondor"
+      ],
+      "warning":"A Knight of the White Tower may only be included if your army also contains a King of Men (Gondor)"
     }
   ],
   "[realms-of-men] windlance":[

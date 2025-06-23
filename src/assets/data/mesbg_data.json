@@ -21292,6 +21292,25 @@
       }
     ]
   },
+  "[realms-of-men] knight-of-the-white-tower": {
+    "model_id": "[realms-of-men] knight-of-the-white-tower",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Good Legacy",
+    "name": "Knight of the White Tower",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 75,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": []
+  },
   "[realms-of-men] captain-of-numenor": {
     "model_id": "[realms-of-men] captain-of-numenor",
     "army_type": "Good",
@@ -21309,6 +21328,32 @@
     ],
     "warband_size": 12,
     "options": []
+  },
+  "[realms-of-men] captain-of-dol-amroth": {
+    "model_id": "[realms-of-men] captain-of-dol-amroth",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Captain of Dol Amroth",
+    "unit_type": "Hero of Fortitude",
+    "base_points": 65,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 12,
+    "options": [
+      {
+        "id": "OPT1429",
+        "name": "Armoured horse and lance",
+        "points": 30,
+        "type": "mount",
+        "mount_name": "Armoured horse"
+      }
+    ]
   },
   "[realms-of-men] captain-of-arnor": {
     "model_id": "[realms-of-men] captain-of-arnor",
@@ -21400,6 +21445,25 @@
       }
     ]
   },
+  "[realms-of-men] king's-huntsman": {
+    "model_id": "[realms-of-men] king's-huntsman",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Good Legacy",
+    "name": "King's Huntsman",
+    "unit_type": "Minor Hero",
+    "base_points": 55,
+    "siege_crew": 0,
+    "legacy": true,
+    "MWFW": [
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "warband_size": 6,
+    "options": []
+  },
   "[realms-of-men] knight-of-arnor": {
     "model_id": "[realms-of-men] knight-of-arnor",
     "army_type": "Good",
@@ -21454,6 +21518,20 @@
         "type": "throw"
       }
     ]
+  },
+  "[realms-of-men] knight-of-dale": {
+    "model_id": "[realms-of-men] knight-of-dale",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Kingdoms of Men",
+    "name": "Knight of Dale",
+    "unit_type": "Warrior",
+    "base_points": 11,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
   },
   "[realms-of-men] knight-of-dol-amroth": {
     "model_id": "[realms-of-men] knight-of-dol-amroth",
@@ -21745,6 +21823,22 @@
       }
     ]
   },
+  "[realms-of-men] rohan-outrider": {
+    "model_id": "[realms-of-men] rohan-outrider",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Good Legacy",
+    "name": "Rohan Outrider",
+    "unit_type": "Warrior",
+    "base_points": 8,
+    "default_bow": true,
+    "siege_crew": 0,
+    "bow_limit": true,
+    "legacy": true,
+    "MWFW": [],
+    "warband_size": 0,
+    "options": []
+  },
   "[realms-of-men] warrior-of-arnor": {
     "model_id": "[realms-of-men] warrior-of-arnor",
     "army_type": "Good",
@@ -21936,6 +22030,31 @@
     ],
     "warband_size": 6,
     "options": []
+  },
+  "[realms-of-men] gondor-avenger-bolt-thrower": {
+    "model_id": "[realms-of-men] gondor-avenger-bolt-thrower",
+    "army_type": "Good",
+    "army_list": "Realms of Men",
+    "profile_origin": "Gondor",
+    "name": "Gondor Avenger Bolt Thrower",
+    "unit_type": "Siege Engine",
+    "base_points": 60,
+    "siege_crew": 2,
+    "bow_limit": true,
+    "MWFW": [
+      [
+        "Gondor Avenger Bolt Thrower - Siege Veteran",
+        "1:1:1:1"
+      ]
+    ],
+    "warband_size": 6,
+    "options": [
+      {
+        "id": "OPT1430",
+        "name": "Swift Reload",
+        "points": 20
+      }
+    ]
   },
   "[reclamation-of-moria] balin-the-dwarf-king-of-moria": {
     "model_id": "[reclamation-of-moria] balin-the-dwarf-king-of-moria",
@@ -27414,7 +27533,7 @@
     "model_id": "[the-grey-company] halbarad",
     "army_type": "Good",
     "army_list": "The Grey Company",
-    "profile_origin": "Kingdoms of Men",
+    "profile_origin": "Arnor & Angmar",
     "name": "Halbarad",
     "unit_type": "Hero of Valour",
     "base_points": 70,
