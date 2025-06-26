@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "changes": [
+      "Change the maximum with of the drawers to fit smaller screens."
+    ]
+  },
   "1.25": {
     "added": [
       "Expanded the automatic warband creation function for mandatory heroes which already had a warning containing the phrase 'must always contain'.",
