@@ -2,6 +2,9 @@
   "main": {
     "changed": [
       "Change the maximum with of the drawers to fit smaller screens."
+    ],
+    "security": [
+      "Upgraded the developer tools used to build the application resolving all the known vulnerabilities."
     ]
   },
   "1.25": {
