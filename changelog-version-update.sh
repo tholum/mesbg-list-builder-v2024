@@ -8,7 +8,7 @@ function updateGithub() {
     # Add the updated files to the staged changes
     git add package.json package-lock.json CHANGELOG.json
     # Commit the files
-    git commit -m "Update version to v$NEW_VERSION"
+    git commit -m "Update version to v$NEW_VERSION" --no-verify
      # Create a tag for the created commit
     git tag "v$NEW_VERSION"
 
