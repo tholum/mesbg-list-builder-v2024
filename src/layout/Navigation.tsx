@@ -52,6 +52,7 @@ import { charts } from "../constants/charts.ts";
 import { OpenNavigationDrawerEvent } from "../events/OpenNavigationDrawerEvent.ts";
 import { useAppState } from "../state/app";
 import { useGameModeState } from "../state/gamemode";
+import { useUserPreferences } from "../state/preference";
 import { useRosterBuildingState } from "../state/roster-building";
 import { slugify } from "../utils/string.ts";
 
@@ -246,18 +247,12 @@ export const NavItemLink = ({
   );
 };
 
-export const Navigation: FunctionComponent<PropsWithChildren> = ({
-  children,
-}) => {
-  const location = useLocation();
-  const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
-  const { rosterId } = useParams();
+const useRosters = () => {
   const { rosters, groups } = useRosterBuildingState();
-  const { openSidebar, setCurrentModal } = useAppState();
-  const { startNewGame, gameState } = useGameModeState();
-  const groupMap = Object.fromEntries(groups.map((group) => [group.id, group]));
+  const { preferences } = useUserPreferences();
+  const navigate = useNavigate();
 
+  const groupMap = Object.fromEntries(groups.map((group) => [group.id, group]));
   const groupedRosters = rosters.reduce(
     (groups, roster) => {
       const group = roster.group || "ungrouped";
@@ -266,6 +261,67 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
     },
     { ungrouped: [] },
   );
+
+  return preferences.hideRostersInNavigation
+    ? [
+        ...groups.map((group) => ({
+          action: () => {
+            navigate(`/rosters/${encodeURIComponent(group.slug)}`);
+          },
+          active:
+            location.pathname === `/rosters/${encodeURIComponent(group.slug)}`,
+          icon: groupIcons[groupMap[group.icon]?.icon] || <FolderOutlined />,
+          label: group.name || "Unknown name",
+          showCaret: true,
+        })),
+      ]
+    : [
+        ...Object.entries(groupedRosters)
+          .filter(([key]) => key !== "ungrouped")
+          .sort((a, b) =>
+            groupMap[a[0]].name.localeCompare(groupMap[b[0]].name),
+          )
+          .map(([group, groupRosters]) => ({
+            action: () => {},
+            active:
+              location.pathname ===
+              `/rosters/${encodeURIComponent(groupMap[group].slug)}`,
+            icon: groupIcons[groupMap[group]?.icon] || <FolderOutlined />,
+            label: groupMap[group]?.name || "Unknown name",
+            children: [
+              ...groupRosters
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((roster) => ({
+                  action: () => navigate(`/roster/${roster.id}`),
+                  active: location.pathname === `/roster/${roster.id}`,
+                  icon: <FactionLogo faction={roster.armyList} />,
+                  label: roster.name,
+                })),
+            ],
+            showCaret: true,
+          })),
+        ...groupedRosters.ungrouped
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((roster) => ({
+            action: () => navigate(`/roster/${roster.id}`),
+            active: location.pathname === `/roster/${roster.id}`,
+            icon: <FactionLogo faction={roster.armyList} />,
+            label: roster.name,
+          })),
+      ];
+};
+
+export const Navigation: FunctionComponent<PropsWithChildren> = ({
+  children,
+}) => {
+  const location = useLocation();
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const { rosterId } = useParams();
+  const { rosters } = useRosterBuildingState();
+  const { openSidebar, setCurrentModal } = useAppState();
+  const { startNewGame, gameState } = useGameModeState();
+  const rosterLinks = useRosters();
 
   const toggleMenuDrawer = () => {
     setOpen(!open);
@@ -295,39 +351,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       label: "My Rosters",
       action: () => navigate("/my-rosters"),
       active: location.pathname === "/my-rosters",
-      children: [
-        ...Object.entries(groupedRosters)
-          .filter(([key]) => key !== "ungrouped")
-          .sort((a, b) =>
-            groupMap[a[0]].name.localeCompare(groupMap[b[0]].name),
-          )
-          .map(([group, groupRosters]) => ({
-            action: () => {},
-            active:
-              location.pathname === `/rosters/${encodeURIComponent(group)}`,
-            icon: groupIcons[groupMap[group]?.icon] || <FolderOutlined />,
-            label: groupMap[group]?.name || "Unknown name",
-            children: [
-              ...groupRosters
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((roster) => ({
-                  action: () => navigate(`/roster/${roster.id}`),
-                  active: location.pathname === `/roster/${roster.id}`,
-                  icon: <FactionLogo faction={roster.armyList} />,
-                  label: roster.name,
-                })),
-            ],
-            showCaret: true,
-          })),
-        ...groupedRosters.ungrouped
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((roster) => ({
-            action: () => navigate(`/roster/${roster.id}`),
-            active: location.pathname === `/roster/${roster.id}`,
-            icon: <FactionLogo faction={roster.armyList} />,
-            label: roster.name,
-          })),
-      ],
+      children: rosterLinks,
       showCaret: false,
     },
     { divider: true },

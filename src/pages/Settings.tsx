@@ -8,6 +8,7 @@ import {
   ManageAccounts,
   PersonRemove,
   PhotoCameraOutlined,
+  Summarize,
   SwitchAccessShortcut,
   Update,
 } from "@mui/icons-material";
@@ -157,6 +158,16 @@ export const Settings = () => {
           }
           value={preferences.mobileRosterToolbar}
           onChange={updatePreference("mobileRosterToolbar")}
+        />
+        <SettingsOption
+          icon={<Summarize />}
+          label="Hide individual rosters in navigation"
+          description={
+            "Having many rosters can clog-up your menubar on the left. Hiding individual rosters and allowing " +
+            "direct group navigation can help you stay organized!"
+          }
+          value={preferences.hideRostersInNavigation || false}
+          onChange={updatePreference("hideRostersInNavigation")}
         />
         <SettingsOption
           icon={<PhotoCameraOutlined />}

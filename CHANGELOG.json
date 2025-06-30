@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Added a togglable option allowing you to remove your individual rosters from the sidebar menu reducing the amount of noise when you have lots of rosters."
+    ],
     "changed": [
       "Change the maximum with of the drawers to fit smaller screens.",
       "Updated the way how the additional and special rules are presented allowing the use of bold keyword texts. (these have not yet been implemented on all lists)"

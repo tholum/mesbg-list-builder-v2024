@@ -5,6 +5,7 @@ export type Preferences =
   | "darkMode"
   | "mobileRosterToolbar"
   | "oldShareScreen"
+  | "hideRostersInNavigation"
   //   Builder restriction preferences
   | "allowCompulsoryGeneralDelete"
   //   Collection preferences
@@ -55,6 +56,7 @@ const initialState: Pick<PreferenceState, "preferences"> = {
     hidePdfSpecialRules: false,
     hidePdfArmyRules: false,
     hidePdfStatTrackers: false,
+    hideRostersInNavigation: false,
   },
 };
 
