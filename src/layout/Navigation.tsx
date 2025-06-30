@@ -270,7 +270,7 @@ const useRosters = () => {
           },
           active:
             location.pathname === `/rosters/${encodeURIComponent(group.slug)}`,
-          icon: groupIcons[groupMap[group.icon]?.icon] || <FolderOutlined />,
+          icon: groupIcons[group.icon] || <FolderOutlined />,
           label: group.name || "Unknown name",
           showCaret: true,
         })),
