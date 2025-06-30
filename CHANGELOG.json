@@ -4,6 +4,9 @@
       "Change the maximum with of the drawers to fit smaller screens.",
       "Updated the way how the additional and special rules are presented allowing the use of bold keyword texts. (these have not yet been implemented on all lists)"
     ],
+    "bugfixes": [
+      "Added Erestor to the list of potential unique heroes in the Last Alliance army list fixing the incorrectly displayed warning."
+    ],
     "security": [
       "Upgraded the developer tools used to build the application resolving all the known vulnerabilities."
     ]

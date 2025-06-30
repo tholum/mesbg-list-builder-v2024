@@ -680,7 +680,8 @@
       "type":"requires_one",
       "dependencies":[
         "[the-last-alliance] gil-galad",
-        "[the-last-alliance] elrond"
+        "[the-last-alliance] elrond",
+        "[the-last-alliance] erestor"
       ],
       "warning":"A Last Alliance Army must include at least one Unique Rivendell Hero."
     }
