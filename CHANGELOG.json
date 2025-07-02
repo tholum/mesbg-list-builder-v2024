@@ -5,6 +5,7 @@
     ],
     "changed": [
       "Change the maximum with of the drawers to fit smaller screens.",
+      "Changed the design of the roster page allowing smaller screens to scale better.",
       "Updated the way how the additional and special rules are presented allowing the use of bold keyword texts. (these have not yet been implemented on all lists)"
     ],
     "bugfixes": [
