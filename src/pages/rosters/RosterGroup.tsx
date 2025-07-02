@@ -195,7 +195,7 @@ export const RosterGroup: FunctionComponent = () => {
                     {
                       p: 1,
                       border: 2,
-                      width: "40ch",
+                      width: "300px",
                       borderStyle: "dashed",
                       borderColor: (theme) => theme.palette.text.disabled,
                     },
