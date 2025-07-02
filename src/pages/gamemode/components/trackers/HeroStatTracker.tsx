@@ -8,6 +8,7 @@ import { useScreenSize } from "../../../../hooks/useScreenSize.ts";
 import { Trackable } from "../../../../state/gamemode/gamestate";
 import { useThemeContext } from "../../../../theme/ThemeContext.tsx";
 import { Counter } from "./Counter.tsx";
+import { EditableTrackerLabel } from "./EditableTrackerLabel.tsx";
 
 const TRACKABLE = ["Might", "Will", "Fate", "Wounds"];
 
@@ -18,11 +19,13 @@ type HeroStatTrackerProps = {
     trackerIndex: number,
     statIndex: number,
   ) => void;
+  updateName: (newName: string, trackerIndex: number) => void;
   index: number;
 };
 export const HeroStatTracker: FunctionComponent<HeroStatTrackerProps> = ({
   tracker,
   updateMwfw,
+  updateName,
   index,
 }) => {
   const screen = useScreenSize();
@@ -34,6 +37,7 @@ export const HeroStatTracker: FunctionComponent<HeroStatTrackerProps> = ({
   }
 
   const alive = isAlive(tracker);
+
   return (
     <Paper
       sx={[
@@ -63,21 +67,19 @@ export const HeroStatTracker: FunctionComponent<HeroStatTrackerProps> = ({
           </Box>
         </Stack>
         <Stack flexGrow={1}>
-          <Typography
-            variant="h6"
+          <Stack
+            alignItems={screen.isMobile ? "center" : "start"}
             sx={{
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              width: "100%",
-              textOverflow: "ellipsis",
-              textAlign: screen.isMobile ? "center" : "start",
               opacity: alive ? 1 : 0.45,
               mb: screen.isMobile ? 2 : 0,
               px: 2,
             }}
           >
-            {tracker.name}
-          </Typography>
+            <EditableTrackerLabel
+              label={tracker.custom_name ?? tracker.name}
+              updateLabel={(newValue) => updateName(newValue, index)}
+            />
+          </Stack>
           <Stack
             direction={screen.isMobile ? "column" : "row"}
             gap={screen.isMobile ? 1 : 0}

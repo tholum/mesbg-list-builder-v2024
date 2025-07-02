@@ -1,7 +1,8 @@
 {
   "main": {
     "added": [
-      "Added a togglable option allowing you to remove your individual rosters from the sidebar menu reducing the amount of noise when you have lots of rosters."
+      "Added a togglable option allowing you to remove your individual rosters from the sidebar menu reducing the amount of noise when you have lots of rosters.",
+      "Added the ability to change the name of hero and multi-wound model trackers in the game mode allowing you to customize the names for when you have multiple of the same model."
     ],
     "changed": [
       "Change the maximum with of the drawers to fit smaller screens.",

@@ -35,6 +35,13 @@ export const HeroStatTrackers = () => {
     });
   }
 
+  function updateName(newName: string, trackerIndex: number): void {
+    const tracker = trackers[trackerIndex];
+    tracker.custom_name = newName;
+    trackers[trackerIndex] = tracker;
+    updateGameState(rosterId, { trackables: trackers });
+  }
+
   return (
     <>
       <Typography
@@ -51,6 +58,7 @@ export const HeroStatTrackers = () => {
         <HeroStatTracker
           tracker={tracker}
           updateMwfw={updateMwfw}
+          updateName={updateName}
           index={index}
           key={index}
         />

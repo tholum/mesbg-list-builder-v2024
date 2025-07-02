@@ -99,7 +99,6 @@ const mapListToTrackers = (
       name: tracker.name,
       value: tracker.W,
       maxValue: tracker.W,
-      permanent: true,
     }));
 };
 
