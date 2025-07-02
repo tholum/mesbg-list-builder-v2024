@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Fixed the incorrectly placed legacies ribbon on the Three Trolls army list."
+    ]
+  },
   "1.26": {
     "added": [
       "Added a togglable option allowing you to remove your individual rosters from the sidebar menu reducing the amount of noise when you have lots of rosters.",
