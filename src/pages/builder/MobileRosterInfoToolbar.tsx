@@ -67,6 +67,7 @@ export const MobileRosterInfoToolbar = () => {
               Bow:{" "}
               <b style={{ display: "inline-flex", gap: "2px" }}>
                 <span>{metadata.bows}</span>
+                {screen.isTablet && <span>/{bowLimit}</span>}
               </b>
             </Typography>
             <Typography
@@ -77,6 +78,7 @@ export const MobileRosterInfoToolbar = () => {
               Thr. Weap:{" "}
               <b style={{ display: "inline-flex", gap: "2px" }}>
                 <span>{metadata.throwingWeapons}</span>
+                {screen.isTablet && <span>/{throwLimit}</span>}
               </b>
             </Typography>
           </Stack>
