@@ -20,12 +20,13 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
   rosters,
   icon,
 }) => {
+  const spacing = "10px";
   const cardStyle = {
-    width: "34ch",
-    left: "3ch",
-    top: "15px",
-    p: 2,
-    height: "320px",
+    left: spacing,
+    top: spacing,
+    p: 1,
+    height: `calc(300px - 2 * ${spacing})`,
+    aspectRatio: "1/1",
     position: "absolute",
   };
 
@@ -50,7 +51,7 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
       style={{ textDecoration: "none", color: "inherit" }}
       data-test-id={"rosters--" + slug + "--group-link"}
     >
-      <Box sx={{ position: "relative", width: "40ch", height: "350px" }}>
+      <Box sx={{ position: "relative", height: "300px", aspectRatio: "1/1" }}>
         {stack.map((rot, i) => (
           <Card
             key={i}
@@ -92,7 +93,7 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
                 whiteSpace: "nowrap", // Prevent text from wrapping
                 overflow: "hidden", // Hide the overflowing text
                 textOverflow: "ellipsis", // Show ellipsis when text overflows
-                width: "240px", // Set a fixed width or max-width for overflow
+                width: "200px", // Set a fixed width or max-width for overflow
               }}
             >
               {name}
@@ -104,7 +105,7 @@ export const RosterGroupCard: FunctionComponent<RosterSummaryCardProps> = ({
                 whiteSpace: "nowrap", // Prevent text from wrapping
                 overflow: "hidden", // Hide the overflowing text
                 textOverflow: "ellipsis", // Show ellipsis when text overflows
-                width: "240px", // Set a fixed width or max-width for overflow
+                width: "200px", // Set a fixed width or max-width for overflow
               }}
             >
               {rosters} Rosters

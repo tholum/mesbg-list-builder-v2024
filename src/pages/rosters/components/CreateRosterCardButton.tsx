@@ -19,7 +19,7 @@ export const CreateRosterCardButton: FunctionComponent = () => {
 
   return (
     <Card
-      sx={{ width: "40ch", p: 2, height: "350px", cursor: "pointer" }}
+      sx={{ p: 2, height: "300px", aspectRatio: "1/1", cursor: "pointer" }}
       elevation={4}
       onClick={() => openCreateRosterModal()}
       data-test-id="rosters--create-a-roster--button"

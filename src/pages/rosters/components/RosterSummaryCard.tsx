@@ -1,6 +1,6 @@
-import { capitalize } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
+import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
@@ -18,10 +18,18 @@ export type RosterSummaryCardProps = {
 
 const KeyValue = ({ label, value }) => {
   return (
-    <Typography fontSize="1.2rem">
-      {capitalize(label).replaceAll("_", " ")}{" "}
-      <b style={{ float: "right" }}>{value}</b>
-    </Typography>
+    <Chip
+      label={
+        <Stack justifyContent="space-between" direction="row">
+          <Typography>{label}</Typography>
+          <Typography>{value}</Typography>
+        </Stack>
+      }
+      sx={{
+        justifyContent: "start",
+        "& span": { display: "block", width: "100%" },
+      }}
+    />
   );
 };
 
@@ -43,11 +51,11 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
       data-test-id={"rosters--" + roster.id + "--link"}
     >
       <Card
-        sx={{ width: "40ch", height: "350px", position: "relative" }}
+        sx={{ height: "300px", aspectRatio: "1/1", position: "relative" }}
         elevation={4}
       >
         <WithRibbon label="Legacy" hideRibbon={!isLegacy}>
-          <Stack sx={{ p: 2 }}>
+          <Stack sx={{ p: 3 }}>
             <center>
               <Typography
                 variant="h6"
@@ -56,7 +64,7 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
                   whiteSpace: "nowrap", // Prevent text from wrapping
                   overflow: "hidden", // Hide the overflowing text
                   textOverflow: "ellipsis", // Show ellipsis when text overflows
-                  width: "300px", // Set a fixed width or max-width for overflow
+                  width: "200px", // Set a fixed width or max-width for overflow
                 }}
               >
                 {roster.name}
@@ -74,17 +82,24 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
               </Typography>
             </center>
 
-            <Stack sx={{ my: 2 }}>
+            <Box
+              sx={{
+                my: 2,
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: ".5rem",
+              }}
+            >
               <KeyValue label="Points" value={roster.metadata.points} />
               <KeyValue label="Units" value={roster.metadata.units} />
               <KeyValue label="Warbands" value={roster.warbands.length} />
               <KeyValue label="Bows" value={roster.metadata.bows} />
               <KeyValue
-                label="Throwing Weapons"
+                label="Thr. Weap"
                 value={roster.metadata.throwingWeapons}
               />
               <KeyValue label="Might" value={roster.metadata.might} />
-            </Stack>
+            </Box>
           </Stack>
           <Box
             sx={{

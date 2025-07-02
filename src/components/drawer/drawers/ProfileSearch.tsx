@@ -84,7 +84,7 @@ export const ProfileSearch = () => {
 
   return (
     <Fragment>
-      <Box sx={{ mb: 1, minWidth: "50ch" }}>
+      <Box sx={{ mb: 1 }}>
         <TextField
           slotProps={{
             input: {
