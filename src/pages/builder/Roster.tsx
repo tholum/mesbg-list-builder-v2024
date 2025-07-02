@@ -137,6 +137,7 @@ export const Roster = () => {
             !screen.isDesktop && displayMobileToolbar
               ? `calc(${ROSTER_INFO_BAR_HEIGHT}px + 1rem)`
               : 2,
+          minWidth: "60ch",
         }}
       >
         <Box
