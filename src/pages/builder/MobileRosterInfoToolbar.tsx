@@ -55,7 +55,7 @@ export const MobileRosterInfoToolbar = () => {
               }
             >
               <span>
-                Points: <b>{metadata.points}</b>
+                Pts: <b>{metadata.points}</b>
               </span>
             </Typography>
             <Typography>
@@ -64,9 +64,9 @@ export const MobileRosterInfoToolbar = () => {
             <Typography
               color={metadata.bows > bowLimit ? "warning" : "inherit"}
             >
-              Bows:{" "}
+              Bow:{" "}
               <b style={{ display: "inline-flex", gap: "2px" }}>
-                <span>{metadata.bows}</span>/<span>{bowLimit}</span>{" "}
+                <span>{metadata.bows}</span>
               </b>
             </Typography>
             <Typography
@@ -74,10 +74,9 @@ export const MobileRosterInfoToolbar = () => {
                 metadata.throwingWeapons > throwLimit ? "warning" : "inherit"
               }
             >
-              Throw.:{" "}
+              Thr. Weap:{" "}
               <b style={{ display: "inline-flex", gap: "2px" }}>
-                <span>{metadata.throwingWeapons}</span>/
-                <span>{throwLimit}</span>
+                <span>{metadata.throwingWeapons}</span>
               </b>
             </Typography>
           </Stack>

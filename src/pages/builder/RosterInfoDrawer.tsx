@@ -41,7 +41,7 @@ export const RosterInfoDrawer = ({
       sx={{
         "& .MuiDrawer-paper": {
           boxSizing: "border-box",
-          width: `${drawerWidth}ch`,
+          width: `min(${drawerWidth}ch, 100%)`,
         },
       }}
       open={infoOpen}
