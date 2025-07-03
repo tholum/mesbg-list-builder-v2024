@@ -8,7 +8,7 @@ from mappers.hero_constraint_data_converter import HeroConstraintDataConverter
 from mappers.warning_data_converter import WarningDataConverter
 from mappers.army_list_data_converter import ArmyListDataConverter
 
-print("\n{date:%d-%m-%Y %H:%M:%S} - Updating data files...".format( date=datetime.datetime.now()))
+print("{date:%d-%m-%Y %H:%M:%S} - Updating data files...".format( date=datetime.datetime.now()))
 df = DataFile("mesbg_data.xlsx")
 
 model_data_converter = ModelDataConverter(df.models, df.options)
@@ -28,4 +28,4 @@ army_list_data = army_list_data_converter.convert_to_json_dict()
 JsonFileWriter.create_json_dump(army_list_data, file_name="army_list_data.json")
 
 JsonFileWriter.create_json_dump_from_data_frame(df.keywords, file_name="keywords.json")
-print("{date:%d-%m-%Y %H:%M:%S} - Done!".format( date=datetime.datetime.now()))
+print("{date:%d-%m-%Y %H:%M:%S} - Done!\n".format( date=datetime.datetime.now()))

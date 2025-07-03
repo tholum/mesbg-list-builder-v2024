@@ -23,7 +23,8 @@
     "deploy": "gh-pages -d build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:data": "cd data && python3 ./json_convert.py"
+    "build:data": "python3 data/scripts/main.py",
+    "watch:data": "find ./data -name '*.xlsx' | entr npm run build:data                                                                                                                                                                   todo-app\n"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
