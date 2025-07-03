@@ -40,6 +40,7 @@ export const Warband = forwardRef<WarbandActions, WarbandProps>(
           backgroundColor: ({ palette }) =>
             mode === "dark" ? palette.grey["900"] : palette.grey.A700,
           p: 1,
+          minWidth: "420px",
         }}
       >
         <Stack gap={1}>

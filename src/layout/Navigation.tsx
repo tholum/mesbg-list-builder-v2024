@@ -261,18 +261,14 @@ const useRosters = () => {
     },
     { ungrouped: [] },
   );
-
   return preferences.hideRostersInNavigation
     ? [
         ...groups.map((group) => ({
-          action: () => {
-            navigate(`/rosters/${encodeURIComponent(group.slug)}`);
-          },
+          action: () => navigate(`/rosters/${group.slug}`),
           active:
             location.pathname === `/rosters/${encodeURIComponent(group.slug)}`,
           icon: groupIcons[group.icon] || <FolderOutlined />,
           label: group.name || "Unknown name",
-          showCaret: true,
         })),
       ]
     : [

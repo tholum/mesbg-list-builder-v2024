@@ -52,8 +52,6 @@ export const UnitSelector = () => {
       spacing={2}
       sx={{
         pb: 10,
-        width: "50ch",
-        maxWidth: "100%",
       }}
     >
       {selectionType === "hero" && (

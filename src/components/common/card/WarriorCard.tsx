@@ -199,25 +199,32 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
           </Box>
         )}
       </Collapse>
-      <Stack direction="row" justifyContent="space-between" sx={{ mt: 2 }}>
-        <QuantityButtons
-          quantity={unit.quantity}
-          updateQuantity={updateQuantity}
-          warbandNum={warbandNum}
-          index={index}
-          unitName={unit.name}
-          collapsed={collapsed}
-        />
-        <CardActionButtons
-          duplicate={!isSiegeEquipment(unit) ? duplicate : null}
-          remove={remove}
-          reselect={!isSiegeEquipment(unit) ? reselect : null}
-          openProfileCard={!isSiegeEquipment(unit) ? openProfileCard : null}
-          warbandNum={warbandNum}
-          index={index}
-          unitName={unit.name}
-        />
-      </Stack>
+      <Collapse in={!collapsed}>
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          sx={{ mt: 2, mr: 2 }}
+          gap={8}
+        >
+          <QuantityButtons
+            quantity={unit.quantity}
+            updateQuantity={updateQuantity}
+            warbandNum={warbandNum}
+            index={index}
+            unitName={unit.name}
+            collapsed={collapsed}
+          />
+          <CardActionButtons
+            duplicate={!isSiegeEquipment(unit) ? duplicate : null}
+            remove={remove}
+            reselect={!isSiegeEquipment(unit) ? reselect : null}
+            openProfileCard={!isSiegeEquipment(unit) ? openProfileCard : null}
+            warbandNum={warbandNum}
+            index={index}
+            unitName={unit.name}
+          />
+        </Stack>
+      </Collapse>
     </Card>
   ) : (
     <Card

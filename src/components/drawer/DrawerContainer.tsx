@@ -18,7 +18,7 @@ export const DrawerContainer = () => {
         anchor="right"
         onClose={() => state.closeSidebar()}
         PaperProps={{
-          sx: { maxWidth: "min(72ch, 100%)", minWidth: "min(55ch, 100%)" },
+          sx: { width: "min(72ch, 100%)" },
         }}
       >
         <Stack
