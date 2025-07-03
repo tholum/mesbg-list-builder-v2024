@@ -2,6 +2,7 @@ import { TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { ChangeEvent, FunctionComponent, useState } from "react";
 import { mesbgData } from "../../../assets/data.ts";
+import { byHeroicTier } from "../../../hooks/profile-utils/sorting.ts";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
 import { Unit } from "../../../types/mesbg-data.types.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
@@ -29,7 +30,8 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
     .filter(handleSpecialRestriction)
     .filter(
       (unit: Unit) => !unit.unique || !selectedModels.includes(unit.model_id),
-    );
+    )
+    .sort(byHeroicTier);
 
   return (
     <Stack gap={1.5}>

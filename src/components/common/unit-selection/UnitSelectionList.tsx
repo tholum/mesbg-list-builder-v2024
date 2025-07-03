@@ -25,11 +25,12 @@ export const UnitSelectionList: FunctionComponent<UnitSelectionListProps> = ({
     heroConstraintData[leadingHeroModelId]?.valid_warband_units || [];
 
   const units = unitIds
-    .map((modelId) => data[modelId])
+    .map((modelId) => data[modelId] as Unit)
     .filter(handleSpecialRestriction(selectedModels))
     .filter(
       (unit: Unit) => !unit.unique || !selectedModels.includes(unit.model_id),
-    );
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <Stack gap={1.5}>
