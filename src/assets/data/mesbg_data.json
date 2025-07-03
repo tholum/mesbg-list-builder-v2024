@@ -30548,6 +30548,7 @@
     "name": "Khandish King",
     "unit_type": "Hero of Valour",
     "base_points": 100,
+    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [

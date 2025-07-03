@@ -8,7 +8,8 @@
       "Fixed the incorrectly placed legacies ribbon on the Three Trolls army list.",
       "Corrected a mistake for the Armoured Horse on the Black Numenorean Marshal's profile card.",
       "Corrected the exchange weapon option for Half Trolls in the Far Harad army list.",
-      "Corrected the MWFW (especialy Wounds) value for Dragons whenever they have selected the Tough Hide option."
+      "Corrected the MWFW (especially Wounds) value for Dragons whenever they have selected the Tough Hide option.",
+      "Remove the ability to select a second Khandish King with the High King of Khand special rule applied."
     ]
   },
   "1.26": {
@@ -17,7 +18,7 @@
       "Added the ability to change the name of hero and multi-wound model trackers in the game mode allowing you to customize the names for when you have multiple of the same model."
     ],
     "changed": [
-      "Change the maximum with of the drawers to fit smaller screens.",
+      "Change the maximum width of the drawers to fit smaller screens.",
       "Changed the design of the roster page allowing smaller screens to scale better.",
       "Updated the way how the additional and special rules are presented allowing the use of bold keyword texts. (these have not yet been implemented on all lists)"
     ],
