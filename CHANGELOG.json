@@ -1,7 +1,8 @@
 {
   "main": {
     "added": [
-      "Added a new toolbar on at the top of the screen which is present when the roster has potential errors which stays visible when scrolling far down."
+      "Added a new toolbar on at the top of the screen which is present when the roster has potential errors which stays visible when scrolling far down.",
+      "Added a list of stat modifications to options such as armour and shield allowing dynamic stats to be shown in the stats table for both Gamemode & PDF."
     ],
     "changed": [
       "Toyed with the screen sizes a bit more to help figure out where the sweet spot is between different users.",
