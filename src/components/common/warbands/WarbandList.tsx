@@ -91,6 +91,7 @@ export const WarbandList: FunctionComponent<WarbandListProps> = ({
                               : {
                                   transition:
                                     "transform 0.3s ease, boxShadow 0.3s ease",
+                                  overflowX: "auto",
                                 }
                           }
                         >

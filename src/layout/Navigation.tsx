@@ -557,7 +557,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
           )}
         </List>
       </Drawer>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, width: "100%" }}>
         <DrawerHeader />
         {children}
       </Box>
