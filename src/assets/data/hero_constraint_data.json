@@ -3332,11 +3332,7 @@
     "extra_profiles": []
   },
   "[grand-army-of-the-south] the-knight-of-umbar": {
-    "valid_warband_units": [
-      "[grand-army-of-the-south] corsair-of-umbar",
-      "[grand-army-of-the-south] corsair-crossbowman",
-      "[grand-army-of-the-south] corsair-reaver"
-    ],
+    "valid_warband_units": [],
     "extra_profiles": []
   },
   "[grand-army-of-the-south] war-mumak-of-harad": {
