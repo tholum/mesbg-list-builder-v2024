@@ -9,7 +9,7 @@ import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
 import { useGameModeState } from "../../state/gamemode";
 import { deepEqual } from "../../utils/objects.ts";
-import { RosterInfoDrawer } from "../builder/RosterInfoDrawer.tsx";
+import { drawerWidth, RosterInfoDrawer } from "../builder/RosterInfoDrawer.tsx";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
 import { ProfileCards } from "./components/tabs/ProfileCards.tsx";
@@ -59,7 +59,11 @@ export const Gamemode = () => {
 
   return (
     <Container maxWidth={false} sx={{ p: 2 }}>
-      <Box>
+      <Box
+        sx={{
+          width: screen.isDesktop ? `calc(100% - ${drawerWidth}ch)` : "100%",
+        }}
+      >
         <GamemodeToolbar />
         {changedSinceStart && rosterChangedWarning && (
           <CustomAlert

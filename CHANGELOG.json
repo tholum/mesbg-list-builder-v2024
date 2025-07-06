@@ -15,7 +15,8 @@
       "Corrected the exchange weapon option for Half Trolls in the Far Harad army list.",
       "Corrected the MWFW (especially Wounds) value for Dragons whenever they have selected the Tough Hide option.",
       "Remove the ability to select a second Khandish King with the High King of Khand special rule applied.",
-      "Disallow selection of Corsair warriors a Knight of Umbar warband for the Grand Army of the South to stick with RAW."
+      "Disallow selection of Corsair warriors a Knight of Umbar warband for the Grand Army of the South to stick with RAW.",
+      "Fix issue of gamemode page on larger screens, where the part of the content was hidden underneath the Roster information."
     ]
   },
   "1.26": {
