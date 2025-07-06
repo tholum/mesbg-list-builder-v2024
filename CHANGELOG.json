@@ -1,8 +1,12 @@
 {
   "main": {
+    "added": [
+      "Added a new toolbar on at the top of the screen which is present when the roster has potential errors which stays visible when scrolling far down."
+    ],
     "changed": [
       "Toyed with the screen sizes a bit more to help figure out where the sweet spot is between different users.",
-      "Also collapse mutation buttons on selected units"
+      "Also collapse mutation buttons on selected units",
+      "Added an overflow property to the warband list which allows horizontal scrolling on smaller screens."
     ],
     "bugfixes": [
       "Fixed the incorrectly placed legacies ribbon on the Three Trolls army list.",
