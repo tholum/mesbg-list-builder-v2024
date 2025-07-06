@@ -28,6 +28,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "../../components/common/link/Link.tsx";
 import { WarbandList } from "../../components/common/warbands/WarbandList.tsx";
 import { ModalTypes } from "../../components/modal/modals.tsx";
+import { OpenNavigationDrawerEvent } from "../../events/OpenNavigationDrawerEvent.ts";
 import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useRosterWarnings } from "../../hooks/useRosterWarnings.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
@@ -42,6 +43,7 @@ import {
   MobileRosterInfoToolbar,
   ROSTER_INFO_BAR_HEIGHT,
 } from "./MobileRosterInfoToolbar.tsx";
+import { MobileRosterWarningsToolbar } from "./MobileRosterWarningsToolbar.tsx";
 import { RosterInfoDrawer, drawerWidth } from "./RosterInfoDrawer.tsx";
 
 export const Roster = () => {
@@ -63,6 +65,7 @@ export const Roster = () => {
   const speedDialRef = useRef<HTMLDivElement | null>(null);
   const [fabOpen, setFabOpen] = useState(false);
   const [redoOpen, setRedoOpen] = useState(false);
+  const [navDrawerOpen, setNavDrawerOpen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => clear());
@@ -81,6 +84,16 @@ export const Roster = () => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [undo, redo, roster]);
+
+  useEffect(() => {
+    function openMenuDrawer(event: OpenNavigationDrawerEvent) {
+      setNavDrawerOpen(event.open);
+    }
+
+    window.addEventListener("mlb-event--open-nav-bar", openMenuDrawer);
+    return () =>
+      window.removeEventListener("mlb-event--open-nav-bar", openMenuDrawer);
+  }, []);
 
   if (!roster) {
     return (
@@ -126,16 +139,30 @@ export const Roster = () => {
     },
   ];
 
+  const toolbarsActive = [displayMobileToolbar, warnings.length > 0].filter(
+    (value) => value === true,
+  ).length;
+
   return (
     <>
-      {displayMobileToolbar && <MobileRosterInfoToolbar />}
+      <Stack
+        sx={{
+          position: "fixed",
+          width: `calc(100% - ${navDrawerOpen ? 320 : 56}px)`,
+          transition: "width 0.3s ease",
+          zIndex: "100",
+        }}
+      >
+        {displayMobileToolbar && <MobileRosterInfoToolbar />}
+        {warnings.length > 0 && <MobileRosterWarningsToolbar />}
+      </Stack>
       <Container
         maxWidth={false}
         sx={{
           p: 2,
           pt:
-            !screen.isDesktop && displayMobileToolbar
-              ? `calc(${ROSTER_INFO_BAR_HEIGHT}px + 1rem)`
+            !screen.isDesktop && toolbarsActive > 0
+              ? `calc(${ROSTER_INFO_BAR_HEIGHT}px * ${toolbarsActive} + 1rem)`
               : 2,
         }}
       >
