@@ -75,6 +75,7 @@ const getCorrectedProfileBasedOnOptionSelection = (
   const optionNames = modifiers
     .flatMap((option) => option.modifiers)
     .map((modifier) => modifier.label)
+    .filter((value) => value)
     .join(", ");
   const corrections = applyModifiersToStats(
     originalStats,
@@ -146,6 +147,8 @@ function transformUnitToListOfProfiles(
     ...getMightWillAndFate(unit),
     ...correctedStats,
   };
+
+  console.log(modifiedProfile);
 
   const additional_stats =
     suffix && !unit.unique

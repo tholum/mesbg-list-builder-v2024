@@ -1209,7 +1209,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Mattock"
           }
         ]
       }
@@ -3375,7 +3375,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -5376,7 +5376,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -6854,7 +6854,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -8363,7 +8363,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Mattock"
           }
         ]
       }
@@ -10209,7 +10209,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -10878,6 +10878,11 @@
             "stat": "D",
             "mod": 2,
             "label": "Tough Hide"
+          },
+          {
+            "stat": "W",
+            "mod": 2,
+            "label": ""
           }
         ]
       },
@@ -10931,6 +10936,11 @@
             "stat": "D",
             "mod": 2,
             "label": "Tough Hide"
+          },
+          {
+            "stat": "W",
+            "mod": 2,
+            "label": ""
           }
         ]
       },
@@ -11438,7 +11448,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Mattock"
           }
         ]
       }
@@ -11737,7 +11747,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -13382,7 +13392,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -14396,7 +14406,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "War drum"
           }
         ]
       }
@@ -14506,7 +14516,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       },
@@ -15569,7 +15579,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "War drum"
           }
         ]
       }
@@ -15611,7 +15621,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       },
@@ -17944,7 +17954,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "War drum"
           }
         ]
       }
@@ -18009,7 +18019,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       },
@@ -20351,7 +20361,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -20527,6 +20537,11 @@
             "stat": "D",
             "mod": 2,
             "label": "Tough Hide"
+          },
+          {
+            "stat": "W",
+            "mod": 2,
+            "label": ""
           }
         ]
       },
@@ -24215,7 +24230,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -27855,7 +27870,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Mattock"
           }
         ]
       }
@@ -28958,7 +28973,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "War drum"
           }
         ]
       }
@@ -29000,7 +29015,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       },
@@ -29932,7 +29947,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Banner"
           }
         ]
       }
@@ -30231,7 +30246,7 @@
           {
             "stat": "D",
             "mod": -1,
-            "label": "No shield"
+            "label": "Mattock"
           }
         ]
       }
