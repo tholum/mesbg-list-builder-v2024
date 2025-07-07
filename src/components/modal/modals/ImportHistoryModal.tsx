@@ -29,12 +29,12 @@ const requiredKeys = [
   "scenarioPlayed",
   "tags",
   "armies",
-  "alliance",
   "bows",
   "victoryPoints",
   "opponentArmies",
   "opponentName",
   "opponentVictoryPoints",
+  "throwingWeapons",
 ];
 
 export const ImportGameHistoryModal = () => {
@@ -85,6 +85,7 @@ export const ImportGameHistoryModal = () => {
     }
 
     for (const game of history) {
+      console.log(game);
       const validGame = validateKeys(game, requiredKeys);
       if (!validGame) {
         displayImportAlert();

@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Add missing exchange option to the Guard of the Galadhrim Court."
+      "Add missing exchange option to the Guard of the Galadhrim Court.",
+      "Removed incorrect input validation when importing your match history."
     ]
   },
   "1.27": {
