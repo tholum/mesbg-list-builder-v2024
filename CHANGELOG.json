@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Add missing exchange option to the Guard of the Galadhrim Court."
+    ]
+  },
   "1.27": {
     "added": [
       "Added a new toolbar on at the top of the screen which is present when the roster has potential errors which stays visible when scrolling far down.",

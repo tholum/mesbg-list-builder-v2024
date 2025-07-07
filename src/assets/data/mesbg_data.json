@@ -389,13 +389,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0890",
-        "name": "Banner",
+        "id": "OPT0889",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0889",
-        "name": "War horn",
+        "id": "OPT0890",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -660,11 +660,6 @@
         "type": "bow"
       },
       {
-        "id": "OPT1360",
-        "name": "Flaming Brand",
-        "points": 1
-      },
-      {
         "id": "OPT1330",
         "name": "Light shield",
         "points": 1
@@ -677,6 +672,11 @@
       {
         "id": "OPT1332",
         "name": "Two-handed weapon",
+        "points": 1
+      },
+      {
+        "id": "OPT1360",
+        "name": "Flaming Brand",
         "points": 1
       }
     ]
@@ -1052,12 +1052,6 @@
         ]
       },
       {
-        "id": "OPT0178",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0177",
         "name": "Shield",
         "points": 1,
@@ -1068,6 +1062,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0178",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -1343,12 +1343,6 @@
         "points": 25
       },
       {
-        "id": "OPT1089",
-        "name": "Crossbow",
-        "points": 2,
-        "type": "bow"
-      },
-      {
         "id": "OPT1088",
         "name": "Shield and spear",
         "points": 2,
@@ -1359,6 +1353,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT1089",
+        "name": "Crossbow",
+        "points": 2,
+        "type": "bow"
       },
       {
         "id": "OPT1090",
@@ -5453,12 +5453,6 @@
         ]
       },
       {
-        "id": "OPT0509",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0508",
         "name": "Shield",
         "points": 1,
@@ -5469,6 +5463,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0509",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -6954,12 +6954,6 @@
         ]
       },
       {
-        "id": "OPT0814",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0813",
         "name": "Shield",
         "points": 1,
@@ -6970,6 +6964,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0814",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -8529,12 +8529,6 @@
         "points": 25
       },
       {
-        "id": "OPT1109",
-        "name": "Crossbow",
-        "points": 2,
-        "type": "bow"
-      },
-      {
         "id": "OPT1108",
         "name": "Shield and spear",
         "points": 2,
@@ -8545,6 +8539,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT1109",
+        "name": "Crossbow",
+        "points": 2,
+        "type": "bow"
       },
       {
         "id": "OPT1110",
@@ -8568,13 +8568,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1113",
-        "name": "Banner",
+        "id": "OPT1112",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1112",
-        "name": "War horn",
+        "id": "OPT1113",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -9069,12 +9069,6 @@
         ]
       },
       {
-        "id": "OPT0071",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0070",
         "name": "Shield",
         "points": 1,
@@ -9085,6 +9079,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0071",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -9317,12 +9317,6 @@
         ]
       },
       {
-        "id": "OPT0455",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0454",
         "name": "Shield",
         "points": 1,
@@ -9333,6 +9327,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0455",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -10411,13 +10411,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1163",
-        "name": "Banner",
+        "id": "OPT1162",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1162",
-        "name": "War horn",
+        "id": "OPT1163",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -10512,12 +10512,6 @@
         ]
       },
       {
-        "id": "OPT0534",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0533",
         "name": "Shield",
         "points": 1,
@@ -10528,6 +10522,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0534",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -11243,13 +11243,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0754",
-        "name": "Banner",
+        "id": "OPT0753",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0753",
-        "name": "War horn",
+        "id": "OPT0754",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -11627,12 +11627,6 @@
         "points": 25
       },
       {
-        "id": "OPT0732",
-        "name": "Crossbow",
-        "points": 2,
-        "type": "bow"
-      },
-      {
         "id": "OPT0731",
         "name": "Shield and spear",
         "points": 2,
@@ -11643,6 +11637,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0732",
+        "name": "Crossbow",
+        "points": 2,
+        "type": "bow"
       },
       {
         "id": "OPT0733",
@@ -11801,13 +11801,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1281",
-        "name": "Banner",
+        "id": "OPT1280",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1280",
-        "name": "War horn",
+        "id": "OPT1281",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -11910,12 +11910,6 @@
         ]
       },
       {
-        "id": "OPT1275",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT1274",
         "name": "Shield",
         "points": 1,
@@ -11926,6 +11920,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT1275",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -12008,13 +12008,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0610",
-        "name": "Ash",
+        "id": "OPT0607",
+        "name": "Beech",
         "points": 0
       },
       {
-        "id": "OPT0607",
-        "name": "Beech",
+        "id": "OPT0608",
+        "name": "Oak",
         "points": 0
       },
       {
@@ -12023,8 +12023,8 @@
         "points": 0
       },
       {
-        "id": "OPT0608",
-        "name": "Oak",
+        "id": "OPT0610",
+        "name": "Ash",
         "points": 0
       }
     ]
@@ -12710,12 +12710,6 @@
         ]
       },
       {
-        "id": "OPT1260",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT1259",
         "name": "Shield",
         "points": 1,
@@ -12726,6 +12720,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT1260",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -13002,12 +13002,6 @@
         ]
       },
       {
-        "id": "OPT0976",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0975",
         "name": "Shield",
         "points": 1,
@@ -13018,6 +13012,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0976",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       },
       {
         "id": "OPT1298",
@@ -13109,13 +13109,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0746",
-        "name": "Banner",
+        "id": "OPT0745",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0745",
-        "name": "War horn",
+        "id": "OPT0746",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -13251,15 +13251,15 @@
         "quantity": 1
       },
       {
-        "id": "OPT0485",
-        "name": "Elven Cloak",
+        "id": "OPT0484",
+        "name": "Sting",
         "points": 5,
         "included": true,
         "quantity": 1
       },
       {
-        "id": "OPT0484",
-        "name": "Sting",
+        "id": "OPT0485",
+        "name": "Elven Cloak",
         "points": 5,
         "included": true,
         "quantity": 1
@@ -13512,12 +13512,6 @@
         ]
       },
       {
-        "id": "OPT0475",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0474",
         "name": "Shield",
         "points": 1,
@@ -13528,6 +13522,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0475",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -14663,12 +14663,6 @@
         ]
       },
       {
-        "id": "OPT1068",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT1067",
         "name": "Shield",
         "points": 1,
@@ -14679,6 +14673,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT1068",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -14758,13 +14758,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1082",
-        "name": "Banner",
+        "id": "OPT1081",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1081",
-        "name": "War horn",
+        "id": "OPT1082",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -15020,11 +15020,6 @@
         ]
       },
       {
-        "id": "OPT0770",
-        "name": "Elven Spear",
-        "points": 1
-      },
-      {
         "id": "OPT0769",
         "name": "Shield",
         "points": 1,
@@ -15035,6 +15030,11 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0770",
+        "name": "Elven Spear",
+        "points": 1
       }
     ]
   },
@@ -15372,13 +15372,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0095",
-        "name": "Banner",
+        "id": "OPT0094",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0094",
-        "name": "War horn",
+        "id": "OPT0095",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -15663,12 +15663,6 @@
         ]
       },
       {
-        "id": "OPT0903",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0902",
         "name": "Shield",
         "points": 1,
@@ -15679,6 +15673,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0903",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -16326,13 +16326,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0988",
-        "name": "Banner",
+        "id": "OPT0987",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0987",
-        "name": "War horn",
+        "id": "OPT0988",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -16942,12 +16942,6 @@
         ]
       },
       {
-        "id": "OPT0025",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0024",
         "name": "Shield",
         "points": 1,
@@ -16958,6 +16952,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0025",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       },
       {
         "id": "OPT1297",
@@ -18118,12 +18118,6 @@
         ]
       },
       {
-        "id": "OPT0287",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0286",
         "name": "Shield",
         "points": 1,
@@ -18134,6 +18128,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0287",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -18201,13 +18201,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0299",
-        "name": "Banner",
+        "id": "OPT0298",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0298",
-        "name": "War horn",
+        "id": "OPT0299",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -18804,7 +18804,13 @@
     "bow_limit": true,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT1431",
+        "name": "Exchange Elven pike for banner and Elven hand weapon",
+        "points": 25
+      }
+    ]
   },
   "[lothlorien] galadhrim-warrior": {
     "model_id": "[lothlorien] galadhrim-warrior",
@@ -19595,12 +19601,6 @@
         ]
       },
       {
-        "id": "OPT0572",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0571",
         "name": "Shield",
         "points": 1,
@@ -19611,6 +19611,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0572",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -19660,12 +19666,6 @@
         ]
       },
       {
-        "id": "OPT0585",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0584",
         "name": "Shield",
         "points": 1,
@@ -19676,6 +19676,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0585",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -20452,12 +20458,6 @@
         ]
       },
       {
-        "id": "OPT0467",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0466",
         "name": "Shield",
         "points": 1,
@@ -20468,6 +20468,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0467",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -21343,12 +21349,6 @@
         ]
       },
       {
-        "id": "OPT0123",
-        "name": "Longbow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0122",
         "name": "Shield",
         "points": 1,
@@ -21359,6 +21359,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0123",
+        "name": "Longbow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -23400,12 +23406,6 @@
         ]
       },
       {
-        "id": "OPT0657",
-        "name": "Longbow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0656",
         "name": "Shield",
         "points": 1,
@@ -23416,6 +23416,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0657",
+        "name": "Longbow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -23434,13 +23440,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1427",
-        "name": "Banner",
+        "id": "OPT1426",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1426",
-        "name": "War horn",
+        "id": "OPT1427",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -23633,12 +23639,6 @@
         ]
       },
       {
-        "id": "OPT0637",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0636",
         "name": "Shield",
         "points": 1,
@@ -23649,6 +23649,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0637",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -23667,13 +23673,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0659",
-        "name": "Banner",
+        "id": "OPT0658",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0658",
-        "name": "War horn",
+        "id": "OPT0659",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -23754,12 +23760,6 @@
         ]
       },
       {
-        "id": "OPT0649",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0648",
         "name": "Shield",
         "points": 1,
@@ -23770,6 +23770,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0649",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -24075,13 +24081,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1264",
-        "name": "Banner",
+        "id": "OPT1263",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1263",
-        "name": "War horn",
+        "id": "OPT1264",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -24350,12 +24356,6 @@
         ]
       },
       {
-        "id": "OPT0494",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0493",
         "name": "Shield",
         "points": 1,
@@ -24366,6 +24366,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0494",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -28250,12 +28256,6 @@
         "points": 25
       },
       {
-        "id": "OPT0783",
-        "name": "Crossbow",
-        "points": 2,
-        "type": "bow"
-      },
-      {
         "id": "OPT0782",
         "name": "Shield and spear",
         "points": 2,
@@ -28266,6 +28266,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0783",
+        "name": "Crossbow",
+        "points": 2,
+        "type": "bow"
       },
       {
         "id": "OPT0784",
@@ -29057,12 +29063,6 @@
         ]
       },
       {
-        "id": "OPT0914",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0913",
         "name": "Shield",
         "points": 1,
@@ -29073,6 +29073,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0914",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -29504,13 +29510,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT0923",
-        "name": "Banner",
+        "id": "OPT0922",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT0922",
-        "name": "War horn",
+        "id": "OPT0923",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -30085,12 +30091,6 @@
         ]
       },
       {
-        "id": "OPT0951",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0950",
         "name": "Shield",
         "points": 1,
@@ -30101,6 +30101,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0951",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -30150,12 +30156,6 @@
         ]
       },
       {
-        "id": "OPT0935",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0934",
         "name": "Shield",
         "points": 1,
@@ -30166,6 +30166,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0935",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -30358,12 +30364,6 @@
         "points": 25
       },
       {
-        "id": "OPT0724",
-        "name": "Crossbow",
-        "points": 2,
-        "type": "bow"
-      },
-      {
         "id": "OPT0723",
         "name": "Shield and spear",
         "points": 2,
@@ -30374,6 +30374,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0724",
+        "name": "Crossbow",
+        "points": 2,
+        "type": "bow"
       },
       {
         "id": "OPT0725",
@@ -30676,12 +30682,6 @@
         ]
       },
       {
-        "id": "OPT0382",
-        "name": "Longbow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0381",
         "name": "Shield",
         "points": 1,
@@ -30692,6 +30692,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0382",
+        "name": "Longbow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
@@ -30977,13 +30983,13 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1123",
-        "name": "Banner",
+        "id": "OPT1122",
+        "name": "War horn",
         "points": 25
       },
       {
-        "id": "OPT1122",
-        "name": "War horn",
+        "id": "OPT1123",
+        "name": "Banner",
         "points": 25
       },
       {
@@ -32761,12 +32767,6 @@
         ]
       },
       {
-        "id": "OPT0231",
-        "name": "Bow",
-        "points": 1,
-        "type": "bow"
-      },
-      {
         "id": "OPT0230",
         "name": "Shield",
         "points": 1,
@@ -32777,6 +32777,12 @@
             "label": "Shield"
           }
         ]
+      },
+      {
+        "id": "OPT0231",
+        "name": "Bow",
+        "points": 1,
+        "type": "bow"
       }
     ]
   },
