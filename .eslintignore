@@ -2,6 +2,7 @@
 node_modules/
 build/
 api/vendor/
+storybook-static/
 
 # Static files
 static-resources/
