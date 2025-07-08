@@ -14,7 +14,7 @@ import { Fragment, useState } from "react";
 import { DatabaseRow, rows } from "../../../pages/database/data.ts";
 import { useAppState } from "../../../state/app";
 import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
-import { Stats } from "../../common/roster/pdf/Stats.tsx";
+import { Stats } from "../../common/roster-pdf/sections/Stats.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
 
 const ProfileRow = ({

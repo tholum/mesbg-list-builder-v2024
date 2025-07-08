@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { QuickReferenceTable } from "../../../../components/common/roster/pdf/QuickReferenceTable.tsx";
+import { QuickReferenceTable } from "../../../../components/common/roster-pdf/sections/QuickReferenceTable.tsx";
 import { useProfiles } from "../../../../hooks/useProfiles.ts";
 
 export const StatsTable = () => {

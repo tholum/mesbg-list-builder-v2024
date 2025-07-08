@@ -3,11 +3,11 @@ import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { GroupIcon } from "../../../components/common/group-icon/GroupIcon.tsx";
-import { Link } from "../../../components/common/link/Link.tsx";
+import { GroupIcon } from "../group-icon/GroupIcon.tsx";
+import { Link } from "../link/Link.tsx";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { GroupOptionsPopoverMenu } from "./RosterGroupPopoverMenu.tsx";
-import { CARD_SIZE_IN_PX } from "./RosterSummaryCard.tsx";
+import { CARD_SIZE_IN_PX } from "../roster-card/RosterSummaryCard.tsx";
 
 export type RosterSummaryCardProps = {
   name: string;

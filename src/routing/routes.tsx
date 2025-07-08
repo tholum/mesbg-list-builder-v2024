@@ -1,15 +1,15 @@
 import { RouteObject } from "react-router-dom";
-import { PdfView } from "../components/common/roster/PdfView.tsx";
+import { PdfView } from "../components/common/roster-pdf/PdfView.tsx";
 import { AppFallback } from "../components/error-boundary/AppFallback.tsx";
 import { App } from "../layout/App.tsx";
 import { About } from "../pages/About.tsx";
 import { Changelog } from "../pages/Changelog.tsx";
 import { Settings } from "../pages/Settings.tsx";
-import { Roster } from "../pages/builder/Roster.tsx";
-import { Collection } from "../pages/collection/Collection.tsx";
+import { Roster } from "../pages/Roster.tsx";
+import { Collection } from "../pages/Collection.tsx";
 import { Database } from "../pages/database/Database.tsx";
 import { Gamemode } from "../pages/gamemode/Gamemode.tsx";
-import { SelectRoster } from "../pages/gamemode/SelectRoster.tsx";
+import { StartGamemode } from "../pages/gamemode/StartGamemode.tsx";
 import { SavedGameResults } from "../pages/match-history/SavedGameResults.tsx";
 import { RosterGroup } from "../pages/rosters/RosterGroup.tsx";
 import { Rosters } from "../pages/rosters/Rosters.tsx";
@@ -38,7 +38,7 @@ export const routes: RouteObject[] = [
       },
       {
         path: "gamemode/start",
-        element: <SelectRoster />,
+        element: <StartGamemode />,
         errorElement: <AppFallback />,
       },
       {

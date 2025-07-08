@@ -9,7 +9,10 @@ import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
 import { useGameModeState } from "../../state/gamemode";
 import { deepEqual } from "../../utils/objects.ts";
-import { drawerWidth, RosterInfoDrawer } from "../builder/RosterInfoDrawer.tsx";
+import {
+  drawerWidth,
+  RosterInfoDrawer,
+} from "../../components/common/roster-info/RosterInfoDrawer.tsx";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
 import { ProfileCards } from "./components/tabs/ProfileCards.tsx";

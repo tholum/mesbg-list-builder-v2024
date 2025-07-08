@@ -11,13 +11,13 @@ import { useRosterBuildingState } from "../../../state/roster-building";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { CustomAlert } from "../alert/CustomAlert.tsx";
 import { Link } from "../link/Link.tsx";
-import { ArmyComposition } from "./pdf/ArmyComposition.tsx";
-import { HeroicActionList } from "./pdf/HeroicActionList.tsx";
-import { MagicalPowerList } from "./pdf/MagicalPowers.tsx";
-import { QuickReferenceTable } from "./pdf/QuickReferenceTable.tsx";
-import { SpecialRuleList } from "./pdf/SpecialRuleList.tsx";
-import { StatTrackers } from "./pdf/StatTrackers.tsx";
-import { UnitProfileList } from "./pdf/UnitProfileList.tsx";
+import { ArmyComposition } from "./sections/ArmyComposition.tsx";
+import { HeroicActionList } from "./sections/HeroicActionList.tsx";
+import { MagicalPowerList } from "./sections/MagicalPowers.tsx";
+import { QuickReferenceTable } from "./sections/QuickReferenceTable.tsx";
+import { SpecialRuleList } from "./sections/SpecialRuleList.tsx";
+import { StatTrackers } from "./sections/StatTrackers.tsx";
+import { UnitProfileList } from "./sections/UnitProfileList.tsx";
 
 export const PdfView = () => {
   const { roster } = useRosterInformation();

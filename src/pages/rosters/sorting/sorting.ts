@@ -1,6 +1,6 @@
 import { Roster } from "../../../types/roster.ts";
-import { SortField, SortOrder } from "../components/RosterSortButton.tsx";
-import { RosterSummaryCardProps } from "../components/RosterSummaryCard.tsx";
+import { SortField, SortOrder } from "./RosterSortButton.tsx";
+import { RosterSummaryCardProps } from "../../../components/common/roster-card/RosterSummaryCard.tsx";
 
 export const getComparator: (
   searchParams: URLSearchParams,

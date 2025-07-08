@@ -74,7 +74,7 @@ const RosterGroup = ({
   );
 };
 
-export const SelectRoster = () => {
+export const StartGamemode = () => {
   const { gameState } = useGameModeState();
   const { rosters, groups } = useRosterBuildingState();
   const navigate = useNavigate();

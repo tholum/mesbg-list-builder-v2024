@@ -19,15 +19,15 @@ import { useUserPreferences } from "../../../state/preference";
 import {
   ImageView,
   ImageViewViewHandlers,
-} from "../../common/roster/ImageView.tsx";
+} from "../../common/roster-summary/ImageView.tsx";
 import {
   RosterTableView,
   RosterTableViewHandlers,
-} from "../../common/roster/TableView.tsx";
+} from "../../common/roster-summary/TableView.tsx";
 import {
   RosterTextView,
   RosterTextViewHandlers,
-} from "../../common/roster/TextView.tsx";
+} from "../../common/roster-summary/TextView.tsx";
 import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
 
 export const RosterSummaryModal = () => {

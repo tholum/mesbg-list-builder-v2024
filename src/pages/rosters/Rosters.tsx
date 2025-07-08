@@ -19,19 +19,19 @@ import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
 import { useScreenSize } from "../../hooks/useScreenSize.ts";
 import { useAppState } from "../../state/app";
 import { useRosterBuildingState } from "../../state/roster-building";
-import { CreateRosterCardButton } from "./components/CreateRosterCardButton.tsx";
-import { RosterGroupCard } from "./components/RosterGroupCard.tsx";
+import { CreateRosterButton } from "../../components/common/create-roster/CreateRosterButton.tsx";
+import { RosterGroupCard } from "../../components/common/roster-group-card/RosterGroupCard.tsx";
 import {
   RosterSortButton,
   SortField,
   SortOrder,
-} from "./components/RosterSortButton.tsx";
+} from "./sorting/RosterSortButton.tsx";
 import {
   CARD_SIZE_IN_PX,
   RosterSummaryCard,
   RosterSummaryCardProps,
-} from "./components/RosterSummaryCard.tsx";
-import { getComparator } from "./utils/sorting.ts";
+} from "../../components/common/roster-card/RosterSummaryCard.tsx";
+import { getComparator } from "./sorting/sorting.ts";
 
 export const Rosters: FunctionComponent = () => {
   const { rosters, groups, updateGroup } = useRosterBuildingState();
@@ -295,7 +295,7 @@ export const Rosters: FunctionComponent = () => {
             </DragDropContext>
 
             <Box sx={{ p: 1 }}>
-              <CreateRosterCardButton />
+              <CreateRosterButton />
             </Box>
           </Stack>
         )}
