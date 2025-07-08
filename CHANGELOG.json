@@ -2,7 +2,9 @@
   "main": {
     "bugfixes": [
       "Add missing exchange option to the Guard of the Galadhrim Court.",
-      "Removed incorrect input validation when importing your match history."
+      "Removed incorrect input validation when importing your match history.",
+      "Remove the accidentally added armoured horse options for Knights of Dol Amroth in Men of the West.",
+      "Updated the description of Dol Amroth for Gondor! on Prince Imrahil, clearly stating it does not affect himself (only PDF, cards still need this update.)"
     ]
   },
   "1.27": {

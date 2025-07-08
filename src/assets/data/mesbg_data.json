@@ -19517,20 +19517,6 @@
     "warband_size": 0,
     "options": [
       {
-        "id": "OPT1157",
-        "name": "Armoured horse and banner",
-        "points": 33,
-        "type": "mount",
-        "mount_name": "Armoured horse"
-      },
-      {
-        "id": "OPT1158",
-        "name": "Armoured horse and war horn",
-        "points": 33,
-        "type": "mount",
-        "mount_name": "Armoured horse"
-      },
-      {
         "id": "OPT1159",
         "name": "Banner",
         "points": 25
