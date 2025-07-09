@@ -26,6 +26,15 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "../components/common/link/Link.tsx";
+import {
+  RosterInfoDrawer,
+  drawerWidth,
+} from "../components/common/roster-info/RosterInfoDrawer.tsx";
+import {
+  MobileRosterInfoToolbar,
+  ROSTER_INFO_BAR_HEIGHT,
+} from "../components/common/toolbar/MobileRosterInfoToolbar.tsx";
+import { MobileRosterWarningsToolbar } from "../components/common/toolbar/MobileRosterWarningsToolbar.tsx";
 import { WarbandList } from "../components/common/warbands/WarbandList.tsx";
 import { ModalTypes } from "../components/modal/modals.tsx";
 import { OpenNavigationDrawerEvent } from "../events/OpenNavigationDrawerEvent.ts";
@@ -39,15 +48,6 @@ import {
   useTemporalRosterBuildingState,
 } from "../state/roster-building";
 import { useThemeContext } from "../theme/ThemeContext.tsx";
-import {
-  MobileRosterInfoToolbar,
-  ROSTER_INFO_BAR_HEIGHT,
-} from "../components/common/toolbar/MobileRosterInfoToolbar.tsx";
-import { MobileRosterWarningsToolbar } from "../components/common/toolbar/MobileRosterWarningsToolbar.tsx";
-import {
-  RosterInfoDrawer,
-  drawerWidth,
-} from "../components/common/roster-info/RosterInfoDrawer.tsx";
 
 export const Roster = () => {
   const screen = useScreenSize();

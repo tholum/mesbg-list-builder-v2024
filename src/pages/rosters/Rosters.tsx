@@ -14,23 +14,23 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { ChangeEvent, FunctionComponent, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { ModalTypes } from "../../components/modal/modals.tsx";
-import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
-import { useScreenSize } from "../../hooks/useScreenSize.ts";
-import { useAppState } from "../../state/app";
-import { useRosterBuildingState } from "../../state/roster-building";
 import { CreateRosterButton } from "../../components/common/create-roster/CreateRosterButton.tsx";
-import { RosterGroupCard } from "../../components/common/roster-group-card/RosterGroupCard.tsx";
-import {
-  RosterSortButton,
-  SortField,
-  SortOrder,
-} from "./sorting/RosterSortButton.tsx";
 import {
   CARD_SIZE_IN_PX,
   RosterSummaryCard,
   RosterSummaryCardProps,
 } from "../../components/common/roster-card/RosterSummaryCard.tsx";
+import { RosterGroupCard } from "../../components/common/roster-group-card/RosterGroupCard.tsx";
+import { ModalTypes } from "../../components/modal/modals.tsx";
+import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
+import { useScreenSize } from "../../hooks/useScreenSize.ts";
+import { useAppState } from "../../state/app";
+import { useRosterBuildingState } from "../../state/roster-building";
+import {
+  RosterSortButton,
+  SortField,
+  SortOrder,
+} from "./sorting/RosterSortButton.tsx";
 import { getComparator } from "./sorting/sorting.ts";
 
 export const Rosters: FunctionComponent = () => {

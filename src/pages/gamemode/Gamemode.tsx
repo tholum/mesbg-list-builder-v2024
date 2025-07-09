@@ -5,14 +5,14 @@ import Typography from "@mui/material/Typography";
 import { SyntheticEvent, useState } from "react";
 import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
 import { Link } from "../../components/common/link/Link.tsx";
-import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
-import { useScreenSize } from "../../hooks/useScreenSize.ts";
-import { useGameModeState } from "../../state/gamemode";
-import { deepEqual } from "../../utils/objects.ts";
 import {
   drawerWidth,
   RosterInfoDrawer,
 } from "../../components/common/roster-info/RosterInfoDrawer.tsx";
+import { useRosterInformation } from "../../hooks/useRosterInformation.ts";
+import { useScreenSize } from "../../hooks/useScreenSize.ts";
+import { useGameModeState } from "../../state/gamemode";
+import { deepEqual } from "../../utils/objects.ts";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
 import { ProfileCards } from "./components/tabs/ProfileCards.tsx";

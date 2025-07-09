@@ -1,9 +1,9 @@
 import Drawer from "@mui/material/Drawer";
 import { useEffect, useState } from "react";
-import { RosterInformation } from "./RosterInformation.tsx";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { DrawerHeader } from "../../../layout/Navigation.tsx";
 import { Roster } from "../../../types/roster.ts";
+import { RosterInformation } from "./RosterInformation.tsx";
 
 export const drawerWidth = 55;
 

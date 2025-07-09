@@ -6,10 +6,10 @@ import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState, MouseEvent } from "react";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
-import { ModalTypes } from "../../modal/modals.tsx";
 import { useAppState } from "../../../state/app";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
+import { ModalTypes } from "../../modal/modals.tsx";
+import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
 
 export const GroupOptionsPopoverMenu = ({
   groupId,

@@ -5,12 +5,12 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { armyListData } from "../../../assets/data.ts";
-import { FactionLogo } from "../images/FactionLogo.tsx";
-import { Link } from "../link/Link.tsx";
-import { WithRibbon } from "../unit-selection/WithRibbon.tsx";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { isSelectedUnit, Roster } from "../../../types/roster.ts";
+import { FactionLogo } from "../images/FactionLogo.tsx";
+import { Link } from "../link/Link.tsx";
+import { WithRibbon } from "../unit-selection/WithRibbon.tsx";
 import { RosterPopoverMenu } from "./RosterPopoverMenu.tsx";
 
 export const CARD_SIZE_IN_PX = 300;

@@ -6,10 +6,10 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
-import { ModalTypes } from "../../modal/modals.tsx";
 import { useScreenSize } from "../../../hooks/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
+import { ModalTypes } from "../../modal/modals.tsx";
 import { CARD_SIZE_IN_PX } from "../roster-card/RosterSummaryCard.tsx";
 
 export const CreateRosterButton: FunctionComponent = () => {

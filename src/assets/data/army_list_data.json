@@ -331,7 +331,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [],
+    "legacy": true
   },
   "Assault on Ravenhill": {
     "additional_rules": [
@@ -2851,8 +2852,7 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": [],
-    "legacy": true
+    "rule_highlights": []
   },
   "Variags of Khand": {
     "additional_rules": [
