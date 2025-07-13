@@ -3016,7 +3016,7 @@
       "active_or_passive_rules": [
         {
           "name": "Steadfast",
-          "type": "Passive",
+          "type": "Active",
           "description": "When a friendly Erebor Hero model within 3\" of Bofur is affected by an enemy special rule or Magical Power, they may roll a D6. On a 3+, the model will ignore the effects. For Magical Powers, any Resist tests must be made before using this special rule."
         }
       ],
