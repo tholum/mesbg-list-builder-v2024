@@ -5,7 +5,8 @@
       "Removed incorrect input validation when importing your match history.",
       "Remove the accidentally added armoured horse options for Knights of Dol Amroth in Men of the West.",
       "Updated the description of Dol Amroth for Gondor! on Prince Imrahil, clearly stating it does not affect himself (only PDF, cards still need this update.)",
-      "Resolve incorrectly marked legacy army lists."
+      "Resolve incorrectly marked legacy army lists.",
+      "Set the defence increase for Exchange armour for Heavy armour on Theoden to 1 instead of 2."
     ]
   },
   "1.27": {
