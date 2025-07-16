@@ -10,7 +10,8 @@
       "Updated the description of Dol Amroth for Gondor! on Prince Imrahil, clearly stating it does not affect himself (only PDF, cards still need this update.)",
       "Resolve incorrectly marked legacy army lists.",
       "Set the defence increase for Exchange armour for Heavy armour on Theoden to 1 instead of 2.",
-      "Fixed incorrectly marked required options for Morannon orcs in the Army of the Great Eye."
+      "Fixed incorrectly marked required options for Morannon orcs in the Army of the Great Eye.",
+      "Fixed the accidental filtering of Legacy lists in the end-game/match-history dialog."
     ]
   },
   "1.27": {

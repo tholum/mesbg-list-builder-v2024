@@ -10,7 +10,10 @@ import { FactionLogo } from "../images/FactionLogo.tsx";
 const armiesByType = Object.values(data)
   .map((item) => ({
     army: item.army_list,
-    type: item.army_type,
+    type: item.army_type
+      // Removing the '(Legacy)' indicator as to keep them within the same grouping
+      // for when doing doubles.
+      .replace(" (Legacy)", ""),
     faction: item.profile_origin,
   }))
   .filter(
