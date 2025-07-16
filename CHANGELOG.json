@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Added an extra line in the PDF on the magical powers section indicating which caster can cast these powers."
+    ],
     "bugfixes": [
       "Add missing exchange option to the Guard of the Galadhrim Court.",
       "Removed incorrect input validation when importing your match history.",
