@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.28": {
     "added": [
       "Added an extra line in the PDF on the magical powers section indicating which caster can cast these powers.",
       "Added the scenarios from the Matched Play Guide to the dropdown of the end-game/game-results"
