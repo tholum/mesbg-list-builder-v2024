@@ -1,7 +1,8 @@
 {
   "main": {
     "added": [
-      "Added an extra line in the PDF on the magical powers section indicating which caster can cast these powers."
+      "Added an extra line in the PDF on the magical powers section indicating which caster can cast these powers.",
+      "Added the scenarios from the Matched Play Guide to the dropdown of the end-game/game-results"
     ],
     "bugfixes": [
       "Add missing exchange option to the Guard of the Galadhrim Court.",
@@ -11,7 +12,7 @@
       "Resolve incorrectly marked legacy army lists.",
       "Set the defence increase for Exchange armour for Heavy armour on Theoden to 1 instead of 2.",
       "Fixed incorrectly marked required options for Morannon orcs in the Army of the Great Eye.",
-      "Fixed the accidental filtering of Legacy lists in the end-game/match-history dialog."
+      "Fixed the accidental filtering of Legacy lists in the end-game/game-results dialog."
     ]
   },
   "1.27": {
