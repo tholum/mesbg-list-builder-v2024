@@ -2425,15 +2425,7 @@
   },
   "[defenders-of-the-pelennor] halbarad": {
     "valid_warband_units": [
-      "[defenders-of-the-pelennor] peregrin-took",
-      "[defenders-of-the-pelennor] warrior-of-minas-tirith",
-      "[defenders-of-the-pelennor] knight-of-minas-tirith",
-      "[defenders-of-the-pelennor] knight-of-dol-amroth",
-      "[defenders-of-the-pelennor] axeman-of-lossarnach",
-      "[defenders-of-the-pelennor] clansman-of-lamedon",
-      "[defenders-of-the-pelennor] blackroot-vale-archer",
-      "[defenders-of-the-pelennor] ranger-of-the-north",
-      "[defenders-of-the-pelennor] man-at-arms-of-dol-amroth"
+      "[defenders-of-the-pelennor] ranger-of-the-north"
     ],
     "extra_profiles": []
   },

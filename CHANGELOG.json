@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Cleaned up the entire dataset's legacy markers to make sure no army lists are falsely listed as legacy."
+      "Cleaned up the entire dataset's legacy markers to make sure no army lists are falsely listed as legacy.",
+      "Removed falsely selectable gondor options for Halbarad in Defenders of the Pelennor."
     ]
   },
   "1.28": {
