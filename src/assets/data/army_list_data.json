@@ -98,7 +98,8 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Hatred (X)"
-    ]
+    ],
+    "legacy": true
   },
   "Army of Edoras": {
     "additional_rules": [
@@ -565,7 +566,8 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Dominant (2)"
-    ]
+    ],
+    "legacy": true
   },
   "Beseigers of the Hornburg": {
     "additional_rules": [
@@ -1010,7 +1012,8 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Hatred (Easterling)"
-    ]
+    ],
+    "legacy": true
   },
   "Fangorn": {
     "additional_rules": [
@@ -1060,7 +1063,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [],
+    "legacy": true
   },
   "Fell Beings of Mirkwood": {
     "additional_rules": [
@@ -1086,7 +1090,8 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Hatred (X)"
-    ]
+    ],
+    "legacy": true
   },
   "Fields of Celebrant": {
     "additional_rules": [
@@ -1119,7 +1124,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [],
+    "legacy": true
   },
   "Fords of Isen": {
     "additional_rules": [
@@ -1807,7 +1813,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [],
+    "legacy": true
   },
   "Realms of Men": {
     "additional_rules": [
@@ -1857,7 +1864,8 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": []
+    "rule_highlights": [],
+    "legacy": true
   },
   "Reclamation of Osgiliath": {
     "additional_rules": [
@@ -2733,8 +2741,7 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Resistant to Magic"
-    ],
-    "legacy": true
+    ]
   },
   "Thorin's Company": {
     "additional_rules": [
@@ -2767,8 +2774,7 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": [],
-    "legacy": true
+    "rule_highlights": []
   },
   "Ugluk's Scouts": {
     "additional_rules": [
@@ -2800,8 +2806,7 @@
     "throw_limit": 0.33,
     "rule_highlights": [
       "Woodland Creature"
-    ],
-    "legacy": true
+    ]
   },
   "Umbar": {
     "additional_rules": [
@@ -2828,8 +2833,7 @@
     "rule_highlights": [
       "Stalk Unseen",
       "Hatred (Gondor)"
-    ],
-    "legacy": true
+    ]
   },
   "Usurpers of Edoras": {
     "additional_rules": [
@@ -2907,8 +2911,7 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": [],
-    "legacy": true
+    "rule_highlights": []
   },
   "Wolves of Isengard": {
     "additional_rules": [
@@ -2939,8 +2942,7 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.5,
-    "rule_highlights": [],
-    "legacy": true
+    "rule_highlights": []
   },
   "Wraiths on Wings": {
     "additional_rules": [
@@ -2960,7 +2962,6 @@
     ],
     "bow_limit": 0.33,
     "throw_limit": 0.33,
-    "rule_highlights": [],
-    "legacy": true
+    "rule_highlights": []
   }
 }

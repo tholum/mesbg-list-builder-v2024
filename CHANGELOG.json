@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Cleaned up the entire dataset's legacy markers to make sure no army lists are falsely listed as legacy."
+    ]
+  },
   "1.28": {
     "added": [
       "Added an extra line in the PDF on the magical powers section indicating which caster can cast these powers.",
