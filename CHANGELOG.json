@@ -2,7 +2,11 @@
   "main": {
     "bugfixes": [
       "Cleaned up the entire dataset's legacy markers to make sure no army lists are falsely listed as legacy.",
-      "Removed falsely selectable gondor options for Halbarad in Defenders of the Pelennor."
+      "Removed falsely selectable gondor options for Halbarad in Defenders of the Pelennor.",
+      "Corrected the profile picture on the The Undying's profile card.",
+      "Corrected the Active Steadfast special rule on Bofur the Dwarf, Champion of Erebor's profile card.",
+      "Corrected the of Prince Imrahil's banner special rule.",
+      "Corrected a typo on the Mirkwood Giant Spider profile card."
     ]
   },
   "1.28": {
