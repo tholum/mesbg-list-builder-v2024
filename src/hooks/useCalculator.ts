@@ -91,7 +91,6 @@ export const useCalculator = () => {
 
   function getBowLimit(unit: SelectedUnit): number {
     if (!unit.bow_limit) return 0;
-    if (unit.name === "Warg Marauder") return unit.quantity;
     return unit.quantity * (unit.siege_crew || 1);
   }
 
