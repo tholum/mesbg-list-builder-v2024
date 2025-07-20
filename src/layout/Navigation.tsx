@@ -345,8 +345,8 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
     {
       icon: <Segment />,
       label: "My Rosters",
-      action: () => navigate("/my-rosters"),
-      active: location.pathname === "/my-rosters",
+      action: () => navigate("/rosters"),
+      active: location.pathname === "/rosters",
       children: rosterLinks,
       showCaret: false,
     },
