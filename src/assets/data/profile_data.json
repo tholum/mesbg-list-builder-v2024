@@ -12390,7 +12390,7 @@
         {
           "name": "King's Knights",
           "type": "Passive",
-          "description": "Whilst they have the Cavalry model, this model gains a bonus of +1 Fight and +1 Defence whilst within 6\" of Thranduil."
+          "description": "Whilst they have the Cavalry keyword, this model gains a bonus of +1 Fight and +1 Defence whilst within 6\" of Thranduil."
         }
       ],
       "magic_powers": [],
