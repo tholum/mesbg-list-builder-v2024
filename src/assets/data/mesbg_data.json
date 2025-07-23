@@ -12480,6 +12480,7 @@
     "name": "King of Men (Gondor)",
     "unit_type": "Hero of Valour",
     "base_points": 75,
+    "unique": true,
     "siege_crew": 0,
     "MWFW": [
       [
