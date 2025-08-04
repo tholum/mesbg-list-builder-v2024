@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.29": {
     "added": [
       "Added the Tabletop Simulator text export to allow easily import you roster using the MESBG FTC."
     ],
