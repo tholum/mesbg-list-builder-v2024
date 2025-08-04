@@ -21,6 +21,7 @@ export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
         const name = tta2mlb[hero.name] ? tta2mlb[hero.name](hero) : hero.name;
         const leader = `(${name}: ${hero.options
           .filter((option) => option.quantity > 0)
+          .filter((option) => option.type !== "ringwraith_amwf")
           .map((option) => option.name)
           .join(", ")})`;
         const followers = units.filter(isSelectedUnit).map((unit) => {
@@ -29,6 +30,7 @@ export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
             : unit.name;
           const options = unit.options
             .filter((option) => option.quantity > 0)
+            .filter((option) => option.type !== "ringwraith_amwf")
             .map((option) => option.name);
           return `    (${unit.quantity}x ${unitName}: ${options})`;
         });
