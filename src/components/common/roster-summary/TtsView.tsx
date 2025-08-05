@@ -3,8 +3,10 @@ import TextField from "@mui/material/TextField";
 import { forwardRef, useImperativeHandle } from "react";
 import tta2mlbJson from "../../../assets/data/tta2mlb.json";
 import { useRosterInformation } from "../../../hooks/useRosterInformation.ts";
+import { useAppState } from "../../../state/app";
 import { isSelectedUnit, SelectedUnit } from "../../../types/roster.ts";
 import { selectedOptionWithType } from "../../../utils/options.ts";
+import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { CustomAlert } from "../alert/CustomAlert.tsx";
 
 export type RosterTextViewHandlers = {
@@ -14,24 +16,25 @@ export type RosterTextViewHandlers = {
 export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
   (_, ref) => {
     const { roster } = useRosterInformation();
+    const { triggerAlert } = useAppState();
+
+    const getOptions = ({ options }: SelectedUnit) =>
+      options
+        .filter((option) => option.quantity > 0)
+        .filter((option) => option.type !== "ringwraith_amwf")
+        .map((option) => option.name)
+        .join(", ");
 
     const exportText = roster.warbands
       .filter((warband) => isSelectedUnit(warband.hero))
       .map(({ hero, units }) => {
         const name = tta2mlb[hero.name] ? tta2mlb[hero.name](hero) : hero.name;
-        const leader = `(${name}: ${hero.options
-          .filter((option) => option.quantity > 0)
-          .filter((option) => option.type !== "ringwraith_amwf")
-          .map((option) => option.name)
-          .join(", ")})`;
+        const leader = `(${name}: ${getOptions(hero)})`;
         const followers = units.filter(isSelectedUnit).map((unit) => {
           const unitName = tta2mlb[unit.name]
             ? tta2mlb[unit.name](unit)
             : unit.name;
-          const options = unit.options
-            .filter((option) => option.quantity > 0)
-            .filter((option) => option.type !== "ringwraith_amwf")
-            .map((option) => option.name);
+          const options = getOptions(unit);
           return `    (${unit.quantity}x ${unitName}: ${options})`;
         });
         return followers.length
@@ -41,8 +44,9 @@ export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
       .join("\n");
 
     useImperativeHandle(ref, () => ({
-      copyToClipboard: () => {
-        window.navigator.clipboard.writeText(exportText);
+      copyToClipboard: async () => {
+        await window.navigator.clipboard.writeText(exportText);
+        triggerAlert(AlertTypes.TTS_TEXT_COPIED_SUCCESS);
       },
     }));
 

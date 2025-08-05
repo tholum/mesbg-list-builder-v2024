@@ -28,6 +28,7 @@ export enum AlertTypes {
 
   IMPORT_COLLECTION_COMPLETED = "IMPORT_COLLECTION_COMPLETED",
   IMPORT_COLLECTION_ERROR = "IMPORT_COLLECTION_ERROR",
+  TTS_TEXT_COPIED_SUCCESS = "TTS_TEXT_COPIED_SUCCESS",
 }
 
 type AlertOptions = {
@@ -84,6 +85,22 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
     {
       variant: "success",
       content: <ScreenshotCopiedAlert />,
+      options: {
+        autoHideAfter: 5000,
+      },
+    },
+  ],
+  [
+    AlertTypes.TTS_TEXT_COPIED_SUCCESS,
+    {
+      variant: "success",
+      content: (
+        <Fragment>
+          <b>Text copied to your clipboard.</b>
+          <hr />
+          You can now import it your army into Tabletop Simulator.
+        </Fragment>
+      ),
       options: {
         autoHideAfter: 5000,
       },
