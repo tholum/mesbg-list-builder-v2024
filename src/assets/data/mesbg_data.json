@@ -12736,7 +12736,7 @@
     "profile_origin": "Rohan",
     "name": "Theodred",
     "unit_type": "Hero of Valour",
-    "base_points": 90,
+    "base_points": 85,
     "unique": true,
     "siege_crew": 0,
     "MWFW": [
@@ -12753,6 +12753,13 @@
         "points": 20,
         "type": "mount",
         "mount_name": "Brego"
+      },
+      {
+        "id": "OPT1432",
+        "name": "Shield",
+        "points": 5,
+        "included": true,
+        "quantity": 1
       }
     ]
   },
@@ -28714,7 +28721,7 @@
       {
         "id": "OPT0339",
         "name": "2A / 1M / 10W / 1F",
-        "points": 90,
+        "points": 85,
         "type": "ringwraith_amwf",
         "included": true,
         "quantity": 1

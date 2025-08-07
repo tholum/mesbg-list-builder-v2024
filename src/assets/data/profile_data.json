@@ -482,7 +482,7 @@
       ]
     },
     "Gulavhar, The Terror of Arnor": {
-      "Mv": "6\"",
+      "Mv": "12\"",
       "Fv": "7",
       "Sv": "5+",
       "S": "8",
@@ -13823,12 +13823,12 @@
       "magic_powers": [
         {
           "name": "Enrage Beast",
-          "range": "Self",
+          "range": "6\"",
           "cast": "3+"
         },
         {
           "name": "Fury (Beast)",
-          "range": "12\"",
+          "range": "Self",
           "cast": "3+"
         },
         {
