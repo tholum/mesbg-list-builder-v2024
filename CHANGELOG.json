@@ -2,7 +2,8 @@
   "main": {
     "changed": [
       "Updated all profile data for the latest FAQ/Errata released on 7th Aug 2025."
-    ]
+    ],
+    "bugfixes": ["Corrected the Troll Brute profile card statbar."]
   },
   "1.29": {
     "added": [
