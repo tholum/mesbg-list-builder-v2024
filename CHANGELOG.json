@@ -3,7 +3,10 @@
     "changed": [
       "Updated all profile data for the latest FAQ/Errata released on 7th Aug 2025."
     ],
-    "bugfixes": ["Corrected the Troll Brute profile card statbar."]
+    "bugfixes": [
+      "Corrected the Troll Brute profile card statbar.",
+      "Removed Khandish troops from the Dragon Knights available warband options, as per Leader of the Dragon Cult special rule."
+    ]
   },
   "1.29": {
     "added": [

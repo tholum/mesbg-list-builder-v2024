@@ -3159,10 +3159,7 @@
   "[grand-army-of-the-south] easterling-dragon-knight": {
     "valid_warband_units": [
       "[grand-army-of-the-south] black-dragon-warrior",
-      "[grand-army-of-the-south] dragon-cult-acolyte",
-      "[grand-army-of-the-south] khandish-warrior",
-      "[grand-army-of-the-south] khandish-horseman",
-      "[grand-army-of-the-south] khandish-charioteer"
+      "[grand-army-of-the-south] dragon-cult-acolyte"
     ],
     "extra_profiles": []
   },
