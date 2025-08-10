@@ -13,6 +13,8 @@ function updateGithub() {
     git tag "v$NEW_VERSION"
 
     echo "Created git commit & tag for v$NEW_VERSION"
+    git push && git push --tags
+    echo "Pushed changes to remote repository and started deployment"
 }
 
 function updateChangelog() {

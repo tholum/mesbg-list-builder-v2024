@@ -19,7 +19,6 @@
     "version": "npm run version:win || npm run version:unix",
     "version:win": "sh changelog-version-update.sh %npm_package_version%",
     "version:unix": "./changelog-version-update.sh $npm_package_version",
-    "postversion": "git push && git push --tags",
     "predeploy": "npm run build-storybook",
     "deploy": "gh-pages -d storybook-static",
     "storybook": "storybook dev -p 6006",
