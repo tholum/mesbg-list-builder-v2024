@@ -5,7 +5,9 @@
     ],
     "bugfixes": [
       "Corrected the Troll Brute profile card statbar.",
-      "Removed Khandish troops from the Dragon Knights available warband options, as per Leader of the Dragon Cult special rule."
+      "Removed Khandish troops from the Dragon Knights available warband options, as per Leader of the Dragon Cult special rule.",
+      "Added the missing Knight of Dale to warband options of the King of Men (Dale).",
+      "Added the missing banner option for Knights of Minas Tirith in the Realms of Men army list."
     ]
   },
   "1.29": {

@@ -23205,7 +23205,20 @@
     "bow_limit": true,
     "MWFW": [],
     "warband_size": 0,
-    "options": []
+    "options": [
+      {
+        "id": "OPT1433",
+        "name": "Exchange shield and lance for banner",
+        "points": 25,
+        "modifiers": [
+          {
+            "stat": "D",
+            "mod": -1,
+            "label": "Banner"
+          }
+        ]
+      }
+    ]
   },
   "[realms-of-men] rider-of-rohan": {
     "model_id": "[realms-of-men] rider-of-rohan",

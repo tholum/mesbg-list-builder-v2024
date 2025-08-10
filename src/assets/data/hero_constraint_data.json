@@ -5199,7 +5199,8 @@
   },
   "[realms-of-men] king-of-men-dale": {
     "valid_warband_units": [
-      "[realms-of-men] warrior-of-dale"
+      "[realms-of-men] warrior-of-dale",
+      "[realms-of-men] knight-of-dale"
     ],
     "extra_profiles": []
   },
