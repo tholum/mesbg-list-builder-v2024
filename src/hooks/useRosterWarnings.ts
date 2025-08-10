@@ -39,8 +39,9 @@ function extraScriptedRosterWarnings(
   const warnings = [];
 
   if (
-    roster.armyList === "The Eagles" ||
-    roster.armyList === "Radagast's Alliance"
+    ["The Eagles", "Radagast's Alliance", "The Battle of Five Armies"].includes(
+      roster.armyList,
+    )
   ) {
     const units = roster.warbands
       .flatMap((wb) => [wb.hero, ...wb.units])
