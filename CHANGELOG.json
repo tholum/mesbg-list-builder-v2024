@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.30": {
     "added": [
       "Added the ability to create custom good/evil rosters without the regular list building restrictions from the army lists in the books."
     ],
