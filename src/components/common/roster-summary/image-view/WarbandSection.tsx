@@ -114,7 +114,7 @@ export const WarbandSection = ({
               {hero?.legacy ? <sup>&#10013;</sup> : ""}{" "}
               {leader === warband.id && <i>(General)</i>}
             </strong>{" "}
-            <span style={{ whiteSpace: "nowrap" }}>
+            <span style={{ whiteSpace: "wrap" }}>
               {heroOptions && <>with {heroOptions}</>}
             </span>
           </Typography>
