@@ -19,6 +19,8 @@ export const useMergedUnitData = () => {
       if (existing) {
         // apply the highest tier to models of the same name/origin.
         existing.unit_type = getHighestUnitTier(existing, entry);
+        // make sure everything can have followers
+        existing.no_followers = false;
 
         // combine options on existing model with current entry.
         const mergedOptions = [...existing.options, ...entry.options];

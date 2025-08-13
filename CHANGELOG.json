@@ -1,5 +1,12 @@
 {
-  "main": {},
+  "main": {
+    "changed": [
+      "Enabled the ability to select combined options for custom rosters allowing kitbashed units such as banners with shield to be used."
+    ],
+    "bugfixes": [
+      "Fixed heroes on the custom lists which inherit the no_followers value from their original army list."
+    ]
+  },
   "1.30": {
     "added": [
       "Added the ability to create custom good/evil rosters without the regular list building restrictions from the army lists in the books."

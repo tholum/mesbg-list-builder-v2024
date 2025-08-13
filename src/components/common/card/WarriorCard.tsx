@@ -195,7 +195,13 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
           <Box sx={{ px: 2, py: 1 }}>
             <OptionList
               options={getOptionsForUnit()}
-              variant={unit.opt_mandatory ? "single-mandatory" : "single"}
+              variant={
+                isCustomRoster
+                  ? "multiple"
+                  : unit.opt_mandatory
+                    ? "single-mandatory"
+                    : "single"
+              }
               onSelect={updateOptions}
               warbandNum={warbandNum}
               index={index}
@@ -328,7 +334,13 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
               {!!unit.options.length && (
                 <OptionList
                   options={getOptionsForUnit()}
-                  variant={unit.opt_mandatory ? "single-mandatory" : "single"}
+                  variant={
+                    isCustomRoster
+                      ? "multiple"
+                      : unit.opt_mandatory
+                        ? "single-mandatory"
+                        : "single"
+                  }
                   onSelect={updateOptions}
                   warbandNum={warbandNum}
                   index={index}
