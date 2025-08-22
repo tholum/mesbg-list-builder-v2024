@@ -468,20 +468,20 @@
           "description": "This model may re-roll a single D6 when making a Duel Roll. Additionally, they may re-roll a single D6 when rolling To Wound when making Strikes."
         }
       ],
-      "magic_powers": [
-        "Expert Rider",
-        "Horse Lord",
-        "Resistant to Magic",
-        "Terror",
-        "Woodland Creature"
-      ],
+      "magic_powers": [],
       "heroic_actions": [
         "Heroic Resolve",
         "Heroic Challenge",
         "Heroic Strength",
         "Heroic Strike"
       ],
-      "special_rules": [],
+      "special_rules": [
+        "Expert Rider",
+        "Horse Lord",
+        "Resistant to Magic",
+        "Terror",
+        "Woodland Creature"
+      ],
       "wargear": [
         "Elven hand-and-a-half weapon",
         "Armour of Gondolin"
