@@ -4,7 +4,10 @@
       "Enabled the ability to select combined options for custom rosters allowing kitbashed units such as banners with shield to be used."
     ],
     "bugfixes": [
-      "Fixed heroes on the custom lists which inherit the no_followers value from their original army list."
+      "Fixed heroes on the custom lists which inherit the no_followers value from their original army list.",
+      "Corrected the Courage value on the War Drake of Rhun profile card.",
+      "Corrected Glorfindel's special rules that appear in the PDF print-out.",
+      "Corrected Lurtz' shield to no longer increase his Defence by 1 in the PDF print-out."
     ]
   },
   "1.30": {

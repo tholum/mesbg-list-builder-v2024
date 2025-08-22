@@ -468,7 +468,13 @@
           "description": "This model may re-roll a single D6 when making a Duel Roll. Additionally, they may re-roll a single D6 when rolling To Wound when making Strikes."
         }
       ],
-      "magic_powers": [],
+      "magic_powers": [
+        "Expert Rider",
+        "Horse Lord",
+        "Resistant to Magic",
+        "Terror",
+        "Woodland Creature"
+      ],
       "heroic_actions": [
         "Heroic Resolve",
         "Heroic Challenge",

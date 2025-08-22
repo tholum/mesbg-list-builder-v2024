@@ -18954,14 +18954,7 @@
       {
         "id": "OPT0124",
         "name": "Shield",
-        "points": 0,
-        "modifiers": [
-          {
-            "stat": "D",
-            "mod": 1,
-            "label": "Shield"
-          }
-        ]
+        "points": 0
       }
     ]
   },
