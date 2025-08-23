@@ -22,7 +22,7 @@ export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
       options
         .filter((option) => option.quantity > 0)
         .filter((option) => option.type !== "ringwraith_amwf")
-        .map((option) => option.name)
+        .map((option) => option.tts_name ?? option.name)
         .join(", ");
 
     const exportText = roster.warbands

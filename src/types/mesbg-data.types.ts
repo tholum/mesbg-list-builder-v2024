@@ -47,6 +47,7 @@ export type Option = {
   min?: number;
   quantity?: number;
   name: string;
+  tts_name?: string;
   id: string;
   points: number;
   type?: OptionType;

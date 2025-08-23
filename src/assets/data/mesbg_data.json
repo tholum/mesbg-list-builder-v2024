@@ -13744,7 +13744,8 @@
         "name": "Armoured horse",
         "points": 25,
         "type": "mount",
-        "mount_name": "Armoured horse"
+        "mount_name": "Armoured horse",
+        "tts_name": "Armoured Horse"
       }
     ]
   },
@@ -17083,7 +17084,8 @@
         "name": "Armoured horse",
         "points": 25,
         "type": "mount",
-        "mount_name": "Armoured horse"
+        "mount_name": "Armoured horse",
+        "tts_name": "Armoured Horse"
       }
     ]
   },
@@ -28818,7 +28820,8 @@
         "name": "Armoured horse",
         "points": 25,
         "type": "mount",
-        "mount_name": "Armoured horse"
+        "mount_name": "Armoured horse",
+        "tts_name": "Armoured Horse"
       }
     ]
   },
