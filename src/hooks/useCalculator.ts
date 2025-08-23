@@ -31,6 +31,13 @@ function heroAdditionalUnitRosterCount(warband: Warband) {
     return 1 + (passengers?.passengers ?? 0);
   }
 
+  if (["Bofur the Dwarf, Champion of Erebor"].includes(warband.hero?.name)) {
+    const hasTroll = warband.hero.options.find(
+      (option) => option.name === "Troll Brute" && option.quantity > 0,
+    );
+    return hasTroll ? 2 : 1;
+  }
+
   if (
     [
       "Mumak War Leader",
