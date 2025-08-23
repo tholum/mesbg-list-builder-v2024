@@ -13,6 +13,12 @@ export const FactionLogo: FunctionComponent<FactionLogoProps> = ({
   size = 24,
 }) => {
   const { mode } = useThemeContext();
+
+  faction =
+    { "Custom: Good": "Custom (Good)", "Custom: Evil": "Custom (Evil)" }[
+      faction
+    ] ?? faction;
+
   return (
     <Avatar
       variant="square"
