@@ -9,7 +9,8 @@
       "Corrected Glorfindel's special rules that appear in the PDF print-out.",
       "Corrected Lurtz' shield to no longer increase his Defence by 1 in the PDF print-out.",
       "Corrected the model count for Bofur the Dwarf when he takes the Troll Brute option.",
-      "Add missing trackers for whenever you include multiple Rangers of the North in a warband."
+      "Add missing trackers for whenever you include multiple Rangers of the North in a warband.",
+      "Added a new column to the options allowing us to create an mapping to comply to the TTS import system."
     ]
   },
   "1.30": {

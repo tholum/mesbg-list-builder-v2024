@@ -6881,7 +6881,8 @@
         "id": "OPT0818",
         "name": "Elf bow",
         "points": 2,
-        "type": "bow"
+        "type": "bow",
+        "tts_name": "Elf Bow"
       },
       {
         "id": "OPT0819",
@@ -18518,7 +18519,8 @@
         "id": "OPT0157",
         "name": "Elf bow",
         "points": 2,
-        "type": "bow"
+        "type": "bow",
+        "tts_name": "Elf Bow"
       },
       {
         "id": "OPT0158",
@@ -18557,7 +18559,8 @@
               "[lindon] gil-galad"
             ]
           }
-        ]
+        ],
+        "tts_name": "King's Guard"
       }
     ]
   },
@@ -21288,7 +21291,8 @@
               "[numenor] elendil"
             ]
           }
-        ]
+        ],
+        "tts_name": "The Ring"
       }
     ]
   },
@@ -26138,7 +26142,8 @@
         "id": "OPT0054",
         "name": "Elf bow",
         "points": 2,
-        "type": "bow"
+        "type": "bow",
+        "tts_name": "Elf Bow"
       },
       {
         "id": "OPT0055",
@@ -30512,7 +30517,8 @@
               "[numenor] gil-galad"
             ]
           }
-        ]
+        ],
+        "tts_name": "The Ring"
       }
     ]
   },
@@ -30614,7 +30620,8 @@
         "id": "OPT0387",
         "name": "Elf bow",
         "points": 2,
-        "type": "bow"
+        "type": "bow",
+        "tts_name": "Elf Bow"
       },
       {
         "id": "OPT0388",
@@ -30653,7 +30660,8 @@
               "[the-last-alliance] gil-galad"
             ]
           }
-        ]
+        ],
+        "tts_name": "King's Guard"
       }
     ]
   },
