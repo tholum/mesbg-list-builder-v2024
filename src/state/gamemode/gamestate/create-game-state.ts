@@ -41,7 +41,9 @@ const mapHeroToStats = (
   }
 
   const [[name, MWFW]] = unit.MWFW;
-  return [convertToStats(name || unit.name, MWFW, unit, isArmyLeader)];
+  return Array.from({ length: unit.quantity }, () =>
+    convertToStats(name || unit.name, MWFW, unit, isArmyLeader),
+  );
 };
 
 const getHeroes = (roster: Roster): Trackable[] => {

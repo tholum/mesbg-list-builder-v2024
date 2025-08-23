@@ -220,6 +220,7 @@ export const useCalculator = () => {
           .filter(isSelectedUnit)
           .filter((unit) => unit.unit_type !== "Siege Equipment")
           .filter((unit) => unit.MWFW.length > 0)
+          .flatMap((unit) => Array(unit.quantity).fill(unit))
           .flatMap((unit) => unit.MWFW)
           .map((mwfw) => mwfw[1].split(":").map(Number))
           .map(([might, will, fate]) => ({ might, will, fate }))

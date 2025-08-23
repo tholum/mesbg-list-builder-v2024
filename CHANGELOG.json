@@ -7,7 +7,9 @@
       "Fixed heroes on the custom lists which inherit the no_followers value from their original army list.",
       "Corrected the Courage value on the War Drake of Rhun profile card.",
       "Corrected Glorfindel's special rules that appear in the PDF print-out.",
-      "Corrected Lurtz' shield to no longer increase his Defence by 1 in the PDF print-out."
+      "Corrected Lurtz' shield to no longer increase his Defence by 1 in the PDF print-out.",
+      "Corrected the model count for Bofur the Dwarf when he takes the Troll Brute option.",
+      "Add missing trackers for whenever you include multiple Rangers of the North in a warband."
     ]
   },
   "1.30": {
