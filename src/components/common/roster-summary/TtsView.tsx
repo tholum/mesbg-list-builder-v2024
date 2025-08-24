@@ -20,31 +20,46 @@ const getOptions = ({ options }: SelectedUnit) =>
     .map((option) => option.tts_name ?? option.name)
     .join(", ");
 
+const getAdditionalIncludes = (roster) => {
+  if (roster.armyList === "Kingdom of Khazad-Dum") {
+    return "\n(2x Dwarven mirror: )";
+  }
+  if (roster.armyList === "Army of the Great Eye") {
+    return "\n(Great eye marker: )";
+  }
+
+  return "";
+};
+
 export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
   (_, ref) => {
     const { roster } = useRosterInformation();
     const { triggerAlert } = useAppState();
 
-    const exportText = roster.warbands
-      .filter((warband) => isSelectedUnit(warband.hero))
-      .map(({ hero, units }) => {
-        const name = tta2mlb[hero.name] ? tta2mlb[hero.name](hero) : hero.name;
-        const leader =
-          hero.unit_type === "Siege Engine"
-            ? name
-            : `(${name}: ${getOptions(hero)})`;
-        const followers = units.filter(isSelectedUnit).map((unit) => {
-          const unitName = tta2mlb[unit.name]
-            ? tta2mlb[unit.name](unit)
-            : unit.name;
-          const options = getOptions(unit);
-          return `    (${unit.quantity}x ${unitName}: ${options})`;
-        });
-        return followers.length
-          ? `${leader}\n${followers.join("\n")}\n`
-          : `${leader}\n`;
-      })
-      .join("\n");
+    const additionalIncludes = getAdditionalIncludes(roster);
+    const exportText =
+      roster.warbands
+        .filter((warband) => isSelectedUnit(warband.hero))
+        .map(({ hero, units }) => {
+          const name = tta2mlb[hero.name]
+            ? tta2mlb[hero.name](hero)
+            : hero.name;
+          const leader =
+            hero.unit_type === "Siege Engine"
+              ? name
+              : `(${name}: ${getOptions(hero)})`;
+          const followers = units.filter(isSelectedUnit).map((unit) => {
+            const unitName = tta2mlb[unit.name]
+              ? tta2mlb[unit.name](unit)
+              : unit.name;
+            const options = getOptions(unit);
+            return `    (${unit.quantity}x ${unitName}: ${options})`;
+          });
+          return followers.length
+            ? `${leader}\n${followers.join("\n")}\n`
+            : `${leader}\n`;
+        })
+        .join("\n") + additionalIncludes;
 
     useImperativeHandle(ref, () => ({
       copyToClipboard: async () => {
