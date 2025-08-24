@@ -13,23 +13,26 @@ export type RosterTextViewHandlers = {
   copyToClipboard: () => void;
 };
 
+const getOptions = ({ options }: SelectedUnit) =>
+  options
+    .filter((option) => option.quantity > 0)
+    .filter((option) => option.type !== "ringwraith_amwf")
+    .map((option) => option.tts_name ?? option.name)
+    .join(", ");
+
 export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
   (_, ref) => {
     const { roster } = useRosterInformation();
     const { triggerAlert } = useAppState();
 
-    const getOptions = ({ options }: SelectedUnit) =>
-      options
-        .filter((option) => option.quantity > 0)
-        .filter((option) => option.type !== "ringwraith_amwf")
-        .map((option) => option.tts_name ?? option.name)
-        .join(", ");
-
     const exportText = roster.warbands
       .filter((warband) => isSelectedUnit(warband.hero))
       .map(({ hero, units }) => {
         const name = tta2mlb[hero.name] ? tta2mlb[hero.name](hero) : hero.name;
-        const leader = `(${name}: ${getOptions(hero)})`;
+        const leader =
+          hero.unit_type === "Siege Engine"
+            ? name
+            : `(${name}: ${getOptions(hero)})`;
         const followers = units.filter(isSelectedUnit).map((unit) => {
           const unitName = tta2mlb[unit.name]
             ? tta2mlb[unit.name](unit)
@@ -88,10 +91,32 @@ export const RosterTabletopSimView = forwardRef<RosterTextViewHandlers>(
   },
 );
 
+const siegeUnitMappings: Record<string, (unit: SelectedUnit) => string> = {
+  Windlance: (unit) =>
+    `(Windlance: ${getOptions(unit)})\n    (1x Dale Siege Veteran: )\n    (1x Dale Crew: )`,
+  "Gondor Avenger Bolt Thrower": (unit) =>
+    `(Gondor Avenger Bolt Thrower: ${getOptions(unit)})\n    (1x Minas Tirith Siege Veteran: )\n    (2x Minas Tirith Siege Crew: )`,
+  "Gondor Battlecry Trebuchet": (unit) =>
+    `(Gondor Battlecry Trebuchet: ${getOptions(unit)})\n    (1x Minas Tirith Siege Veteran: )\n    (2x Minas Tirith Siege Crew: )`,
+  "Dwarven Ballista": (unit) =>
+    `(Dwarven Ballista: ${getOptions(unit)})\n    (1x Dwarf Siege Veteran: )\n    (1x Dwarf Siege Crew: )`,
+  "Corsair Ballista": (unit) =>
+    `(Corsair Ballista: ${getOptions(unit)})\n    (1x Corsair Siege Veteran: )\n    (2x Corsair Siege Crew: )`,
+  "Mordor War Catapult": (unit) =>
+    `(Mordor War Catapult: ${getOptions(unit)})\n    (1x Mordor Orc Siege Veteran: )\n    (2x Mordor Orc Siege Crew: )\n    (1x Mordor Troll Catapult: )`,
+  "Mordor Siege Bow": (unit) =>
+    `(Mordor Siege Bow: ${getOptions(unit)})\n    (1x Mordor Orc Siege Veteran: )\n    (2x Mordor Orc Siege Crew: )`,
+  "Iron Hills Ballista": (unit) =>
+    `(Iron Hills Ballista: ${getOptions(unit)})\n    (1x Iron Hills Dwarf Siege Veteran: )\n    (3x Iron Hills Dwarf Crew: )`,
+  "Isengard Assault Ballista": (unit) =>
+    `(Isengard Assault Ballista: ${getOptions(unit)})\n    (1x Uruk-hai Siege Veteran: )\n    (2x Uruk-hai Crew: )`,
+};
+
 /**
  * This is a mapping from the TTA model names extracted from their datafile and the names from
  * our own data file.
  */
+
 const tta2mlb: Record<string, (unit: SelectedUnit) => string> = {
   // Simple name to name mappings
   ...Object.entries(tta2mlbJson)
@@ -103,6 +128,8 @@ const tta2mlb: Record<string, (unit: SelectedUnit) => string> = {
       }),
       {},
     ),
+  // Siege unit mappings
+  ...siegeUnitMappings,
 
   // Complex mapping including options and quantities.
   "Frodo Baggins": (unit) =>
