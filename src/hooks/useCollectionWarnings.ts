@@ -1,4 +1,5 @@
 import { useCollectionState } from "../state/collection";
+import { Collection } from "../state/collection/inventory";
 import { useUserPreferences } from "../state/preference";
 import { isSiegeEquipment, SelectedUnit } from "../types/roster.ts";
 import { arraysMatch } from "../utils/array.ts";
@@ -30,25 +31,35 @@ export const useCollectionWarnings = (
       warnings: "off",
     };
   }
+  const clonedUnit = {
+    ...unit,
+    options: unit.options.map((o) => ({ ...o, name: o.name.toLowerCase() })),
+  };
 
   // The full collection for a given miniature
-  const { collection } = (inventory[unit.profile_origin] &&
-    inventory[unit.profile_origin][unit.name.replace(" (General)", "")]) || {
-    collection: [],
-  };
+  const modelInventory =
+    inventory[unit.profile_origin] &&
+    inventory[unit.profile_origin][unit.name.replace(" (General)", "")];
+  const collection = !modelInventory
+    ? ([] as Collection[])
+    : modelInventory.collection.map((c) =>
+        typeof c.options === "string"
+          ? { ...c, options: c.options.toLowerCase() }
+          : { ...c, options: c.options.map((o) => o.toLowerCase()) },
+      );
 
   // The amount of miniatures marked as 'Generic' grouped by their mount.
   const generics = calculateGenericModels(collection);
   // The total amount of selected grouped by chosen options
   const totalSelected = getTotalSelectedModelsGroupedPerChosenOptions(
     roster,
-    unit,
+    clonedUnit,
     collection,
   );
 
   // A list of selected options and selected mount
-  const mount = getMountName(unit);
-  const options = getListOfOptionsForGivenUnit(unit);
+  const mount = getMountName(clonedUnit);
+  const options = getListOfOptionsForGivenUnit(clonedUnit);
 
   // The total amount of generic models used,
   // used to check if there are enough models in the collection.
@@ -82,9 +93,9 @@ export const useCollectionWarnings = (
 
   // // Debug line given a specific profile name,
   // // ~ Keep commented until needed!! ~
-  if (unit.name.includes("Uruk-Hai")) {
+  if (clonedUnit.name.includes("Orc W")) {
     console.dir({
-      name: unit.name,
+      name: clonedUnit.name,
       generics,
       mount,
       bestMatchingMount,

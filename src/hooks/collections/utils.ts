@@ -28,12 +28,12 @@ export function getTotalSelectedModelsGroupedPerChosenOptions(
       .map(({ name, unit_type, options, quantity }) => {
         let selectedOptions = options
           .filter((o) => o.quantity > 0)
-          .map((o) => o.name);
+          .map((o) => o.name.toLowerCase());
         if (
           name === "Rohan Royal Guard" &&
-          arraysMatch(selectedOptions, ["Horse", "Throwing spears"])
+          arraysMatch(selectedOptions, ["horse", "throwing spears"])
         ) {
-          selectedOptions = ["Horse and throwing spears"];
+          selectedOptions = ["horse and throwing spears"];
         }
         return {
           options: selectedOptions,
@@ -60,14 +60,14 @@ export function getTotalSelectedModelsGroupedPerChosenOptions(
         collection.find((c) => {
           if (typeof c.options === "string") {
             // warriors
-            if (c.options === "None") {
+            if (c.options === "none") {
               return unit.options.length === 0;
             }
 
             return arraysMatch(unit.options, [c.options]);
           } else {
             // heroes
-            if (c.options[0] === "None") {
+            if (c.options[0] === "none") {
               return unit.options.length === 0 && unit.mount === c.mount;
             }
             return (
@@ -98,8 +98,8 @@ export function calculateGenericModels(
         Number(
           value.find((c) =>
             typeof c.options === "string"
-              ? c.options === "Generic"
-              : c.options.includes("Generic"),
+              ? c.options === "generic"
+              : c.options.includes("generic"),
           )?.amount || "0",
         ),
       ];
@@ -111,9 +111,9 @@ export function getListOfOptionsForGivenUnit(unit: SelectedUnit): string[] {
   let options = unit.options.filter((o) => o.quantity > 0).map((o) => o.name);
   if (
     unit.name === "Rohan Royal Guard" &&
-    arraysMatch(options, ["Horse", "Throwing spears"])
+    arraysMatch(options, ["horse", "throwing spears"])
   ) {
-    options = ["Horse and throwing spears"];
+    options = ["horse and throwing spears"];
   }
   return options;
 }
@@ -142,7 +142,7 @@ export function getAmountOfAvailableUnitsIncludingGenerics(
           arraysMatch(
             typeof ts.options === "string" ? [ts.options] : ts.options,
             options.length === 0
-              ? ["None"]
+              ? ["none"]
               : options.filter((o) => o !== mount),
           ) && mount.includes(ts.mount),
       )?.amount || "0",
