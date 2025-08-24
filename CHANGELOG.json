@@ -10,7 +10,8 @@
       "Corrected Lurtz' shield to no longer increase his Defence by 1 in the PDF print-out.",
       "Corrected the model count for Bofur the Dwarf when he takes the Troll Brute option.",
       "Add missing trackers for whenever you include multiple Rangers of the North in a warband.",
-      "Added a new column to the options allowing us to create an mapping to comply to the TTS import system."
+      "Added a new column to the options allowing us to create an mapping to comply to the TTS import system.",
+      "More miscellaneous fixes and additions to the TTS export text."
     ]
   },
   "1.30": {
