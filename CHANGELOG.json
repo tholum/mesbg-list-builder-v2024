@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "A brand new homepage with an overview of features and a link to our brand new MLB Discord server."
+    ],
     "changed": [
       "Enabled the ability to select combined options for custom rosters allowing kitbashed units such as banners with shield to be used."
     ],

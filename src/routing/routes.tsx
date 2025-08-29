@@ -10,6 +10,7 @@ import { Settings } from "../pages/Settings.tsx";
 import { Database } from "../pages/database/Database.tsx";
 import { Gamemode } from "../pages/gamemode/Gamemode.tsx";
 import { StartGamemode } from "../pages/gamemode/StartGamemode.tsx";
+import { Home } from "../pages/home/Home.tsx";
 import { SavedGameResults } from "../pages/match-history/SavedGameResults.tsx";
 import { RosterGroup } from "../pages/rosters/RosterGroup.tsx";
 import { Rosters } from "../pages/rosters/Rosters.tsx";
@@ -21,6 +22,11 @@ export const routes: RouteObject[] = [
     element: <App />,
     errorElement: <AppFallback />,
     children: [
+      {
+        path: "",
+        element: <Home />,
+        errorElement: <AppFallback />,
+      },
       {
         path: "rosters",
         element: <Rosters />,
@@ -83,12 +89,12 @@ export const routes: RouteObject[] = [
       },
       {
         path: "*",
-        element: <RedirectTo path="/rosters" />,
+        element: <RedirectTo path="/" />,
         errorElement: <AppFallback />,
       },
       {
         path: "",
-        element: <RedirectTo path="/rosters" />,
+        element: <RedirectTo path="/" />,
         errorElement: <AppFallback />,
       },
     ],

@@ -48,10 +48,10 @@ export const Charts = ({ games }: ChartsProps) => {
       <Grid2 size={{ sm: 12, md: 4 }}>
         <ResultsPieChart data={games} />
       </Grid2>
-      <Grid2 size={{ sm: 12, md: 4 }}>
+      <Grid2 size={{ sm: 12, md: 6 }}>
         <OpponentsPlayedBarChart data={games} />
       </Grid2>
-      <Grid2 size={{ sm: 12, md: 4 }}>
+      <Grid2 size={{ sm: 12, md: 6 }}>
         <ScenariosPlayedBarChart data={games} />
       </Grid2>
 

@@ -37,7 +37,7 @@ import {
   useState,
 } from "react";
 import { AiFillTrophy } from "react-icons/ai";
-import { FaChessRook, FaDatabase } from "react-icons/fa";
+import { FaChessRook, FaDatabase, FaDiscord, FaPatreon } from "react-icons/fa";
 import { GiMightyForce, GiSwordsEmblem } from "react-icons/gi";
 import { HiFire } from "react-icons/hi";
 import { HiIdentification } from "react-icons/hi2";
@@ -50,6 +50,7 @@ import { DrawerTypes } from "../components/drawer/drawers.tsx";
 import { ModalTypes } from "../components/modal/modals.tsx";
 import { charts } from "../constants/charts.ts";
 import { OpenNavigationDrawerEvent } from "../events/OpenNavigationDrawerEvent.ts";
+import { DISCORD_LINK, PATREON_LINK } from "../pages/home/Home.tsx";
 import { useAppState } from "../state/app";
 import { useGameModeState } from "../state/gamemode";
 import { useUserPreferences } from "../state/preference";
@@ -393,6 +394,12 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       action: () => navigate("/collection"),
       active: location.pathname === "/collection",
     },
+    {
+      icon: <FaDatabase style={{ fontSize: "1.25rem", margin: "0 auto" }} />,
+      label: "Profile Database",
+      action: () => navigate("/database"),
+      active: location.pathname === "/database",
+    },
     { divider: true },
     {
       icon: <AutoAwesome />,
@@ -449,6 +456,18 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       active: location.pathname === "/about",
     },
     {
+      icon: <FaDiscord style={{ fontSize: "1.5rem" }} />,
+      label: "MLB Discord",
+      action: () => window.open(DISCORD_LINK, "_blank"),
+      active: false,
+    },
+    {
+      icon: <FaPatreon />,
+      label: "Support us on Patreon",
+      action: () => window.open(PATREON_LINK, "_blank"),
+      active: false,
+    },
+    {
       icon: <BugReportIcon />,
       label: "Report a Bug / Correction",
       action: () =>
@@ -461,12 +480,6 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
       label: "App Settings",
       action: () => navigate("/settings"),
       active: location.pathname === "/settings",
-    },
-    {
-      icon: <FaDatabase style={{ fontSize: "1.25rem", margin: "0 auto" }} />,
-      label: "Profile Database",
-      action: () => navigate("/database"),
-      active: location.pathname === "/database",
     },
     { divider: true },
     {
