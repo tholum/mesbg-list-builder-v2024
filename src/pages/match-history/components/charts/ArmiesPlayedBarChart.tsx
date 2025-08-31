@@ -35,8 +35,8 @@ export const ArmiesPlayedBarChart = ({ data }: ArmiesPlayedProps) => {
 
   const victoryPointsData = {
     labels: Object.keys(armiesPlayed),
-    datasets: ["won", "drawn", "lost"].map((key, index) => ({
-      label: "Matches " + key,
+    datasets: ["won", "draw", "lost"].map((key, index) => ({
+      label: key,
       data: Object.values(armiesPlayed).map((wld) => wld[key]),
       yAxisID: "y1",
       backgroundColor: barColors[index],

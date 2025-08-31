@@ -134,7 +134,7 @@ export const MatchesOverTimeMixedChart = ({ data }: MatchesOverTimeProps) => {
       ...["won", "draw", "lost"].map((key, index) => {
         return {
           type: "bar",
-          label: "Matches " + key,
+          label: key,
           data: Object.values(wldRatiosPerDay).map((wld) => wld[key]),
           yAxisID: "y1",
           backgroundColor: barColors[index],
