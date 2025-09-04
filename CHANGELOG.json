@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Corrected Brorgir the Conjurer's spell cast value for Bladewrath to 3+."
+    ]
+  },
   "1.31": {
     "added": [
       "A brand new homepage with an overview of features and a link to our brand new MLB Discord server."
