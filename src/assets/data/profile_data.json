@@ -14504,7 +14504,7 @@
         {
           "name": "Sorcerous Adept",
           "type": "Active",
-          "description": "Brorgir regains 1 Will point every time he rolls a natural 6 on Casting rolls, after resolving the effects of the Magical Power."
+          "description": "Each time Brorgir rolls one or more natural 6s when making a Casting Test, he will regain a single Will Point after resolving the effects of the Magical Power."
         },
         {
           "name": "Easterling Halberd",
