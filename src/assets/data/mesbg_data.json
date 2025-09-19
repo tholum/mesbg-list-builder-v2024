@@ -3206,6 +3206,32 @@
     "warband_size": 12,
     "options": []
   },
+  "[army-of-the-great-eye] mordor-orc-shaman": {
+    "model_id": "[army-of-the-great-eye] mordor-orc-shaman",
+    "army_type": "Evil",
+    "army_list": "Army of the Great Eye",
+    "profile_origin": "Mordor",
+    "name": "Mordor Orc Shaman",
+    "unit_type": "Minor Hero",
+    "base_points": 50,
+    "siege_crew": 0,
+    "MWFW": [
+      [
+        "",
+        "1:3:1:2"
+      ]
+    ],
+    "warband_size": 6,
+    "options": [
+      {
+        "id": "OPT1434",
+        "name": "Warg",
+        "points": 20,
+        "type": "mount",
+        "mount_name": "Warg"
+      }
+    ]
+  },
   "[army-of-the-great-eye] shelob": {
     "model_id": "[army-of-the-great-eye] shelob",
     "army_type": "Evil",
