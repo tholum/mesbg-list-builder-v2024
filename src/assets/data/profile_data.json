@@ -7347,7 +7347,7 @@
         {
           "name": "Bludgeon",
           "type": "Brutal Power Attack",
-          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the bludgeon is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
+          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the target is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
         }
       ],
       "magic_powers": [],
@@ -7464,7 +7464,7 @@
         {
           "name": "Bludgeon",
           "type": "Brutal Power Attack",
-          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the bludgeon is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
+          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the target is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
         }
       ],
       "magic_powers": [],
@@ -7533,7 +7533,7 @@
         {
           "name": "Bludgeon",
           "type": "Brutal Power Attack",
-          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the bludgeon is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
+          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the target is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
         }
       ],
       "magic_powers": [],
@@ -8144,7 +8144,7 @@
         {
           "name": "Bludgeon",
           "type": "Brutal Power Attack",
-          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the bludgeon is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
+          "description": "Choose one enemy model as a bludgeon, and another model as the target. Both suffer a S8 hit. If the target is slain, you may keep repeating this until the bludgeon is not slain (in which case that model is knocked Prone). The bludgeon cannot be a Monster, Chariot or War Beast. If the bludgeon is a Cavalry model, then the rider is picked up and separated from their mount."
         }
       ],
       "magic_powers": [],
