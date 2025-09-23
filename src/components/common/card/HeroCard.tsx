@@ -132,6 +132,21 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
           };
         }
 
+        if (
+          unit.name === "Treebeard" &&
+          option.name.startsWith("Elven Cloak")
+        ) {
+          return {
+            ...option,
+            selectable:
+              option.quantity === 1 ||
+              !!unit.options.find(
+                (other) =>
+                  other.name === "Merry & Pippin" && other.quantity > 0,
+              ),
+          };
+        }
+
         if (unit.name === "Dragon") {
           if (option.quantity > 0) return option;
 

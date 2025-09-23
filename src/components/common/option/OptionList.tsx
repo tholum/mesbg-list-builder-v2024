@@ -44,6 +44,13 @@ export const OptionList: FunctionComponent<OptionListProps> = ({
       // deselect Pippin if shadowfax is removed
       else if (name === "Shadowfax" && !selected && o.name === "Pippin") {
         return { ...o, quantity: 0 };
+      } else if (
+        unitName === "Treebeard" &&
+        name === "Merry & Pippin" &&
+        !selected &&
+        o.name.startsWith("Elven Cloak")
+      ) {
+        return { ...o, quantity: 0 };
       }
       // return any other option unchanged
       else {

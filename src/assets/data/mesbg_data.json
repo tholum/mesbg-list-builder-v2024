@@ -11979,6 +11979,16 @@
         "points": 10,
         "type": "passenger",
         "passengers": 2
+      },
+      {
+        "id": "OPT1435",
+        "name": "Elven Cloak (Merry)",
+        "points": 5
+      },
+      {
+        "id": "OPT1436",
+        "name": "Elven Cloak (Pippin)",
+        "points": 5
       }
     ]
   },
