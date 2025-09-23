@@ -7,6 +7,7 @@ import {
   Inventory,
   SupabaseConfig,
 } from "./types.ts";
+import { v5 as uuidv5, validate as validateUuid } from "uuid";
 
 /**
  * Supabase storage adapter for cloud sync functionality
@@ -14,6 +15,9 @@ import {
 export class SupabaseAdapter implements StorageAdapter {
   private supabase: any = null;
   private userId: string | null = null;
+  // Namespace used to derive stable UUIDs from legacy string identifiers
+  private static readonly LEGACY_ID_NAMESPACE =
+    "eb5b4976-0e2d-5dd9-93bf-5d4bd9ce9a88";
 
   constructor(private config: SupabaseConfig) {}
 
@@ -66,13 +70,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async saveRoster(roster: Roster): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(roster.id, userId);
 
-    const { error } = await this.supabase.from("rosters").insert({
-      id: roster.id,
-      user_id: userId,
-      data: roster,
-      updated_at: new Date().toISOString(),
-    });
+    // Upsert so first-time syncs create the row while subsequent saves update it
+    const { error } = await this.supabase.from("rosters").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
+        data: roster,
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to save roster to Supabase:", error);
@@ -82,15 +92,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async updateRoster(roster: Roster): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(roster.id, userId);
 
-    const { error } = await this.supabase
-      .from("rosters")
-      .update({
+    // Upsert covers the case where the roster was created offline/local only
+    const { error } = await this.supabase.from("rosters").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
         data: roster,
-        updated_at: new Date().toISOString(),
-      })
-      .eq("id", roster.id)
-      .eq("user_id", userId);
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to update roster in Supabase:", error);
@@ -100,11 +114,12 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async deleteRoster(id: string): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const primaryKey = this.normalizeId(id, userId);
 
     const { error } = await this.supabase
       .from("rosters")
       .delete()
-      .eq("id", id)
+      .eq("id", primaryKey)
       .eq("user_id", userId);
 
     if (error) {
@@ -133,13 +148,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async saveRosterGroup(group: RosterGroup): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(group.id, userId);
 
-    const { error } = await this.supabase.from("roster_groups").insert({
-      id: group.id,
-      user_id: userId,
-      data: group,
-      updated_at: new Date().toISOString(),
-    });
+    // Upsert keeps group membership in sync whether or not the row exists yet
+    const { error } = await this.supabase.from("roster_groups").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
+        data: group,
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to save roster group to Supabase:", error);
@@ -149,15 +170,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async updateRosterGroup(group: RosterGroup): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(group.id, userId);
 
-    const { error } = await this.supabase
-      .from("roster_groups")
-      .update({
+    // Upsert covers the case where the group originated locally before cloud sync
+    const { error } = await this.supabase.from("roster_groups").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
         data: group,
-        updated_at: new Date().toISOString(),
-      })
-      .eq("id", group.id)
-      .eq("user_id", userId);
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to update roster group in Supabase:", error);
@@ -167,11 +192,12 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async deleteRosterGroup(id: string): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const primaryKey = this.normalizeId(id, userId);
 
     const { error } = await this.supabase
       .from("roster_groups")
       .delete()
-      .eq("id", id)
+      .eq("id", primaryKey)
       .eq("user_id", userId);
 
     if (error) {
@@ -200,13 +226,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async saveMatch(match: PastGame): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(match.id, userId);
 
-    const { error } = await this.supabase.from("matches").insert({
-      id: match.id,
-      user_id: userId,
-      data: match,
-      updated_at: new Date().toISOString(),
-    });
+    // Upsert ensures historic matches aren't dropped during their first sync
+    const { error } = await this.supabase.from("matches").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
+        data: match,
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to save match to Supabase:", error);
@@ -216,15 +248,19 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async updateMatch(match: PastGame): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const timestamp = new Date().toISOString();
+    const primaryKey = this.normalizeId(match.id, userId);
 
-    const { error } = await this.supabase
-      .from("matches")
-      .update({
+    // Upsert covers the case where the match was recorded before cloud sync existed
+    const { error } = await this.supabase.from("matches").upsert(
+      {
+        id: primaryKey,
+        user_id: userId,
         data: match,
-        updated_at: new Date().toISOString(),
-      })
-      .eq("id", match.id)
-      .eq("user_id", userId);
+        updated_at: timestamp,
+      },
+      { onConflict: "id" },
+    );
 
     if (error) {
       console.error("Failed to update match in Supabase:", error);
@@ -234,11 +270,12 @@ export class SupabaseAdapter implements StorageAdapter {
 
   async deleteMatch(id: string): Promise<void> {
     const userId = await this.ensureAuthenticated();
+    const primaryKey = this.normalizeId(id, userId);
 
     const { error } = await this.supabase
       .from("matches")
       .delete()
-      .eq("id", id)
+      .eq("id", primaryKey)
       .eq("user_id", userId);
 
     if (error) {
@@ -254,19 +291,15 @@ export class SupabaseAdapter implements StorageAdapter {
     const { data, error } = await this.supabase
       .from("collections")
       .select("data")
-      .eq("user_id", userId)
-      .single();
+      .eq("user_id", userId);
 
     if (error) {
-      if (error.code === "PGRST116") {
-        // No collection found, return empty inventory
-        return {};
-      }
       console.error("Failed to fetch collection from Supabase:", error);
       throw new Error("Could not fetch collection");
     }
 
-    return data?.data || {};
+    // Return empty inventory if no collection exists, otherwise return the first (and only) record
+    return data && data.length > 0 ? data[0].data : {};
   }
 
   async updateCollection(inventory: Inventory): Promise<void> {
@@ -322,6 +355,14 @@ export class SupabaseAdapter implements StorageAdapter {
   /**
    * Authentication methods
    */
+
+  private normalizeId(id: string, userId: string): string {
+    if (validateUuid(id)) {
+      return id;
+    }
+
+    return uuidv5(`${userId}:${id}`, SupabaseAdapter.LEGACY_ID_NAMESPACE);
+  }
 
   /**
    * Sign up with email and password

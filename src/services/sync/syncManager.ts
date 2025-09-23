@@ -1,5 +1,6 @@
 import { getStorageAdapter } from "../storage/index.ts";
 import { SyncStatus } from "../storage/types.ts";
+import { SupabaseConfigManager } from "../config/supabaseConfig.ts";
 
 /**
  * Sync manager that orchestrates synchronization between local stores and cloud storage
@@ -102,6 +103,15 @@ export class SyncManager {
     try {
       const storage = await getStorageAdapter();
 
+      // If the adapter supports forcing a push to the cloud, do that first so the
+      // subsequent pull reflects the latest local data.
+      if (
+        "forceSyncToCloud" in storage &&
+        typeof (storage as any).forceSyncToCloud === "function"
+      ) {
+        await (storage as any).forceSyncToCloud();
+      }
+
       // Force refresh data from cloud
       await Promise.all([
         storage.getRosters(),
@@ -182,11 +192,7 @@ export class SyncManager {
    * Check if sync is available (i.e., cloud storage is configured)
    */
   async isSyncAvailable(): Promise<boolean> {
-    try {
-      const storage = await getStorageAdapter();
-      return await storage.isConnected();
-    } catch {
-      return false;
-    }
+    // Check if Supabase is configured and enabled
+    return SupabaseConfigManager.isConfigured();
   }
 }

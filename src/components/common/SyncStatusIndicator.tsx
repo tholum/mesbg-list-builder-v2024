@@ -30,11 +30,12 @@ export const SyncStatusIndicator: FunctionComponent<
     useSyncStatus();
   const { forceSync } = useSync();
 
-  const getStatusIcon = () => {
-    if (!isAvailable) {
-      return <CloudOff fontSize={size} />;
-    }
+  // Don't render anything if sync is not configured
+  if (!isAvailable) {
+    return null;
+  }
 
+  const getStatusIcon = () => {
     if (isSyncing) {
       return <CircularProgress size={size === "small" ? 16 : 20} />;
     }
@@ -58,10 +59,6 @@ export const SyncStatusIndicator: FunctionComponent<
   };
 
   const getTooltipText = () => {
-    if (!isAvailable) {
-      return "Cloud sync not configured. Go to Settings to set up sync.";
-    }
-
     if (lastSyncTime) {
       const timeAgo = Date.now() - lastSyncTime;
       const minutes = Math.floor(timeAgo / (1000 * 60));
