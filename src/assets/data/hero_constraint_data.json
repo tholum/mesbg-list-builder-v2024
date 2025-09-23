@@ -4364,6 +4364,17 @@
     ],
     "extra_profiles": []
   },
+  "[men-of-the-west] captain-of-dol-amroth": {
+    "valid_warband_units": [
+      "[men-of-the-west] peregrin-took",
+      "[men-of-the-west] warrior-of-minas-tirith",
+      "[men-of-the-west] meriadoc-brandybuck",
+      "[men-of-the-west] warrior-of-rohan",
+      "[men-of-the-west] knight-of-dol-amroth",
+      "[men-of-the-west] man-at-arms-of-dol-amroth"
+    ],
+    "extra_profiles": []
+  },
   "[men-of-the-west] captain-of-minas-tirith": {
     "valid_warband_units": [
       "[men-of-the-west] peregrin-took",
