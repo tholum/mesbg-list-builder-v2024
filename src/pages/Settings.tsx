@@ -28,6 +28,7 @@ import Switch from "@mui/material/Switch";
 import Typography from "@mui/material/Typography";
 import { ChangeEvent, FunctionComponent, ReactNode } from "react";
 import { DrawerTypes } from "../components/drawer/drawers.tsx";
+import { CloudSyncPanel } from "../components/settings/CloudSync/index.ts";
 import { useAppState } from "../state/app";
 import { useUserPreferences } from "../state/preference";
 import { Preferences } from "../state/preference/user-preferences";
@@ -197,6 +198,11 @@ export const Settings = () => {
           value={preferences.autoUpdateUnitData}
           onChange={updatePreference("autoUpdateUnitData")}
         />
+
+        <Divider textAlign="left">
+          <Typography variant="h6">Cloud Sync</Typography>
+        </Divider>
+        <CloudSyncPanel />
 
         <Divider textAlign="left">
           <Typography variant="h6">Drawer preferences</Typography>

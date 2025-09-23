@@ -44,6 +44,7 @@ import { HiIdentification } from "react-icons/hi2";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title-v2024.png";
+import { SyncStatusIndicator } from "../components/common/SyncStatusIndicator.tsx";
 import { icons as groupIcons } from "../components/common/group-icon/icons.tsx";
 import { FactionLogo } from "../components/common/images/FactionLogo.tsx";
 import { DrawerTypes } from "../components/drawer/drawers.tsx";
@@ -547,6 +548,7 @@ export const Navigation: FunctionComponent<PropsWithChildren> = ({
             />
           </Button>
           <Box flexGrow={1} />
+          <SyncStatusIndicator variant="full" showRefreshButton={true} />
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open} id="navigation-drawer">
