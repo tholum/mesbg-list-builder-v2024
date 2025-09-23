@@ -1,4 +1,4 @@
-name: Deploy App to test domain
+name: Deploy application to test
 
 on:
   workflow_dispatch: # Allows manual trigger of the workflow
@@ -17,6 +17,10 @@ jobs:
           node-version: "22"
 
       - name: Install & build
+        env:
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+          VITE_FIREBASE_MESSAGE_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGE_SENDER_ID }}
         run: |
           npm install
           npm run build
@@ -30,10 +34,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
           server-dir: /public_html/test/
-
-      - name: Discord notification
-        if: success()
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          RELEASE_VERSION: ${{ github.ref_name }}
-        run: node scripts/notify-discord.js
