@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.32": {
     "added": ["Accounts. And syncing your data to your account."],
     "changed": ["Removed the start game page. Games can now only be started from the three-dot menu on the rosters page or from the roster builder.",
       "Combined the special rules, magic and heroic actions drawer into a single drawer"],
