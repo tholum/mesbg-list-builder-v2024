@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "1.33": {
     "added": [
       "Quick switch option for ongoing games, allowing to seamlessly switch between ongoing games.",
       "Added an small indicator on the roster links in the left sidebar indicating a game in progress.",
