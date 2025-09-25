@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { FaSkullCrossbones } from "react-icons/fa";
-import { UnitProfilePicture } from "../../../../components/common/images/UnitProfilePicture.tsx";
+import { UnitProfilePicture } from "../../../../components/atoms/unit-profile/UnitProfilePicture.tsx";
 import { useScreenSize } from "../../../../hooks/calculations-and-displays/useScreenSize.ts";
 import { Trackable } from "../../../../state/gamemode/gamestate";
 import { useThemeContext } from "../../../../theme/ThemeContext.tsx";

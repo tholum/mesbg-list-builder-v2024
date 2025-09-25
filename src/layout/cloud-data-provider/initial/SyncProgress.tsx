@@ -11,8 +11,8 @@ import {
 import Button from "@mui/material/Button";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CustomAlert } from "../../../components/common/alert/CustomAlert.tsx";
-import { LinearProgressWithLabel } from "../../../components/common/linear-progress/LinearProgressWithLabel.tsx";
+import { CustomAlert } from "../../../components/atoms/alert/CustomAlert.tsx";
+import { LinearProgressWithLabel } from "../../../components/atoms/linear-progress/LinearProgressWithLabel.tsx";
 import { useSyncQueue } from "../../../hooks/cloud-sync/useSyncQueue.ts";
 import { SyncItem } from "./sync-item.ts";
 

@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import { Fragment, useState } from "react";
 import { DatabaseRow, rows } from "../../../pages/database/data.ts";
 import { useAppState } from "../../../state/app";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
 import { Stats } from "../../common/roster-pdf/sections/Stats.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
 

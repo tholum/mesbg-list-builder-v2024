@@ -4,8 +4,8 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";
-import { GroupIcon } from "../group-icon/GroupIcon.tsx";
-import { Link } from "../link/Link.tsx";
+import { GroupIcon } from "../../atoms/group-icon/GroupIcon.tsx";
+import { Link } from "../../atoms/link/Link.tsx";
 import { CARD_SIZE_IN_PX } from "../roster-card/RosterSummaryCard.tsx";
 import { GroupOptionsPopoverMenu } from "./RosterGroupPopoverMenu.tsx";
 

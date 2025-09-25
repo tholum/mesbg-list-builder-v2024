@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { FunctionComponent, useEffect, useState } from "react";
 import data from "../../../assets/data/mesbg_data.json";
 import { ArmyType } from "../../../types/mesbg-data.types.ts";
-import { FactionLogo } from "../images/FactionLogo.tsx";
+import { FactionIcon } from "../faction-icon/FactionIcon.tsx";
 
 const armiesByType = Object.values(data)
   .map((item) => ({
@@ -100,7 +100,7 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
         return (
           <ListItem {...props}>
             <ListItemIcon>
-              <FactionLogo faction={option.army} />
+              <FactionIcon faction={option.army} />
             </ListItemIcon>
             <ListItemText>
               <Typography>{option.army}</Typography>

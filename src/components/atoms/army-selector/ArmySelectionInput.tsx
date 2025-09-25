@@ -3,7 +3,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import data from "../../../assets/data/mesbg_data.json";
 import { ArmyType } from "../../../types/mesbg-data.types.ts";
-import { FactionLogo } from "../images/FactionLogo.tsx";
+import { FactionIcon } from "../faction-icon/FactionIcon.tsx";
 
 export type SelectedArmyList = {
   title: string;
@@ -63,7 +63,7 @@ export const ArmySelectionInput = ({
         return (
           <ListItem {...props} key={option.title}>
             <ListItemIcon>
-              <FactionLogo faction={option.army} />
+              <FactionIcon faction={option.army} />
             </ListItemIcon>
             <ListItemText>{option.title}</ListItemText>
           </ListItem>

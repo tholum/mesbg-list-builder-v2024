@@ -8,7 +8,7 @@ import {
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { useScreenSize } from "../../../../hooks/calculations-and-displays/useScreenSize.ts";
-import { ArmyPicker } from "../../game-results-form/ArmyPicker.tsx";
+import { ArmyPicker } from "../../../atoms/army-selector/ArmyPicker.tsx";
 import { StepProps } from "./StepProps.ts";
 
 export const PlayerArmyStep: FunctionComponent<StepProps> = ({

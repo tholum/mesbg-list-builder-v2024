@@ -6,8 +6,8 @@ import { useRosterInformation } from "../../../hooks/calculations-and-displays/u
 import { useAppState } from "../../../state/app";
 import { isSelectedUnit, SelectedUnit } from "../../../types/roster.ts";
 import { selectedOptionWithType } from "../../../utils/options.ts";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export type RosterTextViewHandlers = {
   copyToClipboard: () => void;

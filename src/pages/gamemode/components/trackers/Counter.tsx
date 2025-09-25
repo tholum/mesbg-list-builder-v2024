@@ -2,7 +2,7 @@ import { Add, Remove } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { SquareIconButton } from "../../../../components/common/icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../../../components/atoms/icon-button/SquareIconButton.tsx";
 
 type MwfwUpdateCallback = (newValue: number) => void;
 

@@ -9,8 +9,8 @@ import fallbackLogo from "../../../assets/images/default.png";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
+import { CARD_SIZE_IN_PX } from "../../common/roster-card/RosterSummaryCard.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
-import { CARD_SIZE_IN_PX } from "../roster-card/RosterSummaryCard.tsx";
 
 export const NewRosterButton: FunctionComponent = () => {
   const { setCurrentModal } = useAppState();

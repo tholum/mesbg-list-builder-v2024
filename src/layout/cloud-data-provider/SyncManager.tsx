@@ -9,7 +9,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import { useAuth } from "../../firebase/FirebaseAuthContext.tsx";
 import { GamestateCloudSyncProvider } from "../../hooks/cloud-sync/GamestateCloudSyncProvider.tsx";
 import { RosterCloudSyncProvider } from "../../hooks/cloud-sync/RosterCloudSyncProvider.tsx";

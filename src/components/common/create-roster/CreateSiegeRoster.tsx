@@ -1,8 +1,8 @@
 import { Stack, TextField, Typography } from "@mui/material";
 import { forwardRef, MouseEvent, useImperativeHandle, useState } from "react";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
-import { CustomSwitch } from "../switch/CustomSwitch.tsx";
-import { ArmySelectionInput } from "./ArmySelectionInput.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { ArmySelectionInput } from "../../atoms/army-selector/ArmySelectionInput.tsx";
+import { CustomSwitch } from "../../atoms/switch/CustomSwitch.tsx";
 import { useCreateRoster } from "./useCreateRoster.ts";
 
 export type CreateSiegeRosterHandlers = {

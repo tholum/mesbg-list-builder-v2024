@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { GiQueenCrown } from "react-icons/gi";
 import { useUserPreferences } from "../../../state/preference";
-import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
+import { CustomSwitch as Switch } from "../switch/CustomSwitch.tsx";
 
 export type HeroLeaderToggleProps = {
   isLeader: boolean;

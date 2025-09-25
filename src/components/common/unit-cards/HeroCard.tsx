@@ -16,14 +16,14 @@ import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { Option } from "../../../types/mesbg-data.types.ts";
 import { SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
-import { LeaderToggle } from "../army-leader/LeaderToggle.tsx";
-import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
-import { OptionList } from "../option/OptionList.tsx";
-import { UnitTypeLabel } from "../unit-type/UnitTypeLabel.tsx";
-import { CardActionButtons } from "./CardActionButtons.tsx";
-import { QuantityButtons } from "./QuantityButtons.tsx";
+import { LeaderToggle } from "../../atoms/army-leader/LeaderToggle.tsx";
+import { MwfBadge } from "../../atoms/might-will-fate/MwfBadge.tsx";
+import { OptionList } from "../../atoms/options/OptionList.tsx";
+import { UnitProfilePicture } from "../../atoms/unit-profile/UnitProfilePicture.tsx";
+import { UnitTypeLabel } from "../../atoms/unit-type/UnitTypeLabel.tsx";
 import { invalidUnitSelectionBackgroundTint } from "./WarriorCard.tsx";
+import { CardActionButtons } from "./buttons/CardActionButtons.tsx";
+import { QuantityButtons } from "./buttons/QuantityButtons.tsx";
 
 export type HeroCardProps = {
   unit: SelectedUnit;

@@ -13,9 +13,9 @@ import { useRosterInformation } from "../../../hooks/calculations-and-displays/u
 import { useDownload } from "../../../hooks/export/useDownload.ts";
 import { useAppState } from "../../../state/app";
 import { isSelectedUnit } from "../../../types/roster.ts";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
-import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { UnitProfileCard } from "../../atoms/unit-profile/UnitProfileCard.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const DownloadProfileCardModal = () => {
   const { roster } = useRosterInformation();

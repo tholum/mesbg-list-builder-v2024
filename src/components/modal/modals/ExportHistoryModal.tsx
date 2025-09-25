@@ -17,7 +17,7 @@ import { download } from "../../../hooks/export/useDownload.ts";
 import { useAppState } from "../../../state/app";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { objectToCSV } from "../../../utils/csv.ts";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const ExportHistoryModal = () => {
   const { closeModal, triggerAlert } = useAppState();

@@ -8,7 +8,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { useNavigate } from "react-router-dom";
-import { CustomAlert } from "../../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../../components/atoms/alert/CustomAlert.tsx";
 import { SyncItem } from "./sync-item.ts";
 
 type SyncableSelectionTableProps = {

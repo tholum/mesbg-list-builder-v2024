@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import { useEffect, useRef, useState } from "react";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import { ModalTypes } from "../../components/modal/modals.tsx";
 import { useAppState } from "../../state/app";
 import { useRecentGamesState } from "../../state/recent-games";

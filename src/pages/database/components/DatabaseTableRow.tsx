@@ -14,7 +14,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { Fragment, useState } from "react";
 import { BsFillPersonVcardFill } from "react-icons/bs";
-import { SquareIconButton } from "../../../components/common/icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../../components/atoms/icon-button/SquareIconButton.tsx";
 import { DrawerTypes } from "../../../components/drawer/drawers.tsx";
 import { ModalTypes } from "../../../components/modal/modals.tsx";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";

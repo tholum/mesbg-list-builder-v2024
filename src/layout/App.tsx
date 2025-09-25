@@ -1,7 +1,7 @@
 import { Outlet as ReactRouterOutlet } from "react-router-dom";
-import { Alerts } from "../components/alerts/Alerts.tsx";
 import { DrawerContainer } from "../components/drawer/DrawerContainer.tsx";
 import { ModalContainer } from "../components/modal/ModalContainer.tsx";
+import { Alerts } from "../components/notifications/Alerts.tsx";
 import { Navigation } from "./Navigation.tsx";
 import { WithCloudSync } from "./cloud-data-provider/WithCloudSync.tsx";
 

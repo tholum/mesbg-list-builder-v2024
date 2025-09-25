@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { Link } from "../../components/common/link/Link.tsx";
+import { Link } from "../../components/atoms/link/Link.tsx";
 import { useRosterBuildingState } from "../../state/roster-building";
 import { RosterGroup } from "../../state/roster-building/groups";
 import { Roster as RosterType } from "../../types/roster.ts";

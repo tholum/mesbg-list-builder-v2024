@@ -8,8 +8,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { useState, MouseEvent } from "react";
 import { useAppState } from "../../../state/app";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
+import { SquareIconButton } from "../../atoms/icon-button/SquareIconButton.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
 
 export const GroupOptionsPopoverMenu = ({
   groupId,

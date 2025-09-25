@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import { FormEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import googleIcon from "../../assets/images/google-icon.png";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import { ModalTypes } from "../../components/modal/modals.tsx";
 import { useAuth } from "../../firebase/FirebaseAuthContext.tsx";
 import { useAppState } from "../../state/app";

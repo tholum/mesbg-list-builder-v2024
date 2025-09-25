@@ -15,10 +15,10 @@ import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { Option } from "../../../types/mesbg-data.types.ts";
 import { isSiegeEquipment, SelectedUnit } from "../../../types/roster.ts";
 import { slugify } from "../../../utils/string.ts";
-import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { OptionList } from "../option/OptionList.tsx";
-import { CardActionButtons } from "./CardActionButtons.tsx";
-import { QuantityButtons } from "./QuantityButtons.tsx";
+import { OptionList } from "../../atoms/options/OptionList.tsx";
+import { UnitProfilePicture } from "../../atoms/unit-profile/UnitProfilePicture.tsx";
+import { CardActionButtons } from "./buttons/CardActionButtons.tsx";
+import { QuantityButtons } from "./buttons/QuantityButtons.tsx";
 
 export type WarriorCardProps = {
   unit: SelectedUnit;

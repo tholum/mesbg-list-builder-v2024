@@ -14,9 +14,9 @@ import { isSelectedUnit, Warband } from "../../../../types/roster.ts";
 import { isHeroWhoLeads } from "../../../../utils/hero.ts";
 import { DrawerTypes } from "../../../drawer/drawers.tsx";
 import { ModalTypes } from "../../../modal/modals.tsx";
-import { HeroCard } from "../../card/HeroCard.tsx";
-import { SelectUnitCardButton } from "../../card/SelectUnitCardButton.tsx";
-import { WarriorCard } from "../../card/WarriorCard.tsx";
+import { HeroCard } from "../../unit-cards/HeroCard.tsx";
+import { SelectUnitCard } from "../../unit-cards/SelectUnitCard.tsx";
+import { WarriorCard } from "../../unit-cards/WarriorCard.tsx";
 import { WithRibbon } from "../../unit-selection/WithRibbon.tsx";
 
 export type WarbandContentProps = {
@@ -91,7 +91,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
           />
         </WithRibbon>
       ) : (
-        <SelectUnitCardButton
+        <SelectUnitCard
           title="Select a hero"
           onClick={openHeroPicker}
           warbandNum={warbandNum}
@@ -154,7 +154,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                         }
                       >
                         {!isSelectedUnit(unit) ? (
-                          <SelectUnitCardButton
+                          <SelectUnitCard
                             title="Select a unit"
                             onClick={() => openUnitPicker(unit.id)}
                             warbandNum={warbandNum}

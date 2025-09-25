@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { useApi } from "../../../hooks/cloud-sync/useApi.ts";
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
 import {
   GroupIconSelector,
   Option as IconOption,
-} from "../../common/group-icon/GroupIconSelector.tsx";
+} from "../../atoms/group-icon/GroupIconSelector.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const UpdateGroupModal = () => {
   const {

@@ -14,8 +14,8 @@ import { useState } from "react";
 import { useApi } from "../../../hooks/cloud-sync/useApi.ts";
 import { useAppState } from "../../../state/app";
 import { useCollectionState } from "../../../state/collection";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const ImportCollection = () => {
   const { closeModal, triggerAlert } = useAppState();

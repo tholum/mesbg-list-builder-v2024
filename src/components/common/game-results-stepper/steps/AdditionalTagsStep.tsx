@@ -2,7 +2,7 @@ import { StepContent, StepLabel } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { AdditionalTagsInput } from "../../game-results-form/TagsInput.tsx";
+import { AdditionalTagsInput } from "../../../atoms/tags-input/TagsInput.tsx";
 import { StepProps } from "./StepProps.ts";
 
 export const AdditionalTagsStep: FunctionComponent<StepProps> = ({

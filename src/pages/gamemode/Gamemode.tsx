@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { SyntheticEvent, useEffect, useState } from "react";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import {
   drawerWidth,
   RosterInfoDrawer,

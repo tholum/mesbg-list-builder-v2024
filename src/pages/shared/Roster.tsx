@@ -3,7 +3,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Container from "@mui/material/Container";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import { useExport } from "../../hooks/export/useExport.ts";
 import { Roster } from "../../types/roster.ts";
 

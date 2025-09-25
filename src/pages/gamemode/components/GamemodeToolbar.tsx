@@ -7,7 +7,7 @@ import { FaSkullCrossbones } from "react-icons/fa";
 import { GiCrackedShield } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import { armyListData } from "../../../assets/data.ts";
-import { SquareIconButton } from "../../../components/common/icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../../components/atoms/icon-button/SquareIconButton.tsx";
 import { ModalTypes } from "../../../components/modal/modals.tsx";
 import { useRosterInformation } from "../../../hooks/calculations-and-displays/useRosterInformation.ts";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";

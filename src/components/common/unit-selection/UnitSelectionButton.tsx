@@ -12,9 +12,9 @@ import { useCollectionState } from "../../../state/collection";
 import { useUserPreferences } from "../../../state/preference";
 import { Unit } from "../../../types/mesbg-data.types.ts";
 import { isSelectedUnit } from "../../../types/roster.ts";
+import { MwfBadge } from "../../atoms/might-will-fate/MwfBadge.tsx";
+import { UnitProfilePicture } from "../../atoms/unit-profile/UnitProfilePicture.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
-import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../might-will-fate/MwfBadge.tsx";
 
 export type UnitSelectionButtonProps = {
   unit: Pick<

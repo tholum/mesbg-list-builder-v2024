@@ -9,8 +9,8 @@ import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useFirebaseAuth } from "../../../firebase/useFirebaseAuth.ts";
 import { useAppState } from "../../../state/app";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const ResetPassword = () => {
   const {

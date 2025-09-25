@@ -2,7 +2,7 @@ import { Stack, StepContent, StepLabel, TextField } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { ChangeEvent, FunctionComponent } from "react";
 import { useGameModeState } from "../../../../state/gamemode";
-import { CustomAlert } from "../../alert/CustomAlert.tsx";
+import { CustomAlert } from "../../../atoms/alert/CustomAlert.tsx";
 import { calculateResult } from "../../game-results-form/result.ts";
 import { scenarios } from "../../game-results-form/scenarios.ts";
 import { StepProps } from "./StepProps.ts";

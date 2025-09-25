@@ -2,7 +2,7 @@ import { ImageList, ImageListItem } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import hero_constraint_data from "../../../../assets/data/hero_constraint_data.json";
-import { UnitProfileCard } from "../../../../components/common/images/UnitProfileCard.tsx";
+import { UnitProfileCard } from "../../../../components/atoms/unit-profile/UnitProfileCard.tsx";
 import { useRosterInformation } from "../../../../hooks/calculations-and-displays/useRosterInformation.ts";
 import { useScreenSize } from "../../../../hooks/calculations-and-displays/useScreenSize.ts";
 import {

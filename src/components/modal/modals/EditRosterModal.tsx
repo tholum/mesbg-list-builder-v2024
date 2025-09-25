@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
 
 export const EditRosterModal = () => {
   const {

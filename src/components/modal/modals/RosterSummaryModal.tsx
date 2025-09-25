@@ -16,6 +16,7 @@ import { useRef, useState } from "react";
 import { FaClipboard, FaImage } from "react-icons/fa6";
 import { useAppState } from "../../../state/app";
 import { useUserPreferences } from "../../../state/preference";
+import { CustomSwitch as Switch } from "../../atoms/switch/CustomSwitch.tsx";
 import {
   ImageView,
   ImageViewViewHandlers,
@@ -28,7 +29,6 @@ import {
   RosterTextView,
   RosterTextViewHandlers,
 } from "../../common/roster-summary/TextView.tsx";
-import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
 
 export const RosterSummaryModal = () => {
   const { closeModal } = useAppState();

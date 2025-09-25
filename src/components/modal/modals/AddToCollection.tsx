@@ -19,8 +19,8 @@ import { useApi } from "../../../hooks/cloud-sync/useApi.ts";
 import { useAppState } from "../../../state/app";
 import { useCollectionState } from "../../../state/collection";
 import { Option } from "../../../types/mesbg-data.types.ts";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
-import { CustomSwitch } from "../../common/switch/CustomSwitch.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { CustomSwitch } from "../../atoms/switch/CustomSwitch.tsx";
 
 export const AddToCollection = () => {
   const {

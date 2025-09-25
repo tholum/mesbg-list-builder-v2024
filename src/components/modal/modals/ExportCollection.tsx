@@ -12,7 +12,7 @@ import { useState } from "react";
 import { download } from "../../../hooks/export/useDownload.ts";
 import { useAppState } from "../../../state/app";
 import { useCollectionState } from "../../../state/collection";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const ExportCollection = () => {
   const { closeModal, triggerAlert } = useAppState();

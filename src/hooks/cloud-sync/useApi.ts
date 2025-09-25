@@ -1,4 +1,4 @@
-import { AlertTypes } from "../../components/alerts/alert-types.tsx";
+import { AlertTypes } from "../../components/notifications/alert-types.tsx";
 import { useAuth } from "../../firebase/FirebaseAuthContext";
 import { useAppState } from "../../state/app";
 import { ModelInventory } from "../../state/collection/inventory";

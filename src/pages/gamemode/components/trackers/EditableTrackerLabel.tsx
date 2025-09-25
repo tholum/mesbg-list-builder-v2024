@@ -6,7 +6,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import { MouseEvent, useState } from "react";
-import { SquareIconButton } from "../../../../components/common/icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../../../components/atoms/icon-button/SquareIconButton.tsx";
 import { useThemeContext } from "../../../../theme/ThemeContext.tsx";
 
 interface EditTrackerLabelProps {

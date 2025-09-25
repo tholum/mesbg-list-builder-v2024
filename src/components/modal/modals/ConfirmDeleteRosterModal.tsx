@@ -5,8 +5,8 @@ import { useApi } from "../../../hooks/cloud-sync/useApi.ts";
 import { useAppState } from "../../../state/app";
 import { useGameModeState } from "../../../state/gamemode";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { AlertTypes } from "../../notifications/alert-types.tsx";
 
 export const ConfirmDeleteRosterModal = () => {
   const {

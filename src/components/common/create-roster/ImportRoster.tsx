@@ -14,7 +14,7 @@ import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { Roster } from "../../../types/roster.ts";
 import { slugify, withSuffix } from "../../../utils/string.ts";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
 
 export type ImportRosterHandlers = {
   handleImportRoster: (e: MouseEvent) => void;

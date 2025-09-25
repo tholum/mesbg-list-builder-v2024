@@ -1,7 +1,7 @@
 import { Stack, TextField, Typography } from "@mui/material";
 import { forwardRef, MouseEvent, useImperativeHandle } from "react";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
-import { CustomSwitch } from "../switch/CustomSwitch.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { CustomSwitch } from "../../atoms/switch/CustomSwitch.tsx";
 import { useCreateCustomRoster } from "./useCustomCreateRoster.ts";
 
 export type CreateCustomRosterHandlers = {

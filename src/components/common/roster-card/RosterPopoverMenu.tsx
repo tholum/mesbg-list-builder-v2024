@@ -14,8 +14,8 @@ import { useGameModeState } from "../../../state/gamemode";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { Roster } from "../../../types/roster.ts";
 import { slugify, withSuffix } from "../../../utils/string.ts";
+import { SquareIconButton } from "../../atoms/icon-button/SquareIconButton.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
 
 export const RosterPopoverMenu = (props: { roster: Roster }) => {
   const { setCurrentModal } = useAppState();

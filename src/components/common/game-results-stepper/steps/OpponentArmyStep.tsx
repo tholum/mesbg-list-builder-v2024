@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import { ArmyPicker } from "../../game-results-form/ArmyPicker.tsx";
+import { ArmyPicker } from "../../../atoms/army-selector/ArmyPicker.tsx";
 import { StepProps } from "./StepProps.ts";
 
 export const OpponentArmyStep: FunctionComponent<StepProps> = ({

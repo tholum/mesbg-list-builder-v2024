@@ -7,7 +7,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../atoms/icon-button/SquareIconButton.tsx";
 
 export type SelectUnitCardButtonProps = {
   warbandNum: number;
@@ -18,9 +18,14 @@ export type SelectUnitCardButtonProps = {
   collapsed?: boolean;
 };
 
-export const SelectUnitCardButton: FunctionComponent<
-  SelectUnitCardButtonProps
-> = ({ title, warbandNum, index, onClick, remove, collapsed }) => {
+export const SelectUnitCard: FunctionComponent<SelectUnitCardButtonProps> = ({
+  title,
+  warbandNum,
+  index,
+  onClick,
+  remove,
+  collapsed,
+}) => {
   const { mode } = useThemeContext();
   const { palette } = useTheme();
   return (

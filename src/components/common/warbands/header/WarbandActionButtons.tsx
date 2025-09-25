@@ -15,7 +15,7 @@ import { useRosterInformation } from "../../../../hooks/calculations-and-display
 import { useWarbandMutations } from "../../../../hooks/mutations/useWarbandMutations.ts";
 import { useUserPreferences } from "../../../../state/preference";
 import { Warband } from "../../../../types/roster.ts";
-import { SquareIconButton } from "../../icon-button/SquareIconButton.tsx";
+import { SquareIconButton } from "../../../atoms/icon-button/SquareIconButton.tsx";
 
 export type WarbandActionButtonsProps = {
   warbandId: string;

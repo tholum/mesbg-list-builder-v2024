@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import { ChangeEvent, FunctionComponent, useState } from "react";
 import { FaPatreon } from "react-icons/fa";
 import { useSearchParams } from "react-router-dom";
-import { NewRosterButton } from "../../components/common/create-roster/NewRosterButton.tsx";
+import { NewRosterButton } from "../../components/atoms/new-roster-button/NewRosterButton.tsx";
 import {
   CARD_SIZE_IN_PX,
   RosterSummaryCard,

@@ -8,7 +8,7 @@ export type FactionLogoProps = {
   size?: number;
 };
 
-export const FactionLogo: FunctionComponent<FactionLogoProps> = ({
+export const FactionIcon: FunctionComponent<FactionLogoProps> = ({
   faction,
   size = 24,
 }) => {

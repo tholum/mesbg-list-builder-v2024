@@ -43,8 +43,8 @@ import { HiIdentification } from "react-icons/hi2";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title-v2024.png";
-import { icons as groupIcons } from "../components/common/group-icon/icons.tsx";
-import { FactionLogo } from "../components/common/images/FactionLogo.tsx";
+import { FactionIcon } from "../components/atoms/faction-icon/FactionIcon.tsx";
+import { icons as groupIcons } from "../components/atoms/group-icon/icons.tsx";
 import { AccountAvatar } from "../components/common/user-avatar/AccountAvatar.tsx";
 import { DrawerTypes } from "../components/drawer/drawers.tsx";
 import { ModalTypes } from "../components/modal/modals.tsx";
@@ -314,7 +314,7 @@ const useRosters = () => {
                 .map((roster) => ({
                   action: () => navigate(`/roster/${roster.id}`),
                   active: location.pathname === `/roster/${roster.id}`,
-                  icon: <FactionLogo faction={roster.armyList} />,
+                  icon: <FactionIcon faction={roster.armyList} />,
                   label: roster.name,
                   badge: rostersWithOngoingGame.includes(roster.id),
                 })),
@@ -326,7 +326,7 @@ const useRosters = () => {
           .map((roster) => ({
             action: () => navigate(`/roster/${roster.id}`),
             active: location.pathname === `/roster/${roster.id}`,
-            icon: <FactionLogo faction={roster.armyList} />,
+            icon: <FactionIcon faction={roster.armyList} />,
             label: roster.name,
             badge: rostersWithOngoingGame.includes(roster.id),
           })),

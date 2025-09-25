@@ -15,8 +15,8 @@ import { useTheme } from "@mui/material/styles";
 import { ChangeEvent, FunctionComponent, useState } from "react";
 import { FaPatreon } from "react-icons/fa";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { NewRosterButton } from "../../components/common/create-roster/NewRosterButton.tsx";
-import { Link } from "../../components/common/link/Link.tsx";
+import { Link } from "../../components/atoms/link/Link.tsx";
+import { NewRosterButton } from "../../components/atoms/new-roster-button/NewRosterButton.tsx";
 import {
   CARD_SIZE_IN_PX,
   RosterSummaryCard,

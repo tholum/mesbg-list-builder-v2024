@@ -12,7 +12,7 @@ import { useRosterInformation } from "../../../hooks/calculations-and-displays/u
 import { useExport } from "../../../hooks/export/useExport.ts";
 import { useAppState } from "../../../state/app";
 import { slugify } from "../../../utils/string.ts";
-import { CustomAlert } from "../../common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
 
 export const ExportRosterModal = () => {
   const { closeModal } = useAppState();

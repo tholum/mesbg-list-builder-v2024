@@ -2,8 +2,8 @@ import { AddOutlined, RemoveOutlined } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
-import { slugify } from "../../../utils/string.ts";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
+import { slugify } from "../../../../utils/string.ts";
+import { SquareIconButton } from "../../../atoms/icon-button/SquareIconButton.tsx";
 
 type QuantityButtonsProps = {
   quantity: number;

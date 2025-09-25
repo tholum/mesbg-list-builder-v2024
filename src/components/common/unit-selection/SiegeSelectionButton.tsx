@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { SiegeEquipment } from "../../../types/mesbg-data.types.ts";
-import { UnitProfilePicture } from "../images/UnitProfilePicture.tsx";
+import { UnitProfilePicture } from "../../atoms/unit-profile/UnitProfilePicture.tsx";
 
 export type UnitSelectionButtonProps = {
   equipment: SiegeEquipment;

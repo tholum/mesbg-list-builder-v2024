@@ -7,7 +7,7 @@ import { heroConstraintData } from "../../../assets/data.ts";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";
 import { useAppState } from "../../../state/app";
 import { Unit } from "../../../types/mesbg-data.types.ts";
-import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
+import { UnitProfileCard } from "../../atoms/unit-profile/UnitProfileCard.tsx";
 
 export const ProfileCardModal = () => {
   const {

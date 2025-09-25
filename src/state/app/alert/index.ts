@@ -1,5 +1,5 @@
 import { v4 } from "uuid";
-import { AlertTypes } from "../../../components/alerts/alert-types.tsx";
+import { AlertTypes } from "../../../components/notifications/alert-types.tsx";
 import { Slice } from "../../Slice.ts";
 import { ApplicationState } from "../index.ts";
 

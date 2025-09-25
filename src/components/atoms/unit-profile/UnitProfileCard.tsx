@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import fallbackCard from "../../../assets/images/default_card.jpg";
-import { ImageWithFallback } from "./ImageWithFallback.tsx";
+import { ImageWithFallback } from "../image/ImageWithFallback.tsx";
 import { UnitProfileProps } from "./UnitProfilePicture.tsx";
 
 export const UnitProfileCard: FunctionComponent<

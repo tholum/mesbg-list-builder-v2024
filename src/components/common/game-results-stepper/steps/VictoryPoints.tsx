@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { useGameModeState } from "../../../../state/gamemode"; //   "Domination",
 import { PastGame } from "../../../../state/recent-games/history";
-import { CustomAlert } from "../../alert/CustomAlert.tsx";
+import { CustomAlert } from "../../../atoms/alert/CustomAlert.tsx";
 import { calculateResult } from "../../game-results-form/result.ts";
 import { StepProps } from "./StepProps.ts";
 import { DestroyTheSuppliesVPs } from "./vp-step/DestroyTheSuppliesVPs.tsx";

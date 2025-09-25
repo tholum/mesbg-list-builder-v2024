@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 import { forwardRef, MouseEvent, useImperativeHandle } from "react";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
-import { ArmySelectionInput } from "./ArmySelectionInput.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
+import { ArmySelectionInput } from "../../atoms/army-selector/ArmySelectionInput.tsx";
 import { useCreateRoster } from "./useCreateRoster.ts";
 
 export type CreateMatchedPlayRosterHandlers = {

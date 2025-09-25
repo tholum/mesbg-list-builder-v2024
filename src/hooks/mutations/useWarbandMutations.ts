@@ -1,7 +1,7 @@
 import { v4 as randomUuid } from "uuid";
 import { mesbgData } from "../../assets/data.ts";
-import { AlertTypes } from "../../components/alerts/alert-types.tsx";
 import { DrawerTypes } from "../../components/drawer/drawers.tsx";
+import { AlertTypes } from "../../components/notifications/alert-types.tsx";
 import { useAppState } from "../../state/app";
 import { useRosterBuildingState } from "../../state/roster-building";
 import { emptyWarband as newWarband } from "../../state/roster-building/roster";

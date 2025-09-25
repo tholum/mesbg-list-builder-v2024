@@ -5,7 +5,7 @@ import { useNewRosterBuilder } from "../../../hooks/new-roster/useNewRosterBuild
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { slugify, withSuffix } from "../../../utils/string.ts";
-import { SelectedArmyList } from "./ArmySelectionInput.tsx";
+import { SelectedArmyList } from "../../atoms/army-selector/ArmySelectionInput.tsx";
 
 export const useCreateRoster = () => {
   const navigate = useNavigate();

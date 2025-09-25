@@ -8,8 +8,8 @@ import { armyListData } from "../../../assets/data.ts";
 import { useScreenSize } from "../../../hooks/calculations-and-displays/useScreenSize.ts";
 import { useThemeContext } from "../../../theme/ThemeContext.tsx";
 import { isSelectedUnit, Roster } from "../../../types/roster.ts";
-import { FactionLogo } from "../images/FactionLogo.tsx";
-import { Link } from "../link/Link.tsx";
+import { FactionIcon } from "../../atoms/faction-icon/FactionIcon.tsx";
+import { Link } from "../../atoms/link/Link.tsx";
 import { WithRibbon } from "../unit-selection/WithRibbon.tsx";
 import { RosterPopoverMenu } from "./RosterPopoverMenu.tsx";
 
@@ -81,7 +81,7 @@ export const RosterSummaryCard: FunctionComponent<RosterSummaryCardProps> = ({
               >
                 {roster.name}
               </Typography>
-              <FactionLogo faction={roster.armyList} size={75} />
+              <FactionIcon faction={roster.armyList} size={75} />
               <Typography
                 variant="body2"
                 sx={{

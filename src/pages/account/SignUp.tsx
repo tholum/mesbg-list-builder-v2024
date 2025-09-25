@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { FormEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
+import { CustomAlert } from "../../components/atoms/alert/CustomAlert.tsx";
 import { useAuth } from "../../firebase/FirebaseAuthContext.tsx";
 
 const errorMap = {

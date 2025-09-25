@@ -12,7 +12,7 @@ import {
   Warband,
 } from "../../../../types/roster.ts";
 import { isMovieQuote } from "../../../../utils/string.ts";
-import { CustomSwitch } from "../../switch/CustomSwitch.tsx";
+import { CustomSwitch } from "../../../atoms/switch/CustomSwitch.tsx";
 import { RosterInformationProps } from "../RosterInformation.tsx";
 import { RosterInformationSection } from "../RosterInformationSection.tsx";
 

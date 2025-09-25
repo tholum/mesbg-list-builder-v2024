@@ -4,7 +4,7 @@ import { FunctionComponent } from "react";
 import { siegeEquipmentData } from "../../../assets/data.ts";
 import { useRosterInformation } from "../../../hooks/calculations-and-displays/useRosterInformation.ts";
 import { SiegeEquipment } from "../../../types/mesbg-data.types.ts";
-import { CustomAlert } from "../alert/CustomAlert.tsx";
+import { CustomAlert } from "../../atoms/alert/CustomAlert.tsx";
 import { SiegeSelectionButton } from "./SiegeSelectionButton.tsx";
 
 export type UnitSelectionListProps = {

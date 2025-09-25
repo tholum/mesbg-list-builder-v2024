@@ -4,9 +4,9 @@ import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
 import { BsFillPersonVcardFill } from "react-icons/bs";
-import { useThemeContext } from "../../../theme/ThemeContext.tsx";
-import { slugify } from "../../../utils/string.ts";
-import { SquareIconButton } from "../icon-button/SquareIconButton.tsx";
+import { useThemeContext } from "../../../../theme/ThemeContext.tsx";
+import { slugify } from "../../../../utils/string.ts";
+import { SquareIconButton } from "../../../atoms/icon-button/SquareIconButton.tsx";
 
 type CardActionButtonsProps = {
   duplicate?: () => void;

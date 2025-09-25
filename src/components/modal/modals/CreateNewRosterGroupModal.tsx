@@ -8,7 +8,7 @@ import { slugify, withSuffix } from "../../../utils/string.ts";
 import {
   GroupIconSelector,
   Option as IconOption,
-} from "../../common/group-icon/GroupIconSelector.tsx";
+} from "../../atoms/group-icon/GroupIconSelector.tsx";
 
 export const CreateNewRosterGroupModal = () => {
   const {
