@@ -13,7 +13,7 @@ import BugReportIcon from "@mui/icons-material/BugReport";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Collapse, CSSObject, Theme, Tooltip } from "@mui/material";
+import { Badge, Collapse, CSSObject, Theme, Tooltip } from "@mui/material";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -52,6 +52,7 @@ import { charts } from "../constants/charts.ts";
 import { OpenNavigationDrawerEvent } from "../events/OpenNavigationDrawerEvent.ts";
 import { DISCORD_LINK, PATREON_LINK } from "../pages/home/Home.tsx";
 import { useAppState } from "../state/app";
+import { useGameModeState } from "../state/gamemode";
 import { useUserPreferences } from "../state/preference";
 import { useRosterBuildingState } from "../state/roster-building";
 import { slugify } from "../utils/string.ts";
@@ -155,6 +156,7 @@ type NavLink = {
   showCaret?: boolean;
   disabled?: boolean;
   disabledReason?: string;
+  badge?: boolean;
 };
 
 type NavDivider = {
@@ -207,7 +209,14 @@ export const NavItemLink = ({
                   open ? { mr: 3 } : { mr: "auto" },
                 ]}
               >
-                {item.icon}
+                <Badge
+                  color="primary"
+                  variant="dot"
+                  badgeContent={item.badge ? 1 : 0}
+                  overlap="circular"
+                >
+                  {item.icon}
+                </Badge>
               </ListItemIcon>
             </Tooltip>
 
@@ -226,6 +235,7 @@ export const NavItemLink = ({
                 open ? { opacity: 1 } : { opacity: 0 },
               ]}
             />
+
             {item.children && item.showCaret && open && (
               <> {expanded ? <ExpandLess /> : <ExpandMore />}</>
             )}
@@ -255,6 +265,9 @@ export const NavItemLink = ({
 
 const useRosters = () => {
   const { rosters, groups } = useRosterBuildingState();
+  const rostersWithOngoingGame = useGameModeState((state) =>
+    Object.keys(state.gameState),
+  );
   const { preferences } = useUserPreferences();
   const navigate = useNavigate();
 
@@ -303,6 +316,7 @@ const useRosters = () => {
                   active: location.pathname === `/roster/${roster.id}`,
                   icon: <FactionLogo faction={roster.armyList} />,
                   label: roster.name,
+                  badge: rostersWithOngoingGame.includes(roster.id),
                 })),
             ],
             showCaret: true,
@@ -314,6 +328,7 @@ const useRosters = () => {
             active: location.pathname === `/roster/${roster.id}`,
             icon: <FactionLogo faction={roster.armyList} />,
             label: roster.name,
+            badge: rostersWithOngoingGame.includes(roster.id),
           })),
       ];
 };

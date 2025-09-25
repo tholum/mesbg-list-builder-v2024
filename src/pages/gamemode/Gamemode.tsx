@@ -4,7 +4,6 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { SyntheticEvent, useEffect, useState } from "react";
 import { CustomAlert } from "../../components/common/alert/CustomAlert.tsx";
-import { Link } from "../../components/common/link/Link.tsx";
 import {
   drawerWidth,
   RosterInfoDrawer,
@@ -16,6 +15,8 @@ import { useApi } from "../../hooks/cloud-sync/useApi.ts";
 import { useGameModeState } from "../../state/gamemode";
 import { Roster } from "../../types/roster.ts";
 import { deepEqual } from "../../utils/objects.ts";
+import { GamestateNotFound } from "../not-found/GameNotFound.tsx";
+import { RosterNotFound } from "../not-found/RosterNotFound.tsx";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
 import { ProfileCards } from "./components/tabs/ProfileCards.tsx";
@@ -39,11 +40,11 @@ const hasChanged = (a: Roster["metadata"], b: Roster["metadata"]) => {
 };
 
 export const Gamemode = () => {
+  const api = useApi();
+  const syncGame = useGamestateSync();
   const screen = useScreenSize();
   const { roster } = useRosterInformation();
   const { gameState, startNewGame } = useGameModeState();
-  const api = useApi();
-  const syncGame = useGamestateSync();
 
   const [value, setValue] = useState(0);
   const [rosterChangedWarning, setRosterChangedWarning] = useState(true);
@@ -56,21 +57,11 @@ export const Gamemode = () => {
   }, [gameState, roster.id]);
 
   if (!roster) {
-    return (
-      <Box sx={{ m: 2 }}>
-        <Typography variant="h4" className="middle-earth">
-          Roster not found!
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          One does not simply navigate to a roster that does not exist.
-        </Typography>
-        <Typography>
-          Please navigate back to{" "}
-          <Link to="/rosters">the roster selection</Link> and select a roster
-          before starting a game.
-        </Typography>
-      </Box>
-    );
+    return <RosterNotFound />;
+  }
+
+  if (!gameState[roster.id]) {
+    return <GamestateNotFound roster={roster} />;
   }
 
   const handleChange = (_: SyntheticEvent, newValue: number) => {
