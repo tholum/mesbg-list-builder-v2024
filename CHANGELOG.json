@@ -1,9 +1,26 @@
 {
-  "main": {},
+  "main": {
+    "added": [
+      "Quick switch option for ongoing games, allowing to seamlessly switch between ongoing games.",
+      "Added an small indicator on the roster links in the left sidebar indicating a game in progress.",
+    ],
+    "changed": [
+      "Added more information on the fallback pages whenever an error is encountered.",
+      "Updated the 'roster not found' and 'no game started' pages when deeplinking to a non existent page."
+    ],
+    "bugfixes": [
+      "Fixed error when syncing collection entries where mounts have multiple options, such as Nazgul.",
+      "Fixed an issue where updating a roster removed it from its existing group."
+    ]
+  },
   "1.32": {
-    "added": ["Accounts. And syncing your data to your account."],
-    "changed": ["Removed the start game page. Games can now only be started from the three-dot menu on the rosters page or from the roster builder.",
-      "Combined the special rules, magic and heroic actions drawer into a single drawer"],
+    "added": [
+      "Accounts. And syncing your data to your account."
+    ],
+    "changed": [
+      "Removed the start game page. Games can now only be started from the three-dot menu on the rosters page or from the roster builder.",
+      "Combined the special rules, magic and heroic actions drawer into a single drawer"
+    ],
     "bugfixes": [
       "Corrected Brorgir the Conjurer's spell cast value for Bladewrath to 3+.",
       "Corrected the wording of the Sorcerous Adept special rule on Brorgir the Conjurer's profile card.",
@@ -319,10 +336,14 @@
       "Shadowfax now correctly displays in Game Mode for Gandalf in Riders of Eomer.",
       "Rangers of Gondor are now correctly available to select in the Realms of Men army list."
     ],
-    "security": ["Upgrade application bundler to resolve vulnerability."]
+    "security": [
+      "Upgrade application bundler to resolve vulnerability."
+    ]
   },
   "1.11": {
-    "added": ["Darkmode."],
+    "added": [
+      "Darkmode."
+    ],
     "changed": [
       "Removed the custom page margin on the PDF printout, which hopefully resolve some printing errors."
     ],
@@ -338,7 +359,9 @@
       "Allow setting a points limit on your roster so you get notified when exceeding your set maximum",
       "Make it possible to mark your roster for siege games allowing you to select siege equipment from the 'Sieges' chapter of the main rule book."
     ],
-    "bugfixes": ["Corrected the profile stats for the Hill Tribes Chieftain."]
+    "bugfixes": [
+      "Corrected the profile stats for the Hill Tribes Chieftain."
+    ]
   },
   "1.9": {
     "added": [
@@ -487,7 +510,9 @@
     ]
   },
   "1.0": {
-    "removed": ["Removed the Work in Progress banner from the my rosters page"]
+    "removed": [
+      "Removed the Work in Progress banner from the my rosters page"
+    ]
   },
   "0.3": {
     "added": [
@@ -515,7 +540,9 @@
     ]
   },
   "0.1": {
-    "added": ["Imported the v2018 code base into v2024"],
+    "added": [
+      "Imported the v2018 code base into v2024"
+    ],
     "changed": [
       "Clean up v2018 related calculations and data that did not carry over to v2024",
       "Update the data files with the v2024 data for the Lord of the Rings book",
