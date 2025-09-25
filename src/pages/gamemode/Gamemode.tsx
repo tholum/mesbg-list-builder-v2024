@@ -17,6 +17,7 @@ import { Roster } from "../../types/roster.ts";
 import { deepEqual } from "../../utils/objects.ts";
 import { GamestateNotFound } from "../not-found/GameNotFound.tsx";
 import { RosterNotFound } from "../not-found/RosterNotFound.tsx";
+import { GameSwitcher } from "./components/GameSwitcher.tsx";
 import { GamemodeToolbar } from "./components/GamemodeToolbar.tsx";
 import { DeploymentHelper } from "./components/tabs/DeploymentHelperTable.tsx";
 import { ProfileCards } from "./components/tabs/ProfileCards.tsx";
@@ -86,6 +87,15 @@ export const Gamemode = () => {
           width: screen.isDesktop ? `calc(100% - ${drawerWidth}ch)` : "100%",
         }}
       >
+        <GameSwitcher
+          activeGame={roster.id}
+          games={Object.entries(gameState)
+            .map(([roster, game]) => ({
+              roster,
+              ...game,
+            }))
+            .sort((a, b) => b.lastUpdated - a.lastUpdated)}
+        />
         <GamemodeToolbar />
         {changedSinceStart && rosterChangedWarning && (
           <CustomAlert
