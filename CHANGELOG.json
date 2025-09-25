@@ -2,7 +2,7 @@
   "main": {
     "added": [
       "Quick switch option for ongoing games, allowing to seamlessly switch between ongoing games.",
-      "Added an small indicator on the roster links in the left sidebar indicating a game in progress.",
+      "Added an small indicator on the roster links in the left sidebar indicating a game in progress."
     ],
     "changed": [
       "Added more information on the fallback pages whenever an error is encountered.",
