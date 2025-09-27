@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "changed": [
+      "Update the default dark-mode setting to match the system settings of the device."
+    ]
+  },
   "1.33": {
     "added": [
       "Quick switch option for ongoing games, allowing to seamlessly switch between ongoing games.",
