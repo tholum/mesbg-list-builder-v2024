@@ -43,7 +43,9 @@ const initialState: Pick<PreferenceState, "preferences"> = {
     splitActiveRules: false,
     oldShareScreen: false,
     collectionWarnings: false,
-    darkMode: false,
+    darkMode:
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches,
     allowCompulsoryGeneralDelete: false,
     removePdfPageBreak: false,
     includePdfSpecialRuleDescriptions: false,
