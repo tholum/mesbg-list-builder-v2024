@@ -2,6 +2,9 @@
   "main": {
     "changed": [
       "Update the default dark-mode setting to match the system settings of the device."
+    ],
+    "bugfixes": [
+      "Corrected the wording of the Skin-changer special rule on Beorn the Bear's profile card."
     ]
   },
   "1.33": {
