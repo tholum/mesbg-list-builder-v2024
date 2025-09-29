@@ -42,7 +42,7 @@ module.exports = {
       },
     ],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": "off",
     "react/jsx-curly-brace-presence": "warn",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",

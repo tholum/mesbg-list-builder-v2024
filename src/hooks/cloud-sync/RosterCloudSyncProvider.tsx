@@ -1,12 +1,17 @@
+import { Slide } from "@mui/material";
+import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar";
 import debounce from "lodash/debounce";
 import isEqual from "lodash/isEqual";
 import {
   createContext,
+  MouseEvent,
   ReactNode,
   useContext,
   useEffect,
   useMemo,
   useRef,
+  useState,
 } from "react";
 import { useAuth } from "../../firebase/FirebaseAuthContext";
 import { Roster } from "../../types/roster";
@@ -26,6 +31,10 @@ export const RosterCloudSyncProvider = ({
   const auth = useAuth();
   const { updateRoster } = useApi();
   const previousRosterRef = useRef<Roster | null>(null);
+  const [open, setOpen] = useState(false);
+  const [remaining, setRemaining] = useState<number>(0);
+  const startRef = useRef<number | null>(null);
+  const delay = 10_000;
 
   async function syncRoster(roster: Roster) {
     try {
@@ -39,11 +48,18 @@ export const RosterCloudSyncProvider = ({
   const debouncedSync = useMemo(
     () =>
       debounce((nextRoster: Roster) => {
+        setOpen(false);
         syncRoster(nextRoster);
-      }, 10_000),
+      }, delay),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   );
+
+  const flush = () => {
+    debouncedSync.flush();
+    setOpen(false);
+    setRemaining(0);
+  };
 
   /**
    * Effect that flushes the debounce whenever the provider unloads.
@@ -53,7 +69,7 @@ export const RosterCloudSyncProvider = ({
   useEffect(() => {
     return () => {
       console.debug("Flushing debounce...");
-      debouncedSync.flush();
+      flush();
     };
   }, [debouncedSync]);
 
@@ -64,29 +80,74 @@ export const RosterCloudSyncProvider = ({
    */
   useEffect(() => {
     const handleBeforeUnload = () => {
-      debouncedSync.flush();
+      flush();
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
 
     return () => {
-      debouncedSync.flush();
+      flush();
       window.removeEventListener("beforeunload", handleBeforeUnload);
     };
   }, [debouncedSync]);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const intervalId = setInterval(() => {
+      if (startRef.current !== null) {
+        const elapsed = Date.now() - startRef.current;
+        const timeLeft = Math.max(0, delay - elapsed);
+        setRemaining(timeLeft);
+        if (timeLeft === 0) {
+          clearInterval(intervalId);
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(intervalId);
+  }, [open]);
 
   function sync(roster: Roster) {
     console.debug("Attempting sync roster...");
     if (!roster || !auth.user) return;
     if (isEqual(roster, previousRosterRef.current)) return;
     previousRosterRef.current = roster;
+
     console.debug("Starting debounce...");
+    startRef.current = Date.now();
+    setRemaining(delay);
+    setOpen(true);
+
     debouncedSync(roster);
   }
+
+  const handleClose = (event: MouseEvent<HTMLElement>) => {
+    event.preventDefault();
+    flush();
+  };
 
   return (
     <RosterSyncContext.Provider value={sync}>
       {children}
+      <Snackbar
+        open={open}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        TransitionComponent={Slide}
+        message={`Syncing roster in ${Math.ceil(remaining / 1000)}s`}
+        action={
+          <Button color="primary" size="small" onClick={handleClose}>
+            sync now!
+          </Button>
+        }
+        sx={{ bottom: 90, backgroundColor: "transparent" }}
+        ContentProps={{
+          sx: {
+            backgroundColor: "transparent",
+            color: (theme) => theme.palette.text.primary,
+          },
+        }}
+      />
     </RosterSyncContext.Provider>
   );
 };
