@@ -142,10 +142,10 @@ export const GamestateCloudSyncProvider = ({
             sync now!
           </Button>
         }
-        sx={{ bottom: 90, backgroundColor: "transparent" }}
+        sx={{ bottom: 90, backgroundColor: "transparent", zIndex: 1000 }}
         ContentProps={{
           sx: {
-            backgroundColor: "transparent",
+            backgroundColor: (theme) => theme.palette.background.paper,
             color: (theme) => theme.palette.text.primary,
           },
         }}
