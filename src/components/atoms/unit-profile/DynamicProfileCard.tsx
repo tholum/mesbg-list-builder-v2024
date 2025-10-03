@@ -1,5 +1,5 @@
 import { Box, Typography, styled } from "@mui/material";
-import { FunctionComponent, forwardRef } from "react";
+import { forwardRef } from "react";
 import { DatabaseRow } from "../../../pages/database/data.ts";
 
 const CardContainer = styled(Box)({
@@ -188,163 +188,161 @@ interface DynamicProfileCardProps {
   row: DatabaseRow;
 }
 
-export const DynamicProfileCard: FunctionComponent<DynamicProfileCardProps> =
-  forwardRef<HTMLDivElement, DynamicProfileCardProps>(({ row }, ref) => {
-    const profile = row.profile;
-    const hasHeroStats = row.M !== "-" || row.W !== "-" || row.F !== "-";
+export const DynamicProfileCard = forwardRef<
+  HTMLDivElement,
+  DynamicProfileCardProps
+>(({ row }, ref) => {
+  const profile = row.profile;
+  const hasHeroStats = row.M !== "-" || row.W !== "-" || row.F !== "-";
 
-    // Create metadata line (unit type and origin)
-    const unitTypes = Array.isArray(row.unit_type)
-      ? row.unit_type.join(", ")
-      : row.unit_type;
+  // Create metadata line (unit type and origin)
+  const unitTypes = Array.isArray(row.unit_type)
+    ? row.unit_type.join(", ")
+    : row.unit_type;
 
-    return (
-      <CardContainer ref={ref}>
-        <LeftColumn>
-          {/* Header */}
-          <ProfileHeader>
-            <ProfileName>{row.name}</ProfileName>
-            <ProfileMeta>
-              {unitTypes} | {row.profile_origin}
-            </ProfileMeta>
-          </ProfileHeader>
+  return (
+    <CardContainer ref={ref}>
+      <LeftColumn>
+        {/* Header */}
+        <ProfileHeader>
+          <ProfileName>{row.name}</ProfileName>
+          <ProfileMeta>
+            {unitTypes} | {row.profile_origin}
+          </ProfileMeta>
+        </ProfileHeader>
 
-          {/* Main Stats Table */}
-          <StatsTable>
-            <StatCell>
-              <StatLabel>Mv</StatLabel>
-              <StatValue>{profile.Mv || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>Fv</StatLabel>
-              <StatValue>{profile.Fv || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>Sv</StatLabel>
-              <StatValue>{profile.Sv || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>S</StatLabel>
-              <StatValue>{profile.S || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>D</StatLabel>
-              <StatValue>{profile.D || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>A</StatLabel>
-              <StatValue>{profile.A || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>W</StatLabel>
-              <StatValue>{profile.W || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>C</StatLabel>
-              <StatValue>{profile.C || "-"}</StatValue>
-            </StatCell>
-            <StatCell>
-              <StatLabel>I</StatLabel>
-              <StatValue>{profile.I || "-"}</StatValue>
-            </StatCell>
-          </StatsTable>
+        {/* Main Stats Table */}
+        <StatsTable>
+          <StatCell>
+            <StatLabel>Mv</StatLabel>
+            <StatValue>{profile.Mv || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>Fv</StatLabel>
+            <StatValue>{profile.Fv || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>Sv</StatLabel>
+            <StatValue>{profile.Sv || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>S</StatLabel>
+            <StatValue>{profile.S || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>D</StatLabel>
+            <StatValue>{profile.D || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>A</StatLabel>
+            <StatValue>{profile.A || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>W</StatLabel>
+            <StatValue>{profile.W || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>C</StatLabel>
+            <StatValue>{profile.C || "-"}</StatValue>
+          </StatCell>
+          <StatCell>
+            <StatLabel>I</StatLabel>
+            <StatValue>{profile.I || "-"}</StatValue>
+          </StatCell>
+        </StatsTable>
 
-          {/* Hero Stats (M/W/F) */}
-          {hasHeroStats && (
-            <HeroStatsContainer>
-              <HeroStatBadge>
-                <HeroStatLabel>M</HeroStatLabel>
-                <HeroStatValue>{row.M}</HeroStatValue>
-              </HeroStatBadge>
-              <HeroStatBadge>
-                <HeroStatLabel>W</HeroStatLabel>
-                <HeroStatValue>{row.W}</HeroStatValue>
-              </HeroStatBadge>
-              <HeroStatBadge>
-                <HeroStatLabel>F</HeroStatLabel>
-                <HeroStatValue>{row.F}</HeroStatValue>
-              </HeroStatBadge>
-            </HeroStatsContainer>
-          )}
+        {/* Hero Stats (M/W/F) */}
+        {hasHeroStats && (
+          <HeroStatsContainer>
+            <HeroStatBadge>
+              <HeroStatLabel>M</HeroStatLabel>
+              <HeroStatValue>{row.M}</HeroStatValue>
+            </HeroStatBadge>
+            <HeroStatBadge>
+              <HeroStatLabel>W</HeroStatLabel>
+              <HeroStatValue>{row.W}</HeroStatValue>
+            </HeroStatBadge>
+            <HeroStatBadge>
+              <HeroStatLabel>F</HeroStatLabel>
+              <HeroStatValue>{row.F}</HeroStatValue>
+            </HeroStatBadge>
+          </HeroStatsContainer>
+        )}
 
-          {/* Wargear */}
-          {profile.wargear && profile.wargear.length > 0 && (
+        {/* Wargear */}
+        {profile.wargear && profile.wargear.length > 0 && (
+          <>
+            <SectionTitle>Wargear</SectionTitle>
+            <SectionContent>{profile.wargear.join(", ")}</SectionContent>
+          </>
+        )}
+
+        {/* Special Rules */}
+        {profile.special_rules && profile.special_rules.length > 0 && (
+          <>
+            <SectionTitle>Special Rules</SectionTitle>
+            <SectionContent>{profile.special_rules.join(", ")}</SectionContent>
+          </>
+        )}
+
+        {/* Active/Passive Rules */}
+        {profile.active_or_passive_rules &&
+          profile.active_or_passive_rules.length > 0 && (
             <>
-              <SectionTitle>Wargear</SectionTitle>
-              <SectionContent>{profile.wargear.join(", ")}</SectionContent>
+              {profile.active_or_passive_rules.map((rule, index) => (
+                <Box key={index}>
+                  <SectionContent>
+                    <AbilityName>{rule.name}</AbilityName> -{" "}
+                    <AbilityType type={rule.type}>{rule.type}</AbilityType> -{" "}
+                    {rule.description}
+                  </SectionContent>
+                </Box>
+              ))}
             </>
           )}
 
-          {/* Special Rules */}
-          {profile.special_rules && profile.special_rules.length > 0 && (
-            <>
-              <SectionTitle>Special Rules</SectionTitle>
-              <SectionContent>
-                {profile.special_rules.join(", ")}
-              </SectionContent>
-            </>
-          )}
+        {/* Heroic Actions */}
+        {profile.heroic_actions && profile.heroic_actions.length > 0 && (
+          <>
+            <SectionTitle>Heroic Actions</SectionTitle>
+            <SectionContent>{profile.heroic_actions.join(", ")}</SectionContent>
+          </>
+        )}
 
-          {/* Active/Passive Rules */}
-          {profile.active_or_passive_rules &&
-            profile.active_or_passive_rules.length > 0 && (
-              <>
-                {profile.active_or_passive_rules.map((rule, index) => (
-                  <Box key={index}>
-                    <SectionContent>
-                      <AbilityName>{rule.name}</AbilityName> -{" "}
-                      <AbilityType type={rule.type}>{rule.type}</AbilityType> -{" "}
-                      {rule.description}
-                    </SectionContent>
-                  </Box>
-                ))}
-              </>
-            )}
-
-          {/* Heroic Actions */}
-          {profile.heroic_actions && profile.heroic_actions.length > 0 && (
-            <>
-              <SectionTitle>Heroic Actions</SectionTitle>
-              <SectionContent>
-                {profile.heroic_actions.join(", ")}
-              </SectionContent>
-            </>
-          )}
-
-          {/* Magical Powers */}
-          {profile.magic_powers && profile.magic_powers.length > 0 && (
-            <>
-              <SectionTitle>Magical Powers</SectionTitle>
-              <MagicPowersTable>
-                <MagicPowerRow>
-                  <MagicPowerHeader>Power</MagicPowerHeader>
-                  <MagicPowerHeader>Range</MagicPowerHeader>
-                  <MagicPowerHeader>Cast</MagicPowerHeader>
+        {/* Magical Powers */}
+        {profile.magic_powers && profile.magic_powers.length > 0 && (
+          <>
+            <SectionTitle>Magical Powers</SectionTitle>
+            <MagicPowersTable>
+              <MagicPowerRow>
+                <MagicPowerHeader>Power</MagicPowerHeader>
+                <MagicPowerHeader>Range</MagicPowerHeader>
+                <MagicPowerHeader>Cast</MagicPowerHeader>
+              </MagicPowerRow>
+              {profile.magic_powers.map((power, index) => (
+                <MagicPowerRow key={index}>
+                  <Typography sx={{ fontSize: "11px" }}>
+                    {power.name}
+                  </Typography>
+                  <Typography sx={{ fontSize: "11px" }}>
+                    {power.range}
+                  </Typography>
+                  <Typography sx={{ fontSize: "11px" }}>
+                    {power.cast}
+                  </Typography>
                 </MagicPowerRow>
-                {profile.magic_powers.map((power, index) => (
-                  <MagicPowerRow key={index}>
-                    <Typography sx={{ fontSize: "11px" }}>
-                      {power.name}
-                    </Typography>
-                    <Typography sx={{ fontSize: "11px" }}>
-                      {power.range}
-                    </Typography>
-                    <Typography sx={{ fontSize: "11px" }}>
-                      {power.cast}
-                    </Typography>
-                  </MagicPowerRow>
-                ))}
-              </MagicPowersTable>
-            </>
-          )}
-        </LeftColumn>
+              ))}
+            </MagicPowersTable>
+          </>
+        )}
+      </LeftColumn>
 
-        <RightColumn>
-          {/* Placeholder Image */}
-          <PlaceholderImage>PROFILE IMAGE</PlaceholderImage>
-        </RightColumn>
-      </CardContainer>
-    );
-  });
+      <RightColumn>
+        {/* Placeholder Image */}
+        <PlaceholderImage>PROFILE IMAGE</PlaceholderImage>
+      </RightColumn>
+    </CardContainer>
+  );
+});
 
 DynamicProfileCard.displayName = "DynamicProfileCard";

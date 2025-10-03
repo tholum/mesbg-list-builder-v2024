@@ -26,6 +26,7 @@ import { ConfirmDisbandGroupModal } from "./modals/ConfirmDisbandGroupModal.tsx"
 import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterGroupModal } from "./modals/CreateNewRosterGroupModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
+import { DownloadDynamicProfileCardModal } from "./modals/DownloadDynamicProfileCardModal.tsx";
 import { DownloadProfileCardModal } from "./modals/DownloadProfileCardModal.tsx";
 import { DynamicProfileCardModal } from "./modals/DynamicProfileCardModal.tsx";
 import { EditRosterModal } from "./modals/EditRosterModal.tsx";
@@ -57,6 +58,7 @@ export enum ModalTypes {
   END_GAME_DIALOG = "END_GAME_DIALOG",
 
   DOWNLOAD_PROFILE_CARDS = "DOWNLOAD_PROFILE_CARDS",
+  DOWNLOAD_DYNAMIC_PROFILE_CARDS = "DOWNLOAD_DYNAMIC_PROFILE_CARDS",
   ROSTER_SUMMARY = "ROSTER_SUMMARY",
   TABLETOP_SIM_EXPORT = "TABLETOP_SIM_EXPORT",
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
@@ -164,6 +166,15 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <Download />,
       title: "Download all Profile Cards",
       children: <DownloadProfileCardModal />,
+      overflow: "none",
+    },
+  ],
+  [
+    ModalTypes.DOWNLOAD_DYNAMIC_PROFILE_CARDS,
+    {
+      icon: <Download />,
+      title: "Download Dynamic Profile Cards",
+      children: <DownloadDynamicProfileCardModal />,
       overflow: "none",
     },
   ],

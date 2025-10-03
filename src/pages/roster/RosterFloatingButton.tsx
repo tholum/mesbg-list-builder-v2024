@@ -56,9 +56,7 @@ export const RosterFloatingButton = ({ roster }: { roster: RosterType }) => {
       icon: <Download />,
       name: "Download New Profile Cards",
       callback: () =>
-        alert(
-          "Download New Profile Cards - Feature coming soon! This will download dynamically generated HTML profile cards.",
-        ),
+        setCurrentModal(ModalTypes.DOWNLOAD_DYNAMIC_PROFILE_CARDS),
       disabled: roster.metadata.units === 0,
     },
     {
