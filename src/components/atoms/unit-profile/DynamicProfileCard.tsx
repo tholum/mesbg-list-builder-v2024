@@ -1,5 +1,6 @@
 import { Box, Typography, styled } from "@mui/material";
 import { forwardRef } from "react";
+import cardBackground from "../../../assets/images/card-background.jpg";
 import fallbackLogo from "../../../assets/images/default.png";
 import { DatabaseRow } from "../../../pages/database/data.ts";
 import { ImageWithFallback } from "../image/ImageWithFallback.tsx";
@@ -7,7 +8,9 @@ import { ImageWithFallback } from "../image/ImageWithFallback.tsx";
 const CardContainer = styled(Box)({
   height: "650px",
   aspectRatio: "1.414 / 1",
-  backgroundColor: "#f5e6d3",
+  backgroundImage: `url(${cardBackground})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
   border: "1px solid #d4c4a8",
   borderRadius: "12px",
   padding: "20px",
