@@ -36,6 +36,7 @@ export type HeroCardProps = {
   toggleLeader?: (value: boolean) => void;
   updateUnit: (updatedUnit: SelectedUnit) => void;
   openProfileCard: () => void;
+  openDynamicProfileCard?: () => void;
   reselect: () => void;
   remove?: () => void;
 };
@@ -50,6 +51,7 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
   isLeader = false,
   toggleLeader,
   openProfileCard,
+  openDynamicProfileCard,
   reselect,
   remove,
   collapsed,
@@ -323,6 +325,7 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                   : reselect
               }
               openProfileCard={openProfileCard}
+              openDynamicProfileCard={openDynamicProfileCard}
               warbandNum={warbandNum}
               index={index}
               unitName={unit.name}
@@ -518,6 +521,7 @@ export const HeroCard: FunctionComponent<HeroCardProps> = ({
                   : reselect
               }
               openProfileCard={openProfileCard}
+              openDynamicProfileCard={openDynamicProfileCard}
               warbandNum={warbandNum}
               index={index}
               unitName={unit.name}

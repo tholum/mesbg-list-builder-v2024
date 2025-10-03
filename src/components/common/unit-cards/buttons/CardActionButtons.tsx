@@ -13,6 +13,7 @@ type CardActionButtonsProps = {
   remove?: () => void;
   reselect?: () => void;
   openProfileCard?: () => void;
+  openDynamicProfileCard?: () => void;
   warbandNum: number;
   index: number;
   unitName: string;
@@ -23,6 +24,7 @@ export const CardActionButtons: FunctionComponent<CardActionButtonsProps> = ({
   remove,
   reselect,
   openProfileCard,
+  openDynamicProfileCard,
   warbandNum,
   index,
   unitName,
@@ -45,6 +47,21 @@ export const CardActionButtons: FunctionComponent<CardActionButtonsProps> = ({
             onClick={openProfileCard}
             testId={`open-profile-card--w${warbandNum}-i${index}`}
             testName={`open-profile-card--${slugify(unitName)}`}
+          />
+        )}
+        {!!openDynamicProfileCard && (
+          <SquareIconButton
+            icon={<BsFillPersonVcardFill />}
+            iconColor={palette.primary.contrastText}
+            backgroundColor={
+              mode === "dark" ? palette.primary.dark : palette.primary.main
+            }
+            backgroundColorHover={
+              mode === "dark" ? palette.primary.main : palette.primary.dark
+            }
+            onClick={openDynamicProfileCard}
+            testId={`open-dynamic-profile-card--w${warbandNum}-i${index}`}
+            testName={`open-dynamic-profile-card--${slugify(unitName)}`}
           />
         )}
         {!!duplicate && (

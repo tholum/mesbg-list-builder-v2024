@@ -53,6 +53,15 @@ export const RosterFloatingButton = ({ roster }: { roster: RosterType }) => {
       disabled: roster.metadata.units === 0,
     },
     {
+      icon: <Download />,
+      name: "Download New Profile Cards",
+      callback: () =>
+        alert(
+          "Download New Profile Cards - Feature coming soon! This will download dynamically generated HTML profile cards.",
+        ),
+      disabled: roster.metadata.units === 0,
+    },
+    {
       icon: <Print />,
       name: "Open Printable PDF view",
       callback: () => navigate(`/roster/${rosterId}/pdf-printable`),
