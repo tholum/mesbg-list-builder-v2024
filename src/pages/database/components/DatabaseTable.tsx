@@ -63,6 +63,7 @@ export const DatabaseTable = ({
               </TableSortLabel>
             </TableCell>
             <TableCell align="center">Card</TableCell>
+            <TableCell align="center">New Card</TableCell>
             {screen.isDesktop && (
               <>
                 <TableCell align="center">

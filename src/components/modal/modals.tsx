@@ -27,6 +27,7 @@ import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterGroupModal } from "./modals/CreateNewRosterGroupModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
 import { DownloadProfileCardModal } from "./modals/DownloadProfileCardModal.tsx";
+import { DynamicProfileCardModal } from "./modals/DynamicProfileCardModal.tsx";
 import { EditRosterModal } from "./modals/EditRosterModal.tsx";
 import { EndGameStepperDialog } from "./modals/EndGameStepperDialog.tsx";
 import { ExportCollection } from "./modals/ExportCollection.tsx";
@@ -47,6 +48,7 @@ export enum ModalTypes {
   EXPORT_ROSTER = "EXPORT_ROSTER",
 
   PROFILE_CARD = "PROFILE_CARD",
+  DYNAMIC_PROFILE_CARD = "DYNAMIC_PROFILE_CARD",
   CHART = "CHART",
 
   EXPORT_GAMES = "EXPORT_GAMES",
@@ -137,6 +139,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <BsFillPersonVcardFill />,
       title: "",
       children: <ProfileCardModal />,
+    },
+  ],
+  [
+    ModalTypes.DYNAMIC_PROFILE_CARD,
+    {
+      icon: <BsFillPersonVcardFill />,
+      title: "",
+      children: <DynamicProfileCardModal />,
     },
   ],
   [
