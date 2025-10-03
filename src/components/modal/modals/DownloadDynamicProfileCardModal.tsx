@@ -30,8 +30,9 @@ export const DownloadDynamicProfileCardModal = () => {
   const [profileCards, setProfileCards] = useState<DatabaseRow[]>([]);
   const [isDownloading, setIsDownloading] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [currentCard, setCurrentCard] = useState<string>("");
+  const [currentCardIndex, setCurrentCardIndex] = useState<number>(-1);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const captureCardRef = useRef<HTMLDivElement>(null);
 
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.down("lg"));
@@ -148,17 +149,18 @@ export const DownloadDynamicProfileCardModal = () => {
 
       for (let i = 0; i < profileCards.length; i++) {
         const card = profileCards[i];
-        const cardKey = `${card.profile_origin}|${card.name}`;
-        setCurrentCard(card.name);
+        setCurrentCardIndex(i);
 
-        const cardElement = cardRefs.current.get(cardKey);
-        if (!cardElement) {
-          console.warn(`Card element not found for ${cardKey}`);
+        // Wait for the card to be fully rendered
+        await new Promise((resolve) => setTimeout(resolve, 200));
+
+        if (!captureCardRef.current) {
+          console.warn(`Card ref not available for ${card.name}`);
           continue;
         }
 
         // Use html2canvas to convert the card to an image
-        const canvas = await html2canvas(cardElement, {
+        const canvas = await html2canvas(captureCardRef.current, {
           backgroundColor: null,
           scale: 2, // Higher quality
           logging: false,
@@ -188,11 +190,13 @@ export const DownloadDynamicProfileCardModal = () => {
       );
 
       setIsDownloading(false);
+      setCurrentCardIndex(-1);
       closeModal();
     } catch (error) {
       console.error("Error generating profile cards:", error);
       triggerAlert(AlertTypes.DOWNLOAD_FAILED);
       setIsDownloading(false);
+      setCurrentCardIndex(-1);
     }
   };
 
@@ -215,7 +219,11 @@ export const DownloadDynamicProfileCardModal = () => {
         {isDownloading && (
           <div style={{ marginTop: 16, marginBottom: 16 }}>
             <Typography variant="body2" gutterBottom>
-              Generating card: {currentCard} ({Math.round(progress)}%)
+              Generating card:{" "}
+              {currentCardIndex >= 0
+                ? profileCards[currentCardIndex]?.name
+                : ""}{" "}
+              ({Math.round(progress)}%)
             </Typography>
             <LinearProgress variant="determinate" value={progress} />
           </div>
@@ -227,7 +235,6 @@ export const DownloadDynamicProfileCardModal = () => {
             return (
               <ImageListItem key={index} cols={1}>
                 <div
-                  ref={(el) => setCardRef(cardKey, el)}
                   style={{
                     transform: "scale(0.5)",
                     transformOrigin: "top left",
@@ -235,12 +242,36 @@ export const DownloadDynamicProfileCardModal = () => {
                     marginBottom: "-200px",
                   }}
                 >
-                  <DynamicProfileCard row={card} />
+                  <DynamicProfileCard
+                    ref={(el) => setCardRef(cardKey, el)}
+                    row={card}
+                  />
                 </div>
               </ImageListItem>
             );
           })}
         </ImageList>
+
+        {/* Single card for capture - rendered off-screen but fully visible to html2canvas */}
+        <div
+          style={{
+            position: "fixed",
+            left: "-9999px",
+            top: 0,
+            width: "650px",
+            height: "auto",
+            pointerEvents: "none",
+          }}
+        >
+          {isDownloading &&
+            currentCardIndex >= 0 &&
+            profileCards[currentCardIndex] && (
+              <DynamicProfileCard
+                ref={captureCardRef}
+                row={profileCards[currentCardIndex]}
+              />
+            )}
+        </div>
       </DialogContent>
       <DialogActions>
         <Button
