@@ -1,6 +1,8 @@
 import { Box, Typography, styled } from "@mui/material";
 import { forwardRef } from "react";
+import fallbackLogo from "../../../assets/images/default.png";
 import { DatabaseRow } from "../../../pages/database/data.ts";
+import { ImageWithFallback } from "../image/ImageWithFallback.tsx";
 
 const CardContainer = styled(Box)({
   width: "650px",
@@ -53,20 +55,22 @@ const ProfileMeta = styled(Typography)({
   letterSpacing: "0.3px",
 });
 
-const PlaceholderImage = styled(Box)({
+const ProfileImageContainer = styled(Box)({
   width: "200px",
   height: "200px",
-  backgroundColor: "#e8dcc8",
   border: "3px solid #c4a574",
   borderRadius: "50%",
+  overflow: "hidden",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  color: "#8b7355",
-  fontSize: "12px",
-  fontWeight: "bold",
-  textAlign: "center",
-  padding: "20px",
+  backgroundColor: "#e8dcc8",
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+  "& img": {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  },
 });
 
 const StatsTable = styled(Box)({
@@ -338,8 +342,14 @@ export const DynamicProfileCard = forwardRef<
       </LeftColumn>
 
       <RightColumn>
-        {/* Placeholder Image */}
-        <PlaceholderImage>PROFILE IMAGE</PlaceholderImage>
+        {/* Profile Image */}
+        <ProfileImageContainer>
+          <ImageWithFallback
+            source={`${RESOURCES_URL}/images/profiles/${row.profile_origin}/pictures/${row.name}.png?version=${BUILD_VERSION}`}
+            fallbackImageSource={fallbackLogo}
+            alt={`Profile picture for ${row.name}`}
+          />
+        </ProfileImageContainer>
       </RightColumn>
     </CardContainer>
   );
