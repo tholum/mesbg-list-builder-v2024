@@ -5,8 +5,8 @@ import { DatabaseRow } from "../../../pages/database/data.ts";
 import { ImageWithFallback } from "../image/ImageWithFallback.tsx";
 
 const CardContainer = styled(Box)({
-  width: "650px",
-  minHeight: "400px",
+  height: "650px",
+  aspectRatio: "1.414 / 1",
   backgroundColor: "#f5e6d3",
   border: "1px solid #d4c4a8",
   borderRadius: "12px",
@@ -18,6 +18,7 @@ const CardContainer = styled(Box)({
   display: "grid",
   gridTemplateColumns: "1fr 250px",
   gap: "20px",
+  overflow: "hidden",
 });
 
 const LeftColumn = styled(Box)({
