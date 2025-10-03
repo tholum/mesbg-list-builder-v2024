@@ -77,6 +77,24 @@ export const DatabaseTableRow = ({ row }: { row: DatabaseRow }) => {
             }}
           />
         </TableCell>
+        <TableCell align="center">
+          <SquareIconButton
+            icon={<BsFillPersonVcardFill />}
+            iconColor={palette.primary.contrastText}
+            backgroundColor={
+              mode === "dark" ? palette.primary.dark : palette.primary.main
+            }
+            backgroundColorHover={
+              mode === "dark" ? palette.primary.main : palette.primary.dark
+            }
+            onClick={() => {
+              setCurrentModal(ModalTypes.DYNAMIC_PROFILE_CARD, {
+                row: row,
+                title: row.name,
+              });
+            }}
+          />
+        </TableCell>
         {screen.isDesktop && (
           <>
             <TableCell align="center">

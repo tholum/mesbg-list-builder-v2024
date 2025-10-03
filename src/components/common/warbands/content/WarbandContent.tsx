@@ -73,6 +73,16 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
     });
   }
 
+  function openDynamicProfileCard(unit: Unit) {
+    console.debug(
+      `Open dynamic profile card for ${unit.profile_origin}/${unit.name}`,
+    );
+    setCurrentModal(ModalTypes.DYNAMIC_PROFILE_CARD, {
+      unit: unit,
+      title: unit.name,
+    });
+  }
+
   return (
     <Stack sx={{ p: 1 }} gap={1}>
       {isSelectedUnit(hero) ? (
@@ -84,6 +94,7 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
             index={0}
             updateUnit={mutations.updateHero}
             openProfileCard={() => openProfileCard(hero)}
+            openDynamicProfileCard={() => openDynamicProfileCard(hero)}
             reselect={openHeroPicker}
             isLeader={isWarbandWithLeader}
             toggleLeader={mutations.toggleArmyGeneral}
@@ -173,6 +184,9 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                                 index={index + 1} // +1 offset for the warband captain.
                                 updateUnit={mutations.updateUnit}
                                 openProfileCard={() => openProfileCard(unit)}
+                                openDynamicProfileCard={() =>
+                                  openDynamicProfileCard(unit)
+                                }
                                 reselect={() => openUnitPicker(unit.id)}
                                 remove={() => mutations.removeUnit(unit.id)}
                                 collapsed={collapsed}
@@ -185,6 +199,9 @@ export const WarbandContent: FunctionComponent<WarbandContentProps> = ({
                                 warbandNum={warbandNum}
                                 index={index + 1} // +1 offset for the warband captain.
                                 openProfileCard={() => openProfileCard(unit)}
+                                openDynamicProfileCard={() =>
+                                  openDynamicProfileCard(unit)
+                                }
                                 updateUnit={(updatedUnit) =>
                                   mutations.updateUnit(updatedUnit)
                                 }

@@ -29,6 +29,7 @@ export type WarriorCardProps = {
   collapsed?: boolean;
   updateUnit: (updatedUnit: SelectedUnit) => void;
   openProfileCard: () => void;
+  openDynamicProfileCard?: () => void;
   duplicate: () => void;
   reselect: () => void;
   remove: () => void;
@@ -43,6 +44,7 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
   index,
   updateUnit,
   openProfileCard,
+  openDynamicProfileCard,
   duplicate,
   reselect,
   remove,
@@ -230,6 +232,9 @@ export const WarriorCard: FunctionComponent<WarriorCardProps> = ({
             remove={remove}
             reselect={!isSiegeEquipment(unit) ? reselect : null}
             openProfileCard={!isSiegeEquipment(unit) ? openProfileCard : null}
+            openDynamicProfileCard={
+              !isSiegeEquipment(unit) ? openDynamicProfileCard : null
+            }
             warbandNum={warbandNum}
             index={index}
             unitName={unit.name}
